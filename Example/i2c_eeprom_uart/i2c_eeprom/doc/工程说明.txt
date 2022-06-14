@@ -1,0 +1,17 @@
+本实验实现了上位机通过串口发送命令帧和数据帧给FPGA，
+FPGA对命令帧和数据帧解析之后，对EEPROM进行写操作与读操作，
+并将从EEPROM读取的数据通过串口返回给上位机。
+
+模块：
+1、串口接收模块(uart_rx)：接收上位机发送的字节，给到命令解析模块(cmd_analy)；
+
+2、命令解析模块(cmd_analy)：对串口接收接收到的字节进行解析，提取出数据和读请求、写请求；
+   将数据给到wr_fifo缓存；或者将写/读请求给到EEPROM控制模块(eeprom_control)；
+
+3、EEPROM读写控制模块(eeprom_control)：根据接收到的写、读请求，
+   向I2C接口模块(i2c_interface)发起(读、写)传2请求(req)、命令码(cmd)和数据；
+
+4、I2C接口模块(i2c_interface)：根据接收到的(读、写)传输请求(req)、命令码(cmd)，
+   在FPGA和EEPROM之间传输数据。
+
+5、串口发送模块(uart_tx)：将从EEPROM读取的数据通过串口返回给上位机；

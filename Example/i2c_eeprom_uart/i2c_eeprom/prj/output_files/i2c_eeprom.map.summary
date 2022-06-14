@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Aug 30 11:09:10 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : i2c_eeprom
+Top-level Entity Name : i2c_eeprom
+Family : Cyclone IV E
+Total logic elements : 397
+    Total combinational functions : 335
+    Dedicated logic registers : 240
+Total registers : 240
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 1,024
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/class5_code/multiplier_32bit/tb
+vmultiplier_32bit
+!s110 1627812885
+!i10b 1
+!s100 cnlnz4zB0FO67BXLhfL[j1
+ID>SjRk0DAI6A<1cYSUUW^0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1627812875
+8../rtl/multiplier_32bit.v
+F../rtl/multiplier_32bit.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1627812885.000000
+!s107 ../rtl/multiplier_32bit.v|
+!s90 -reportprogress|300|../rtl/multiplier_32bit.v|
+!i113 1
+Z3 tCvgOpt 0
+vmultiplier_32bit_tb
+!s110 1627812884
+!i10b 1
+!s100 zdMDIlUF_;Kh@ZE<aUS8o0
+IR3So_kaYI>K@8l3AjCD382
+R1
+R0
+w1627806749
+8multiplier_32bit_tb.v
+Fmultiplier_32bit_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1627812884.000000
+!s107 multiplier_32bit_tb.v|
+!s90 -reportprogress|300|multiplier_32bit_tb.v|
+!i113 1
+R3

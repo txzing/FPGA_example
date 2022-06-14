@@ -1,0 +1,364 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do sdram_test_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlib sdram
+# ** Warning: (vlib-34) Library already exists at "sdram".
+# vmap sdram sdram
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap sdram sdram 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work sdram +incdir+C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis {C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/sdram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:22 on Jul 23,2021
+# vlog -reportprogress 300 -vlog01compat -work sdram "+incdir+C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis" C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/sdram.v 
+# -- Compiling module sdram
+# 
+# Top level modules:
+# 	sdram
+# End time: 16:25:22 on Jul 23,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work sdram +incdir+C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/submodules {C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/submodules/sdram_new_sdram_controller_0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:22 on Jul 23,2021
+# vlog -reportprogress 300 -vlog01compat -work sdram "+incdir+C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/submodules" C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/submodules/sdram_new_sdram_controller_0.v 
+# -- Compiling module sdram_new_sdram_controller_0_input_efifo_module
+# -- Compiling module sdram_new_sdram_controller_0
+# 
+# Top level modules:
+# 	sdram_new_sdram_controller_0
+# End time: 16:25:22 on Jul 23,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FPGA/Desktop/SDRAM_test/src {C:/Users/FPGA/Desktop/SDRAM_test/src/process.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:22 on Jul 23,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FPGA/Desktop/SDRAM_test/src" C:/Users/FPGA/Desktop/SDRAM_test/src/process.v 
+# -- Compiling module process
+# 
+# Top level modules:
+# 	process
+# End time: 16:25:22 on Jul 23,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FPGA/Desktop/SDRAM_test/src {C:/Users/FPGA/Desktop/SDRAM_test/src/uart_tx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:22 on Jul 23,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FPGA/Desktop/SDRAM_test/src" C:/Users/FPGA/Desktop/SDRAM_test/src/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 16:25:22 on Jul 23,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FPGA/Desktop/SDRAM_test/src {C:/Users/FPGA/Desktop/SDRAM_test/src/uart_rx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:22 on Jul 23,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FPGA/Desktop/SDRAM_test/src" C:/Users/FPGA/Desktop/SDRAM_test/src/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 16:25:22 on Jul 23,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FPGA/Desktop/SDRAM_test/src {C:/Users/FPGA/Desktop/SDRAM_test/src/sdram_test.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:22 on Jul 23,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FPGA/Desktop/SDRAM_test/src" C:/Users/FPGA/Desktop/SDRAM_test/src/sdram_test.v 
+# -- Compiling module sdram_test
+# 
+# Top level modules:
+# 	sdram_test
+# End time: 16:25:22 on Jul 23,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FPGA/Desktop/SDRAM_test/ip {C:/Users/FPGA/Desktop/SDRAM_test/ip/pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:22 on Jul 23,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FPGA/Desktop/SDRAM_test/ip" C:/Users/FPGA/Desktop/SDRAM_test/ip/pll.v 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 16:25:23 on Jul 23,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FPGA/Desktop/SDRAM_test/ip {C:/Users/FPGA/Desktop/SDRAM_test/ip/fifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:23 on Jul 23,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FPGA/Desktop/SDRAM_test/ip" C:/Users/FPGA/Desktop/SDRAM_test/ip/fifo.v 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 16:25:23 on Jul 23,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FPGA/Desktop/SDRAM_test/prj/db {C:/Users/FPGA/Desktop/SDRAM_test/prj/db/pll_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:23 on Jul 23,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FPGA/Desktop/SDRAM_test/prj/db" C:/Users/FPGA/Desktop/SDRAM_test/prj/db/pll_altpll.v 
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# End time: 16:25:23 on Jul 23,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/FPGA/Desktop/SDRAM_test/prj/../sim {C:/Users/FPGA/Desktop/SDRAM_test/prj/../sim/sdram_test_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:23 on Jul 23,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FPGA/Desktop/SDRAM_test/prj/../sim" C:/Users/FPGA/Desktop/SDRAM_test/prj/../sim/sdram_test_tb.v 
+# -- Compiling module sdram_test_tb
+# 
+# Top level modules:
+# 	sdram_test_tb
+# End time: 16:25:23 on Jul 23,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L sdram -voptargs="+acc"  sdram_test_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L sdram -voptargs=""+acc"" sdram_test_tb 
+# Start time: 16:25:23 on Jul 23,2021
+# Loading work.sdram_test_tb
+# Loading work.sdram_test
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.process
+# Loading work.fifo
+# Loading altera_mf_ver.scfifo
+# Loading work.uart_tx
+# Loading work.uart_rx
+# Loading sdram.sdram
+# Loading sdram.sdram_new_sdram_controller_0
+# Loading sdram.sdram_new_sdram_controller_0_input_efifo_module
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: FPGA  Hostname: DESKTOP-863HOQH  ProcessID: 12960
+#           Attempting to use alternate WLF file "./wlft8ftzkw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft8ftzkw
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# This reference design requires a vendor simulation model.
+# To simulate accesses to SDRAM, you must:
+# 	 - Download the vendor model
+# 	 - Install the model in the system_sim directory
+# 	 - `include the vendor model in the the top-level system file,
+# 	 - Instantiate sdram simulation models and wire them to testbench signals
+# 	 - Be aware that you may have to disable some timing checks in the vendor model
+# 		   (because this simulation is zero-delay based)
+# 
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: sdram_test_tb.sdram_test_u0.pll_0.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 390000  Instance: sdram_test_tb.sdram_test_u0.pll_0.altpll_component.cycloneiii_pll.pll3
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+add wave -position insertpoint  \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/clk \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rst_n \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/uart_rxd \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/uart_txd \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_address \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_byteenable_n \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_chipselect \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_writedata \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_read_n \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_write_n \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_readdata \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_readdatavalid \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_waitrequest \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_wr_dat \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_rdreq \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_wrreq \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_empty \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_full \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_almost_empty \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_almost_full \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_rd_dat \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_wr_dat \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_rdreq \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_wrreq \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_empty \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_full \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_almost_empty \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_almost_full \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_rd_dat \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_data_i \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_start_i \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_ready_o \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_data_o \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_data_vild_o \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_parity_error_o \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_state \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_state_next \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_state \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_state_next \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_state \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_state_next
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L sdram -voptargs=\"+acc\" work.sdram_test_tb
+# End time: 16:26:16 on Jul 23,2021, Elapsed time: 0:00:53
+# Errors: 1, Warnings: 2
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L sdram -voptargs=""+acc"" work.sdram_test_tb 
+# Start time: 16:26:16 on Jul 23,2021
+# Loading work.sdram_test_tb
+# Loading work.sdram_test
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.process
+# Loading work.fifo
+# Loading altera_mf_ver.scfifo
+# Loading work.uart_tx
+# Loading work.uart_rx
+# Loading sdram.sdram
+# Loading sdram.sdram_new_sdram_controller_0
+# Loading sdram.sdram_new_sdram_controller_0_input_efifo_module
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+add wave -position insertpoint  \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/clk \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rst_n \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/uart_rxd \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/uart_txd \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_address \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_byteenable_n \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_chipselect \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_writedata \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_read_n \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_write_n \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_readdata \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_readdatavalid \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_waitrequest \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_wr_dat \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_rdreq \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_wrreq \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_empty \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_full \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_almost_empty \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_almost_full \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_rd_dat \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_wr_dat \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_rdreq \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_wrreq \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_empty \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_full \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_almost_empty \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_almost_full \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_rd_dat \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_data_i \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_start_i \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_ready_o \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_data_o \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_data_vild_o \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_parity_error_o \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_state \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_state_next \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_state \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_state_next \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_state \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_state_next
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: FPGA  Hostname: DESKTOP-863HOQH  ProcessID: 12960
+#           Attempting to use alternate WLF file "./wlfth1wq89".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfth1wq89
+restart
+run
+# 
+# This reference design requires a vendor simulation model.
+# To simulate accesses to SDRAM, you must:
+# 	 - Download the vendor model
+# 	 - Install the model in the system_sim directory
+# 	 - `include the vendor model in the the top-level system file,
+# 	 - Instantiate sdram simulation models and wire them to testbench signals
+# 	 - Be aware that you may have to disable some timing checks in the vendor model
+# 		   (because this simulation is zero-delay based)
+# 
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: sdram_test_tb.sdram_test_u0.pll_0.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 390000  Instance: sdram_test_tb.sdram_test_u0.pll_0.altpll_component.cycloneiii_pll.pll3
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 21910 ns.
+add wave -position insertpoint  \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/clk \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rst_n \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/uart_rxd \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/uart_txd \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_address \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_byteenable_n \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_chipselect \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_writedata \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_read_n \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_write_n \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_readdata \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_readdatavalid \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_sdram_waitrequest \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_wr_dat \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_rdreq \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_wrreq \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_empty \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_full \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_almost_empty \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_almost_full \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_fifo_rd_dat \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_wr_dat \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_rdreq \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_wrreq \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_empty \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_full \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_almost_empty \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_almost_full \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_fifo_rd_dat \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_data_i \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_start_i \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_ready_o \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_data_o \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_data_vild_o \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_parity_error_o \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_state \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/rx_state_next \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_state \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/tx_state_next \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_state \
+sim:/sdram_test_tb/sdram_test_u0/process_u0/avalon_state_next

@@ -1,0 +1,13 @@
+
+State Machine - |fsm_clock|clock:u_clock|state_c
+Name state_c.SET_ALARM state_c.SET_TIME state_c.IDLE 
+state_c.IDLE 0 0 0 
+state_c.SET_TIME 0 1 1 
+state_c.SET_ALARM 1 0 1 
+
+State Machine - |fsm_clock|key_filter:u_key_filter|state_c
+Name state_c.FILTER_UP state_c.HOLD_DOWN state_c.FILTER_DOWN state_c.IDLE 
+state_c.IDLE 0 0 0 0 
+state_c.FILTER_DOWN 0 0 1 1 
+state_c.HOLD_DOWN 0 1 0 1 
+state_c.FILTER_UP 1 0 0 1 

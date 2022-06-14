@@ -1,0 +1,289 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "cmos_sioc",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wen",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_casn",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_rasn",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dqm[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dqm[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_bank[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_bank[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_hys",
+					"strict" : false
+				},
+				{
+					"name" : "vga_vys",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[4]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[5]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[6]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[7]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[8]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[9]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[10]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[11]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[12]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[13]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[14]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[15]",
+					"strict" : false
+				},
+				{
+					"name" : "cmos_siod",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[12]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[13]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[14]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[15]",
+					"strict" : false
+				},
+				{
+					"name" : "cmos_pclk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "key_in",
+					"strict" : false
+				},
+				{
+					"name" : "cmos_href",
+					"strict" : false
+				},
+				{
+					"name" : "cmos_din[7]",
+					"strict" : false
+				},
+				{
+					"name" : "cmos_din[6]",
+					"strict" : false
+				},
+				{
+					"name" : "cmos_din[5]",
+					"strict" : false
+				},
+				{
+					"name" : "cmos_din[4]",
+					"strict" : false
+				},
+				{
+					"name" : "cmos_din[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cmos_din[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cmos_din[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cmos_din[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cmos_vsync",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

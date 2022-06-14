@@ -1,0 +1,523 @@
+Analysis & Synthesis report for fsm_clock
+Wed Mar 30 14:15:11 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |fsm_clock|clock:u_clock|state_c
+  9. State Machine - |fsm_clock|key_filter:u_key_filter|state_c
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |fsm_clock
+ 14. Parameter Settings for User Entity Instance: key_filter:u_key_filter
+ 15. Parameter Settings for User Entity Instance: clock:u_clock
+ 16. Parameter Settings for User Entity Instance: seg_driver:u_seg_driver
+ 17. Parameter Settings for User Entity Instance: beep_driver:u_beep_driver
+ 18. Port Connectivity Checks: "seg_driver:u_seg_driver"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Mar 30 14:15:11 2022           ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                      ; fsm_clock                                       ;
+; Top-level Entity Name              ; fsm_clock                                       ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 484                                             ;
+;     Total combinational functions  ; 474                                             ;
+;     Dedicated logic registers      ; 247                                             ;
+; Total registers                    ; 247                                             ;
+; Total pins                         ; 20                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE6F17C8        ;                    ;
+; Top-level entity name                                            ; fsm_clock          ; fsm_clock          ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                  ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                    ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+; ../rtl/key_filter.v              ; yes             ; User Verilog HDL File  ; C:/Users/TX/Desktop/fsm_clock/rtl/key_filter.v  ;         ;
+; ../rtl/beep_driver.v             ; yes             ; User Verilog HDL File  ; C:/Users/TX/Desktop/fsm_clock/rtl/beep_driver.v ;         ;
+; ../rtl/seg_driver.v              ; yes             ; User Verilog HDL File  ; C:/Users/TX/Desktop/fsm_clock/rtl/seg_driver.v  ;         ;
+; ../rtl/fsm_clock.v               ; yes             ; User Verilog HDL File  ; C:/Users/TX/Desktop/fsm_clock/rtl/fsm_clock.v   ;         ;
+; ../rtl/clock.v                   ; yes             ; User Verilog HDL File  ; C:/Users/TX/Desktop/fsm_clock/rtl/clock.v       ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+
+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 484           ;
+;                                             ;               ;
+; Total combinational functions               ; 474           ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 239           ;
+;     -- 3 input functions                    ; 90            ;
+;     -- <=2 input functions                  ; 145           ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 390           ;
+;     -- arithmetic mode                      ; 84            ;
+;                                             ;               ;
+; Total registers                             ; 247           ;
+;     -- Dedicated logic registers            ; 247           ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 20            ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; sys_clk~input ;
+; Maximum fan-out                             ; 247           ;
+; Total fan-out                               ; 2507          ;
+; Average fan-out                             ; 3.29          ;
++---------------------------------------------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                           ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------+--------------+
+; |fsm_clock                     ; 474 (0)             ; 247 (0)                   ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |fsm_clock                           ; fsm_clock   ; work         ;
+;    |beep_driver:u_beep_driver| ; 45 (45)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsm_clock|beep_driver:u_beep_driver ; beep_driver ; work         ;
+;    |clock:u_clock|             ; 287 (287)           ; 144 (144)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsm_clock|clock:u_clock             ; clock       ; work         ;
+;    |key_filter:u_key_filter|   ; 65 (65)             ; 36 (36)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsm_clock|key_filter:u_key_filter   ; key_filter  ; work         ;
+;    |seg_driver:u_seg_driver|   ; 77 (77)             ; 35 (35)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsm_clock|seg_driver:u_seg_driver   ; seg_driver  ; work         ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------+
+; State Machine - |fsm_clock|clock:u_clock|state_c                        ;
++-------------------+-------------------+------------------+--------------+
+; Name              ; state_c.SET_ALARM ; state_c.SET_TIME ; state_c.IDLE ;
++-------------------+-------------------+------------------+--------------+
+; state_c.IDLE      ; 0                 ; 0                ; 0            ;
+; state_c.SET_TIME  ; 0                 ; 1                ; 1            ;
+; state_c.SET_ALARM ; 1                 ; 0                ; 1            ;
++-------------------+-------------------+------------------+--------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------+
+; State Machine - |fsm_clock|key_filter:u_key_filter|state_c                                       ;
++---------------------+-------------------+-------------------+---------------------+--------------+
+; Name                ; state_c.FILTER_UP ; state_c.HOLD_DOWN ; state_c.FILTER_DOWN ; state_c.IDLE ;
++---------------------+-------------------+-------------------+---------------------+--------------+
+; state_c.IDLE        ; 0                 ; 0                 ; 0                   ; 0            ;
+; state_c.FILTER_DOWN ; 0                 ; 0                 ; 1                   ; 1            ;
+; state_c.HOLD_DOWN   ; 0                 ; 1                 ; 0                   ; 1            ;
+; state_c.FILTER_UP   ; 1                 ; 0                 ; 0                   ; 1            ;
++---------------------+-------------------+-------------------+---------------------+--------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 247   ;
+; Number of registers using Synchronous Clear  ; 52    ;
+; Number of registers using Synchronous Load   ; 35    ;
+; Number of registers using Asynchronous Clear ; 246   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 112   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; seg_driver:u_seg_driver|seg_sel_n[1]    ; 5       ;
+; seg_driver:u_seg_driver|seg_sel_n[2]    ; 4       ;
+; seg_driver:u_seg_driver|seg_sel_n[3]    ; 4       ;
+; seg_driver:u_seg_driver|seg_sel_n[4]    ; 3       ;
+; seg_driver:u_seg_driver|seg_sel_n[5]    ; 4       ;
+; seg_driver:u_seg_driver|seg_data[0]     ; 1       ;
+; seg_driver:u_seg_driver|seg_data[1]     ; 1       ;
+; seg_driver:u_seg_driver|seg_data[2]     ; 1       ;
+; seg_driver:u_seg_driver|seg_data[3]     ; 1       ;
+; seg_driver:u_seg_driver|seg_data[4]     ; 1       ;
+; seg_driver:u_seg_driver|seg_data[5]     ; 1       ;
+; seg_driver:u_seg_driver|seg_data[6]     ; 1       ;
+; seg_driver:u_seg_driver|seg_data[7]     ; 1       ;
+; beep_driver:u_beep_driver|beep_n        ; 2       ;
+; clock:u_clock|cnt_s_s[0]                ; 7       ;
+; clock:u_clock|alarm_s_s[0]              ; 7       ;
+; clock:u_clock|cnt_m_g[0]                ; 7       ;
+; clock:u_clock|alarm_m_g[0]              ; 7       ;
+; clock:u_clock|cnt_h_s[0]                ; 8       ;
+; clock:u_clock|alarm_h_s[0]              ; 7       ;
+; clock:u_clock|alarm_s_s[1]              ; 6       ;
+; clock:u_clock|cnt_m_s[1]                ; 7       ;
+; clock:u_clock|alarm_m_s[1]              ; 6       ;
+; clock:u_clock|cnt_m_g[1]                ; 6       ;
+; clock:u_clock|cnt_s_g[1]                ; 6       ;
+; clock:u_clock|cnt_s_s[2]                ; 5       ;
+; clock:u_clock|alarm_m_g[2]              ; 5       ;
+; clock:u_clock|cnt_s_g[2]                ; 5       ;
+; clock:u_clock|alarm_s_g[2]              ; 5       ;
+; key_filter:u_key_filter|key_in_r2[0]    ; 3       ;
+; key_filter:u_key_filter|key_in_r2[1]    ; 3       ;
+; key_filter:u_key_filter|key_in_r1[0]    ; 3       ;
+; key_filter:u_key_filter|key_in_r1[1]    ; 3       ;
+; key_filter:u_key_filter|key_in_r2[2]    ; 5       ;
+; key_filter:u_key_filter|key_in_r1[2]    ; 6       ;
+; key_filter:u_key_filter|key_in_r0[0]    ; 1       ;
+; key_filter:u_key_filter|key_in_r0[1]    ; 1       ;
+; key_filter:u_key_filter|key_in_r0[2]    ; 1       ;
+; Total number of inverted registers = 38 ;         ;
++-----------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|set_flag[4]      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|alarm_flag[3]    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|dout_mask[0]     ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|dout[19]         ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|cnt_s_g[3]       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|cnt_s_s[3]       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|cnt_m_g[2]       ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|cnt_m_s[2]       ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|cnt_h_g[3]       ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|cnt_h_s[2]       ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|set_h_s[2]       ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|alarm_h_s[1]     ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|set_h_g[0]       ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|alarm_h_g[1]     ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|set_m_s[1]       ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|alarm_m_s[0]     ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|set_m_g[1]       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|alarm_m_g[1]     ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|set_s_s[0]       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|alarm_s_s[3]     ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|set_s_g[0]       ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|alarm_s_g[1]     ;
+; 64:1               ; 4 bits    ; 168 LEs       ; 28 LEs               ; 140 LEs                ; Yes        ; |fsm_clock|seg_driver:u_seg_driver|num[1] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|cnt_s_g[1]       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|cnt_s_s[0]       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|cnt_m_g[1]       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|alarm_m_g[0]     ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |fsm_clock|clock:u_clock|alarm_s_s[1]     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |fsm_clock ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; KEY_WIDTH      ; 3     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: key_filter:u_key_filter ;
++----------------+----------------------+------------------------------+
+; Parameter Name ; Value                ; Type                         ;
++----------------+----------------------+------------------------------+
+; DELAY_20MS     ; 11110100001001000000 ; Unsigned Binary              ;
+; KEY_W          ; 3                    ; Signed Integer               ;
++----------------+----------------------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clock:u_clock  ;
++----------------+--------------------------+-----------------+
+; Parameter Name ; Value                    ; Type            ;
++----------------+--------------------------+-----------------+
+; TIME_1S        ; 5000000                  ; Signed Integer  ;
+; CURRENT_TIME   ; 000100000010001101010110 ; Unsigned Binary ;
+; ALARM_TIME     ; 000100000010010100110100 ; Unsigned Binary ;
++----------------+--------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: seg_driver:u_seg_driver ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; SHIFT_TIME     ; 50000 ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: beep_driver:u_beep_driver ;
++----------------+----------+--------------------------------------------+
+; Parameter Name ; Value    ; Type                                       ;
++----------------+----------+--------------------------------------------+
+; TIME_DELAY     ; 25000000 ; Signed Integer                             ;
++----------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "seg_driver:u_seg_driver" ;
++---------------+-------+----------+------------------+
+; Port          ; Type  ; Severity ; Details          ;
++---------------+-------+----------+------------------+
+; point_n[1..0] ; Input ; Info     ; Stuck at VCC     ;
+; point_n[5]    ; Input ; Info     ; Stuck at VCC     ;
+; point_n[4]    ; Input ; Info     ; Stuck at GND     ;
+; point_n[3]    ; Input ; Info     ; Stuck at VCC     ;
+; point_n[2]    ; Input ; Info     ; Stuck at GND     ;
++---------------+-------+----------+------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 20                          ;
+; cycloneiii_ff         ; 247                         ;
+;     CLR               ; 74                          ;
+;     CLR SCLR          ; 26                          ;
+;     CLR SLD           ; 35                          ;
+;     ENA               ; 1                           ;
+;     ENA CLR           ; 85                          ;
+;     ENA CLR SCLR      ; 26                          ;
+; cycloneiii_lcell_comb ; 488                         ;
+;     arith             ; 84                          ;
+;         2 data inputs ; 84                          ;
+;     normal            ; 404                         ;
+;         1 data inputs ; 32                          ;
+;         2 data inputs ; 43                          ;
+;         3 data inputs ; 90                          ;
+;         4 data inputs ; 239                         ;
+;                       ;                             ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.17                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Processing started: Wed Mar 30 14:15:00 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fsm_clock -c fsm_clock
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/tx/desktop/fsm_clock/rtl/key_filter.v
+    Info (12023): Found entity 1: key_filter File: C:/Users/TX/Desktop/fsm_clock/rtl/key_filter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/tx/desktop/fsm_clock/rtl/beep_driver.v
+    Info (12023): Found entity 1: beep_driver File: C:/Users/TX/Desktop/fsm_clock/rtl/beep_driver.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file /users/tx/desktop/fsm_clock/rtl/seg_driver.v
+    Info (12023): Found entity 1: seg_driver File: C:/Users/TX/Desktop/fsm_clock/rtl/seg_driver.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/tx/desktop/fsm_clock/rtl/fsm_clock.v
+    Info (12023): Found entity 1: fsm_clock File: C:/Users/TX/Desktop/fsm_clock/rtl/fsm_clock.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/tx/desktop/fsm_clock/rtl/clock.v
+    Info (12023): Found entity 1: clock File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at fsm_clock.v(36): created implicit net for "beep_en" File: C:/Users/TX/Desktop/fsm_clock/rtl/fsm_clock.v Line: 36
+Info (12127): Elaborating entity "fsm_clock" for the top level hierarchy
+Info (12128): Elaborating entity "key_filter" for hierarchy "key_filter:u_key_filter" File: C:/Users/TX/Desktop/fsm_clock/rtl/fsm_clock.v Line: 23
+Warning (10230): Verilog HDL assignment warning at key_filter.v(124): truncated value with size 32 to match size of target (20) File: C:/Users/TX/Desktop/fsm_clock/rtl/key_filter.v Line: 124
+Info (12128): Elaborating entity "clock" for hierarchy "clock:u_clock" File: C:/Users/TX/Desktop/fsm_clock/rtl/fsm_clock.v Line: 37
+Warning (10230): Verilog HDL assignment warning at clock.v(157): truncated value with size 32 to match size of target (26) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 157
+Warning (10230): Verilog HDL assignment warning at clock.v(177): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 177
+Warning (10230): Verilog HDL assignment warning at clock.v(201): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 201
+Warning (10230): Verilog HDL assignment warning at clock.v(225): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 225
+Warning (10230): Verilog HDL assignment warning at clock.v(248): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 248
+Warning (10230): Verilog HDL assignment warning at clock.v(271): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 271
+Warning (10230): Verilog HDL assignment warning at clock.v(297): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 297
+Warning (10230): Verilog HDL assignment warning at clock.v(338): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 338
+Warning (10230): Verilog HDL assignment warning at clock.v(361): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 361
+Warning (10230): Verilog HDL assignment warning at clock.v(384): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 384
+Warning (10230): Verilog HDL assignment warning at clock.v(407): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 407
+Warning (10230): Verilog HDL assignment warning at clock.v(430): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 430
+Warning (10230): Verilog HDL assignment warning at clock.v(453): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 453
+Warning (10230): Verilog HDL assignment warning at clock.v(490): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 490
+Warning (10230): Verilog HDL assignment warning at clock.v(512): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 512
+Warning (10230): Verilog HDL assignment warning at clock.v(534): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 534
+Warning (10230): Verilog HDL assignment warning at clock.v(556): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 556
+Warning (10230): Verilog HDL assignment warning at clock.v(578): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 578
+Warning (10230): Verilog HDL assignment warning at clock.v(600): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/clock.v Line: 600
+Info (12128): Elaborating entity "seg_driver" for hierarchy "seg_driver:u_seg_driver" File: C:/Users/TX/Desktop/fsm_clock/rtl/fsm_clock.v Line: 47
+Warning (10230): Verilog HDL assignment warning at seg_driver.v(43): truncated value with size 32 to match size of target (16) File: C:/Users/TX/Desktop/fsm_clock/rtl/seg_driver.v Line: 43
+Info (12128): Elaborating entity "beep_driver" for hierarchy "beep_driver:u_beep_driver" File: C:/Users/TX/Desktop/fsm_clock/rtl/fsm_clock.v Line: 54
+Warning (10230): Verilog HDL assignment warning at beep_driver.v(35): truncated value with size 32 to match size of target (26) File: C:/Users/TX/Desktop/fsm_clock/rtl/beep_driver.v Line: 35
+Warning (10230): Verilog HDL assignment warning at beep_driver.v(56): truncated value with size 32 to match size of target (4) File: C:/Users/TX/Desktop/fsm_clock/rtl/beep_driver.v Line: 56
+Info (13000): Registers with preset signals will power-up high File: C:/Users/TX/Desktop/fsm_clock/rtl/seg_driver.v Line: 59
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 504 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 484 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 4762 megabytes
+    Info: Processing ended: Wed Mar 30 14:15:11 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:20
+
+

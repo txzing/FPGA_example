@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Apr 01 16:48:31 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : fsm_saler
+Top-level Entity Name : fsm_saler
+Family : Cyclone IV E
+Total logic elements : 686
+    Total combinational functions : 673
+    Dedicated logic registers : 189
+Total registers : 189
+Total pins : 24
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

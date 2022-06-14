@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/FPGA/Desktop/SDRAM_test/sim
+vsdram
+Z1 !s110 1627028722
+!i10b 1
+!s100 KK^nUf@3Hgk^O7KXF2M803
+I`6UHNfo3DKZkJze0g_4WT2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1626940123
+8C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/sdram.v
+FC:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/sdram.v
+L0 6
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1627028722.000000
+!s107 C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/sdram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|sdram|+incdir+C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis|C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/sdram.v|
+!i113 1
+Z6 o-vlog01compat -work sdram
+!s92 -vlog01compat -work sdram +incdir+C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis
+Z7 tCvgOpt 0
+vsdram_new_sdram_controller_0
+R1
+!i10b 1
+!s100 YBLT2ciWDN1H79Eifed5=1
+IY1kP;1NSh=Cm<l5@F2zDl2
+R2
+R0
+R3
+Z8 8C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/submodules/sdram_new_sdram_controller_0.v
+Z9 FC:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/submodules/sdram_new_sdram_controller_0.v
+L0 159
+R4
+r1
+!s85 0
+31
+R5
+Z10 !s107 C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/submodules/sdram_new_sdram_controller_0.v|
+Z11 !s90 -reportprogress|300|-vlog01compat|-work|sdram|+incdir+C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/submodules|C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/submodules/sdram_new_sdram_controller_0.v|
+!i113 1
+R6
+Z12 !s92 -vlog01compat -work sdram +incdir+C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/synthesis/submodules
+R7
+vsdram_new_sdram_controller_0_input_efifo_module
+R1
+!i10b 1
+!s100 [?;FSo@SzjQOO<AEHF;YF0
+IM`R3oa`IYTz2RS0B?Q80I0
+R2
+R0
+R3
+R8
+R9
+L0 21
+R4
+r1
+!s85 0
+31
+R5
+R10
+R11
+!i113 1
+R6
+R12
+R7

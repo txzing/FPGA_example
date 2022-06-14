@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"name":"Project Name","data":["./a"],"classes":["info-table"]},
+{"name":"Target Family, Device","data":["Cyclone V, 5CEFA9F23I7"]},
+{"name":"i++ Version","data":["18.1.0 Build 625"]},
+{"name":"Quartus Version","data":["18.1.0 Build 625"]},
+{"name":"Command","data":["i++ -march=CycloneV avg.c -ghdl"]},
+{"name":"Reports Generated At", "data":["Tue Jul 13 15:48:22 2021"]}
+]}

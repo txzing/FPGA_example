@@ -1,0 +1,979 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [4.09108, 3.06556, 1.37261, 0.583658, 0.892857]
+  , "total":
+  [3359, 3008, 3, 1]
+  , "name":"System"
+  , "max_resources":
+  [109572, 219144, 514, 112]
+  , "children":
+  [
+    {
+      "name":"avg"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [4.09108, 3.06556, 1.37261, 0.583658, 0.892857]
+      , "total_kernel_resources":
+      [3359, 3008, 3, 1]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Component call"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 128 bits wide with a buffer size of 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Component return"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 1 bit wide with a buffer size of 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Variable: \n - 'i' (avg.c:8)"
+          , "type":"resource"
+          , "data":
+          [7, 36, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"avg.c"
+                , "line":8
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32 and depth 1"
+            }
+          ]
+        }
+        , {
+          "name":"Variable: \n - 'j' (avg.c:8)"
+          , "type":"resource"
+          , "data":
+          [40, 27, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"avg.c"
+                , "line":8
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32 and depth 16 (depth was increased by a factor of 16 due to a loop initiation interval of 16.)"
+            }
+          ]
+        }
+        , {
+          "name":"Variable: \n - 'sum' (avg.c:9)"
+          , "type":"resource"
+          , "data":
+          [96, 93, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"avg.c"
+                , "line":9
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32 and depth 16 (depth was increased by a factor of 16 due to a loop initiation interval of 16.)"
+            }
+          ]
+        }
+        , {
+          "name":"avg.B1.start"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [0, 128, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [0, 128, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [5, 2, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [5, 2, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [1, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"avg.B2"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [28, 55, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0]
+                }
+                , {
+                  "name":"avg.c:12"
+                  , "type":"resource"
+                  , "data":
+                  [17.3333, 47.3333, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":12
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"avg.c:23"
+                  , "type":"resource"
+                  , "data":
+                  [5, 2, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":23
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"avg.c:24"
+                  , "type":"resource"
+                  , "data":
+                  [4.66667, 5.66667, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":24
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [103, 50, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"avg.c:12"
+                  , "type":"resource"
+                  , "data":
+                  [37.6667, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":12
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0]
+                    }
+                    , {
+                      "name":"6-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [4.66667, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"avg.c:24"
+                  , "type":"resource"
+                  , "data":
+                  [2.33333, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":24
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"6-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2.33333, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"avg.B3"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [236, 363, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [236, 363, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [365, 374, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [97, 93, 0, 0]
+                }
+                , {
+                  "name":"avg.c:12"
+                  , "type":"resource"
+                  , "data":
+                  [125, 129, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":12
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"avg.c:14"
+                  , "type":"resource"
+                  , "data":
+                  [0.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":14
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"avg.c:16"
+                  , "type":"resource"
+                  , "data":
+                  [107, 107, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":16
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"avg.c:20"
+                  , "type":"resource"
+                  , "data":
+                  [0.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":20
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"avg.c:23"
+                  , "type":"resource"
+                  , "data":
+                  [21, 27, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":23
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"avg.c:24"
+                  , "type":"resource"
+                  , "data":
+                  [14, 18, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":24
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [368, 159, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [1027, 749, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Floating-point Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [995, 717, 0, 0]
+                    }
+                    , {
+                      "name":"Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 32, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"avg.c:16"
+                  , "type":"resource"
+                  , "data":
+                  [38, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":16
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0]
+                    }
+                    , {
+                      "name":"4-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [5, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"avg.c:18"
+                  , "type":"resource"
+                  , "data":
+                  [33, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":18
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"avg.c:19"
+                  , "type":"resource"
+                  , "data":
+                  [35, 1, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":19
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [35, 1, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"avg.c:20"
+                  , "type":"resource"
+                  , "data":
+                  [249, 221, 2, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":20
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [249, 221, 2, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Local-pipelined LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"avg.B4"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [22, 43, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [22, 43, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [25, 19, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"avg.c:23"
+                  , "type":"resource"
+                  , "data":
+                  [25, 19, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":23
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [85, 47, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"avg.c:22"
+                  , "type":"resource"
+                  , "data":
+                  [457, 359, 0, 1]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":22
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Floating-point Multiply"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [457, 359, 0, 1]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"avg.c:23"
+                  , "type":"resource"
+                  , "data":
+                  [92, 272, 1, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":23
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [92, 272, 1, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Local-pipelined LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"avg.B5"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [3, 8, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [3, 8, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "dout0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[9]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[10]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[11]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[12]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[13]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[14]",
+					"strict" : false
+				},
+				{
+					"name" : "dout0[15]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[10]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[12]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[13]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[14]",
+					"strict" : false
+				},
+				{
+					"name" : "dout1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "dout_vld",
+					"strict" : false
+				},
+				{
+					"name" : "din_vld",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "din_a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "din_a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "din_a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "din_a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "din_a[4]",
+					"strict" : false
+				},
+				{
+					"name" : "din_a[5]",
+					"strict" : false
+				},
+				{
+					"name" : "din_a[6]",
+					"strict" : false
+				},
+				{
+					"name" : "din_a[7]",
+					"strict" : false
+				},
+				{
+					"name" : "din_b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "din_b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "din_b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "din_b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "din_b[4]",
+					"strict" : false
+				},
+				{
+					"name" : "din_b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "din_b[6]",
+					"strict" : false
+				},
+				{
+					"name" : "din_b[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

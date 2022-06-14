@@ -1,0 +1,385 @@
+Analysis & Synthesis report for multiplier_32bit
+Sun Aug 01 18:16:18 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Aug 01 18:16:18 2021           ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                      ; multiplier_32bit                                ;
+; Top-level Entity Name              ; multiplier_32bit                                ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 2,186                                           ;
+;     Total combinational functions  ; 2,085                                           ;
+;     Dedicated logic registers      ; 1,542                                           ;
+; Total registers                    ; 1542                                            ;
+; Total pins                         ; 132                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE6F17C8        ;                    ;
+; Top-level entity name                                            ; multiplier_32bit   ; multiplier_32bit   ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------+---------+
+; ../rtl/multiplier_32bit.v        ; yes             ; User Verilog HDL File  ; D:/class5_code/multiplier_32bit/rtl/multiplier_32bit.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 2,186     ;
+;                                             ;           ;
+; Total combinational functions               ; 2085      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 0         ;
+;     -- 3 input functions                    ; 989       ;
+;     -- <=2 input functions                  ; 1096      ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 1055      ;
+;     -- arithmetic mode                      ; 1030      ;
+;                                             ;           ;
+; Total registers                             ; 1542      ;
+;     -- Dedicated logic registers            ; 1542      ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 132       ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 1542      ;
+; Total fan-out                               ; 11395     ;
+; Average fan-out                             ; 2.93      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                           ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name      ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
+; |multiplier_32bit          ; 2085 (2085)         ; 1542 (1542)               ; 0           ; 0            ; 0       ; 0         ; 132  ; 0            ; |multiplier_32bit   ; multiplier_32bit ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                ;
++------------------------------------------+----------------------------------------+
+; Register name                            ; Reason for Removal                     ;
++------------------------------------------+----------------------------------------+
+; res0_r0[32..63]                          ; Stuck at GND due to stuck port data_in ;
+; res0_r1[0,33..63]                        ; Stuck at GND due to stuck port data_in ;
+; res0_r2[0,1,34..63]                      ; Stuck at GND due to stuck port data_in ;
+; res0_r3[0..2,35..63]                     ; Stuck at GND due to stuck port data_in ;
+; res0_r4[0..3,36..63]                     ; Stuck at GND due to stuck port data_in ;
+; res0_r5[0..4,37..63]                     ; Stuck at GND due to stuck port data_in ;
+; res0_r6[0..5,38..63]                     ; Stuck at GND due to stuck port data_in ;
+; res0_r7[0..6,39..63]                     ; Stuck at GND due to stuck port data_in ;
+; res0_r8[0..7,40..63]                     ; Stuck at GND due to stuck port data_in ;
+; res0_r9[0..8,41..63]                     ; Stuck at GND due to stuck port data_in ;
+; res0_r10[0..9,42..63]                    ; Stuck at GND due to stuck port data_in ;
+; res0_r11[0..10,43..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r12[0..11,44..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r13[0..12,45..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r14[0..13,46..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r15[0..14,47..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r16[0..15,48..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r17[0..16,49..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r18[0..17,50..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r19[0..18,51..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r20[0..19,52..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r21[0..20,53..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r22[0..21,54..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r23[0..22,55..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r24[0..23,56..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r25[0..24,57..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r26[0..25,58..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r27[0..26,59..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r28[0..27,60..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r29[0..28,61..63]                   ; Stuck at GND due to stuck port data_in ;
+; res0_r30[0..29,62,63]                    ; Stuck at GND due to stuck port data_in ;
+; res0_r31[0..30,63]                       ; Stuck at GND due to stuck port data_in ;
+; res1_r1[0..3]                            ; Stuck at GND due to stuck port data_in ;
+; res1_r2[0..7]                            ; Stuck at GND due to stuck port data_in ;
+; res1_r3[0..11]                           ; Stuck at GND due to stuck port data_in ;
+; res1_r4[0..15]                           ; Stuck at GND due to stuck port data_in ;
+; res1_r5[0..19]                           ; Stuck at GND due to stuck port data_in ;
+; res1_r6[0..23]                           ; Stuck at GND due to stuck port data_in ;
+; res1_r7[0..27]                           ; Stuck at GND due to stuck port data_in ;
+; res2_r1[0..15]                           ; Stuck at GND due to stuck port data_in ;
+; res1_r0[36..62]                          ; Merged with res1_r0[63]                ;
+; res1_r1[40..62]                          ; Merged with res1_r1[63]                ;
+; res1_r2[44..62]                          ; Merged with res1_r2[63]                ;
+; res1_r3[48..62]                          ; Merged with res1_r3[63]                ;
+; res1_r4[52..62]                          ; Merged with res1_r4[63]                ;
+; res1_r5[56..62]                          ; Merged with res1_r5[63]                ;
+; res1_r6[60..62]                          ; Merged with res1_r6[63]                ;
+; res1_r0[63]                              ; Stuck at GND due to stuck port data_in ;
+; res1_r1[63]                              ; Stuck at GND due to stuck port data_in ;
+; res1_r2[63]                              ; Stuck at GND due to stuck port data_in ;
+; res1_r3[63]                              ; Stuck at GND due to stuck port data_in ;
+; res1_r4[63]                              ; Stuck at GND due to stuck port data_in ;
+; res1_r5[63]                              ; Stuck at GND due to stuck port data_in ;
+; res1_r6[63]                              ; Stuck at GND due to stuck port data_in ;
+; res2_r0[49..63]                          ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1279 ;                                        ;
++------------------------------------------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                           ;
++---------------+---------------------------+-------------------------------------------------------------------------------------------+
+; Register name ; Reason for Removal        ; Registers Removed due to This Register                                                    ;
++---------------+---------------------------+-------------------------------------------------------------------------------------------+
+; res0_r0[63]   ; Stuck at GND              ; res1_r0[63], res2_r0[54], res2_r0[53], res2_r0[52], res2_r0[51], res2_r0[50], res2_r0[49] ;
+;               ; due to stuck port data_in ;                                                                                           ;
+; res1_r1[3]    ; Stuck at GND              ; res2_r0[63], res2_r0[62], res2_r0[61], res2_r0[60], res2_r0[59], res2_r0[58], res2_r0[57] ;
+;               ; due to stuck port data_in ;                                                                                           ;
+; res0_r4[63]   ; Stuck at GND              ; res1_r1[63]                                                                               ;
+;               ; due to stuck port data_in ;                                                                                           ;
+; res0_r8[63]   ; Stuck at GND              ; res1_r2[63]                                                                               ;
+;               ; due to stuck port data_in ;                                                                                           ;
+; res0_r12[63]  ; Stuck at GND              ; res1_r3[63]                                                                               ;
+;               ; due to stuck port data_in ;                                                                                           ;
+; res0_r16[63]  ; Stuck at GND              ; res1_r4[63]                                                                               ;
+;               ; due to stuck port data_in ;                                                                                           ;
+; res0_r20[63]  ; Stuck at GND              ; res1_r5[63]                                                                               ;
+;               ; due to stuck port data_in ;                                                                                           ;
+; res0_r24[63]  ; Stuck at GND              ; res1_r6[63]                                                                               ;
+;               ; due to stuck port data_in ;                                                                                           ;
+; res1_r2[7]    ; Stuck at GND              ; res2_r0[56]                                                                               ;
+;               ; due to stuck port data_in ;                                                                                           ;
+; res1_r3[11]   ; Stuck at GND              ; res2_r0[55]                                                                               ;
+;               ; due to stuck port data_in ;                                                                                           ;
++---------------+---------------------------+-------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1542  ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 1542  ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 1473  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 132                         ;
+; cycloneiii_ff         ; 1542                        ;
+;     CLR               ; 69                          ;
+;     ENA CLR           ; 1473                        ;
+; cycloneiii_lcell_comb ; 2085                        ;
+;     arith             ; 1030                        ;
+;         2 data inputs ; 41                          ;
+;         3 data inputs ; 989                         ;
+;     normal            ; 1055                        ;
+;         0 data inputs ; 29                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 1024                        ;
+;                       ;                             ;
+; Max LUT depth         ; 7.40                        ;
+; Average LUT depth     ; 4.16                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Processing started: Sun Aug 01 18:16:08 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multiplier_32bit -c multiplier_32bit
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /class5_code/multiplier_32bit/rtl/multiplier_32bit.v
+    Info (12023): Found entity 1: multiplier_32bit File: D:/class5_code/multiplier_32bit/rtl/multiplier_32bit.v Line: 1
+Info (12127): Elaborating entity "multiplier_32bit" for the top level hierarchy
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 2318 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 67 input pins
+    Info (21059): Implemented 65 output pins
+    Info (21061): Implemented 2186 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4783 megabytes
+    Info: Processing ended: Sun Aug 01 18:16:18 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:16
+
+

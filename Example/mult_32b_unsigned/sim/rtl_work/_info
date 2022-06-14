@@ -1,0 +1,118 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/FPGA/Desktop/mult_32b_unsigned/sim
+vmult_shift_add
+!s110 1626833836
+!i10b 1
+!s100 1BG<ZRFPNKbRME<TcQ61:2
+I8O@BFIOaJSG24>V3H@=AP3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1626832066
+8C:/Users/FPGA/Desktop/mult_32b_unsigned/src/mult_shift_add.v
+FC:/Users/FPGA/Desktop/mult_32b_unsigned/src/mult_shift_add.v
+L0 2
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1626833836.000000
+!s107 C:/Users/FPGA/Desktop/mult_32b_unsigned/src/mult_shift_add.v|
+!s90 -reportprogress|300|-work|work|C:/Users/FPGA/Desktop/mult_32b_unsigned/src/mult_shift_add.v|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+vmult_shift_add_tb
+!s110 1626833820
+!i10b 1
+!s100 =NY>O<RjK>hnm4f`7[Nh]2
+IO]GV3>NSoVVX?c_EO80a51
+R1
+R0
+w1626752116
+8C:/Users/FPGA/Desktop/mult_32b_unsigned/sim/mult_shift_add_tb.v
+FC:/Users/FPGA/Desktop/mult_32b_unsigned/sim/mult_shift_add_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1626833820.000000
+!s107 C:/Users/FPGA/Desktop/mult_32b_unsigned/sim/mult_shift_add_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/FPGA/Desktop/mult_32b_unsigned/sim/mult_shift_add_tb.v|
+!i113 1
+R3
+R4
+vmult_top
+!s110 1626833805
+!i10b 1
+!s100 zn=QcQChVQ6H:A<4F]gG?1
+IL1lVK8m5DCKh]<8G:4a2R0
+R1
+R0
+w1626830866
+8C:/Users/FPGA/Desktop/mult_32b_unsigned/src/mult_top.v
+FC:/Users/FPGA/Desktop/mult_32b_unsigned/src/mult_top.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1626833805.000000
+!s107 C:/Users/FPGA/Desktop/mult_32b_unsigned/src/mult_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FPGA/Desktop/mult_32b_unsigned/src|C:/Users/FPGA/Desktop/mult_32b_unsigned/src/mult_top.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/FPGA/Desktop/mult_32b_unsigned/src
+R4
+vpll
+Z6 !s110 1626833806
+!i10b 1
+!s100 O@jh@6Fn2jCi^JgEB<CY?1
+I`bMK;J`oSWeF>@4DfiiFC3
+R1
+R0
+w1626830813
+8C:/Users/FPGA/Desktop/mult_32b_unsigned/ip/pll.v
+FC:/Users/FPGA/Desktop/mult_32b_unsigned/ip/pll.v
+L0 39
+R2
+r1
+!s85 0
+31
+Z7 !s108 1626833806.000000
+!s107 C:/Users/FPGA/Desktop/mult_32b_unsigned/ip/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FPGA/Desktop/mult_32b_unsigned/ip|C:/Users/FPGA/Desktop/mult_32b_unsigned/ip/pll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/FPGA/Desktop/mult_32b_unsigned/ip
+R4
+vpll_altpll
+R6
+!i10b 1
+!s100 bail@jC7IODff2knn<iU^2
+IQah<7fo@z]OFfnU_zD9]F0
+R1
+R0
+w1626830904
+8C:/Users/FPGA/Desktop/mult_32b_unsigned/prj/db/pll_altpll.v
+FC:/Users/FPGA/Desktop/mult_32b_unsigned/prj/db/pll_altpll.v
+L0 30
+R2
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/FPGA/Desktop/mult_32b_unsigned/prj/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FPGA/Desktop/mult_32b_unsigned/prj/db|C:/Users/FPGA/Desktop/mult_32b_unsigned/prj/db/pll_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/FPGA/Desktop/mult_32b_unsigned/prj/db
+R4

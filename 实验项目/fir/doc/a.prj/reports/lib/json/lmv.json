@@ -1,0 +1,68 @@
+{
+  "nodes":
+  [
+    {
+      "type":"interface"
+      , "id":23
+      , "name":"x"
+      , "debug":
+      [
+        [
+          {
+            "filename":"avg.c"
+            , "line":7
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Data width":"64"
+          , "Address width":"64"
+          , "Address Space":"0"
+          , "Latency":"1"
+          , "ReadWrite Mode":"readwrite"
+          , "Maximum burst":"1"
+          , "Wait request":"0"
+          , "Alignment":"0"
+          , "Component":"avg"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":24
+      , "name":"y"
+      , "debug":
+      [
+        [
+          {
+            "filename":"avg.c"
+            , "line":7
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Data width":"64"
+          , "Address width":"64"
+          , "Address Space":"0"
+          , "Latency":"1"
+          , "ReadWrite Mode":"readwrite"
+          , "Maximum burst":"1"
+          , "Wait request":"0"
+          , "Alignment":"0"
+          , "Component":"avg"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

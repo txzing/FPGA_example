@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 10",
+		"os_version" : "10.0"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "not_applicable",
+		"error_message" : "Uncaught C++ Exception",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7ffa516b4f68: KERNELBASE + 0x34f68 (RaiseException + 0x68)\n\t0x7ffa255fe3d8: MSVCR120 + 0x5e3d8 (__BuildCatchObjectHelper + 0x3b0)\n\t0x7ffa53d91455: ntdll + 0xa1455 (RtlCaptureContext2 + 0x4a5)\n\t0x7ffa09b4c798: db_acf + 0x6c798 (`std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::_Copy&apos;::`1&apos;::catch$1 + 0x28)\n\t0x7ffa2560691f: MSVCR120 + 0x6691f (__unDNameEx + 0x267)\n\t0x7ffa255fe36c: MSVCR120 + 0x5e36c (__BuildCatchObjectHelper + 0x344)\n\t0x7ffa53d91455: ntdll + 0xa1455 (RtlCaptureContext2 + 0x4a5)\n\t0x7ffa09ae1ba4: db_acf + 0x1ba4 (?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z + 0x84)\n\t0x7ffa09ae2062: db_acf + 0x2062 (?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@PEBD_K@Z + 0xa2)\n\t0x7ffa09af8506: db_acf + 0x18506 (?acf_clone_string_if_not_null@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBD@Z + 0x76)\n\t0x7ffa09afbe2c: db_acf + 0x1be2c (?set_original_tcl_command@ACF_ASSIGNMENT_IMPL@@QEAAXPEBD@Z + 0xcc)\n\t0x7ffa09afc721: db_acf + 0x1c721 (?set_variable_original_tcl_command_from_file@ACF_ASSIGNMENT@@AEAAXPEBD@Z + 0x31)\n\t0x7ffa09b18191: db_acf + 0x38191 (?internal_read_modern_settings_file_from_disk@ACF_MANAGER_STORAGE_REAL@@AEAA_NPEBD_NAEAVACF_READ_FILE_OPTIONS@@@Z + 0xaa1)\n\t0x7ffa09b16e9e: db_acf + 0x36e9e (?internal_read_file_from_disk@ACF_MANAGER_STORAGE_REAL@@AEAA_NPEBD_NAEAVACF_READ_FILE_OPTIONS@@@Z + 0x17e)\n\t0x7ffa09b1dc92: db_acf + 0x3dc92 (?read_defaults@ACF_MANAGER_STORAGE_REAL@@AEAAXXZ + 0x502)\n\t0x7ffa09b20438: db_acf + 0x40438 (?reset@ACF_MANAGER_STORAGE_REAL@@AEAAX_N0@Z + 0x338)\n\t0x7ffa09b22387: db_acf + 0x42387 (?synchronize_all_files@ACF_MANAGER_STORAGE_REAL@@AEAA_N_N@Z + 0x187)\n\t0x7ffa09b2215e: db_acf + 0x4215e (?synchronize@ACF_MANAGER_STORAGE_REAL@@UEAA_N_N@Z + 0xce)\n\t0x7ffa09b00311: db_acf + 0x20311 (?synchronize@ACF_REVISION_MANAGER@@QEAA_NXZ + 0x21)\n\t0x7ffa09b264b7: db_acf + 0x464b7 (?write_lock@ACF_MANAGER_STORAGE_REAL@@UEAA_N_N@Z + 0x77)\n\t0x7ffa09b08146: db_acf + 0x28146 (?internal_open_create_project@ACF_MANAGER@@IEAA?AW4ERROR_STATUS@ACF_REVISION_MANAGER@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00_N11111@Z + 0xb26)\n\t0x7ffa09b09bc4: db_acf + 0x29bc4 (?open_project@ACF_MANAGER@@UEAA?AW4ERROR_STATUS@ACF_REVISION_MANAGER@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00_N1111@Z + 0x7b4)\n\t0x7ffa2d094014: sys_proj + 0x4014 (??0PROJ_PROJECT@@AEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0_N0@Z + 0x4d4)\n\t0x7ffa2d09ace1: sys_proj + 0xace1 (?open@PROJ_PROJECT@@SA?AW4PROJ_STATUS@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0_N0@Z + 0x401)\n\t0x7ffa0cf77aa5: SYS_QUI + 0x47aa5 (?open_project@QUI_PRJ_UI_MGR@@UEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00@Z + 0x6b5)\n\t0x7ffa0cf41e5f: SYS_QUI + 0x11e5f (?process_cmdline_arguments_post_main_wnd_show@QUI_APP@@MEAAXPEAVQUI_CMDLINE@@@Z + 0x34f)\n\t0x7ffa0cf40674: SYS_QUI + 0x10674 (?init_instance@QUI_APP@@UEAA_NHPEAPEBDPEAVQUI_CMDLINE@@@Z + 0x4c4)\n\t0x7ffa35991ef6: SYS_QGQ + 0x1ef6 (?init_instance@QGQ_APP@@UEAA_NHPEAPEBDPEAVQUI_CMDLINE@@@Z + 0xd6)\n\t0x7ff618b81971: quartus + 0x1971 (?qgq_main@@YAHHPEAPEBD@Z + 0x71)\n\t0x7ffa26412e98: CCL_MSG + 0x12e98 (?msg_main_thread@@YAPEAXPEAX@Z + 0x18)\n\t0x7ffa2641467e: CCL_MSG + 0x1467e (?msg_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x6e)\n\t0x7ffa358f6660: ccl_mem + 0x16660 (?mem_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x70)\n\t0x7ffa26412761: CCL_MSG + 0x12761 (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0xa1)\n\t0x7ff618b824e7: quartus + 0x24e7 (WinMain + 0x127)\n\t0x7ff618b81e58: quartus + 0x1e58 (__tmainCRTStartup + 0x148)\n\t0x7ffa536d7033: KERNEL32 + 0x17033 (BaseThreadInitThunk + 0x13)\n\t0x7ffa53d42650: ntdll + 0x52650 (RtlUserThreadStart + 0x20)\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "18.1.0",
+		"build" : "625",
+		"edition" : "Standard Edition"
+	}
+}

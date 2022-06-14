@@ -1,0 +1,38 @@
+
+State Machine - |ov5640_sdram_vga|sdram_controler:u_sdram_ctrl|sdram_intf:u_intf|state_c
+Name state_c.READ state_c.WRITE state_c.ACTI state_c.IDLE state_c.MRS state_c.AREF state_c.PRECH state_c.WAIT 
+state_c.WAIT 0 0 0 0 0 0 0 0 
+state_c.PRECH 0 0 0 0 0 0 1 1 
+state_c.AREF 0 0 0 0 0 1 0 1 
+state_c.MRS 0 0 0 0 1 0 0 1 
+state_c.IDLE 0 0 0 1 0 0 0 1 
+state_c.ACTI 0 0 1 0 0 0 0 1 
+state_c.WRITE 0 1 0 0 0 0 0 1 
+state_c.READ 1 0 0 0 0 0 0 1 
+
+State Machine - |ov5640_sdram_vga|sdram_controler:u_sdram_ctrl|sdram_ctrl:u_rw_ctrl|state_c
+Name state_c.DONE state_c.BURST_R state_c.BURST_W state_c.IDLE 
+state_c.IDLE 0 0 0 0 
+state_c.BURST_W 0 0 1 1 
+state_c.BURST_R 0 1 0 1 
+state_c.DONE 1 0 0 1 
+
+State Machine - |ov5640_sdram_vga|ov5640_config:u_cfg|i2c_interface:u_i2c_interface|state_c
+Name state_c.STOP state_c.SACK state_c.READ state_c.RACK state_c.WRITE state_c.START state_c.IDLE 
+state_c.IDLE 0 0 0 0 0 0 0 
+state_c.START 0 0 0 0 0 1 1 
+state_c.WRITE 0 0 0 0 1 0 1 
+state_c.RACK 0 0 0 1 0 0 1 
+state_c.READ 0 0 1 0 0 0 1 
+state_c.SACK 0 1 0 0 0 0 1 
+state_c.STOP 1 0 0 0 0 0 1 
+
+State Machine - |ov5640_sdram_vga|ov5640_config:u_cfg|i2c_config:u_i2c_cfg|state_c
+Name state_c.DONE state_c.RDONE state_c.RREQ state_c.WDONE state_c.WREQ state_c.IDLE state_c.WAIT 
+state_c.WAIT 0 0 0 0 0 0 0 
+state_c.IDLE 0 0 0 0 0 1 1 
+state_c.WREQ 0 0 0 0 1 0 1 
+state_c.WDONE 0 0 0 1 0 0 1 
+state_c.RREQ 0 0 1 0 0 0 1 
+state_c.RDONE 0 1 0 0 0 0 1 
+state_c.DONE 1 0 0 0 0 0 1 

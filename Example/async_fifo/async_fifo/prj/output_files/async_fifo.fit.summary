@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Apr 08 12:31:17 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : async_fifo
+Top-level Entity Name : async_fifo
+Family : Cyclone IV E
+Device : EP4CE6F17C8
+Timing Models : Final
+Total logic elements : 141 / 6,272 ( 2 % )
+    Total combinational functions : 115 / 6,272 ( 2 % )
+    Dedicated logic registers : 115 / 6,272 ( 2 % )
+Total registers : 115
+Total pins : 43 / 180 ( 24 % )
+Total virtual pins : 0
+Total memory bits : 4,096 / 276,480 ( 1 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

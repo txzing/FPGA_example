@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Sep 01 09:10:14 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : sdram_test
+Top-level Entity Name : sdram_test
+Family : Cyclone IV E
+Device : EP4CE6F17C8
+Timing Models : Final
+Total logic elements : 2,686 / 6,272 ( 43 % )
+    Total combinational functions : 1,405 / 6,272 ( 22 % )
+    Dedicated logic registers : 2,222 / 6,272 ( 35 % )
+Total registers : 2289
+Total pins : 43 / 180 ( 24 % )
+Total virtual pins : 0
+Total memory bits : 120,832 / 276,480 ( 44 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

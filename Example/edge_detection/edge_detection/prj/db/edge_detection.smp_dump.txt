@@ -1,0 +1,19 @@
+
+State Machine - |edge_detection|sdram_driver:u_sdram_driver|state_c
+Name state_c.10000000 state_c.01000000 state_c.00100000 state_c.00010000 state_c.00001000 state_c.00000100 state_c.00000010 state_c.00000001 
+state_c.00000001 0 0 0 0 0 0 0 0 
+state_c.00000010 0 0 0 0 0 0 1 1 
+state_c.00000100 0 0 0 0 0 1 0 1 
+state_c.00001000 0 0 0 0 1 0 0 1 
+state_c.00010000 0 0 0 1 0 0 0 1 
+state_c.00100000 0 0 1 0 0 0 0 1 
+state_c.01000000 0 1 0 0 0 0 0 1 
+state_c.10000000 1 0 0 0 0 0 0 1 
+
+State Machine - |edge_detection|sdram_rw_ctrl:u_sdram_rw_ctrl|state_c
+Name state_c.10000 state_c.01000 state_c.00100 state_c.00010 state_c.00001 
+state_c.00001 0 0 0 0 0 
+state_c.00010 0 0 0 1 1 
+state_c.00100 0 0 1 0 1 
+state_c.01000 0 1 0 0 1 
+state_c.10000 1 0 0 0 1 

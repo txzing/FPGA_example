@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/FPGA_DEMO/FPGA_HDL/signed_mult/tb
+vmult
+Z0 !s110 1634958017
+!i10b 1
+!s100 6ZhOTHcBJWm9nngM5lC@S2
+IVkCiFOiLfcC@NKY9Z11jk0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/TX/Desktop/signed_mult/signed_mult/tb
+w1634956896
+8../rtl/mult.v
+F../rtl/mult.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1634958017.000000
+!s107 ../rtl/mult.v|
+!s90 -reportprogress|300|../rtl/mult.v|
+!i113 1
+Z5 tCvgOpt 0
+vmult_tb
+R0
+!i10b 1
+!s100 >SgZ1GBKSjXJKbVOQJW>V2
+I6G32CCGz>IB[:P4YK0ZN51
+R1
+R2
+w1634958012
+8mult_tb.v
+Fmult_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 mult_tb.v|
+!s90 -reportprogress|300|mult_tb.v|
+!i113 1
+R5
+vsigned_mult
+Z6 !s110 1634957128
+!i10b 1
+!s100 ldiX]d]5d?Ffn42^m_?fA2
+IH8GQ;6zdW^<GG=T5OcINK0
+R1
+R2
+w1634956911
+8../rtl/signed_mult.v
+F../rtl/signed_mult.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z7 !s108 1634957128.000000
+!s107 ../rtl/signed_mult.v|
+!s90 -reportprogress|300|../rtl/signed_mult.v|
+!i113 1
+R5
+vsigned_mult_tb
+R6
+!i10b 1
+!s100 G6KK;E49KLGXT`Xm^DJF:1
+IEA]VHhLO:gk[hIcmKEXj=0
+R1
+R2
+w1634957120
+8signed_mult_tb.v
+Fsigned_mult_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R7
+!s107 signed_mult_tb.v|
+!s90 -reportprogress|300|signed_mult_tb.v|
+!i113 1
+R5

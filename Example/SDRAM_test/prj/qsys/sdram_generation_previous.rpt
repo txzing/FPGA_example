@@ -1,0 +1,78 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\Users\FPGA\Desktop\SDRAM_test\prj\sdram.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=C:\Users\FPGA\Desktop\SDRAM_test\prj\qsys\simulation --family="Cyclone IV E" --part=EP4CE6F17C8
+Progress: Loading prj/sdram.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module new_sdram_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sdram.new_sdram_controller_0: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: sdram: Generating sdram "sdram" for SIM_VERILOG
+Info: new_sdram_controller_0: Starting RTL generation for module 'sdram_new_sdram_controller_0'
+Info: new_sdram_controller_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=sdram_new_sdram_controller_0 --dir=C:/Users/FPGA/AppData/Local/Temp/alt8830_2696361504892293066.dir/0002_new_sdram_controller_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/FPGA/AppData/Local/Temp/alt8830_2696361504892293066.dir/0002_new_sdram_controller_0_gen//sdram_new_sdram_controller_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/FPGA/AppData/Local/Temp/alt8830_2696361504892293066.dir/0002_new_sdram_controller_0_gen/  ]
+Info: new_sdram_controller_0: Done RTL generation for module 'sdram_new_sdram_controller_0'
+Info: new_sdram_controller_0: "sdram" instantiated altera_avalon_new_sdram_controller "new_sdram_controller_0"
+Info: sdram: Done "sdram" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\Users\FPGA\Desktop\SDRAM_test\prj\qsys\sdram.spd --output-directory=C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\FPGA\Desktop\SDRAM_test\prj\qsys\sdram.spd --output-directory=C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/FPGA/Desktop/SDRAM_test/prj/qsys/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\FPGA\Desktop\SDRAM_test\prj\sdram.qsys --block-symbol-file --output-directory=C:\Users\FPGA\Desktop\SDRAM_test\prj\qsys --family="Cyclone IV E" --part=EP4CE6F17C8
+Progress: Loading prj/sdram.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module new_sdram_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sdram.new_sdram_controller_0: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\FPGA\Desktop\SDRAM_test\prj\sdram.qsys --synthesis=VERILOG --output-directory=C:\Users\FPGA\Desktop\SDRAM_test\prj\qsys\synthesis --family="Cyclone IV E" --part=EP4CE6F17C8
+Progress: Loading prj/sdram.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module new_sdram_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sdram.new_sdram_controller_0: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: sdram: Generating sdram "sdram" for QUARTUS_SYNTH
+Info: new_sdram_controller_0: Starting RTL generation for module 'sdram_new_sdram_controller_0'
+Info: new_sdram_controller_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=sdram_new_sdram_controller_0 --dir=C:/Users/FPGA/AppData/Local/Temp/alt8830_2696361504892293066.dir/0004_new_sdram_controller_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/FPGA/AppData/Local/Temp/alt8830_2696361504892293066.dir/0004_new_sdram_controller_0_gen//sdram_new_sdram_controller_0_component_configuration.pl  --do_build_sim=0  ]
+Info: new_sdram_controller_0: Done RTL generation for module 'sdram_new_sdram_controller_0'
+Info: new_sdram_controller_0: "sdram" instantiated altera_avalon_new_sdram_controller "new_sdram_controller_0"
+Info: sdram: Done "sdram" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

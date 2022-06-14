@@ -1,0 +1,16 @@
+
+State Machine - |temp_detect|binary2bcd:u_binary2bcd|state_c
+Name state_c.DONE state_c.SHIFT state_c.IDLE 
+state_c.IDLE 0 0 0 
+state_c.SHIFT 0 1 1 
+state_c.DONE 1 0 1 
+
+State Machine - |temp_detect|ds18b20_driver:ds18b20_driver|state_c
+Name state_c.rd_byte state_c.rd_temp state_c.delay state_c.temp_convert state_c.wr_byte state_c.rom_skip state_c.init 
+state_c.init 0 0 0 0 0 0 0 
+state_c.rom_skip 0 0 0 0 0 1 1 
+state_c.wr_byte 0 0 0 0 1 0 1 
+state_c.temp_convert 0 0 0 1 0 0 1 
+state_c.delay 0 0 1 0 0 0 1 
+state_c.rd_temp 0 1 0 0 0 0 1 
+state_c.rd_byte 1 0 0 0 0 0 1 

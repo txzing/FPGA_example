@@ -1,0 +1,1278 @@
+TimeQuest Timing Analyzer report for temp_detect
+Sat Oct 30 09:49:57 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. SDC File List
+  5. Clocks
+  6. Slow Model Fmax Summary
+  7. Slow Model Setup Summary
+  8. Slow Model Hold Summary
+  9. Slow Model Recovery Summary
+ 10. Slow Model Removal Summary
+ 11. Slow Model Minimum Pulse Width Summary
+ 12. Slow Model Setup: 'sys_clk'
+ 13. Slow Model Hold: 'sys_clk'
+ 14. Slow Model Minimum Pulse Width: 'sys_clk'
+ 15. Setup Times
+ 16. Hold Times
+ 17. Clock to Output Times
+ 18. Minimum Clock to Output Times
+ 19. Output Enable Times
+ 20. Minimum Output Enable Times
+ 21. Output Disable Times
+ 22. Minimum Output Disable Times
+ 23. Fast Model Setup Summary
+ 24. Fast Model Hold Summary
+ 25. Fast Model Recovery Summary
+ 26. Fast Model Removal Summary
+ 27. Fast Model Minimum Pulse Width Summary
+ 28. Fast Model Setup: 'sys_clk'
+ 29. Fast Model Hold: 'sys_clk'
+ 30. Fast Model Minimum Pulse Width: 'sys_clk'
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Output Enable Times
+ 36. Minimum Output Enable Times
+ 37. Output Disable Times
+ 38. Minimum Output Disable Times
+ 39. Multicorner Timing Analysis Summary
+ 40. Setup Times
+ 41. Hold Times
+ 42. Clock to Output Times
+ 43. Minimum Clock to Output Times
+ 44. Setup Transfers
+ 45. Hold Transfers
+ 46. Report TCCS
+ 47. Report RSKM
+ 48. Unconstrained Paths
+ 49. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                       ;
++--------------------+--------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version ;
+; Revision Name      ; temp_detect                                                        ;
+; Device Family      ; Cyclone II                                                         ;
+; Device Name        ; EP2C5T144C8                                                        ;
+; Timing Models      ; Final                                                              ;
+; Delay Model        ; Combined                                                           ;
+; Rise/Fall Delays   ; Unavailable                                                        ;
++--------------------+--------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------+
+; SDC File List                                       ;
++-----------------+--------+--------------------------+
+; SDC File Path   ; Status ; Read at                  ;
++-----------------+--------+--------------------------+
+; temp_detect.sdc ; OK     ; Sat Oct 30 09:49:57 2021 ;
++-----------------+--------+--------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                              ;
++------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------+
+; Clock Name ; Type ; Period ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets     ;
++------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------+
+; sys_clk    ; Base ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { sys_clk } ;
++------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 101.24 MHz ; 101.24 MHz      ; sys_clk    ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++----------------------------------+
+; Slow Model Setup Summary         ;
++---------+--------+---------------+
+; Clock   ; Slack  ; End Point TNS ;
++---------+--------+---------------+
+; sys_clk ; 10.122 ; 0.000         ;
++---------+--------+---------------+
+
+
++---------------------------------+
+; Slow Model Hold Summary         ;
++---------+-------+---------------+
+; Clock   ; Slack ; End Point TNS ;
++---------+-------+---------------+
+; sys_clk ; 0.499 ; 0.000         ;
++---------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++---------+-------+----------------------+
+; Clock   ; Slack ; End Point TNS        ;
++---------+-------+----------------------+
+; sys_clk ; 8.758 ; 0.000                ;
++---------+-------+----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'sys_clk'                                                                                                                                          ;
++--------+------------------------------------------+--------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+--------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 10.122 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|dq_out_en    ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 9.905      ;
+; 10.221 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|wr_data[6]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.814      ;
+; 10.221 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|wr_data[2]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.814      ;
+; 10.221 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|wr_data[5]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.814      ;
+; 10.221 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|wr_data[7]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.814      ;
+; 10.244 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|dq_out_en    ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 9.783      ;
+; 10.343 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|wr_data[6]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.692      ;
+; 10.343 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|wr_data[2]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.692      ;
+; 10.343 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|wr_data[5]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.692      ;
+; 10.343 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|wr_data[7]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.692      ;
+; 10.420 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|dq_out_en    ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 9.607      ;
+; 10.519 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|wr_data[6]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.516      ;
+; 10.519 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|wr_data[2]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.516      ;
+; 10.519 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|wr_data[5]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.516      ;
+; 10.519 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|wr_data[7]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.516      ;
+; 10.625 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[10]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.420      ;
+; 10.625 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[11]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.420      ;
+; 10.625 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[12]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.420      ;
+; 10.625 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[13]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.420      ;
+; 10.625 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[14]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.420      ;
+; 10.625 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[15]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.420      ;
+; 10.625 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[16]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.420      ;
+; 10.625 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[17]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.420      ;
+; 10.625 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[18]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.420      ;
+; 10.625 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[19]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.420      ;
+; 10.626 ; ds18b20_driver:ds18b20_driver|M_Delay[8] ; ds18b20_driver:ds18b20_driver|dq_out_en    ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 9.401      ;
+; 10.657 ; ds18b20_driver:ds18b20_driver|M_Delay[7] ; ds18b20_driver:ds18b20_driver|dq_out_en    ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 9.370      ;
+; 10.725 ; ds18b20_driver:ds18b20_driver|M_Delay[8] ; ds18b20_driver:ds18b20_driver|wr_data[6]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.310      ;
+; 10.725 ; ds18b20_driver:ds18b20_driver|M_Delay[8] ; ds18b20_driver:ds18b20_driver|wr_data[2]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.310      ;
+; 10.725 ; ds18b20_driver:ds18b20_driver|M_Delay[8] ; ds18b20_driver:ds18b20_driver|wr_data[5]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.310      ;
+; 10.725 ; ds18b20_driver:ds18b20_driver|M_Delay[8] ; ds18b20_driver:ds18b20_driver|wr_data[7]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.310      ;
+; 10.747 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[10]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.298      ;
+; 10.747 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[11]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.298      ;
+; 10.747 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[12]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.298      ;
+; 10.747 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[13]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.298      ;
+; 10.747 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[14]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.298      ;
+; 10.747 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[15]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.298      ;
+; 10.747 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[16]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.298      ;
+; 10.747 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[17]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.298      ;
+; 10.747 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[18]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.298      ;
+; 10.747 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[19]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.298      ;
+; 10.756 ; ds18b20_driver:ds18b20_driver|M_Delay[7] ; ds18b20_driver:ds18b20_driver|wr_data[6]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.279      ;
+; 10.756 ; ds18b20_driver:ds18b20_driver|M_Delay[7] ; ds18b20_driver:ds18b20_driver|wr_data[2]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.279      ;
+; 10.756 ; ds18b20_driver:ds18b20_driver|M_Delay[7] ; ds18b20_driver:ds18b20_driver|wr_data[5]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.279      ;
+; 10.756 ; ds18b20_driver:ds18b20_driver|M_Delay[7] ; ds18b20_driver:ds18b20_driver|wr_data[7]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.279      ;
+; 10.859 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|flag         ; sys_clk      ; sys_clk     ; 20.000       ; -0.009     ; 9.172      ;
+; 10.923 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[10]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.122      ;
+; 10.923 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[11]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.122      ;
+; 10.923 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[12]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.122      ;
+; 10.923 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[13]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.122      ;
+; 10.923 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[14]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.122      ;
+; 10.923 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[15]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.122      ;
+; 10.923 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[16]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.122      ;
+; 10.923 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[17]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.122      ;
+; 10.923 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[18]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.122      ;
+; 10.923 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[19]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.005      ; 9.122      ;
+; 10.981 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|flag         ; sys_clk      ; sys_clk     ; 20.000       ; -0.009     ; 9.050      ;
+; 10.992 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[0]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 9.049      ;
+; 10.992 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[1]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 9.049      ;
+; 10.992 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[3]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 9.049      ;
+; 10.992 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[4]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 9.049      ;
+; 10.992 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[5]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 9.049      ;
+; 10.992 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[6]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 9.049      ;
+; 10.992 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[7]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 9.049      ;
+; 10.992 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[8]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 9.049      ;
+; 10.992 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[9]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 9.049      ;
+; 10.992 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[2]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 9.049      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[20] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[17] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[16] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[13] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[12] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[11] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[10] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[9]  ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[8]  ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[14] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[15] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[18] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.008 ; ds18b20_driver:ds18b20_driver|cnt_1us[5] ; ds18b20_driver:ds18b20_driver|temp_out[19] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 9.027      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[20] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[17] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[16] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[13] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[12] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[11] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[10] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[9]  ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[8]  ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[14] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[15] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[18] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.053 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[19] ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 8.982      ;
+; 11.072 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[20] ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 8.955      ;
+; 11.072 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[17] ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 8.955      ;
+; 11.072 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[16] ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 8.955      ;
+; 11.072 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[13] ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 8.955      ;
+; 11.072 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[12] ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 8.955      ;
+; 11.072 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[11] ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 8.955      ;
+; 11.072 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[10] ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 8.955      ;
++--------+------------------------------------------+--------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'sys_clk'                                                                                                                                                    ;
++-------+------------------------------------------------+------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                      ; To Node                                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------------+------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.499 ; ds18b20_driver:ds18b20_driver|cnt_1us[1]       ; ds18b20_driver:ds18b20_driver|cnt_1us[1]       ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|flag             ; ds18b20_driver:ds18b20_driver|flag             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|m_state_c.M_WAIT ; ds18b20_driver:ds18b20_driver|m_state_c.M_WAIT ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|m_state_c.M_IDLE ; ds18b20_driver:ds18b20_driver|m_state_c.M_IDLE ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|m_state_c.M_REST ; ds18b20_driver:ds18b20_driver|m_state_c.M_REST ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|m_state_c.M_RELE ; ds18b20_driver:ds18b20_driver|m_state_c.M_RELE ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|slave_ack        ; ds18b20_driver:ds18b20_driver|slave_ack        ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|m_state_c.M_RACK ; ds18b20_driver:ds18b20_driver|m_state_c.M_RACK ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|m_state_c.M_ROMS ; ds18b20_driver:ds18b20_driver|m_state_c.M_ROMS ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|s_state_c.S_IDLE ; ds18b20_driver:ds18b20_driver|s_state_c.S_IDLE ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|s_state_c.S_RELE ; ds18b20_driver:ds18b20_driver|s_state_c.S_RELE ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|state_c.IDLE           ; binary2bcd:u_binary2bcd|state_c.IDLE           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|shift_cnt[0]           ; binary2bcd:u_binary2bcd|shift_cnt[0]           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|state_c.SHIFT          ; binary2bcd:u_binary2bcd|state_c.SHIFT          ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|orign_data[0]    ; ds18b20_driver:ds18b20_driver|orign_data[0]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|orign_data[15]   ; ds18b20_driver:ds18b20_driver|orign_data[15]   ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|orign_data[1]    ; ds18b20_driver:ds18b20_driver|orign_data[1]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|orign_data[2]    ; ds18b20_driver:ds18b20_driver|orign_data[2]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|orign_data[3]    ; ds18b20_driver:ds18b20_driver|orign_data[3]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|orign_data[4]    ; ds18b20_driver:ds18b20_driver|orign_data[4]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|orign_data[5]    ; ds18b20_driver:ds18b20_driver|orign_data[5]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|orign_data[6]    ; ds18b20_driver:ds18b20_driver|orign_data[6]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|orign_data[7]    ; ds18b20_driver:ds18b20_driver|orign_data[7]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|orign_data[8]    ; ds18b20_driver:ds18b20_driver|orign_data[8]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|orign_data[9]    ; ds18b20_driver:ds18b20_driver|orign_data[9]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|orign_data[10]   ; ds18b20_driver:ds18b20_driver|orign_data[10]   ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data0[1]               ; binary2bcd:u_binary2bcd|data0[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data0[3]               ; binary2bcd:u_binary2bcd|data0[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data0[2]               ; binary2bcd:u_binary2bcd|data0[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data1[2]               ; binary2bcd:u_binary2bcd|data1[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data1[1]               ; binary2bcd:u_binary2bcd|data1[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data1[3]               ; binary2bcd:u_binary2bcd|data1[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data2[3]               ; binary2bcd:u_binary2bcd|data2[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data2[1]               ; binary2bcd:u_binary2bcd|data2[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data2[2]               ; binary2bcd:u_binary2bcd|data2[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data3[2]               ; binary2bcd:u_binary2bcd|data3[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data3[3]               ; binary2bcd:u_binary2bcd|data3[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data3[1]               ; binary2bcd:u_binary2bcd|data3[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data4[3]               ; binary2bcd:u_binary2bcd|data4[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data4[2]               ; binary2bcd:u_binary2bcd|data4[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; binary2bcd:u_binary2bcd|data4[1]               ; binary2bcd:u_binary2bcd|data4[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; ds18b20_driver:ds18b20_driver|temp_sign        ; ds18b20_driver:ds18b20_driver|temp_sign        ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; seg_driver:u_seg_driver|dot                    ; seg_driver:u_seg_driver|dot                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; lcd12864:u_lcd12864|lcd_e                      ; lcd12864:u_lcd12864|lcd_e                      ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.805      ;
+; 0.738 ; binary2bcd:u_binary2bcd|din_r[13]              ; binary2bcd:u_binary2bcd|din_r[14]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.044      ;
+; 0.754 ; binary2bcd:u_binary2bcd|state_c.DONE           ; binary2bcd:u_binary2bcd|state_c.IDLE           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.060      ;
+; 0.754 ; binary2bcd:u_binary2bcd|data4[2]               ; binary2bcd:u_binary2bcd|data4[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.060      ;
+; 0.758 ; binary2bcd:u_binary2bcd|data4[2]               ; binary2bcd:u_binary2bcd|data4[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.064      ;
+; 0.760 ; binary2bcd:u_binary2bcd|data0[3]               ; binary2bcd:u_binary2bcd|data0[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.066      ;
+; 0.760 ; binary2bcd:u_binary2bcd|data0[3]               ; binary2bcd:u_binary2bcd|data0[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.066      ;
+; 0.768 ; ds18b20_driver:ds18b20_driver|s_state_c.S_RELE ; ds18b20_driver:ds18b20_driver|s_state_c.S_LOW  ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.074      ;
+; 0.769 ; ds18b20_driver:ds18b20_driver|cnt1[5]          ; ds18b20_driver:ds18b20_driver|cnt1[5]          ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.075      ;
+; 0.773 ; ds18b20_driver:ds18b20_driver|cnt_1us[1]       ; ds18b20_driver:ds18b20_driver|cnt_1us[4]       ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.079      ;
+; 0.775 ; ds18b20_driver:ds18b20_driver|cnt_1us[1]       ; ds18b20_driver:ds18b20_driver|cnt_1us[5]       ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.081      ;
+; 0.776 ; binary2bcd:u_binary2bcd|data3[1]               ; binary2bcd:u_binary2bcd|data4[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.082      ;
+; 0.776 ; binary2bcd:u_binary2bcd|data0[2]               ; binary2bcd:u_binary2bcd|data0[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.082      ;
+; 0.778 ; binary2bcd:u_binary2bcd|data0[2]               ; binary2bcd:u_binary2bcd|data1[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.084      ;
+; 0.779 ; binary2bcd:u_binary2bcd|data2[2]               ; binary2bcd:u_binary2bcd|data3[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.085      ;
+; 0.780 ; binary2bcd:u_binary2bcd|data2[2]               ; binary2bcd:u_binary2bcd|data2[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.086      ;
+; 0.782 ; binary2bcd:u_binary2bcd|data2[1]               ; binary2bcd:u_binary2bcd|data2[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.088      ;
+; 0.785 ; binary2bcd:u_binary2bcd|data2[1]               ; binary2bcd:u_binary2bcd|data2[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.091      ;
+; 0.786 ; binary2bcd:u_binary2bcd|data1[3]               ; binary2bcd:u_binary2bcd|data2[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.092      ;
+; 0.786 ; binary2bcd:u_binary2bcd|data1[3]               ; binary2bcd:u_binary2bcd|data1[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.092      ;
+; 0.786 ; binary2bcd:u_binary2bcd|data3[0]               ; binary2bcd:u_binary2bcd|data3[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.092      ;
+; 0.786 ; binary2bcd:u_binary2bcd|data4[0]               ; binary2bcd:u_binary2bcd|data4[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.092      ;
+; 0.787 ; ds18b20_driver:ds18b20_driver|s_state_c.S_LOW  ; ds18b20_driver:ds18b20_driver|s_state_c.S_SEND ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.093      ;
+; 0.787 ; binary2bcd:u_binary2bcd|state_c.SHIFT          ; binary2bcd:u_binary2bcd|state_c.DONE           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.093      ;
+; 0.788 ; ds18b20_driver:ds18b20_driver|s_state_c.S_LOW  ; ds18b20_driver:ds18b20_driver|s_state_c.S_SAMP ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.094      ;
+; 0.788 ; binary2bcd:u_binary2bcd|data3[3]               ; binary2bcd:u_binary2bcd|data3[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.094      ;
+; 0.788 ; binary2bcd:u_binary2bcd|data3[0]               ; binary2bcd:u_binary2bcd|data3[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.094      ;
+; 0.792 ; binary2bcd:u_binary2bcd|state_c.SHIFT          ; binary2bcd:u_binary2bcd|shift_cnt[0]           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.098      ;
+; 0.794 ; binary2bcd:u_binary2bcd|state_c.SHIFT          ; binary2bcd:u_binary2bcd|shift_cnt[4]           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.100      ;
+; 0.795 ; binary2bcd:u_binary2bcd|state_c.SHIFT          ; binary2bcd:u_binary2bcd|shift_cnt[2]           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.101      ;
+; 0.798 ; ds18b20_driver:ds18b20_driver|s_state_c.S_DONE ; ds18b20_driver:ds18b20_driver|temp_out_vld     ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.104      ;
+; 0.799 ; ds18b20_driver:ds18b20_driver|s_state_c.S_DONE ; ds18b20_driver:ds18b20_driver|s_state_c.S_IDLE ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.105      ;
+; 0.904 ; binary2bcd:u_binary2bcd|din_r[18]              ; binary2bcd:u_binary2bcd|din_r[19]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.210      ;
+; 0.908 ; ds18b20_driver:ds18b20_driver|temp_out[3]      ; binary2bcd:u_binary2bcd|din_r[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.214      ;
+; 0.913 ; ds18b20_driver:ds18b20_driver|m_state_c.M_RCMD ; ds18b20_driver:ds18b20_driver|m_state_c.M_RTMP ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.219      ;
+; 0.913 ; binary2bcd:u_binary2bcd|din_r[5]               ; binary2bcd:u_binary2bcd|din_r[6]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.219      ;
+; 0.913 ; binary2bcd:u_binary2bcd|din_r[6]               ; binary2bcd:u_binary2bcd|din_r[7]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.219      ;
+; 0.915 ; ds18b20_driver:ds18b20_driver|temp_out[2]      ; binary2bcd:u_binary2bcd|din_r[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.221      ;
+; 0.925 ; seg_driver:u_seg_driver|seg_sel[4]             ; seg_driver:u_seg_driver|seg_sel[5]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.231      ;
+; 0.939 ; binary2bcd:u_binary2bcd|data0[0]               ; binary2bcd:u_binary2bcd|data1[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.245      ;
+; 0.955 ; binary2bcd:u_binary2bcd|data1[1]               ; binary2bcd:u_binary2bcd|data2[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.261      ;
+; 0.957 ; seg_driver:u_seg_driver|disp_num[3]            ; seg_driver:u_seg_driver|seg_dig[7]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.263      ;
+; 0.960 ; binary2bcd:u_binary2bcd|data2[0]               ; binary2bcd:u_binary2bcd|data3[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.266      ;
+; 0.963 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[1]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.269      ;
+; 0.965 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[0]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.271      ;
+; 0.965 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[3]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.271      ;
+; 0.967 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[2]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.273      ;
+; 0.970 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[6]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.276      ;
+; 0.971 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[4]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.277      ;
+; 0.971 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[5]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.277      ;
+; 0.984 ; seg_driver:u_seg_driver|seg_sel[7]             ; seg_driver:u_seg_driver|seg_sel[0]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.290      ;
+; 0.992 ; seg_driver:u_seg_driver|seg_sel[0]             ; seg_driver:u_seg_driver|seg_sel[1]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.298      ;
+; 1.034 ; seg_driver:u_seg_driver|dot                    ; seg_driver:u_seg_driver|seg_dig[7]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.015      ; 1.355      ;
+; 1.063 ; ds18b20_driver:ds18b20_driver|flag             ; ds18b20_driver:ds18b20_driver|m_state_c.M_CONT ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.369      ;
+; 1.074 ; binary2bcd:u_binary2bcd|data1[1]               ; binary2bcd:u_binary2bcd|data1[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.380      ;
+; 1.076 ; binary2bcd:u_binary2bcd|data1[1]               ; binary2bcd:u_binary2bcd|data1[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.382      ;
+; 1.103 ; binary2bcd:u_binary2bcd|shift_cnt[0]           ; binary2bcd:u_binary2bcd|state_c.DONE           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 1.409      ;
++-------+------------------------------------------------+------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'sys_clk'                                                                              ;
++-------+--------------+----------------+------------------+---------+------------+--------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock   ; Clock Edge ; Target                               ;
++-------+--------------+----------------+------------------+---------+------------+--------------------------------------+
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[10] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[10] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[11] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[11] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[12] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[12] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[13] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[13] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[14] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[14] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[15] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[15] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[16] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[16] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[17] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[17] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[18] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[18] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[19] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[19] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[4]  ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[4]  ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[5]  ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[5]  ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[6]  ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[6]  ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[7]  ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[7]  ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[8]  ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[8]  ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[9]  ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[9]  ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[0]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[0]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[1]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[1]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[2]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[2]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[3]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[3]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[0]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[0]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[1]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[1]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[2]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[2]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[3]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[3]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[0]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[0]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[1]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[1]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[2]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[2]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[3]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[3]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[0]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[0]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[1]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[1]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[2]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[2]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[3]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[3]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[0]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[0]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[1]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[1]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[2]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[2]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[3]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[3]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[0]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[0]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[10]    ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[10]    ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[11]    ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[11]    ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[12]    ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[12]    ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[13]    ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[13]    ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[14]    ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[14]    ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[15]    ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[15]    ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[16]    ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[16]    ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[17]    ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[17]    ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[18]    ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[18]    ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[19]    ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[19]    ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[1]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[1]     ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[20]    ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[20]    ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[2]     ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[2]     ;
++-------+--------------+----------------+------------------+---------+------------+--------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; dq        ; sys_clk    ; 6.225 ; 6.225 ; Rise       ; sys_clk         ;
+; sys_rst_n ; sys_clk    ; 7.663 ; 7.663 ; Rise       ; sys_clk         ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; dq        ; sys_clk    ; -5.102 ; -5.102 ; Rise       ; sys_clk         ;
+; sys_rst_n ; sys_clk    ; -7.397 ; -7.397 ; Rise       ; sys_clk         ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; dq          ; sys_clk    ; 9.519 ; 9.519 ; Rise       ; sys_clk         ;
+; lcd_e       ; sys_clk    ; 8.261 ; 8.261 ; Rise       ; sys_clk         ;
+; seg_sel[*]  ; sys_clk    ; 8.795 ; 8.795 ; Rise       ; sys_clk         ;
+;  seg_sel[0] ; sys_clk    ; 8.795 ; 8.795 ; Rise       ; sys_clk         ;
+;  seg_sel[1] ; sys_clk    ; 8.791 ; 8.791 ; Rise       ; sys_clk         ;
+;  seg_sel[2] ; sys_clk    ; 8.771 ; 8.771 ; Rise       ; sys_clk         ;
+;  seg_sel[3] ; sys_clk    ; 8.656 ; 8.656 ; Rise       ; sys_clk         ;
+;  seg_sel[4] ; sys_clk    ; 8.417 ; 8.417 ; Rise       ; sys_clk         ;
+;  seg_sel[5] ; sys_clk    ; 8.076 ; 8.076 ; Rise       ; sys_clk         ;
+;  seg_sel[6] ; sys_clk    ; 7.641 ; 7.641 ; Rise       ; sys_clk         ;
+;  seg_sel[7] ; sys_clk    ; 8.356 ; 8.356 ; Rise       ; sys_clk         ;
+; seg_sig[*]  ; sys_clk    ; 8.390 ; 8.390 ; Rise       ; sys_clk         ;
+;  seg_sig[0] ; sys_clk    ; 7.616 ; 7.616 ; Rise       ; sys_clk         ;
+;  seg_sig[1] ; sys_clk    ; 8.390 ; 8.390 ; Rise       ; sys_clk         ;
+;  seg_sig[2] ; sys_clk    ; 7.643 ; 7.643 ; Rise       ; sys_clk         ;
+;  seg_sig[3] ; sys_clk    ; 7.623 ; 7.623 ; Rise       ; sys_clk         ;
+;  seg_sig[4] ; sys_clk    ; 7.952 ; 7.952 ; Rise       ; sys_clk         ;
+;  seg_sig[5] ; sys_clk    ; 7.269 ; 7.269 ; Rise       ; sys_clk         ;
+;  seg_sig[6] ; sys_clk    ; 8.031 ; 8.031 ; Rise       ; sys_clk         ;
+;  seg_sig[7] ; sys_clk    ; 7.281 ; 7.281 ; Rise       ; sys_clk         ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; dq          ; sys_clk    ; 9.519 ; 9.519 ; Rise       ; sys_clk         ;
+; lcd_e       ; sys_clk    ; 8.261 ; 8.261 ; Rise       ; sys_clk         ;
+; seg_sel[*]  ; sys_clk    ; 7.641 ; 7.641 ; Rise       ; sys_clk         ;
+;  seg_sel[0] ; sys_clk    ; 8.795 ; 8.795 ; Rise       ; sys_clk         ;
+;  seg_sel[1] ; sys_clk    ; 8.791 ; 8.791 ; Rise       ; sys_clk         ;
+;  seg_sel[2] ; sys_clk    ; 8.771 ; 8.771 ; Rise       ; sys_clk         ;
+;  seg_sel[3] ; sys_clk    ; 8.656 ; 8.656 ; Rise       ; sys_clk         ;
+;  seg_sel[4] ; sys_clk    ; 8.417 ; 8.417 ; Rise       ; sys_clk         ;
+;  seg_sel[5] ; sys_clk    ; 8.076 ; 8.076 ; Rise       ; sys_clk         ;
+;  seg_sel[6] ; sys_clk    ; 7.641 ; 7.641 ; Rise       ; sys_clk         ;
+;  seg_sel[7] ; sys_clk    ; 8.356 ; 8.356 ; Rise       ; sys_clk         ;
+; seg_sig[*]  ; sys_clk    ; 7.269 ; 7.269 ; Rise       ; sys_clk         ;
+;  seg_sig[0] ; sys_clk    ; 7.616 ; 7.616 ; Rise       ; sys_clk         ;
+;  seg_sig[1] ; sys_clk    ; 8.390 ; 8.390 ; Rise       ; sys_clk         ;
+;  seg_sig[2] ; sys_clk    ; 7.643 ; 7.643 ; Rise       ; sys_clk         ;
+;  seg_sig[3] ; sys_clk    ; 7.623 ; 7.623 ; Rise       ; sys_clk         ;
+;  seg_sig[4] ; sys_clk    ; 7.952 ; 7.952 ; Rise       ; sys_clk         ;
+;  seg_sig[5] ; sys_clk    ; 7.269 ; 7.269 ; Rise       ; sys_clk         ;
+;  seg_sig[6] ; sys_clk    ; 8.031 ; 8.031 ; Rise       ; sys_clk         ;
+;  seg_sig[7] ; sys_clk    ; 7.281 ; 7.281 ; Rise       ; sys_clk         ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------+
+; Output Enable Times                                                  ;
++-----------+------------+-------+------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+------+------------+-----------------+
+; dq        ; sys_clk    ; 9.462 ;      ; Rise       ; sys_clk         ;
++-----------+------------+-------+------+------------+-----------------+
+
+
++----------------------------------------------------------------------+
+; Minimum Output Enable Times                                          ;
++-----------+------------+-------+------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+------+------------+-----------------+
+; dq        ; sys_clk    ; 9.462 ;      ; Rise       ; sys_clk         ;
++-----------+------------+-------+------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Output Disable Times                                                          ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; dq        ; sys_clk    ; 9.462     ;           ; Rise       ; sys_clk         ;
++-----------+------------+-----------+-----------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                  ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; dq        ; sys_clk    ; 9.462     ;           ; Rise       ; sys_clk         ;
++-----------+------------+-----------+-----------+------------+-----------------+
+
+
++----------------------------------+
+; Fast Model Setup Summary         ;
++---------+--------+---------------+
+; Clock   ; Slack  ; End Point TNS ;
++---------+--------+---------------+
+; sys_clk ; 16.819 ; 0.000         ;
++---------+--------+---------------+
+
+
++---------------------------------+
+; Fast Model Hold Summary         ;
++---------+-------+---------------+
+; Clock   ; Slack ; End Point TNS ;
++---------+-------+---------------+
+; sys_clk ; 0.215 ; 0.000         ;
++---------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++---------+-------+----------------------+
+; Clock   ; Slack ; End Point TNS        ;
++---------+-------+----------------------+
+; sys_clk ; 9.000 ; 0.000                ;
++---------+-------+----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'sys_clk'                                                                                                                                          ;
++--------+------------------------------------------+--------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+--------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 16.819 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[10]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.216      ;
+; 16.819 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[11]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.216      ;
+; 16.819 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[12]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.216      ;
+; 16.819 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[13]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.216      ;
+; 16.819 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[14]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.216      ;
+; 16.819 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[15]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.216      ;
+; 16.819 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[16]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.216      ;
+; 16.819 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[17]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.216      ;
+; 16.819 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[18]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.216      ;
+; 16.819 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[19]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.216      ;
+; 16.831 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|wr_data[6]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 3.196      ;
+; 16.831 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|wr_data[2]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 3.196      ;
+; 16.831 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|wr_data[5]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 3.196      ;
+; 16.831 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|wr_data[7]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 3.196      ;
+; 16.865 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[10]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.170      ;
+; 16.865 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[11]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.170      ;
+; 16.865 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[12]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.170      ;
+; 16.865 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[13]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.170      ;
+; 16.865 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[14]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.170      ;
+; 16.865 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[15]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.170      ;
+; 16.865 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[16]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.170      ;
+; 16.865 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[17]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.170      ;
+; 16.865 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[18]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.170      ;
+; 16.865 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[19]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.170      ;
+; 16.877 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|wr_data[6]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 3.150      ;
+; 16.877 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|wr_data[2]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 3.150      ;
+; 16.877 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|wr_data[5]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 3.150      ;
+; 16.877 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|wr_data[7]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 3.150      ;
+; 16.879 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|dq_out_en    ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 3.140      ;
+; 16.925 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|dq_out_en    ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 3.094      ;
+; 16.928 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[0]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.105      ;
+; 16.928 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[1]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.105      ;
+; 16.928 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[3]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.105      ;
+; 16.928 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[4]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.105      ;
+; 16.928 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[5]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.105      ;
+; 16.928 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[6]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.105      ;
+; 16.928 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[7]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.105      ;
+; 16.928 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[8]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.105      ;
+; 16.928 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[9]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.105      ;
+; 16.928 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|cnt0[2]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.105      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[20] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[17] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[16] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[13] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[12] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[11] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[10] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[9]  ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[8]  ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[14] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[15] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[18] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|S_Delay[5] ; ds18b20_driver:ds18b20_driver|temp_out[19] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 3.062      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[10]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.079      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[11]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.079      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[12]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.079      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[13]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.079      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[14]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.079      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[15]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.079      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[16]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.079      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[17]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.079      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[18]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.079      ;
+; 16.956 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|cnt0[19]     ; sys_clk      ; sys_clk     ; 20.000       ; 0.003      ; 3.079      ;
+; 16.968 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|wr_data[6]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 3.059      ;
+; 16.968 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|wr_data[2]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 3.059      ;
+; 16.968 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|wr_data[5]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 3.059      ;
+; 16.968 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|wr_data[7]   ; sys_clk      ; sys_clk     ; 20.000       ; -0.005     ; 3.059      ;
+; 16.974 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[0]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.059      ;
+; 16.974 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[1]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.059      ;
+; 16.974 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[3]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.059      ;
+; 16.974 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[4]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.059      ;
+; 16.974 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[5]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.059      ;
+; 16.974 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[6]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.059      ;
+; 16.974 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[7]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.059      ;
+; 16.974 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[8]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.059      ;
+; 16.974 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[9]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.059      ;
+; 16.974 ; ds18b20_driver:ds18b20_driver|M_Delay[4] ; ds18b20_driver:ds18b20_driver|cnt0[2]      ; sys_clk      ; sys_clk     ; 20.000       ; 0.001      ; 3.059      ;
+; 16.985 ; ds18b20_driver:ds18b20_driver|M_Delay[1] ; ds18b20_driver:ds18b20_driver|flag         ; sys_clk      ; sys_clk     ; 20.000       ; -0.007     ; 3.040      ;
+; 17.016 ; ds18b20_driver:ds18b20_driver|M_Delay[3] ; ds18b20_driver:ds18b20_driver|dq_out_en    ; sys_clk      ; sys_clk     ; 20.000       ; -0.013     ; 3.003      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[20] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[17] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[16] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[13] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[12] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[11] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[10] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[9]  ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[8]  ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[14] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[15] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[18] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.021 ; ds18b20_driver:ds18b20_driver|cnt1[2]    ; ds18b20_driver:ds18b20_driver|temp_out[19] ; sys_clk      ; sys_clk     ; 20.000       ; -0.014     ; 2.997      ;
+; 17.027 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[20] ; sys_clk      ; sys_clk     ; 20.000       ; -0.007     ; 2.998      ;
+; 17.027 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[17] ; sys_clk      ; sys_clk     ; 20.000       ; -0.007     ; 2.998      ;
+; 17.027 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[16] ; sys_clk      ; sys_clk     ; 20.000       ; -0.007     ; 2.998      ;
+; 17.027 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[13] ; sys_clk      ; sys_clk     ; 20.000       ; -0.007     ; 2.998      ;
+; 17.027 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[12] ; sys_clk      ; sys_clk     ; 20.000       ; -0.007     ; 2.998      ;
+; 17.027 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[11] ; sys_clk      ; sys_clk     ; 20.000       ; -0.007     ; 2.998      ;
+; 17.027 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[10] ; sys_clk      ; sys_clk     ; 20.000       ; -0.007     ; 2.998      ;
+; 17.027 ; ds18b20_driver:ds18b20_driver|cnt_1us[2] ; ds18b20_driver:ds18b20_driver|temp_out[9]  ; sys_clk      ; sys_clk     ; 20.000       ; -0.007     ; 2.998      ;
++--------+------------------------------------------+--------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'sys_clk'                                                                                                                                                    ;
++-------+------------------------------------------------+------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                      ; To Node                                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------------+------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; ds18b20_driver:ds18b20_driver|cnt_1us[1]       ; ds18b20_driver:ds18b20_driver|cnt_1us[1]       ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|flag             ; ds18b20_driver:ds18b20_driver|flag             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|m_state_c.M_WAIT ; ds18b20_driver:ds18b20_driver|m_state_c.M_WAIT ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|m_state_c.M_IDLE ; ds18b20_driver:ds18b20_driver|m_state_c.M_IDLE ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|m_state_c.M_REST ; ds18b20_driver:ds18b20_driver|m_state_c.M_REST ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|m_state_c.M_RELE ; ds18b20_driver:ds18b20_driver|m_state_c.M_RELE ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|slave_ack        ; ds18b20_driver:ds18b20_driver|slave_ack        ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|m_state_c.M_RACK ; ds18b20_driver:ds18b20_driver|m_state_c.M_RACK ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|m_state_c.M_ROMS ; ds18b20_driver:ds18b20_driver|m_state_c.M_ROMS ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|s_state_c.S_IDLE ; ds18b20_driver:ds18b20_driver|s_state_c.S_IDLE ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|s_state_c.S_RELE ; ds18b20_driver:ds18b20_driver|s_state_c.S_RELE ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|state_c.IDLE           ; binary2bcd:u_binary2bcd|state_c.IDLE           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|shift_cnt[0]           ; binary2bcd:u_binary2bcd|shift_cnt[0]           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|state_c.SHIFT          ; binary2bcd:u_binary2bcd|state_c.SHIFT          ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|orign_data[0]    ; ds18b20_driver:ds18b20_driver|orign_data[0]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|orign_data[15]   ; ds18b20_driver:ds18b20_driver|orign_data[15]   ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|orign_data[1]    ; ds18b20_driver:ds18b20_driver|orign_data[1]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|orign_data[2]    ; ds18b20_driver:ds18b20_driver|orign_data[2]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|orign_data[3]    ; ds18b20_driver:ds18b20_driver|orign_data[3]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|orign_data[4]    ; ds18b20_driver:ds18b20_driver|orign_data[4]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|orign_data[5]    ; ds18b20_driver:ds18b20_driver|orign_data[5]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|orign_data[6]    ; ds18b20_driver:ds18b20_driver|orign_data[6]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|orign_data[7]    ; ds18b20_driver:ds18b20_driver|orign_data[7]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|orign_data[8]    ; ds18b20_driver:ds18b20_driver|orign_data[8]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|orign_data[9]    ; ds18b20_driver:ds18b20_driver|orign_data[9]    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|orign_data[10]   ; ds18b20_driver:ds18b20_driver|orign_data[10]   ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data0[1]               ; binary2bcd:u_binary2bcd|data0[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data0[3]               ; binary2bcd:u_binary2bcd|data0[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data0[2]               ; binary2bcd:u_binary2bcd|data0[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data1[2]               ; binary2bcd:u_binary2bcd|data1[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data1[1]               ; binary2bcd:u_binary2bcd|data1[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data1[3]               ; binary2bcd:u_binary2bcd|data1[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data2[3]               ; binary2bcd:u_binary2bcd|data2[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data2[1]               ; binary2bcd:u_binary2bcd|data2[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data2[2]               ; binary2bcd:u_binary2bcd|data2[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data3[2]               ; binary2bcd:u_binary2bcd|data3[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data3[3]               ; binary2bcd:u_binary2bcd|data3[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data3[1]               ; binary2bcd:u_binary2bcd|data3[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data4[3]               ; binary2bcd:u_binary2bcd|data4[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data4[2]               ; binary2bcd:u_binary2bcd|data4[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; binary2bcd:u_binary2bcd|data4[1]               ; binary2bcd:u_binary2bcd|data4[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ds18b20_driver:ds18b20_driver|temp_sign        ; ds18b20_driver:ds18b20_driver|temp_sign        ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; seg_driver:u_seg_driver|dot                    ; seg_driver:u_seg_driver|dot                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; lcd12864:u_lcd12864|lcd_e                      ; lcd12864:u_lcd12864|lcd_e                      ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.367      ;
+; 0.238 ; binary2bcd:u_binary2bcd|din_r[13]              ; binary2bcd:u_binary2bcd|din_r[14]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.390      ;
+; 0.243 ; binary2bcd:u_binary2bcd|data4[2]               ; binary2bcd:u_binary2bcd|data4[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.395      ;
+; 0.247 ; binary2bcd:u_binary2bcd|state_c.DONE           ; binary2bcd:u_binary2bcd|state_c.IDLE           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.399      ;
+; 0.247 ; binary2bcd:u_binary2bcd|data4[2]               ; binary2bcd:u_binary2bcd|data4[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.399      ;
+; 0.249 ; binary2bcd:u_binary2bcd|data0[3]               ; binary2bcd:u_binary2bcd|data0[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.401      ;
+; 0.250 ; binary2bcd:u_binary2bcd|data0[3]               ; binary2bcd:u_binary2bcd|data0[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.402      ;
+; 0.251 ; ds18b20_driver:ds18b20_driver|cnt1[5]          ; ds18b20_driver:ds18b20_driver|cnt1[5]          ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.403      ;
+; 0.252 ; ds18b20_driver:ds18b20_driver|s_state_c.S_RELE ; ds18b20_driver:ds18b20_driver|s_state_c.S_LOW  ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.404      ;
+; 0.254 ; ds18b20_driver:ds18b20_driver|cnt_1us[1]       ; ds18b20_driver:ds18b20_driver|cnt_1us[4]       ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.406      ;
+; 0.254 ; binary2bcd:u_binary2bcd|data3[1]               ; binary2bcd:u_binary2bcd|data4[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.406      ;
+; 0.255 ; ds18b20_driver:ds18b20_driver|cnt_1us[1]       ; ds18b20_driver:ds18b20_driver|cnt_1us[5]       ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.407      ;
+; 0.257 ; binary2bcd:u_binary2bcd|state_c.SHIFT          ; binary2bcd:u_binary2bcd|state_c.DONE           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.409      ;
+; 0.257 ; binary2bcd:u_binary2bcd|data2[1]               ; binary2bcd:u_binary2bcd|data2[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.409      ;
+; 0.258 ; binary2bcd:u_binary2bcd|data1[3]               ; binary2bcd:u_binary2bcd|data2[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.410      ;
+; 0.258 ; binary2bcd:u_binary2bcd|data2[2]               ; binary2bcd:u_binary2bcd|data3[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.410      ;
+; 0.258 ; binary2bcd:u_binary2bcd|data0[2]               ; binary2bcd:u_binary2bcd|data0[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.410      ;
+; 0.258 ; binary2bcd:u_binary2bcd|data2[2]               ; binary2bcd:u_binary2bcd|data2[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.410      ;
+; 0.259 ; binary2bcd:u_binary2bcd|data0[2]               ; binary2bcd:u_binary2bcd|data1[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.411      ;
+; 0.259 ; binary2bcd:u_binary2bcd|data1[3]               ; binary2bcd:u_binary2bcd|data1[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.411      ;
+; 0.260 ; binary2bcd:u_binary2bcd|data2[1]               ; binary2bcd:u_binary2bcd|data2[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.412      ;
+; 0.260 ; binary2bcd:u_binary2bcd|data3[0]               ; binary2bcd:u_binary2bcd|data3[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.412      ;
+; 0.261 ; binary2bcd:u_binary2bcd|data3[3]               ; binary2bcd:u_binary2bcd|data3[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.413      ;
+; 0.261 ; binary2bcd:u_binary2bcd|data4[0]               ; binary2bcd:u_binary2bcd|data4[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.413      ;
+; 0.262 ; ds18b20_driver:ds18b20_driver|s_state_c.S_LOW  ; ds18b20_driver:ds18b20_driver|s_state_c.S_SEND ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.414      ;
+; 0.262 ; binary2bcd:u_binary2bcd|state_c.SHIFT          ; binary2bcd:u_binary2bcd|shift_cnt[0]           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.414      ;
+; 0.262 ; binary2bcd:u_binary2bcd|data3[0]               ; binary2bcd:u_binary2bcd|data3[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.414      ;
+; 0.263 ; ds18b20_driver:ds18b20_driver|s_state_c.S_LOW  ; ds18b20_driver:ds18b20_driver|s_state_c.S_SAMP ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.415      ;
+; 0.264 ; binary2bcd:u_binary2bcd|state_c.SHIFT          ; binary2bcd:u_binary2bcd|shift_cnt[4]           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.416      ;
+; 0.265 ; binary2bcd:u_binary2bcd|state_c.SHIFT          ; binary2bcd:u_binary2bcd|shift_cnt[2]           ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.417      ;
+; 0.266 ; ds18b20_driver:ds18b20_driver|s_state_c.S_DONE ; ds18b20_driver:ds18b20_driver|temp_out_vld     ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.418      ;
+; 0.270 ; ds18b20_driver:ds18b20_driver|s_state_c.S_DONE ; ds18b20_driver:ds18b20_driver|s_state_c.S_IDLE ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.422      ;
+; 0.287 ; ds18b20_driver:ds18b20_driver|temp_out[3]      ; binary2bcd:u_binary2bcd|din_r[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.439      ;
+; 0.290 ; binary2bcd:u_binary2bcd|din_r[18]              ; binary2bcd:u_binary2bcd|din_r[19]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.442      ;
+; 0.291 ; ds18b20_driver:ds18b20_driver|temp_out[2]      ; binary2bcd:u_binary2bcd|din_r[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.443      ;
+; 0.293 ; binary2bcd:u_binary2bcd|din_r[5]               ; binary2bcd:u_binary2bcd|din_r[6]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.445      ;
+; 0.293 ; binary2bcd:u_binary2bcd|din_r[6]               ; binary2bcd:u_binary2bcd|din_r[7]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.445      ;
+; 0.304 ; binary2bcd:u_binary2bcd|data0[0]               ; binary2bcd:u_binary2bcd|data1[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.456      ;
+; 0.305 ; binary2bcd:u_binary2bcd|data1[1]               ; binary2bcd:u_binary2bcd|data2[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.457      ;
+; 0.311 ; binary2bcd:u_binary2bcd|data2[0]               ; binary2bcd:u_binary2bcd|data3[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.463      ;
+; 0.313 ; seg_driver:u_seg_driver|disp_num[3]            ; seg_driver:u_seg_driver|seg_dig[7]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.465      ;
+; 0.316 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[1]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.468      ;
+; 0.318 ; seg_driver:u_seg_driver|dot                    ; seg_driver:u_seg_driver|seg_dig[7]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.009      ; 0.479      ;
+; 0.319 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[0]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.471      ;
+; 0.319 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[3]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.471      ;
+; 0.320 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[2]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.472      ;
+; 0.323 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[6]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.475      ;
+; 0.324 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[4]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.476      ;
+; 0.324 ; seg_driver:u_seg_driver|disp_num[1]            ; seg_driver:u_seg_driver|seg_dig[5]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.476      ;
+; 0.325 ; seg_driver:u_seg_driver|seg_sel[7]             ; seg_driver:u_seg_driver|seg_sel[0]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.477      ;
+; 0.328 ; seg_driver:u_seg_driver|seg_sel[0]             ; seg_driver:u_seg_driver|seg_sel[1]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.480      ;
+; 0.331 ; ds18b20_driver:ds18b20_driver|m_state_c.M_RCMD ; ds18b20_driver:ds18b20_driver|m_state_c.M_RTMP ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.483      ;
+; 0.332 ; binary2bcd:u_binary2bcd|data1[1]               ; binary2bcd:u_binary2bcd|data1[3]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.484      ;
+; 0.335 ; binary2bcd:u_binary2bcd|data1[1]               ; binary2bcd:u_binary2bcd|data1[2]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.487      ;
+; 0.338 ; seg_driver:u_seg_driver|seg_sel[4]             ; seg_driver:u_seg_driver|seg_sel[5]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.490      ;
+; 0.355 ; seg_driver:u_seg_driver|cnt_scan[0]            ; seg_driver:u_seg_driver|cnt_scan[0]            ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.507      ;
+; 0.355 ; ds18b20_driver:ds18b20_driver|orign_data[2]    ; ds18b20_driver:ds18b20_driver|temp_data[2]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.000      ; 0.507      ;
++-------+------------------------------------------------+------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'sys_clk'                                                                              ;
++-------+--------------+----------------+------------------+---------+------------+--------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock   ; Clock Edge ; Target                               ;
++-------+--------------+----------------+------------------+---------+------------+--------------------------------------+
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[10] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[10] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[11] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[11] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[12] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[12] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[13] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[13] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[14] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[14] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[15] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[15] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[16] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[16] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[17] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[17] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[18] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[18] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[19] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[19] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[4]  ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[4]  ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[5]  ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[5]  ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[6]  ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[6]  ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[7]  ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[7]  ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[8]  ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[8]  ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[9]  ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|bcd_dout[9]  ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[0]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[0]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[1]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[1]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[2]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[2]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[3]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data0[3]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[0]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[0]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[1]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[1]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[2]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[2]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[3]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data1[3]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[0]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[0]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[1]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[1]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[2]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[2]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[3]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data2[3]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[0]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[0]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[1]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[1]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[2]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[2]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[3]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data3[3]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[0]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[0]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[1]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[1]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[2]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[2]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[3]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|data4[3]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[0]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[0]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[10]    ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[10]    ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[11]    ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[11]    ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[12]    ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[12]    ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[13]    ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[13]    ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[14]    ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[14]    ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[15]    ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[15]    ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[16]    ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[16]    ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[17]    ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[17]    ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[18]    ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[18]    ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[19]    ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[19]    ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[1]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[1]     ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[20]    ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[20]    ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[2]     ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; sys_clk ; Rise       ; binary2bcd:u_binary2bcd|din_r[2]     ;
++-------+--------------+----------------+------------------+---------+------------+--------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; dq        ; sys_clk    ; 2.653 ; 2.653 ; Rise       ; sys_clk         ;
+; sys_rst_n ; sys_clk    ; 3.131 ; 3.131 ; Rise       ; sys_clk         ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; dq        ; sys_clk    ; -2.280 ; -2.280 ; Rise       ; sys_clk         ;
+; sys_rst_n ; sys_clk    ; -3.011 ; -3.011 ; Rise       ; sys_clk         ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; dq          ; sys_clk    ; 4.156 ; 4.156 ; Rise       ; sys_clk         ;
+; lcd_e       ; sys_clk    ; 3.493 ; 3.493 ; Rise       ; sys_clk         ;
+; seg_sel[*]  ; sys_clk    ; 3.941 ; 3.941 ; Rise       ; sys_clk         ;
+;  seg_sel[0] ; sys_clk    ; 3.941 ; 3.941 ; Rise       ; sys_clk         ;
+;  seg_sel[1] ; sys_clk    ; 3.934 ; 3.934 ; Rise       ; sys_clk         ;
+;  seg_sel[2] ; sys_clk    ; 3.928 ; 3.928 ; Rise       ; sys_clk         ;
+;  seg_sel[3] ; sys_clk    ; 3.931 ; 3.931 ; Rise       ; sys_clk         ;
+;  seg_sel[4] ; sys_clk    ; 3.822 ; 3.822 ; Rise       ; sys_clk         ;
+;  seg_sel[5] ; sys_clk    ; 3.725 ; 3.725 ; Rise       ; sys_clk         ;
+;  seg_sel[6] ; sys_clk    ; 3.574 ; 3.574 ; Rise       ; sys_clk         ;
+;  seg_sel[7] ; sys_clk    ; 3.780 ; 3.780 ; Rise       ; sys_clk         ;
+; seg_sig[*]  ; sys_clk    ; 3.809 ; 3.809 ; Rise       ; sys_clk         ;
+;  seg_sig[0] ; sys_clk    ; 3.561 ; 3.561 ; Rise       ; sys_clk         ;
+;  seg_sig[1] ; sys_clk    ; 3.809 ; 3.809 ; Rise       ; sys_clk         ;
+;  seg_sig[2] ; sys_clk    ; 3.570 ; 3.570 ; Rise       ; sys_clk         ;
+;  seg_sig[3] ; sys_clk    ; 3.563 ; 3.563 ; Rise       ; sys_clk         ;
+;  seg_sig[4] ; sys_clk    ; 3.652 ; 3.652 ; Rise       ; sys_clk         ;
+;  seg_sig[5] ; sys_clk    ; 3.460 ; 3.460 ; Rise       ; sys_clk         ;
+;  seg_sig[6] ; sys_clk    ; 3.694 ; 3.694 ; Rise       ; sys_clk         ;
+;  seg_sig[7] ; sys_clk    ; 3.466 ; 3.466 ; Rise       ; sys_clk         ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; dq          ; sys_clk    ; 4.156 ; 4.156 ; Rise       ; sys_clk         ;
+; lcd_e       ; sys_clk    ; 3.493 ; 3.493 ; Rise       ; sys_clk         ;
+; seg_sel[*]  ; sys_clk    ; 3.574 ; 3.574 ; Rise       ; sys_clk         ;
+;  seg_sel[0] ; sys_clk    ; 3.941 ; 3.941 ; Rise       ; sys_clk         ;
+;  seg_sel[1] ; sys_clk    ; 3.934 ; 3.934 ; Rise       ; sys_clk         ;
+;  seg_sel[2] ; sys_clk    ; 3.928 ; 3.928 ; Rise       ; sys_clk         ;
+;  seg_sel[3] ; sys_clk    ; 3.931 ; 3.931 ; Rise       ; sys_clk         ;
+;  seg_sel[4] ; sys_clk    ; 3.822 ; 3.822 ; Rise       ; sys_clk         ;
+;  seg_sel[5] ; sys_clk    ; 3.725 ; 3.725 ; Rise       ; sys_clk         ;
+;  seg_sel[6] ; sys_clk    ; 3.574 ; 3.574 ; Rise       ; sys_clk         ;
+;  seg_sel[7] ; sys_clk    ; 3.780 ; 3.780 ; Rise       ; sys_clk         ;
+; seg_sig[*]  ; sys_clk    ; 3.460 ; 3.460 ; Rise       ; sys_clk         ;
+;  seg_sig[0] ; sys_clk    ; 3.561 ; 3.561 ; Rise       ; sys_clk         ;
+;  seg_sig[1] ; sys_clk    ; 3.809 ; 3.809 ; Rise       ; sys_clk         ;
+;  seg_sig[2] ; sys_clk    ; 3.570 ; 3.570 ; Rise       ; sys_clk         ;
+;  seg_sig[3] ; sys_clk    ; 3.563 ; 3.563 ; Rise       ; sys_clk         ;
+;  seg_sig[4] ; sys_clk    ; 3.652 ; 3.652 ; Rise       ; sys_clk         ;
+;  seg_sig[5] ; sys_clk    ; 3.460 ; 3.460 ; Rise       ; sys_clk         ;
+;  seg_sig[6] ; sys_clk    ; 3.694 ; 3.694 ; Rise       ; sys_clk         ;
+;  seg_sig[7] ; sys_clk    ; 3.466 ; 3.466 ; Rise       ; sys_clk         ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------+
+; Output Enable Times                                                  ;
++-----------+------------+-------+------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+------+------------+-----------------+
+; dq        ; sys_clk    ; 4.127 ;      ; Rise       ; sys_clk         ;
++-----------+------------+-------+------+------------+-----------------+
+
+
++----------------------------------------------------------------------+
+; Minimum Output Enable Times                                          ;
++-----------+------------+-------+------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+------+------------+-----------------+
+; dq        ; sys_clk    ; 4.127 ;      ; Rise       ; sys_clk         ;
++-----------+------------+-------+------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Output Disable Times                                                          ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; dq        ; sys_clk    ; 4.127     ;           ; Rise       ; sys_clk         ;
++-----------+------------+-----------+-----------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                  ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; dq        ; sys_clk    ; 4.127     ;           ; Rise       ; sys_clk         ;
++-----------+------------+-----------+-----------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                          ;
++------------------+--------+-------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack ; 10.122 ; 0.215 ; N/A      ; N/A     ; 8.758               ;
+;  sys_clk         ; 10.122 ; 0.215 ; N/A      ; N/A     ; 8.758               ;
+; Design-wide TNS  ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  sys_clk         ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
++------------------+--------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; dq        ; sys_clk    ; 6.225 ; 6.225 ; Rise       ; sys_clk         ;
+; sys_rst_n ; sys_clk    ; 7.663 ; 7.663 ; Rise       ; sys_clk         ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; dq        ; sys_clk    ; -2.280 ; -2.280 ; Rise       ; sys_clk         ;
+; sys_rst_n ; sys_clk    ; -3.011 ; -3.011 ; Rise       ; sys_clk         ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; dq          ; sys_clk    ; 9.519 ; 9.519 ; Rise       ; sys_clk         ;
+; lcd_e       ; sys_clk    ; 8.261 ; 8.261 ; Rise       ; sys_clk         ;
+; seg_sel[*]  ; sys_clk    ; 8.795 ; 8.795 ; Rise       ; sys_clk         ;
+;  seg_sel[0] ; sys_clk    ; 8.795 ; 8.795 ; Rise       ; sys_clk         ;
+;  seg_sel[1] ; sys_clk    ; 8.791 ; 8.791 ; Rise       ; sys_clk         ;
+;  seg_sel[2] ; sys_clk    ; 8.771 ; 8.771 ; Rise       ; sys_clk         ;
+;  seg_sel[3] ; sys_clk    ; 8.656 ; 8.656 ; Rise       ; sys_clk         ;
+;  seg_sel[4] ; sys_clk    ; 8.417 ; 8.417 ; Rise       ; sys_clk         ;
+;  seg_sel[5] ; sys_clk    ; 8.076 ; 8.076 ; Rise       ; sys_clk         ;
+;  seg_sel[6] ; sys_clk    ; 7.641 ; 7.641 ; Rise       ; sys_clk         ;
+;  seg_sel[7] ; sys_clk    ; 8.356 ; 8.356 ; Rise       ; sys_clk         ;
+; seg_sig[*]  ; sys_clk    ; 8.390 ; 8.390 ; Rise       ; sys_clk         ;
+;  seg_sig[0] ; sys_clk    ; 7.616 ; 7.616 ; Rise       ; sys_clk         ;
+;  seg_sig[1] ; sys_clk    ; 8.390 ; 8.390 ; Rise       ; sys_clk         ;
+;  seg_sig[2] ; sys_clk    ; 7.643 ; 7.643 ; Rise       ; sys_clk         ;
+;  seg_sig[3] ; sys_clk    ; 7.623 ; 7.623 ; Rise       ; sys_clk         ;
+;  seg_sig[4] ; sys_clk    ; 7.952 ; 7.952 ; Rise       ; sys_clk         ;
+;  seg_sig[5] ; sys_clk    ; 7.269 ; 7.269 ; Rise       ; sys_clk         ;
+;  seg_sig[6] ; sys_clk    ; 8.031 ; 8.031 ; Rise       ; sys_clk         ;
+;  seg_sig[7] ; sys_clk    ; 7.281 ; 7.281 ; Rise       ; sys_clk         ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; dq          ; sys_clk    ; 4.156 ; 4.156 ; Rise       ; sys_clk         ;
+; lcd_e       ; sys_clk    ; 3.493 ; 3.493 ; Rise       ; sys_clk         ;
+; seg_sel[*]  ; sys_clk    ; 3.574 ; 3.574 ; Rise       ; sys_clk         ;
+;  seg_sel[0] ; sys_clk    ; 3.941 ; 3.941 ; Rise       ; sys_clk         ;
+;  seg_sel[1] ; sys_clk    ; 3.934 ; 3.934 ; Rise       ; sys_clk         ;
+;  seg_sel[2] ; sys_clk    ; 3.928 ; 3.928 ; Rise       ; sys_clk         ;
+;  seg_sel[3] ; sys_clk    ; 3.931 ; 3.931 ; Rise       ; sys_clk         ;
+;  seg_sel[4] ; sys_clk    ; 3.822 ; 3.822 ; Rise       ; sys_clk         ;
+;  seg_sel[5] ; sys_clk    ; 3.725 ; 3.725 ; Rise       ; sys_clk         ;
+;  seg_sel[6] ; sys_clk    ; 3.574 ; 3.574 ; Rise       ; sys_clk         ;
+;  seg_sel[7] ; sys_clk    ; 3.780 ; 3.780 ; Rise       ; sys_clk         ;
+; seg_sig[*]  ; sys_clk    ; 3.460 ; 3.460 ; Rise       ; sys_clk         ;
+;  seg_sig[0] ; sys_clk    ; 3.561 ; 3.561 ; Rise       ; sys_clk         ;
+;  seg_sig[1] ; sys_clk    ; 3.809 ; 3.809 ; Rise       ; sys_clk         ;
+;  seg_sig[2] ; sys_clk    ; 3.570 ; 3.570 ; Rise       ; sys_clk         ;
+;  seg_sig[3] ; sys_clk    ; 3.563 ; 3.563 ; Rise       ; sys_clk         ;
+;  seg_sig[4] ; sys_clk    ; 3.652 ; 3.652 ; Rise       ; sys_clk         ;
+;  seg_sig[5] ; sys_clk    ; 3.460 ; 3.460 ; Rise       ; sys_clk         ;
+;  seg_sig[6] ; sys_clk    ; 3.694 ; 3.694 ; Rise       ; sys_clk         ;
+;  seg_sig[7] ; sys_clk    ; 3.466 ; 3.466 ; Rise       ; sys_clk         ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; sys_clk    ; sys_clk  ; 13790    ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; sys_clk    ; sys_clk  ; 13790    ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 1     ; 1    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 257   ; 257  ;
+; Unconstrained Output Ports      ; 27    ; 27   ;
+; Unconstrained Output Port Paths ; 28    ; 28   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Sat Oct 30 09:49:57 2021
+Info: Command: quartus_sta temp_detect -c temp_detect
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332104): Reading SDC File: 'temp_detect.sdc'
+Warning (332060): Node: lcd12864:u_lcd12864|lcd_e was determined to be a clock but was found without an associated clock assignment.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332146): Worst-case setup slack is 10.122
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    10.122         0.000 sys_clk 
+Info (332146): Worst-case hold slack is 0.499
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.499         0.000 sys_clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 8.758
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     8.758         0.000 sys_clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Warning (332060): Node: lcd12864:u_lcd12864|lcd_e was determined to be a clock but was found without an associated clock assignment.
+Info (332146): Worst-case setup slack is 16.819
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    16.819         0.000 sys_clk 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 sys_clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 9.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     9.000         0.000 sys_clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4581 megabytes
+    Info: Processing ended: Sat Oct 30 09:49:57 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Feb 25 16:13:04 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : temp_detect
+Top-level Entity Name : temp_detect
+Family : Cyclone IV E
+Total logic elements : 2,198
+    Total combinational functions : 1,102
+    Dedicated logic registers : 1,720
+Total registers : 1720
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 46,080
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

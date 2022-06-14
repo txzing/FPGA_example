@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/lz/Desktop/async_fifo/tb
+vasync_fifo
+Z0 !s110 1649642512
+!i10b 1
+!s100 6g0MXiTVb5cCMV9mZE:450
+IMQHeoHcAPa23oVhgzBkoi3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/TX/Desktop/async_fifo/async_fifo/tb
+w1649391667
+8../rtl/async_fifo.v
+F../rtl/async_fifo.v
+L0 12
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1649642512.000000
+!s107 ../rtl/async_fifo.v|
+!s90 -reportprogress|300|../rtl/async_fifo.v|
+!i113 1
+Z5 tCvgOpt 0
+vasync_fifo_tb
+R0
+!i10b 1
+!s100 oFPOS2i4Vl@^zMSd4]=?n3
+IYeLe3cE`3BcaWZnk3<;mC3
+R1
+R2
+w1649642328
+8async_fifo_tb.v
+Fasync_fifo_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 async_fifo_tb.v|
+!s90 -reportprogress|300|async_fifo_tb.v|
+!i113 1
+R5

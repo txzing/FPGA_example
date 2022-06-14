@@ -1,0 +1,1284 @@
+Timing Analyzer report for fsm_saler
+Fri Apr 01 16:48:42 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Setup: 'sys_clk'
+ 13. Slow 1200mV 85C Model Hold: 'sys_clk'
+ 14. Slow 1200mV 85C Model Metastability Summary
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Slow 1200mV 0C Model Setup: 'sys_clk'
+ 22. Slow 1200mV 0C Model Hold: 'sys_clk'
+ 23. Slow 1200mV 0C Model Metastability Summary
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Fast 1200mV 0C Model Setup: 'sys_clk'
+ 30. Fast 1200mV 0C Model Hold: 'sys_clk'
+ 31. Fast 1200mV 0C Model Metastability Summary
+ 32. Multicorner Timing Analysis Summary
+ 33. Board Trace Model Assignments
+ 34. Input Transition Times
+ 35. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 36. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 37. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 38. Setup Transfers
+ 39. Hold Transfers
+ 40. Report TCCS
+ 41. Report RSKM
+ 42. Unconstrained Paths Summary
+ 43. Clock Status Summary
+ 44. Unconstrained Input Ports
+ 45. Unconstrained Output Ports
+ 46. Unconstrained Input Ports
+ 47. Unconstrained Output Ports
+ 48. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                         ;
++-----------------------+---------------------------------------------------------+
+; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                                  ;
+; Revision Name         ; fsm_saler                                               ;
+; Device Family         ; Cyclone IV E                                            ;
+; Device Name           ; EP4CE6F17C8                                             ;
+; Timing Models         ; Final                                                   ;
+; Delay Model           ; Combined                                                ;
+; Rise/Fall Delays      ; Enabled                                                 ;
++-----------------------+---------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.06        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   2.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                              ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets     ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------+
+; sys_clk    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { sys_clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------+
+
+
++-------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary              ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 65.62 MHz ; 65.62 MHz       ; sys_clk    ;      ;
++-----------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++---------+---------+-----------------+
+; Clock   ; Slack   ; End Point TNS   ;
++---------+---------+-----------------+
+; sys_clk ; -14.239 ; -815.293        ;
++---------+---------+-----------------+
+
+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++---------+-------+------------------+
+; Clock   ; Slack ; End Point TNS    ;
++---------+-------+------------------+
+; sys_clk ; 0.452 ; 0.000            ;
++---------+-------+------------------+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++---------+--------+--------------------------------+
+; Clock   ; Slack  ; End Point TNS                  ;
++---------+--------+--------------------------------+
+; sys_clk ; -3.000 ; -284.043                       ;
++---------+--------+--------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'sys_clk'                                                                                                        ;
++---------+-------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node                     ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; -14.239 ; control:u_control|sum[5]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 15.569     ;
+; -14.237 ; control:u_control|sum[5]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 15.567     ;
+; -13.977 ; control:u_control|sum[7]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 15.307     ;
+; -13.975 ; control:u_control|sum[7]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 15.305     ;
+; -13.843 ; control:u_control|sum[6]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 15.173     ;
+; -13.841 ; control:u_control|sum[6]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 15.171     ;
+; -13.822 ; control:u_control|sum[5]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 15.152     ;
+; -13.560 ; control:u_control|sum[7]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 14.890     ;
+; -13.426 ; control:u_control|sum[6]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 14.756     ;
+; -13.359 ; control:u_control|sum[5]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.330      ; 14.690     ;
+; -13.097 ; control:u_control|sum[7]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.330      ; 14.428     ;
+; -12.999 ; control:u_control|money_in[5] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.925     ;
+; -12.963 ; control:u_control|sum[6]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.330      ; 14.294     ;
+; -12.940 ; control:u_control|money_in[6] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.866     ;
+; -12.835 ; control:u_control|money_in[5] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.761     ;
+; -12.830 ; control:u_control|money_in[5] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.756     ;
+; -12.776 ; control:u_control|money_in[6] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.702     ;
+; -12.771 ; control:u_control|money_in[6] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.697     ;
+; -12.751 ; control:u_control|money_in[7] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.677     ;
+; -12.587 ; control:u_control|money_in[7] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.513     ;
+; -12.582 ; control:u_control|money_in[7] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.508     ;
+; -12.485 ; control:u_control|money_in[6] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.411     ;
+; -12.422 ; control:u_control|money_in[5] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.348     ;
+; -12.421 ; control:u_control|sum[4]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 13.751     ;
+; -12.419 ; control:u_control|sum[4]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 13.749     ;
+; -12.343 ; control:u_control|money_in[6] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.081     ; 13.263     ;
+; -12.318 ; control:u_control|money_in[6] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.244     ;
+; -12.313 ; control:u_control|money_in[6] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.239     ;
+; -12.280 ; control:u_control|money_in[5] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.081     ; 13.200     ;
+; -12.255 ; control:u_control|money_in[5] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.181     ;
+; -12.250 ; control:u_control|money_in[5] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 13.176     ;
+; -12.181 ; control:u_control|sum[5]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 13.098     ;
+; -12.032 ; control:u_control|money_in[7] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 12.958     ;
+; -12.026 ; control:u_control|sum[7]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 12.943     ;
+; -12.006 ; control:u_control|sum[6]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 12.923     ;
+; -12.004 ; control:u_control|sum[4]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 13.334     ;
+; -11.978 ; control:u_control|sum[5]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 12.895     ;
+; -11.929 ; control:u_control|money_in[7] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.081     ; 12.849     ;
+; -11.918 ; control:u_control|sum[5]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 12.835     ;
+; -11.865 ; control:u_control|money_in[7] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 12.791     ;
+; -11.860 ; control:u_control|money_in[7] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 12.786     ;
+; -11.823 ; control:u_control|sum[7]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 12.740     ;
+; -11.803 ; control:u_control|sum[6]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 12.720     ;
+; -11.763 ; control:u_control|sum[7]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 12.680     ;
+; -11.743 ; control:u_control|sum[6]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 12.660     ;
+; -11.595 ; control:u_control|money_in[4] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 12.521     ;
+; -11.541 ; control:u_control|sum[4]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.330      ; 12.872     ;
+; -11.431 ; control:u_control|money_in[4] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 12.357     ;
+; -11.426 ; control:u_control|money_in[4] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 12.352     ;
+; -10.751 ; control:u_control|money_in[4] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 11.677     ;
+; -10.719 ; control:u_control|sum[4]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 11.636     ;
+; -10.609 ; control:u_control|money_in[4] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.081     ; 11.529     ;
+; -10.584 ; control:u_control|money_in[4] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 11.510     ;
+; -10.579 ; control:u_control|money_in[4] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 11.505     ;
+; -10.516 ; control:u_control|sum[4]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 11.433     ;
+; -10.456 ; control:u_control|sum[4]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 11.373     ;
+; -9.064  ; control:u_control|sum[3]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 10.394     ;
+; -9.062  ; control:u_control|sum[3]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 10.392     ;
+; -8.924  ; control:u_control|money_in[3] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 9.850      ;
+; -8.747  ; control:u_control|money_in[3] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 9.673      ;
+; -8.742  ; control:u_control|money_in[3] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 9.668      ;
+; -8.724  ; control:u_control|money_in[3] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 9.650      ;
+; -8.647  ; control:u_control|sum[3]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.329      ; 9.977      ;
+; -8.582  ; control:u_control|money_in[3] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.081     ; 9.502      ;
+; -8.557  ; control:u_control|money_in[3] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 9.483      ;
+; -8.552  ; control:u_control|money_in[3] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 9.478      ;
+; -8.496  ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.421      ;
+; -8.496  ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.421      ;
+; -8.496  ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.421      ;
+; -8.496  ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.421      ;
+; -8.496  ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.421      ;
+; -8.496  ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.421      ;
+; -8.409  ; control:u_control|sum[3]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 9.326      ;
+; -8.406  ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.331      ;
+; -8.406  ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.331      ;
+; -8.406  ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.331      ;
+; -8.406  ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.331      ;
+; -8.406  ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.331      ;
+; -8.406  ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.331      ;
+; -8.367  ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.077     ; 9.291      ;
+; -8.367  ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.077     ; 9.291      ;
+; -8.367  ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.077     ; 9.291      ;
+; -8.367  ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.077     ; 9.291      ;
+; -8.367  ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.077     ; 9.291      ;
+; -8.367  ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.077     ; 9.291      ;
+; -8.235  ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.160      ;
+; -8.235  ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.160      ;
+; -8.235  ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.160      ;
+; -8.235  ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.160      ;
+; -8.235  ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.160      ;
+; -8.235  ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.160      ;
+; -8.206  ; control:u_control|sum[3]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 9.123      ;
+; -8.184  ; control:u_control|sum[3]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.330      ; 9.515      ;
+; -8.180  ; control:u_control|cnt_1s[11]  ; control:u_control|num_a[0]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.050     ; 9.131      ;
+; -8.180  ; control:u_control|cnt_1s[11]  ; control:u_control|num_a[1]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.050     ; 9.131      ;
+; -8.180  ; control:u_control|cnt_1s[11]  ; control:u_control|num_a[2]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.050     ; 9.131      ;
+; -8.180  ; control:u_control|cnt_1s[11]  ; control:u_control|num_a[3]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.050     ; 9.131      ;
+; -8.146  ; control:u_control|sum[3]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.084     ; 9.063      ;
+; -8.146  ; control:u_control|cnt_1s[10]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.071      ;
+; -8.146  ; control:u_control|cnt_1s[10]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.076     ; 9.071      ;
++---------+-------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'sys_clk'                                                                                                                                   ;
++-------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                   ; To Node                                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.452 ; beep_driver:u_beep_driver|beep_n            ; beep_driver:u_beep_driver|beep_n            ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.746      ;
+; 0.452 ; beep_driver:u_beep_driver|cnt_10[2]         ; beep_driver:u_beep_driver|cnt_10[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.746      ;
+; 0.452 ; beep_driver:u_beep_driver|cnt_10[1]         ; beep_driver:u_beep_driver|cnt_10[1]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.746      ;
+; 0.452 ; beep_driver:u_beep_driver|add_flag          ; beep_driver:u_beep_driver|add_flag          ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.746      ;
+; 0.453 ; control:u_control|state_c.SELECT            ; control:u_control|state_c.SELECT            ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; control:u_control|num_a[1]                  ; control:u_control|num_a[1]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; control:u_control|num_a[2]                  ; control:u_control|num_a[2]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; control:u_control|num_b[1]                  ; control:u_control|num_b[1]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; control:u_control|num_b[2]                  ; control:u_control|num_b[2]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; control:u_control|cnt_5s[2]                 ; control:u_control|cnt_5s[2]                 ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; control:u_control|cnt_5s[1]                 ; control:u_control|cnt_5s[1]                 ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; control:u_control|state_c.WAIT              ; control:u_control|state_c.WAIT              ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; control:u_control|state_c.INCOIN            ; control:u_control|state_c.INCOIN            ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.746      ;
+; 0.454 ; key_filter:u_key_filter|state_c.HOLD_DOWN   ; key_filter:u_key_filter|state_c.HOLD_DOWN   ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|state_c.FILTER_UP   ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; key_filter:u_key_filter|state_c.FILTER_DOWN ; key_filter:u_key_filter|state_c.FILTER_DOWN ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 0.746      ;
+; 0.464 ; beep_driver:u_beep_driver|cnt_10[0]         ; beep_driver:u_beep_driver|cnt_10[0]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.758      ;
+; 0.465 ; control:u_control|num_a[0]                  ; control:u_control|num_a[0]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.758      ;
+; 0.465 ; control:u_control|num_b[0]                  ; control:u_control|num_b[0]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.758      ;
+; 0.465 ; control:u_control|cnt_5s[0]                 ; control:u_control|cnt_5s[0]                 ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.758      ;
+; 0.491 ; beep_driver:u_beep_driver|cnt_delay[25]     ; beep_driver:u_beep_driver|cnt_delay[25]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.784      ;
+; 0.508 ; control:u_control|cnt_5s[1]                 ; control:u_control|cnt_5s[2]                 ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.801      ;
+; 0.509 ; seg_driver:u_seg_driver|seg_sel_n[5]        ; seg_driver:u_seg_driver|seg_sel_n[0]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.803      ;
+; 0.510 ; control:u_control|sel_flag[1]               ; control:u_control|sel_flag[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 0.802      ;
+; 0.510 ; control:u_control|num_a[1]                  ; control:u_control|num_a[2]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.803      ;
+; 0.514 ; control:u_control|money_in[7]               ; control:u_control|money_in[7]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.807      ;
+; 0.516 ; beep_driver:u_beep_driver|add_flag          ; beep_driver:u_beep_driver|beep_n            ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.810      ;
+; 0.518 ; beep_driver:u_beep_driver|cnt_10[0]         ; beep_driver:u_beep_driver|cnt_10[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.812      ;
+; 0.519 ; control:u_control|led[0]                    ; control:u_control|led[3]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.812      ;
+; 0.520 ; key_filter:u_key_filter|key_in_r2[0]        ; key_filter:u_key_filter|key_down[0]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 0.812      ;
+; 0.527 ; control:u_control|sum[0]                    ; control:u_control|dout[12]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.820      ;
+; 0.528 ; control:u_control|num_b[0]                  ; control:u_control|num_b[1]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.821      ;
+; 0.529 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[6]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.823      ;
+; 0.529 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[1]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.823      ;
+; 0.530 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[3]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.824      ;
+; 0.531 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.825      ;
+; 0.533 ; control:u_control|led[0]                    ; control:u_control|led[1]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.826      ;
+; 0.533 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[4]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.827      ;
+; 0.534 ; control:u_control|led[1]                    ; control:u_control|led[0]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.827      ;
+; 0.535 ; control:u_control|led[1]                    ; control:u_control|led[2]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.828      ;
+; 0.536 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[5]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.830      ;
+; 0.537 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[0]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.831      ;
+; 0.570 ; control:u_control|state_c.SELECT            ; control:u_control|num_b[0]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.863      ;
+; 0.651 ; control:u_control|sel_flag[0]               ; control:u_control|sel_flag[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 0.943      ;
+; 0.651 ; key_filter:u_key_filter|key_in_r2[1]        ; key_filter:u_key_filter|key_down[1]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 0.943      ;
+; 0.660 ; control:u_control|led[3]                    ; control:u_control|led[0]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.953      ;
+; 0.664 ; key_filter:u_key_filter|key_in_r1[2]        ; key_filter:u_key_filter|key_down[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 0.956      ;
+; 0.667 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[1]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.961      ;
+; 0.668 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[3]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.962      ;
+; 0.669 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[6]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.963      ;
+; 0.669 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.963      ;
+; 0.674 ; control:u_control|led[2]                    ; control:u_control|led[1]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.967      ;
+; 0.674 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[4]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.968      ;
+; 0.675 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[5]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.969      ;
+; 0.675 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[0]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 0.969      ;
+; 0.675 ; control:u_control|led[2]                    ; control:u_control|led[3]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.968      ;
+; 0.676 ; control:u_control|led[3]                    ; control:u_control|led[2]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.969      ;
+; 0.679 ; control:u_control|state_c.INCOIN            ; control:u_control|dout[9]                   ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.972      ;
+; 0.697 ; control:u_control|num_a[0]                  ; control:u_control|sum[0]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 0.990      ;
+; 0.719 ; seg_driver:u_seg_driver|seg_sel_n[0]        ; seg_driver:u_seg_driver|seg_sel_n[1]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 1.013      ;
+; 0.723 ; seg_driver:u_seg_driver|seg_sel_n[4]        ; seg_driver:u_seg_driver|seg_sel_n[5]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.082      ; 1.017      ;
+; 0.725 ; key_filter:u_key_filter|key_in_r0[2]        ; key_filter:u_key_filter|key_in_r1[2]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 1.017      ;
+; 0.739 ; key_filter:u_key_filter|key_in_r1[2]        ; key_filter:u_key_filter|key_in_r2[2]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 1.031      ;
+; 0.744 ; beep_driver:u_beep_driver|cnt_delay[3]      ; beep_driver:u_beep_driver|cnt_delay[3]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.037      ;
+; 0.744 ; beep_driver:u_beep_driver|cnt_delay[9]      ; beep_driver:u_beep_driver|cnt_delay[9]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.037      ;
+; 0.744 ; beep_driver:u_beep_driver|cnt_delay[10]     ; beep_driver:u_beep_driver|cnt_delay[10]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.037      ;
+; 0.744 ; beep_driver:u_beep_driver|cnt_delay[11]     ; beep_driver:u_beep_driver|cnt_delay[11]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.037      ;
+; 0.744 ; beep_driver:u_beep_driver|cnt_delay[12]     ; beep_driver:u_beep_driver|cnt_delay[12]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.037      ;
+; 0.744 ; beep_driver:u_beep_driver|cnt_delay[15]     ; beep_driver:u_beep_driver|cnt_delay[15]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.037      ;
+; 0.744 ; control:u_control|money_in[1]               ; control:u_control|money_in[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.101      ; 1.057      ;
+; 0.745 ; beep_driver:u_beep_driver|cnt_delay[7]      ; beep_driver:u_beep_driver|cnt_delay[7]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.038      ;
+; 0.745 ; beep_driver:u_beep_driver|cnt_delay[8]      ; beep_driver:u_beep_driver|cnt_delay[8]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.038      ;
+; 0.745 ; beep_driver:u_beep_driver|cnt_delay[17]     ; beep_driver:u_beep_driver|cnt_delay[17]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.038      ;
+; 0.745 ; beep_driver:u_beep_driver|cnt_delay[19]     ; beep_driver:u_beep_driver|cnt_delay[19]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.038      ;
+; 0.746 ; beep_driver:u_beep_driver|cnt_delay[5]      ; beep_driver:u_beep_driver|cnt_delay[5]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.039      ;
+; 0.746 ; beep_driver:u_beep_driver|cnt_delay[16]     ; beep_driver:u_beep_driver|cnt_delay[16]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.039      ;
+; 0.746 ; beep_driver:u_beep_driver|cnt_delay[18]     ; beep_driver:u_beep_driver|cnt_delay[18]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.039      ;
+; 0.747 ; beep_driver:u_beep_driver|cnt_delay[21]     ; beep_driver:u_beep_driver|cnt_delay[21]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.040      ;
+; 0.747 ; beep_driver:u_beep_driver|cnt_delay[6]      ; beep_driver:u_beep_driver|cnt_delay[6]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.040      ;
+; 0.747 ; beep_driver:u_beep_driver|cnt_delay[23]     ; beep_driver:u_beep_driver|cnt_delay[23]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.040      ;
+; 0.748 ; beep_driver:u_beep_driver|cnt_delay[4]      ; beep_driver:u_beep_driver|cnt_delay[4]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.041      ;
+; 0.748 ; beep_driver:u_beep_driver|cnt_delay[24]     ; beep_driver:u_beep_driver|cnt_delay[24]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.041      ;
+; 0.749 ; beep_driver:u_beep_driver|cnt_delay[20]     ; beep_driver:u_beep_driver|cnt_delay[20]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.042      ;
+; 0.749 ; beep_driver:u_beep_driver|cnt_delay[22]     ; beep_driver:u_beep_driver|cnt_delay[22]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.042      ;
+; 0.749 ; key_filter:u_key_filter|state_c.HOLD_DOWN   ; key_filter:u_key_filter|key_down[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 1.041      ;
+; 0.758 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[1]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 1.050      ;
+; 0.758 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[4]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 1.050      ;
+; 0.758 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[7]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 1.050      ;
+; 0.759 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[5]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 1.051      ;
+; 0.759 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[6]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.080      ; 1.051      ;
+; 0.759 ; seg_driver:u_seg_driver|cnt[13]             ; seg_driver:u_seg_driver|cnt[13]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.083      ; 1.054      ;
+; 0.759 ; seg_driver:u_seg_driver|cnt[11]             ; seg_driver:u_seg_driver|cnt[11]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.083      ; 1.054      ;
+; 0.759 ; seg_driver:u_seg_driver|cnt[5]              ; seg_driver:u_seg_driver|cnt[5]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.083      ; 1.054      ;
+; 0.759 ; seg_driver:u_seg_driver|cnt[3]              ; seg_driver:u_seg_driver|cnt[3]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.083      ; 1.054      ;
+; 0.759 ; seg_driver:u_seg_driver|cnt[1]              ; seg_driver:u_seg_driver|cnt[1]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.083      ; 1.054      ;
+; 0.761 ; seg_driver:u_seg_driver|cnt[7]              ; seg_driver:u_seg_driver|cnt[7]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.083      ; 1.056      ;
+; 0.762 ; beep_driver:u_beep_driver|cnt_delay[1]      ; beep_driver:u_beep_driver|cnt_delay[1]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.055      ;
+; 0.762 ; beep_driver:u_beep_driver|cnt_delay[13]     ; beep_driver:u_beep_driver|cnt_delay[13]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.055      ;
+; 0.762 ; seg_driver:u_seg_driver|cnt[2]              ; seg_driver:u_seg_driver|cnt[2]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.083      ; 1.057      ;
+; 0.763 ; beep_driver:u_beep_driver|cnt_delay[2]      ; beep_driver:u_beep_driver|cnt_delay[2]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.081      ; 1.056      ;
++-------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+-----------------------------------------------
+; Slow 1200mV 85C Model Metastability Summary ;
+-----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++-------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary               ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 71.33 MHz ; 71.33 MHz       ; sys_clk    ;      ;
++-----------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++---------+---------+----------------+
+; Clock   ; Slack   ; End Point TNS  ;
++---------+---------+----------------+
+; sys_clk ; -13.019 ; -750.934       ;
++---------+---------+----------------+
+
+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++---------+-------+-----------------+
+; Clock   ; Slack ; End Point TNS   ;
++---------+-------+-----------------+
+; sys_clk ; 0.401 ; 0.000           ;
++---------+-------+-----------------+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++---------+--------+-------------------------------+
+; Clock   ; Slack  ; End Point TNS                 ;
++---------+--------+-------------------------------+
+; sys_clk ; -3.000 ; -284.043                      ;
++---------+--------+-------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'sys_clk'                                                                                                         ;
++---------+-------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node                     ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; -13.019 ; control:u_control|sum[5]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 14.334     ;
+; -13.018 ; control:u_control|sum[5]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 14.333     ;
+; -12.726 ; control:u_control|sum[7]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 14.041     ;
+; -12.725 ; control:u_control|sum[7]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 14.040     ;
+; -12.624 ; control:u_control|sum[5]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 13.939     ;
+; -12.600 ; control:u_control|sum[6]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 13.915     ;
+; -12.599 ; control:u_control|sum[6]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 13.914     ;
+; -12.331 ; control:u_control|sum[7]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 13.646     ;
+; -12.205 ; control:u_control|sum[6]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 13.520     ;
+; -12.135 ; control:u_control|sum[5]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.306      ; 13.443     ;
+; -11.860 ; control:u_control|money_in[5] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 12.797     ;
+; -11.842 ; control:u_control|sum[7]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.306      ; 13.150     ;
+; -11.793 ; control:u_control|money_in[6] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 12.730     ;
+; -11.716 ; control:u_control|sum[6]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.306      ; 13.024     ;
+; -11.713 ; control:u_control|money_in[5] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 12.650     ;
+; -11.709 ; control:u_control|money_in[5] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 12.646     ;
+; -11.627 ; control:u_control|money_in[6] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 12.564     ;
+; -11.623 ; control:u_control|money_in[6] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 12.560     ;
+; -11.565 ; control:u_control|money_in[7] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 12.502     ;
+; -11.399 ; control:u_control|money_in[7] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 12.336     ;
+; -11.395 ; control:u_control|money_in[7] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 12.332     ;
+; -11.340 ; control:u_control|sum[4]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 12.655     ;
+; -11.339 ; control:u_control|sum[4]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 12.654     ;
+; -11.278 ; control:u_control|money_in[5] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 12.214     ;
+; -11.277 ; control:u_control|money_in[6] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 12.213     ;
+; -11.127 ; control:u_control|money_in[5] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.070     ; 12.059     ;
+; -11.126 ; control:u_control|money_in[6] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.070     ; 12.058     ;
+; -11.113 ; control:u_control|money_in[5] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 12.049     ;
+; -11.112 ; control:u_control|money_in[6] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 12.048     ;
+; -11.107 ; control:u_control|money_in[5] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 12.043     ;
+; -11.106 ; control:u_control|money_in[6] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 12.042     ;
+; -10.976 ; control:u_control|sum[5]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 11.903     ;
+; -10.945 ; control:u_control|sum[4]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 12.260     ;
+; -10.889 ; control:u_control|money_in[7] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 11.825     ;
+; -10.841 ; control:u_control|sum[7]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 11.768     ;
+; -10.839 ; control:u_control|sum[6]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 11.766     ;
+; -10.773 ; control:u_control|sum[5]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 11.700     ;
+; -10.738 ; control:u_control|money_in[7] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.070     ; 11.670     ;
+; -10.724 ; control:u_control|money_in[7] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 11.660     ;
+; -10.718 ; control:u_control|money_in[7] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 11.654     ;
+; -10.715 ; control:u_control|sum[5]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 11.642     ;
+; -10.638 ; control:u_control|sum[7]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 11.565     ;
+; -10.636 ; control:u_control|sum[6]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 11.563     ;
+; -10.580 ; control:u_control|sum[7]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 11.507     ;
+; -10.578 ; control:u_control|sum[6]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 11.505     ;
+; -10.577 ; control:u_control|money_in[4] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 11.514     ;
+; -10.456 ; control:u_control|sum[4]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.306      ; 11.764     ;
+; -10.430 ; control:u_control|money_in[4] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 11.367     ;
+; -10.426 ; control:u_control|money_in[4] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 11.363     ;
+; -9.735  ; control:u_control|money_in[4] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 10.671     ;
+; -9.651  ; control:u_control|sum[4]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 10.578     ;
+; -9.584  ; control:u_control|money_in[4] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.070     ; 10.516     ;
+; -9.570  ; control:u_control|money_in[4] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 10.506     ;
+; -9.564  ; control:u_control|money_in[4] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 10.500     ;
+; -9.448  ; control:u_control|sum[4]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 10.375     ;
+; -9.390  ; control:u_control|sum[4]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.075     ; 10.317     ;
+; -8.220  ; control:u_control|sum[3]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 9.535      ;
+; -8.219  ; control:u_control|sum[3]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 9.534      ;
+; -8.155  ; control:u_control|money_in[3] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 9.092      ;
+; -7.988  ; control:u_control|money_in[3] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 8.925      ;
+; -7.985  ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.918      ;
+; -7.985  ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.918      ;
+; -7.985  ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.918      ;
+; -7.985  ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.918      ;
+; -7.985  ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.918      ;
+; -7.985  ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.918      ;
+; -7.983  ; control:u_control|money_in[3] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.065     ; 8.920      ;
+; -7.977  ; control:u_control|money_in[3] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 8.913      ;
+; -7.933  ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.866      ;
+; -7.933  ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.866      ;
+; -7.933  ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.866      ;
+; -7.933  ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.866      ;
+; -7.933  ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.866      ;
+; -7.933  ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.866      ;
+; -7.908  ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.070     ; 8.840      ;
+; -7.908  ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.070     ; 8.840      ;
+; -7.908  ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.070     ; 8.840      ;
+; -7.908  ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.070     ; 8.840      ;
+; -7.908  ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.070     ; 8.840      ;
+; -7.908  ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.070     ; 8.840      ;
+; -7.826  ; control:u_control|money_in[3] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.070     ; 8.758      ;
+; -7.825  ; control:u_control|sum[3]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.313      ; 9.140      ;
+; -7.812  ; control:u_control|money_in[3] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 8.748      ;
+; -7.806  ; control:u_control|money_in[3] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.066     ; 8.742      ;
+; -7.771  ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.704      ;
+; -7.771  ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.704      ;
+; -7.771  ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.704      ;
+; -7.771  ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.704      ;
+; -7.771  ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.704      ;
+; -7.771  ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.704      ;
+; -7.673  ; control:u_control|cnt_1s[10]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.606      ;
+; -7.673  ; control:u_control|cnt_1s[10]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.606      ;
+; -7.673  ; control:u_control|cnt_1s[10]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.606      ;
+; -7.673  ; control:u_control|cnt_1s[10]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.606      ;
+; -7.673  ; control:u_control|cnt_1s[10]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.606      ;
+; -7.673  ; control:u_control|cnt_1s[10]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.069     ; 8.606      ;
+; -7.665  ; control:u_control|cnt_1s[11]  ; control:u_control|num_a[0]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.044     ; 8.623      ;
+; -7.665  ; control:u_control|cnt_1s[11]  ; control:u_control|num_a[1]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.044     ; 8.623      ;
+; -7.665  ; control:u_control|cnt_1s[11]  ; control:u_control|num_a[2]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.044     ; 8.623      ;
+; -7.665  ; control:u_control|cnt_1s[11]  ; control:u_control|num_a[3]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.044     ; 8.623      ;
++---------+-------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'sys_clk'                                                                                                                                    ;
++-------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                   ; To Node                                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.401 ; beep_driver:u_beep_driver|beep_n            ; beep_driver:u_beep_driver|beep_n            ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; beep_driver:u_beep_driver|cnt_10[2]         ; beep_driver:u_beep_driver|cnt_10[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; beep_driver:u_beep_driver|cnt_10[1]         ; beep_driver:u_beep_driver|cnt_10[1]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; beep_driver:u_beep_driver|add_flag          ; beep_driver:u_beep_driver|add_flag          ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; control:u_control|state_c.SELECT            ; control:u_control|state_c.SELECT            ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; control:u_control|num_a[1]                  ; control:u_control|num_a[1]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; control:u_control|num_a[2]                  ; control:u_control|num_a[2]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; control:u_control|num_b[1]                  ; control:u_control|num_b[1]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; control:u_control|num_b[2]                  ; control:u_control|num_b[2]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; control:u_control|state_c.WAIT              ; control:u_control|state_c.WAIT              ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; control:u_control|state_c.INCOIN            ; control:u_control|state_c.INCOIN            ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.669      ;
+; 0.402 ; control:u_control|cnt_5s[2]                 ; control:u_control|cnt_5s[2]                 ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; control:u_control|cnt_5s[1]                 ; control:u_control|cnt_5s[1]                 ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; key_filter:u_key_filter|state_c.HOLD_DOWN   ; key_filter:u_key_filter|state_c.HOLD_DOWN   ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|state_c.FILTER_UP   ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; key_filter:u_key_filter|state_c.FILTER_DOWN ; key_filter:u_key_filter|state_c.FILTER_DOWN ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.669      ;
+; 0.416 ; beep_driver:u_beep_driver|cnt_10[0]         ; beep_driver:u_beep_driver|cnt_10[0]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.684      ;
+; 0.416 ; control:u_control|num_a[0]                  ; control:u_control|num_a[0]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.684      ;
+; 0.416 ; control:u_control|num_b[0]                  ; control:u_control|num_b[0]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.684      ;
+; 0.417 ; control:u_control|cnt_5s[0]                 ; control:u_control|cnt_5s[0]                 ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.684      ;
+; 0.455 ; beep_driver:u_beep_driver|cnt_delay[25]     ; beep_driver:u_beep_driver|cnt_delay[25]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.723      ;
+; 0.468 ; seg_driver:u_seg_driver|seg_sel_n[5]        ; seg_driver:u_seg_driver|seg_sel_n[0]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.074      ; 0.737      ;
+; 0.470 ; control:u_control|sel_flag[1]               ; control:u_control|sel_flag[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.737      ;
+; 0.470 ; control:u_control|num_a[1]                  ; control:u_control|num_a[2]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.738      ;
+; 0.475 ; control:u_control|money_in[7]               ; control:u_control|money_in[7]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.742      ;
+; 0.476 ; control:u_control|cnt_5s[1]                 ; control:u_control|cnt_5s[2]                 ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.743      ;
+; 0.478 ; control:u_control|led[0]                    ; control:u_control|led[3]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.746      ;
+; 0.483 ; beep_driver:u_beep_driver|add_flag          ; beep_driver:u_beep_driver|beep_n            ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.751      ;
+; 0.484 ; beep_driver:u_beep_driver|cnt_10[0]         ; beep_driver:u_beep_driver|cnt_10[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.752      ;
+; 0.486 ; key_filter:u_key_filter|key_in_r2[0]        ; key_filter:u_key_filter|key_down[0]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.753      ;
+; 0.487 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[6]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.755      ;
+; 0.488 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[1]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.756      ;
+; 0.489 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[3]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.757      ;
+; 0.489 ; control:u_control|num_b[0]                  ; control:u_control|num_b[1]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.757      ;
+; 0.490 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.758      ;
+; 0.491 ; control:u_control|sum[0]                    ; control:u_control|dout[12]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.759      ;
+; 0.492 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[4]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.760      ;
+; 0.495 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[5]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.763      ;
+; 0.495 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[0]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.763      ;
+; 0.496 ; control:u_control|led[0]                    ; control:u_control|led[1]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.764      ;
+; 0.498 ; control:u_control|led[1]                    ; control:u_control|led[2]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.766      ;
+; 0.498 ; control:u_control|led[1]                    ; control:u_control|led[0]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.766      ;
+; 0.539 ; control:u_control|state_c.SELECT            ; control:u_control|num_b[0]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.807      ;
+; 0.600 ; control:u_control|sel_flag[0]               ; control:u_control|sel_flag[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.867      ;
+; 0.608 ; key_filter:u_key_filter|key_in_r2[1]        ; key_filter:u_key_filter|key_down[1]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.875      ;
+; 0.610 ; control:u_control|led[3]                    ; control:u_control|led[0]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.878      ;
+; 0.620 ; key_filter:u_key_filter|key_in_r1[2]        ; key_filter:u_key_filter|key_down[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.887      ;
+; 0.622 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[1]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.890      ;
+; 0.624 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[6]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.892      ;
+; 0.624 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[3]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.892      ;
+; 0.624 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.892      ;
+; 0.626 ; control:u_control|led[2]                    ; control:u_control|led[1]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.894      ;
+; 0.628 ; control:u_control|led[2]                    ; control:u_control|led[3]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.896      ;
+; 0.629 ; control:u_control|led[3]                    ; control:u_control|led[2]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.897      ;
+; 0.630 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[4]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.898      ;
+; 0.630 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[5]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.898      ;
+; 0.631 ; control:u_control|state_c.INCOIN            ; control:u_control|dout[9]                   ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.899      ;
+; 0.631 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[0]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.899      ;
+; 0.646 ; key_filter:u_key_filter|key_in_r0[2]        ; key_filter:u_key_filter|key_in_r1[2]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.070      ; 0.911      ;
+; 0.652 ; control:u_control|num_a[0]                  ; control:u_control|sum[0]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.920      ;
+; 0.665 ; seg_driver:u_seg_driver|seg_sel_n[4]        ; seg_driver:u_seg_driver|seg_sel_n[5]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.074      ; 0.934      ;
+; 0.677 ; seg_driver:u_seg_driver|seg_sel_n[0]        ; seg_driver:u_seg_driver|seg_sel_n[1]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.074      ; 0.946      ;
+; 0.683 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[1]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.950      ;
+; 0.683 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[4]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.950      ;
+; 0.683 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[7]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.950      ;
+; 0.684 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[5]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.951      ;
+; 0.684 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[6]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.951      ;
+; 0.688 ; key_filter:u_key_filter|key_in_r1[2]        ; key_filter:u_key_filter|key_in_r2[2]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.955      ;
+; 0.691 ; beep_driver:u_beep_driver|cnt_delay[11]     ; beep_driver:u_beep_driver|cnt_delay[11]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.959      ;
+; 0.691 ; control:u_control|money_in[1]               ; control:u_control|money_in[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.091      ; 0.977      ;
+; 0.692 ; beep_driver:u_beep_driver|cnt_delay[8]      ; beep_driver:u_beep_driver|cnt_delay[8]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.960      ;
+; 0.692 ; beep_driver:u_beep_driver|cnt_delay[12]     ; beep_driver:u_beep_driver|cnt_delay[12]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.960      ;
+; 0.692 ; beep_driver:u_beep_driver|cnt_delay[16]     ; beep_driver:u_beep_driver|cnt_delay[16]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.960      ;
+; 0.693 ; beep_driver:u_beep_driver|cnt_delay[3]      ; beep_driver:u_beep_driver|cnt_delay[3]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.961      ;
+; 0.693 ; beep_driver:u_beep_driver|cnt_delay[5]      ; beep_driver:u_beep_driver|cnt_delay[5]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.961      ;
+; 0.693 ; beep_driver:u_beep_driver|cnt_delay[7]      ; beep_driver:u_beep_driver|cnt_delay[7]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.961      ;
+; 0.693 ; beep_driver:u_beep_driver|cnt_delay[9]      ; beep_driver:u_beep_driver|cnt_delay[9]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.961      ;
+; 0.693 ; beep_driver:u_beep_driver|cnt_delay[10]     ; beep_driver:u_beep_driver|cnt_delay[10]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.961      ;
+; 0.693 ; beep_driver:u_beep_driver|cnt_delay[15]     ; beep_driver:u_beep_driver|cnt_delay[15]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.961      ;
+; 0.693 ; beep_driver:u_beep_driver|cnt_delay[19]     ; beep_driver:u_beep_driver|cnt_delay[19]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.961      ;
+; 0.694 ; beep_driver:u_beep_driver|cnt_delay[17]     ; beep_driver:u_beep_driver|cnt_delay[17]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.962      ;
+; 0.695 ; beep_driver:u_beep_driver|cnt_delay[21]     ; beep_driver:u_beep_driver|cnt_delay[21]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.963      ;
+; 0.695 ; beep_driver:u_beep_driver|cnt_delay[18]     ; beep_driver:u_beep_driver|cnt_delay[18]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.963      ;
+; 0.695 ; beep_driver:u_beep_driver|cnt_delay[23]     ; beep_driver:u_beep_driver|cnt_delay[23]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.963      ;
+; 0.695 ; beep_driver:u_beep_driver|cnt_delay[24]     ; beep_driver:u_beep_driver|cnt_delay[24]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.963      ;
+; 0.697 ; beep_driver:u_beep_driver|cnt_delay[4]      ; beep_driver:u_beep_driver|cnt_delay[4]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.965      ;
+; 0.697 ; beep_driver:u_beep_driver|cnt_delay[6]      ; beep_driver:u_beep_driver|cnt_delay[6]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.965      ;
+; 0.698 ; beep_driver:u_beep_driver|cnt_delay[20]     ; beep_driver:u_beep_driver|cnt_delay[20]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.966      ;
+; 0.698 ; key_filter:u_key_filter|state_c.HOLD_DOWN   ; key_filter:u_key_filter|key_down[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.072      ; 0.965      ;
+; 0.699 ; beep_driver:u_beep_driver|cnt_delay[22]     ; beep_driver:u_beep_driver|cnt_delay[22]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.967      ;
+; 0.703 ; seg_driver:u_seg_driver|cnt[13]             ; seg_driver:u_seg_driver|cnt[13]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.074      ; 0.972      ;
+; 0.703 ; seg_driver:u_seg_driver|cnt[5]              ; seg_driver:u_seg_driver|cnt[5]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.074      ; 0.972      ;
+; 0.703 ; seg_driver:u_seg_driver|cnt[3]              ; seg_driver:u_seg_driver|cnt[3]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.074      ; 0.972      ;
+; 0.704 ; seg_driver:u_seg_driver|cnt[11]             ; seg_driver:u_seg_driver|cnt[11]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.074      ; 0.973      ;
+; 0.705 ; seg_driver:u_seg_driver|cnt[1]              ; seg_driver:u_seg_driver|cnt[1]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.074      ; 0.974      ;
+; 0.706 ; beep_driver:u_beep_driver|cnt_delay[2]      ; beep_driver:u_beep_driver|cnt_delay[2]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.974      ;
+; 0.706 ; beep_driver:u_beep_driver|cnt_delay[13]     ; beep_driver:u_beep_driver|cnt_delay[13]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.974      ;
+; 0.707 ; beep_driver:u_beep_driver|cnt_delay[1]      ; beep_driver:u_beep_driver|cnt_delay[1]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.073      ; 0.975      ;
+; 0.707 ; seg_driver:u_seg_driver|cnt[7]              ; seg_driver:u_seg_driver|cnt[7]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.074      ; 0.976      ;
+; 0.708 ; seg_driver:u_seg_driver|cnt[2]              ; seg_driver:u_seg_driver|cnt[2]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.074      ; 0.977      ;
++-------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Slow 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++---------+--------+-----------------+
+; Clock   ; Slack  ; End Point TNS   ;
++---------+--------+-----------------+
+; sys_clk ; -5.503 ; -253.700        ;
++---------+--------+-----------------+
+
+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++---------+-------+-----------------+
+; Clock   ; Slack ; End Point TNS   ;
++---------+-------+-----------------+
+; sys_clk ; 0.187 ; 0.000           ;
++---------+-------+-----------------+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++---------+--------+-------------------------------+
+; Clock   ; Slack  ; End Point TNS                 ;
++---------+--------+-------------------------------+
+; sys_clk ; -3.000 ; -247.976                      ;
++---------+--------+-------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'sys_clk'                                                                                                        ;
++--------+-------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; -5.503 ; control:u_control|sum[5]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 6.614      ;
+; -5.501 ; control:u_control|sum[5]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 6.612      ;
+; -5.437 ; control:u_control|sum[7]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 6.548      ;
+; -5.435 ; control:u_control|sum[7]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 6.546      ;
+; -5.389 ; control:u_control|sum[6]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 6.500      ;
+; -5.387 ; control:u_control|sum[6]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 6.498      ;
+; -5.329 ; control:u_control|sum[5]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 6.440      ;
+; -5.263 ; control:u_control|sum[7]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 6.374      ;
+; -5.215 ; control:u_control|sum[6]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 6.326      ;
+; -5.129 ; control:u_control|sum[5]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.123      ; 6.239      ;
+; -5.063 ; control:u_control|sum[7]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.123      ; 6.173      ;
+; -5.046 ; control:u_control|money_in[5] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.999      ;
+; -5.015 ; control:u_control|sum[6]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.123      ; 6.125      ;
+; -4.996 ; control:u_control|money_in[6] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.949      ;
+; -4.977 ; control:u_control|money_in[7] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.930      ;
+; -4.973 ; control:u_control|money_in[5] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.926      ;
+; -4.968 ; control:u_control|money_in[5] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.921      ;
+; -4.923 ; control:u_control|money_in[6] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.876      ;
+; -4.918 ; control:u_control|money_in[6] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.871      ;
+; -4.904 ; control:u_control|money_in[7] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.857      ;
+; -4.899 ; control:u_control|money_in[7] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.852      ;
+; -4.754 ; control:u_control|money_in[6] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 5.710      ;
+; -4.737 ; control:u_control|sum[4]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 5.848      ;
+; -4.735 ; control:u_control|sum[4]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 5.846      ;
+; -4.723 ; control:u_control|money_in[6] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.676      ;
+; -4.711 ; control:u_control|money_in[5] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 5.667      ;
+; -4.680 ; control:u_control|money_in[5] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.633      ;
+; -4.658 ; control:u_control|money_in[6] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 5.614      ;
+; -4.653 ; control:u_control|money_in[6] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 5.609      ;
+; -4.633 ; control:u_control|sum[5]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 5.584      ;
+; -4.615 ; control:u_control|money_in[5] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 5.571      ;
+; -4.610 ; control:u_control|money_in[5] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 5.566      ;
+; -4.563 ; control:u_control|sum[4]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 5.674      ;
+; -4.560 ; control:u_control|sum[7]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 5.511      ;
+; -4.552 ; control:u_control|sum[5]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 5.503      ;
+; -4.549 ; control:u_control|sum[6]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 5.500      ;
+; -4.541 ; control:u_control|money_in[7] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 5.497      ;
+; -4.537 ; control:u_control|money_in[7] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.490      ;
+; -4.526 ; control:u_control|sum[5]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 5.477      ;
+; -4.479 ; control:u_control|sum[7]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 5.430      ;
+; -4.468 ; control:u_control|sum[6]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 5.419      ;
+; -4.453 ; control:u_control|sum[7]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 5.404      ;
+; -4.445 ; control:u_control|money_in[7] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 5.401      ;
+; -4.442 ; control:u_control|sum[6]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 5.393      ;
+; -4.440 ; control:u_control|money_in[7] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 5.396      ;
+; -4.413 ; control:u_control|money_in[4] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.366      ;
+; -4.363 ; control:u_control|sum[4]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.123      ; 5.473      ;
+; -4.340 ; control:u_control|money_in[4] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.293      ;
+; -4.335 ; control:u_control|money_in[4] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 5.288      ;
+; -4.020 ; control:u_control|sum[4]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 4.971      ;
+; -3.989 ; control:u_control|money_in[4] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 4.945      ;
+; -3.985 ; control:u_control|money_in[4] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 4.938      ;
+; -3.939 ; control:u_control|sum[4]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 4.890      ;
+; -3.913 ; control:u_control|sum[4]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 4.864      ;
+; -3.893 ; control:u_control|money_in[4] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 4.849      ;
+; -3.888 ; control:u_control|money_in[4] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 4.844      ;
+; -3.328 ; control:u_control|money_in[3] ; control:u_control|dout[1]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 4.281      ;
+; -3.325 ; control:u_control|sum[3]      ; control:u_control|dout[18]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 4.436      ;
+; -3.323 ; control:u_control|sum[3]      ; control:u_control|dout[19]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 4.434      ;
+; -3.255 ; control:u_control|money_in[3] ; control:u_control|dout[3]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 4.208      ;
+; -3.250 ; control:u_control|money_in[3] ; control:u_control|dout[2]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 4.203      ;
+; -3.151 ; control:u_control|sum[3]      ; control:u_control|dout[17]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.124      ; 4.262      ;
+; -3.129 ; control:u_control|money_in[3] ; control:u_control|dout[7]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 4.085      ;
+; -3.125 ; control:u_control|money_in[3] ; control:u_control|dout[4]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 4.078      ;
+; -3.063 ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 4.016      ;
+; -3.063 ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 4.016      ;
+; -3.063 ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 4.016      ;
+; -3.063 ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 4.016      ;
+; -3.063 ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 4.016      ;
+; -3.063 ; control:u_control|cnt_1s[12]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 4.016      ;
+; -3.041 ; control:u_control|sum[3]      ; control:u_control|dout[15]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 3.992      ;
+; -3.040 ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.993      ;
+; -3.040 ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.993      ;
+; -3.040 ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.993      ;
+; -3.040 ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.993      ;
+; -3.040 ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.993      ;
+; -3.040 ; control:u_control|cnt_1s[11]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.993      ;
+; -3.039 ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.992      ;
+; -3.039 ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.992      ;
+; -3.039 ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.992      ;
+; -3.039 ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.992      ;
+; -3.039 ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.992      ;
+; -3.039 ; control:u_control|cnt_1s[20]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.992      ;
+; -3.033 ; control:u_control|money_in[3] ; control:u_control|dout[5]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 3.989      ;
+; -3.028 ; control:u_control|money_in[3] ; control:u_control|dout[6]     ; sys_clk      ; sys_clk     ; 1.000        ; -0.031     ; 3.984      ;
+; -2.995 ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[2] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.948      ;
+; -2.995 ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[3] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.948      ;
+; -2.995 ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[4] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.948      ;
+; -2.995 ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[5] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.948      ;
+; -2.995 ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[6] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.948      ;
+; -2.995 ; control:u_control|cnt_1s[13]  ; control:u_control|money_in[7] ; sys_clk      ; sys_clk     ; 1.000        ; -0.034     ; 3.948      ;
+; -2.960 ; control:u_control|sum[3]      ; control:u_control|dout[13]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 3.911      ;
+; -2.951 ; control:u_control|sum[3]      ; control:u_control|dout[16]    ; sys_clk      ; sys_clk     ; 1.000        ; 0.123      ; 4.061      ;
+; -2.936 ; control:u_control|cnt_1s[12]  ; control:u_control|num_a[0]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.023     ; 3.900      ;
+; -2.936 ; control:u_control|cnt_1s[12]  ; control:u_control|num_a[1]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.023     ; 3.900      ;
+; -2.936 ; control:u_control|cnt_1s[12]  ; control:u_control|num_a[2]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.023     ; 3.900      ;
+; -2.936 ; control:u_control|cnt_1s[12]  ; control:u_control|num_a[3]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.023     ; 3.900      ;
+; -2.934 ; control:u_control|sum[3]      ; control:u_control|dout[14]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.036     ; 3.885      ;
+; -2.913 ; control:u_control|cnt_1s[11]  ; control:u_control|num_a[0]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.023     ; 3.877      ;
+; -2.913 ; control:u_control|cnt_1s[11]  ; control:u_control|num_a[1]    ; sys_clk      ; sys_clk     ; 1.000        ; -0.023     ; 3.877      ;
++--------+-------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'sys_clk'                                                                                                                                    ;
++-------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                   ; To Node                                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.187 ; beep_driver:u_beep_driver|beep_n            ; beep_driver:u_beep_driver|beep_n            ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; beep_driver:u_beep_driver|cnt_10[2]         ; beep_driver:u_beep_driver|cnt_10[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; beep_driver:u_beep_driver|cnt_10[1]         ; beep_driver:u_beep_driver|cnt_10[1]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; beep_driver:u_beep_driver|add_flag          ; beep_driver:u_beep_driver|add_flag          ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; control:u_control|state_c.SELECT            ; control:u_control|state_c.SELECT            ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; control:u_control|num_a[1]                  ; control:u_control|num_a[1]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; control:u_control|num_a[2]                  ; control:u_control|num_a[2]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; control:u_control|num_b[1]                  ; control:u_control|num_b[1]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; control:u_control|num_b[2]                  ; control:u_control|num_b[2]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; control:u_control|cnt_5s[2]                 ; control:u_control|cnt_5s[2]                 ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; control:u_control|cnt_5s[1]                 ; control:u_control|cnt_5s[1]                 ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; control:u_control|state_c.WAIT              ; control:u_control|state_c.WAIT              ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; control:u_control|state_c.INCOIN            ; control:u_control|state_c.INCOIN            ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; key_filter:u_key_filter|state_c.HOLD_DOWN   ; key_filter:u_key_filter|state_c.HOLD_DOWN   ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|state_c.FILTER_UP   ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; key_filter:u_key_filter|state_c.FILTER_DOWN ; key_filter:u_key_filter|state_c.FILTER_DOWN ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.307      ;
+; 0.194 ; beep_driver:u_beep_driver|cnt_10[0]         ; beep_driver:u_beep_driver|cnt_10[0]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.314      ;
+; 0.194 ; control:u_control|num_a[0]                  ; control:u_control|num_a[0]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.314      ;
+; 0.194 ; control:u_control|num_b[0]                  ; control:u_control|num_b[0]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.314      ;
+; 0.194 ; control:u_control|cnt_5s[0]                 ; control:u_control|cnt_5s[0]                 ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.314      ;
+; 0.197 ; beep_driver:u_beep_driver|cnt_delay[25]     ; beep_driver:u_beep_driver|cnt_delay[25]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.318      ;
+; 0.201 ; beep_driver:u_beep_driver|add_flag          ; beep_driver:u_beep_driver|beep_n            ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.321      ;
+; 0.204 ; key_filter:u_key_filter|key_in_r2[0]        ; key_filter:u_key_filter|key_down[0]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.324      ;
+; 0.205 ; control:u_control|sum[0]                    ; control:u_control|dout[12]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.325      ;
+; 0.205 ; control:u_control|num_a[1]                  ; control:u_control|num_a[2]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.325      ;
+; 0.207 ; control:u_control|money_in[7]               ; control:u_control|money_in[7]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.327      ;
+; 0.208 ; control:u_control|led[0]                    ; control:u_control|led[1]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.328      ;
+; 0.208 ; seg_driver:u_seg_driver|seg_sel_n[5]        ; seg_driver:u_seg_driver|seg_sel_n[0]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.329      ;
+; 0.208 ; control:u_control|cnt_5s[1]                 ; control:u_control|cnt_5s[2]                 ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.328      ;
+; 0.209 ; control:u_control|led[1]                    ; control:u_control|led[2]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.329      ;
+; 0.209 ; control:u_control|led[1]                    ; control:u_control|led[0]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.329      ;
+; 0.209 ; control:u_control|sel_flag[1]               ; control:u_control|sel_flag[0]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.329      ;
+; 0.214 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[6]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.335      ;
+; 0.215 ; beep_driver:u_beep_driver|cnt_10[0]         ; beep_driver:u_beep_driver|cnt_10[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.335      ;
+; 0.216 ; control:u_control|led[0]                    ; control:u_control|led[3]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.336      ;
+; 0.216 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[3]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.337      ;
+; 0.217 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.338      ;
+; 0.217 ; control:u_control|num_b[0]                  ; control:u_control|num_b[1]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.337      ;
+; 0.219 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[4]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.340      ;
+; 0.219 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[1]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.340      ;
+; 0.221 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[5]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.342      ;
+; 0.221 ; seg_driver:u_seg_driver|num[2]              ; seg_driver:u_seg_driver|seg_data[0]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.342      ;
+; 0.233 ; control:u_control|state_c.SELECT            ; control:u_control|num_b[0]                  ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.353      ;
+; 0.259 ; key_filter:u_key_filter|key_in_r2[1]        ; key_filter:u_key_filter|key_down[1]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.379      ;
+; 0.263 ; control:u_control|sel_flag[0]               ; control:u_control|sel_flag[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.383      ;
+; 0.268 ; control:u_control|led[2]                    ; control:u_control|led[1]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.388      ;
+; 0.270 ; control:u_control|led[3]                    ; control:u_control|led[2]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.390      ;
+; 0.270 ; control:u_control|led[2]                    ; control:u_control|led[3]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.390      ;
+; 0.271 ; control:u_control|state_c.INCOIN            ; control:u_control|dout[9]                   ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.391      ;
+; 0.271 ; control:u_control|led[3]                    ; control:u_control|led[0]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.391      ;
+; 0.273 ; key_filter:u_key_filter|key_in_r1[2]        ; key_filter:u_key_filter|key_down[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.393      ;
+; 0.273 ; key_filter:u_key_filter|key_in_r0[2]        ; key_filter:u_key_filter|key_in_r1[2]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.035      ; 0.392      ;
+; 0.276 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[6]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.397      ;
+; 0.276 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[1]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.397      ;
+; 0.278 ; seg_driver:u_seg_driver|seg_sel_n[4]        ; seg_driver:u_seg_driver|seg_sel_n[5]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.399      ;
+; 0.278 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[3]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.399      ;
+; 0.279 ; seg_driver:u_seg_driver|seg_sel_n[0]        ; seg_driver:u_seg_driver|seg_sel_n[1]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.400      ;
+; 0.279 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.400      ;
+; 0.281 ; control:u_control|num_a[0]                  ; control:u_control|sum[0]                    ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.401      ;
+; 0.282 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[4]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.403      ;
+; 0.283 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[5]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.404      ;
+; 0.283 ; seg_driver:u_seg_driver|num[1]              ; seg_driver:u_seg_driver|seg_data[0]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.404      ;
+; 0.289 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[4]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.035      ; 0.408      ;
+; 0.289 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[7]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.035      ; 0.408      ;
+; 0.289 ; key_filter:u_key_filter|key_in_r1[2]        ; key_filter:u_key_filter|key_in_r2[2]        ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.409      ;
+; 0.290 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[1]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.035      ; 0.409      ;
+; 0.290 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[5]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.035      ; 0.409      ;
+; 0.290 ; key_filter:u_key_filter|state_c.FILTER_UP   ; key_filter:u_key_filter|cnt[6]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.035      ; 0.409      ;
+; 0.296 ; beep_driver:u_beep_driver|cnt_delay[11]     ; beep_driver:u_beep_driver|cnt_delay[11]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.417      ;
+; 0.296 ; beep_driver:u_beep_driver|cnt_delay[12]     ; beep_driver:u_beep_driver|cnt_delay[12]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.417      ;
+; 0.297 ; beep_driver:u_beep_driver|cnt_delay[3]      ; beep_driver:u_beep_driver|cnt_delay[3]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.418      ;
+; 0.297 ; beep_driver:u_beep_driver|cnt_delay[5]      ; beep_driver:u_beep_driver|cnt_delay[5]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.418      ;
+; 0.297 ; beep_driver:u_beep_driver|cnt_delay[7]      ; beep_driver:u_beep_driver|cnt_delay[7]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.418      ;
+; 0.297 ; beep_driver:u_beep_driver|cnt_delay[10]     ; beep_driver:u_beep_driver|cnt_delay[10]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.418      ;
+; 0.297 ; beep_driver:u_beep_driver|cnt_delay[15]     ; beep_driver:u_beep_driver|cnt_delay[15]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.418      ;
+; 0.297 ; beep_driver:u_beep_driver|cnt_delay[16]     ; beep_driver:u_beep_driver|cnt_delay[16]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.418      ;
+; 0.297 ; control:u_control|money_in[1]               ; control:u_control|money_in[1]               ; sys_clk      ; sys_clk     ; 0.000        ; 0.045      ; 0.426      ;
+; 0.298 ; beep_driver:u_beep_driver|cnt_delay[21]     ; beep_driver:u_beep_driver|cnt_delay[21]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.419      ;
+; 0.298 ; beep_driver:u_beep_driver|cnt_delay[8]      ; beep_driver:u_beep_driver|cnt_delay[8]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.419      ;
+; 0.298 ; beep_driver:u_beep_driver|cnt_delay[9]      ; beep_driver:u_beep_driver|cnt_delay[9]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.419      ;
+; 0.298 ; beep_driver:u_beep_driver|cnt_delay[17]     ; beep_driver:u_beep_driver|cnt_delay[17]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.419      ;
+; 0.298 ; beep_driver:u_beep_driver|cnt_delay[18]     ; beep_driver:u_beep_driver|cnt_delay[18]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.419      ;
+; 0.298 ; beep_driver:u_beep_driver|cnt_delay[19]     ; beep_driver:u_beep_driver|cnt_delay[19]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.419      ;
+; 0.299 ; beep_driver:u_beep_driver|cnt_delay[4]      ; beep_driver:u_beep_driver|cnt_delay[4]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.420      ;
+; 0.299 ; beep_driver:u_beep_driver|cnt_delay[6]      ; beep_driver:u_beep_driver|cnt_delay[6]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.420      ;
+; 0.299 ; beep_driver:u_beep_driver|cnt_delay[20]     ; beep_driver:u_beep_driver|cnt_delay[20]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.420      ;
+; 0.299 ; beep_driver:u_beep_driver|cnt_delay[23]     ; beep_driver:u_beep_driver|cnt_delay[23]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.420      ;
+; 0.299 ; beep_driver:u_beep_driver|cnt_delay[24]     ; beep_driver:u_beep_driver|cnt_delay[24]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.420      ;
+; 0.300 ; beep_driver:u_beep_driver|cnt_delay[22]     ; beep_driver:u_beep_driver|cnt_delay[22]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.421      ;
+; 0.301 ; key_filter:u_key_filter|state_c.HOLD_DOWN   ; key_filter:u_key_filter|key_down[2]         ; sys_clk      ; sys_clk     ; 0.000        ; 0.036      ; 0.421      ;
+; 0.302 ; seg_driver:u_seg_driver|cnt[13]             ; seg_driver:u_seg_driver|cnt[13]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.038      ; 0.424      ;
+; 0.302 ; seg_driver:u_seg_driver|cnt[5]              ; seg_driver:u_seg_driver|cnt[5]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.038      ; 0.424      ;
+; 0.302 ; seg_driver:u_seg_driver|cnt[3]              ; seg_driver:u_seg_driver|cnt[3]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.038      ; 0.424      ;
+; 0.303 ; seg_driver:u_seg_driver|cnt[11]             ; seg_driver:u_seg_driver|cnt[11]             ; sys_clk      ; sys_clk     ; 0.000        ; 0.038      ; 0.425      ;
+; 0.303 ; seg_driver:u_seg_driver|cnt[7]              ; seg_driver:u_seg_driver|cnt[7]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.038      ; 0.425      ;
+; 0.303 ; seg_driver:u_seg_driver|cnt[1]              ; seg_driver:u_seg_driver|cnt[1]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.038      ; 0.425      ;
+; 0.304 ; beep_driver:u_beep_driver|cnt_delay[2]      ; beep_driver:u_beep_driver|cnt_delay[2]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.425      ;
+; 0.304 ; beep_driver:u_beep_driver|cnt_delay[13]     ; beep_driver:u_beep_driver|cnt_delay[13]     ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.425      ;
+; 0.304 ; seg_driver:u_seg_driver|cnt[2]              ; seg_driver:u_seg_driver|cnt[2]              ; sys_clk      ; sys_clk     ; 0.000        ; 0.038      ; 0.426      ;
+; 0.305 ; beep_driver:u_beep_driver|cnt_delay[1]      ; beep_driver:u_beep_driver|cnt_delay[1]      ; sys_clk      ; sys_clk     ; 0.000        ; 0.037      ; 0.426      ;
++-------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Fast 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+----------+-------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -14.239  ; 0.187 ; N/A      ; N/A     ; -3.000              ;
+;  sys_clk         ; -14.239  ; 0.187 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -815.293 ; 0.0   ; 0.0      ; 0.0     ; -284.043            ;
+;  sys_clk         ; -815.293 ; 0.000 ; N/A      ; N/A     ; -284.043            ;
++------------------+----------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                   ;
++--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin          ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; seg_sel_n[0] ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_sel_n[1] ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_sel_n[2] ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_sel_n[3] ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_sel_n[4] ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_sel_n[5] ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_data[0]  ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_data[1]  ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_data[2]  ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_data[3]  ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_data[4]  ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_data[5]  ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_data[6]  ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_data[7]  ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[0]       ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[1]       ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[2]       ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[3]       ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; beep_n       ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++--------------------------------------------------------------+
+; Input Transition Times                                       ;
++-----------+--------------+-----------------+-----------------+
+; Pin       ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-----------+--------------+-----------------+-----------------+
+; sys_clk   ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; sys_rst_n ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; key_in[2] ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; key_in[0] ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; key_in[1] ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
++-----------+--------------+-----------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin          ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; seg_sel_n[0] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 6.38e-09 V                   ; 3.13 V              ; -0.117 V            ; 0.15 V                               ; 0.263 V                              ; 6.31e-10 s                  ; 4.46e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 6.38e-09 V                  ; 3.13 V             ; -0.117 V           ; 0.15 V                              ; 0.263 V                             ; 6.31e-10 s                 ; 4.46e-10 s                 ; No                        ; No                        ;
+; seg_sel_n[1] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; seg_sel_n[2] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; seg_sel_n[3] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; seg_sel_n[4] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; seg_sel_n[5] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; seg_data[0]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; seg_data[1]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; seg_data[2]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; seg_data[3]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; seg_data[4]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; seg_data[5]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; seg_data[6]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; seg_data[7]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; led[0]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 6.38e-09 V                   ; 3.12 V              ; -0.0818 V           ; 0.205 V                              ; 0.244 V                              ; 8.86e-10 s                  ; 6.56e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 6.38e-09 V                  ; 3.12 V             ; -0.0818 V          ; 0.205 V                             ; 0.244 V                             ; 8.86e-10 s                 ; 6.56e-10 s                 ; No                        ; No                        ;
+; led[1]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 6.38e-09 V                   ; 3.12 V              ; -0.0818 V           ; 0.205 V                              ; 0.244 V                              ; 8.86e-10 s                  ; 6.56e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 6.38e-09 V                  ; 3.12 V             ; -0.0818 V          ; 0.205 V                             ; 0.244 V                             ; 8.86e-10 s                 ; 6.56e-10 s                 ; No                        ; No                        ;
+; led[2]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 6.38e-09 V                   ; 3.12 V              ; -0.0818 V           ; 0.205 V                              ; 0.244 V                              ; 8.86e-10 s                  ; 6.56e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 6.38e-09 V                  ; 3.12 V             ; -0.0818 V          ; 0.205 V                             ; 0.244 V                             ; 8.86e-10 s                 ; 6.56e-10 s                 ; No                        ; No                        ;
+; led[3]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 6.38e-09 V                   ; 3.12 V              ; -0.0818 V           ; 0.205 V                              ; 0.244 V                              ; 8.86e-10 s                  ; 6.56e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 6.38e-09 V                  ; 3.12 V             ; -0.0818 V          ; 0.205 V                             ; 0.244 V                             ; 8.86e-10 s                 ; 6.56e-10 s                 ; No                        ; No                        ;
+; beep_n       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 6.38e-09 V                   ; 3.12 V              ; -0.0818 V           ; 0.205 V                              ; 0.244 V                              ; 8.86e-10 s                  ; 6.56e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 6.38e-09 V                  ; 3.12 V             ; -0.0818 V          ; 0.205 V                             ; 0.244 V                             ; 8.86e-10 s                 ; 6.56e-10 s                 ; No                        ; No                        ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin          ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; seg_sel_n[0] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 5.04e-07 V                   ; 3.11 V              ; -0.0624 V           ; 0.233 V                              ; 0.172 V                              ; 6.86e-10 s                  ; 6.33e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 5.04e-07 V                  ; 3.11 V             ; -0.0624 V          ; 0.233 V                             ; 0.172 V                             ; 6.86e-10 s                 ; 6.33e-10 s                 ; Yes                       ; No                        ;
+; seg_sel_n[1] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; seg_sel_n[2] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; seg_sel_n[3] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; seg_sel_n[4] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; seg_sel_n[5] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; seg_data[0]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; seg_data[1]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; seg_data[2]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; seg_data[3]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; seg_data[4]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; seg_data[5]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; seg_data[6]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; seg_data[7]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; led[0]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 5.04e-07 V                   ; 3.11 V              ; -0.0469 V           ; 0.191 V                              ; 0.215 V                              ; 1.08e-09 s                  ; 8.62e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 5.04e-07 V                  ; 3.11 V             ; -0.0469 V          ; 0.191 V                             ; 0.215 V                             ; 1.08e-09 s                 ; 8.62e-10 s                 ; Yes                       ; No                        ;
+; led[1]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 5.04e-07 V                   ; 3.11 V              ; -0.0469 V           ; 0.191 V                              ; 0.215 V                              ; 1.08e-09 s                  ; 8.62e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 5.04e-07 V                  ; 3.11 V             ; -0.0469 V          ; 0.191 V                             ; 0.215 V                             ; 1.08e-09 s                 ; 8.62e-10 s                 ; Yes                       ; No                        ;
+; led[2]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 5.04e-07 V                   ; 3.11 V              ; -0.0469 V           ; 0.191 V                              ; 0.215 V                              ; 1.08e-09 s                  ; 8.62e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 5.04e-07 V                  ; 3.11 V             ; -0.0469 V          ; 0.191 V                             ; 0.215 V                             ; 1.08e-09 s                 ; 8.62e-10 s                 ; Yes                       ; No                        ;
+; led[3]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 5.04e-07 V                   ; 3.11 V              ; -0.0469 V           ; 0.191 V                              ; 0.215 V                              ; 1.08e-09 s                  ; 8.62e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 5.04e-07 V                  ; 3.11 V             ; -0.0469 V          ; 0.191 V                             ; 0.215 V                             ; 1.08e-09 s                 ; 8.62e-10 s                 ; Yes                       ; No                        ;
+; beep_n       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 5.04e-07 V                   ; 3.11 V              ; -0.0469 V           ; 0.191 V                              ; 0.215 V                              ; 1.08e-09 s                  ; 8.62e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 5.04e-07 V                  ; 3.11 V             ; -0.0469 V          ; 0.191 V                             ; 0.215 V                             ; 1.08e-09 s                 ; 8.62e-10 s                 ; Yes                       ; No                        ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin          ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; seg_sel_n[0] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.25e-07 V                   ; 3.6 V               ; -0.127 V            ; 0.302 V                              ; 0.21 V                               ; 4.55e-10 s                  ; 4.11e-10 s                  ; No                         ; No                         ; 3.46 V                      ; 1.25e-07 V                  ; 3.6 V              ; -0.127 V           ; 0.302 V                             ; 0.21 V                              ; 4.55e-10 s                 ; 4.11e-10 s                 ; No                        ; No                        ;
+; seg_sel_n[1] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; seg_sel_n[2] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; seg_sel_n[3] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; seg_sel_n[4] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; seg_sel_n[5] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; seg_data[0]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; seg_data[1]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; seg_data[2]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; seg_data[3]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; seg_data[4]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; seg_data[5]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; seg_data[6]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; seg_data[7]  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; led[0]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.25e-07 V                   ; 3.57 V              ; -0.0855 V           ; 0.315 V                              ; 0.175 V                              ; 6.79e-10 s                  ; 6.15e-10 s                  ; No                         ; No                         ; 3.46 V                      ; 1.25e-07 V                  ; 3.57 V             ; -0.0855 V          ; 0.315 V                             ; 0.175 V                             ; 6.79e-10 s                 ; 6.15e-10 s                 ; No                        ; No                        ;
+; led[1]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.25e-07 V                   ; 3.57 V              ; -0.0855 V           ; 0.315 V                              ; 0.175 V                              ; 6.79e-10 s                  ; 6.15e-10 s                  ; No                         ; No                         ; 3.46 V                      ; 1.25e-07 V                  ; 3.57 V             ; -0.0855 V          ; 0.315 V                             ; 0.175 V                             ; 6.79e-10 s                 ; 6.15e-10 s                 ; No                        ; No                        ;
+; led[2]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.25e-07 V                   ; 3.57 V              ; -0.0855 V           ; 0.315 V                              ; 0.175 V                              ; 6.79e-10 s                  ; 6.15e-10 s                  ; No                         ; No                         ; 3.46 V                      ; 1.25e-07 V                  ; 3.57 V             ; -0.0855 V          ; 0.315 V                             ; 0.175 V                             ; 6.79e-10 s                 ; 6.15e-10 s                 ; No                        ; No                        ;
+; led[3]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.25e-07 V                   ; 3.57 V              ; -0.0855 V           ; 0.315 V                              ; 0.175 V                              ; 6.79e-10 s                  ; 6.15e-10 s                  ; No                         ; No                         ; 3.46 V                      ; 1.25e-07 V                  ; 3.57 V             ; -0.0855 V          ; 0.315 V                             ; 0.175 V                             ; 6.79e-10 s                 ; 6.15e-10 s                 ; No                        ; No                        ;
+; beep_n       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.25e-07 V                   ; 3.57 V              ; -0.0855 V           ; 0.315 V                              ; 0.175 V                              ; 6.79e-10 s                  ; 6.15e-10 s                  ; No                         ; No                         ; 3.46 V                      ; 1.25e-07 V                  ; 3.57 V             ; -0.0855 V          ; 0.315 V                             ; 0.175 V                             ; 6.79e-10 s                 ; 6.15e-10 s                 ; No                        ; No                        ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; sys_clk    ; sys_clk  ; 516734   ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; sys_clk    ; sys_clk  ; 516734   ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 192   ; 192  ;
+; Unconstrained Output Ports      ; 18    ; 18   ;
+; Unconstrained Output Port Paths ; 18    ; 18   ;
++---------------------------------+-------+------+
+
+
++----------------------------------------+
+; Clock Status Summary                   ;
++---------+---------+------+-------------+
+; Target  ; Clock   ; Type ; Status      ;
++---------+---------+------+-------------+
+; sys_clk ; sys_clk ; Base ; Constrained ;
++---------+---------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; key_in[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key_in[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key_in[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; sys_rst_n  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                           ;
++--------------+---------------------------------------------------------------------------------------+
+; Output Port  ; Comment                                                                               ;
++--------------+---------------------------------------------------------------------------------------+
+; beep_n       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sel_n[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sel_n[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sel_n[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sel_n[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sel_n[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sel_n[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++--------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; key_in[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key_in[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key_in[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; sys_rst_n  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                           ;
++--------------+---------------------------------------------------------------------------------------+
+; Output Port  ; Comment                                                                               ;
++--------------+---------------------------------------------------------------------------------------+
+; beep_n       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_data[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sel_n[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sel_n[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sel_n[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sel_n[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sel_n[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sel_n[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++--------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Processing started: Fri Apr 01 16:48:40 2022
+Info: Command: quartus_sta fsm_saler -c fsm_saler
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'fsm_saler.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name sys_clk sys_clk
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -14.239
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -14.239            -815.293 sys_clk 
+Info (332146): Worst-case hold slack is 0.452
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.452               0.000 sys_clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -284.043 sys_clk 
+Info (332114): Report Metastability: Found 3 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -13.019
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -13.019            -750.934 sys_clk 
+Info (332146): Worst-case hold slack is 0.401
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.401               0.000 sys_clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -284.043 sys_clk 
+Info (332114): Report Metastability: Found 3 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -5.503
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -5.503            -253.700 sys_clk 
+Info (332146): Worst-case hold slack is 0.187
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.187               0.000 sys_clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -247.976 sys_clk 
+Info (332114): Report Metastability: Found 3 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4754 megabytes
+    Info: Processing ended: Fri Apr 01 16:48:42 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

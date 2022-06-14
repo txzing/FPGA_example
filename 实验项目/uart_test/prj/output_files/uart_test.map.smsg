@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at cmd_analy.v(96): always construct contains both blocking and non-blocking assignments File: C:/Users/TX/Desktop/uart_test/rtl/cmd_analy.v Line: 96
+Info (10281): Verilog HDL Declaration information at clock_data.v(14): object "time_1s" differs only in case from object "TIME_1S" in the same scope File: C:/Users/TX/Desktop/uart_test/rtl/clock_data.v Line: 14

@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Dec 13 18:25:04 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : ov5640_sdram_vga
+Top-level Entity Name : ov5640_sdram_vga
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 623
+Total pins : 86
+Total virtual pins : 0
+Total block memory bits : 127,216
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2
+Total DLLs : 0

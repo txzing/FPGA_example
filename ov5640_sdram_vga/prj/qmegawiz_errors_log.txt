@@ -1,0 +1,21 @@
+
+
+E:/FPGA_DEMO/de10_demo/ov5640_sdram_vga/ip/pll1/pll1.v
+
+Dec 08 10PM:42:14>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/FPGA_DEMO/de10_demo/ov5640_sdram_vga/ip/pll0/pll0.v
+
+Dec 10 11PM:39:40>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/FPGA_DEMO/de10_demo/ov5640_sdram_vga/ip/pll0/pll0.v
+
+Dec 10 11PM:39:42>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/FPGA_DEMO/de10_demo/ov5640_sdram_vga/ip/pll0/pll0.v
+
+Dec 10 11PM:39:47>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "dout_vld",
+					"strict" : false
+				},
+				{
+					"name" : "dout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[9]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[10]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[11]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[12]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[13]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[14]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[15]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[16]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[17]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[18]",
+					"strict" : false
+				},
+				{
+					"name" : "dout[19]",
+					"strict" : false
+				},
+				{
+					"name" : "cal_row_done",
+					"strict" : false
+				},
+				{
+					"name" : "init_done",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "din_vld",
+					"strict" : false
+				},
+				{
+					"name" : "din[0]",
+					"strict" : false
+				},
+				{
+					"name" : "din[1]",
+					"strict" : false
+				},
+				{
+					"name" : "din[2]",
+					"strict" : false
+				},
+				{
+					"name" : "din[3]",
+					"strict" : false
+				},
+				{
+					"name" : "din[4]",
+					"strict" : false
+				},
+				{
+					"name" : "din[5]",
+					"strict" : false
+				},
+				{
+					"name" : "din[6]",
+					"strict" : false
+				},
+				{
+					"name" : "din[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

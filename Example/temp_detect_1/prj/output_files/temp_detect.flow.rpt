@@ -1,0 +1,127 @@
+Flow report for temp_detect
+Sat Oct 30 09:49:57 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Flow Summary                                                                          ;
++------------------------------------+--------------------------------------------------+
+; Flow Status                        ; Successful - Sat Oct 30 09:49:56 2021            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; temp_detect                                      ;
+; Top-level Entity Name              ; temp_detect                                      ;
+; Family                             ; Cyclone II                                       ;
+; Device                             ; EP2C5T144C8                                      ;
+; Timing Models                      ; Final                                            ;
+; Total logic elements               ; 539 / 4,608 ( 12 % )                             ;
+;     Total combinational functions  ; 535 / 4,608 ( 12 % )                             ;
+;     Dedicated logic registers      ; 244 / 4,608 ( 5 % )                              ;
+; Total registers                    ; 244                                              ;
+; Total pins                         ; 31 / 89 ( 35 % )                                 ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 0 / 119,808 ( 0 % )                              ;
+; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                                   ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                    ;
++------------------------------------+--------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 10/30/2021 09:49:49 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; temp_detect         ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                            ;
++-------------------------------------+------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                                      ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 118759611875087.163555858905780                            ; --            ; --          ; --         ;
+; ENABLE_SIGNALTAP                    ; Off                                                        ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                         ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                          ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                                                   ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                      ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                     ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                        ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                      ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                               ; --            ; --          ; --         ;
+; SLD_FILE                            ; C:/Users/TX/Desktop/temp_detect/prj/stp1_auto_stripped.stp ; --            ; --          ; --         ;
+; USE_SIGNALTAP_FILE                  ; stp1.stp                                                   ; --            ; --          ; --         ;
++-------------------------------------+------------------------------------------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4603 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:02     ; 1.0                     ; 5245 MB             ; 00:00:02                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4551 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 4581 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:05     ; --                      ; --                  ; 00:00:07                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-M6M13P2  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-M6M13P2  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-M6M13P2  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-M6M13P2  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off temp_detect -c temp_detect
+quartus_fit --read_settings_files=off --write_settings_files=off temp_detect -c temp_detect
+quartus_asm --read_settings_files=off --write_settings_files=off temp_detect -c temp_detect
+quartus_sta temp_detect -c temp_detect
+
+
+

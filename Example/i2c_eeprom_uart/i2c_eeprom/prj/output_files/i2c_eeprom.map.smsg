@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at eeprom_control.v(8): object "wr_req" differs only in case from object "WR_REQ" in the same scope File: C:/Users/TX/Desktop/i2c_eeprom/i2c_eeprom/rtl/eeprom_control.v Line: 8
+Info (10281): Verilog HDL Declaration information at eeprom_control.v(9): object "rd_req" differs only in case from object "RD_REQ" in the same scope File: C:/Users/TX/Desktop/i2c_eeprom/i2c_eeprom/rtl/eeprom_control.v Line: 9

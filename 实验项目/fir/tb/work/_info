@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA_rtl_project/fir/tb
+vfir
+!s110 1626161561
+!i10b 1
+!s100 fJmDU:PO;EoU`5^WmY@1j0
+IdMlDQdoU^CACK^DiY^9H91
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1625211552
+8../rtl/fir.v
+F../rtl/fir.v
+L0 11
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1626161560.000000
+!s107 ../rtl/fir.v|
+!s90 -reportprogress|300|../rtl/fir.v|
+!i113 1
+Z4 tCvgOpt 0
+vfir_tb
+!s110 1626161560
+!i10b 1
+!s100 6XXGO3LWDN4ND1VjHYKJO1
+IQbz1R>ZCJEz>cWOd9WAof0
+R1
+R0
+w1625208615
+8fir_tb.v
+Ffir_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+R3
+!s107 fir_tb.v|
+!s90 -reportprogress|300|fir_tb.v|
+!i113 1
+R4

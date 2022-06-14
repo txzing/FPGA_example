@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Aug 01 18:16:18 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : multiplier_32bit
+Top-level Entity Name : multiplier_32bit
+Family : Cyclone IV E
+Total logic elements : 2,186
+    Total combinational functions : 2,085
+    Dedicated logic registers : 1,542
+Total registers : 1542
+Total pins : 132
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

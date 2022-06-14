@@ -1,0 +1,77 @@
+module key_filter #(parameter KEY_IN_W = 2,DATA_W = 20,TIME_20MS = 500_000)(
+      input                             clk    ,    //25MHz
+      input                             rst_n  ,
+      input         [KEY_IN_W - 1:0]    key_in ,  
+      output    reg [KEY_IN_W - 1:0]    key_done
+);
+
+   //信号定义
+    reg     [KEY_IN_W:0]   key_r0          ;//同步  按键输入信号时异步信号
+    reg     [KEY_IN_W:0]   key_r1          ;//打拍  检测跳变沿
+
+    reg     [KEY_IN_W:0]   n_nedge         ;//下降沿
+
+    reg     [DATA_W-1:0]  delay_cnt       ;//延时20ms计数器
+    wire            add_delay_cnt   ;
+    wire            end_delay_cnt   ;
+
+    reg             add_flag        ;
+
+// key_r0 同步  打拍
+    always @(posedge clk or negedge rst_n)begin 
+            if(!rst_n)begin
+                key_r0 <= 2'b11;
+                key_r1 <= 2'b11;
+            end 
+            else begin 
+                key_r0 <= key_in;
+                key_r1 <= key_r0;
+            end 
+    end
+
+//检测下降沿
+    assign n_nedge = ~key_r0 & key_r1;
+
+//delay_cnt
+    always @(posedge clk or negedge rst_n)begin 
+        if(!rst_n)begin
+            delay_cnt <= 0;
+        end 
+        else if(add_delay_cnt)begin 
+            if(end_delay_cnt)begin 
+                delay_cnt <= 0;
+            end
+            else begin 
+                delay_cnt <= delay_cnt + 1;
+            end 
+        end
+    end 
+    assign add_delay_cnt = add_flag ;
+    assign end_delay_cnt = add_cnt && delay_cnt == DELAY -1 ;
+
+// add_flag
+    always @(posedge clk or negedge rst_n)begin 
+            if(!rst_n)begin
+                add_flag <= 1'b0;
+            end 
+            else if(n_nedge!=2'b0)begin 
+                add_flag <= 1'b1;   
+            end 
+            else begin 
+                add_flag <= 1'b0;
+            end 
+    end
+
+ //key_done
+    always @(posedge clk or negedge rst_n)begin 
+            if(!rst_n)begin
+                key_done <= 2'b0;
+            end 
+            else if(end_delay_cnt)begin 
+                key_done <= ~key_r1;
+            end 
+            else begin 
+                key_done <= 2'b0;
+            end 
+    end
+endmodule

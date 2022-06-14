@@ -1,0 +1,148 @@
+module lcd12864(
+input	            clk, 
+input	            rst_n,
+//input  [n:0]      din,							//传入要显示的数据
+output            lcd_rw, 		//读、写操作选择信号，1：读数据，0：写数据
+output            lcd_psb, //1:并行，0：串行
+output            lcd_rst_n,	
+output reg        lcd_e, 
+output reg        lcd_rs, 		//选择输出命令还是数据										
+output reg [7:0]  lcd_data
+); 				
+//状态机参数
+reg  [8:0]   state_cnt;//操作计数器	
+
+parameter     CLK_3KHz = 8332;
+reg  [13:0]   cnt_lcd_clk; 										
+wire          add_cnt_lcd_clk;
+wire          end_cnt_lcd_clk;
+
+//*****************以下为中文编码*****************/
+parameter  string_1 = 16'hB5B1;//当
+parameter  string_2 = 16'hC7B0;//前
+parameter  string_3 = 16'hCEC2;//温
+parameter  string_4 = 16'hB6C8;//度
+parameter  string_5 = 16'hB5CD;//低
+parameter  string_6 = 16'hB8DF;//高
+parameter  string_7 = 16'hE3D0;//阈
+parameter  string_8 = 16'hD6B5;//值
+//***************************************************************//
+assign   lcd_rw = 1'b0; //仅对LCD12864进行写数据操作
+assign   lcd_psb = 1'b1;//并行通信方式
+assign   lcd_rst_n = rst_n;
+/**************************产生lcd时钟信号*************************/
+always @(posedge clk or negedge rst_n)begin 
+if(!rst_n)begin
+    cnt_lcd_clk <= 0;
+    lcd_e <= 1'b1;
+  end 
+  else if(add_cnt_lcd_clk)begin 
+         if(end_cnt_lcd_clk)begin 
+           cnt_lcd_clk <= 0;
+           lcd_e <= ~lcd_e;
+         end
+         else begin 
+           cnt_lcd_clk <= cnt_lcd_clk + 1;
+           lcd_e <= lcd_e;
+         end 
+  end
+   else  begin
+       cnt_lcd_clk <= cnt_lcd_clk;
+       lcd_e <= lcd_e;
+  end
+end 
+
+assign add_cnt_lcd_clk = 1'b1;
+assign end_cnt_lcd_clk = add_cnt_lcd_clk && cnt_lcd_clk == (CLK_3KHz/2)-1;
+
+//****************************lcd12806控制信号*****************************************/                          
+always @(posedge lcd_e or negedge rst_n)begin
+if(!rst_n)begin
+    lcd_rs <= 1'b0;
+    lcd_data <= 8'bzzzzzzzz;							//高阻态
+    state_cnt <= 6'd0;
+end
+  else case (state_cnt)
+//命令参数设置
+		6'd0:  begin lcd_rs <= 1'b0; lcd_data <= 8'h30; state_cnt <= state_cnt+1; end //8位数据口
+		6'd1:  begin lcd_rs <= 1'b0; lcd_data <= 8'h30; state_cnt <= state_cnt+1; end //基本指令集，同一指令之动作不可同时改变 RE 及 DL，需先改变 DL 后在改变 RE 才可确保 FLAG 正确设定
+		6'd2:  begin lcd_rs <= 1'b0; lcd_data <= 8'h0c; state_cnt <= state_cnt+1; end // 关光标
+		6'd3:  begin lcd_rs <= 1'b0; lcd_data <= 8'h01; state_cnt <= state_cnt+1; end //清屏
+		6'd4:  begin lcd_rs <= 1'b0; lcd_data <= 8'h06; state_cnt <= state_cnt+1; end //进入点设定
+//显示设置
+		6'd5:  begin lcd_rs <= 1'b0; lcd_data <= 8'h80; state_cnt <= state_cnt+1; end //第一行
+		6'd6:  begin lcd_rs <= 1'b1; lcd_data <= string_1[7:0]; state_cnt <= state_cnt+1; end
+		6'd7:  begin lcd_rs <= 1'b1; lcd_data <= string_1[15:8]; state_cnt <= state_cnt+1; end
+		6'd8:  begin lcd_rs <= 1'b1; lcd_data <= string_2[7:0]; state_cnt <= state_cnt+1; end
+		6'd9:  begin lcd_rs <= 1'b1; lcd_data <= string_2[15:8]; state_cnt <= state_cnt+1; end
+		6'd10: begin lcd_rs <= 1'b1; lcd_data <= string_3[7:0]; state_cnt <= state_cnt+1; end
+		6'd11: begin lcd_rs <= 1'b1; lcd_data <= string_3[15:8]; state_cnt <= state_cnt+1; end
+		6'd12: begin lcd_rs <= 1'b1; lcd_data <= string_4[7:0]; state_cnt <= state_cnt+1; end
+		6'd13: begin lcd_rs <= 1'b1; lcd_data <= string_4[15:8]; state_cnt <= state_cnt+1; end
+		6'd14: begin lcd_rs <= 1'b1; lcd_data <= ":"; state_cnt <= state_cnt+1; end
+		6'd15: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end	
+		6'd16: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd17: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd18: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end//如果显示数字，需要加0'd48,例如data_buff <= num+8'd48
+		6'd19: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd20: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd21: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+
+		6'd22: begin lcd_rs <= 1'b0; lcd_data <= 8'h90; state_cnt <= state_cnt+1; end //第二行
+		6'd23: begin lcd_rs <= 1'b1; lcd_data <= string_5[7:0]; state_cnt <= state_cnt+1; end
+		6'd24: begin lcd_rs <= 1'b1; lcd_data <= string_5[15:8]; state_cnt <= state_cnt+1; end
+		6'd25: begin lcd_rs <= 1'b1; lcd_data <= string_3[7:0]; state_cnt <= state_cnt+1; end
+		6'd26: begin lcd_rs <= 1'b1; lcd_data <= string_3[15:8]; state_cnt <= state_cnt+1; end
+		6'd27: begin lcd_rs <= 1'b1; lcd_data <= string_7[7:0]; state_cnt <= state_cnt+1; end
+		6'd28: begin lcd_rs <= 1'b1; lcd_data <= string_7[15:8]; state_cnt <= state_cnt+1; end
+		6'd29: begin lcd_rs <= 1'b1; lcd_data <= string_8[7:0]; state_cnt <= state_cnt+1; end
+		6'd30: begin lcd_rs <= 1'b1; lcd_data <= string_8[15:8]; state_cnt <= state_cnt+1; end
+		6'd31: begin lcd_rs <= 1'b1; lcd_data <= ":"; state_cnt <= state_cnt+1; end	
+		6'd32: begin lcd_rs <= 1'b1; lcd_data <= "2"; state_cnt <= state_cnt+1; end
+		6'd33: begin lcd_rs <= 1'b1; lcd_data <= "2"; state_cnt <= state_cnt+1; end
+		6'd34: begin lcd_rs <= 1'b1; lcd_data <= 8'h27; state_cnt <= state_cnt+1; end
+		6'd35: begin lcd_rs <= 1'b1; lcd_data <= 8'h43; state_cnt <= state_cnt+1; end
+		6'd36: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd37: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd38: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+  
+		6'd39: begin lcd_rs <= 1'b0; lcd_data <= 8'h88; state_cnt <= state_cnt+1; end//第三行 
+		6'd40: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd41: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd42: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd43: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd44: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd45: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd46: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd47: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end  
+		6'd48: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd49: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd50: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd51: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end                     
+		6'd52: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd53: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd54: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd55: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+  
+		6'd56: begin lcd_rs <= 1'b0; lcd_data <= 8'h98; state_cnt <= state_cnt+1; end//第四行
+		6'd57: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd58: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd59: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd60: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd61: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd62: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd63: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+    6'd64: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd65: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd66: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd67: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd68: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd69: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd70: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+    6'd71: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= state_cnt+1; end
+		6'd72: begin lcd_rs <= 1'b1; lcd_data <= 8'h20; state_cnt <= 6'd5; end
+		default : begin lcd_rs <= 1'b0; lcd_data <= 8'bzz; state_cnt <= 6'd0; end
+		endcase
+	end
+	
+endmodule

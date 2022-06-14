@@ -1,0 +1,59 @@
+# Reading D:/Intel_FPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do uart_test_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/Intel_FPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/TX/Desktop/uart_test/rtl {C:/Users/TX/Desktop/uart_test/rtl/param.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:18:53 on Apr 02,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TX/Desktop/uart_test/rtl" C:/Users/TX/Desktop/uart_test/rtl/param.v 
+# End time: 17:18:53 on Apr 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/TX/Desktop/uart_test/rtl {C:/Users/TX/Desktop/uart_test/rtl/uart_tx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:18:53 on Apr 02,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TX/Desktop/uart_test/rtl" C:/Users/TX/Desktop/uart_test/rtl/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 17:18:53 on Apr 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/TX/Desktop/uart_test/prj/../tb {C:/Users/TX/Desktop/uart_test/prj/../tb/uart_tx_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:18:53 on Apr 02,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TX/Desktop/uart_test/prj/../tb" C:/Users/TX/Desktop/uart_test/prj/../tb/uart_tx_tb.v 
+# -- Compiling module uart_tx_tb
+# 
+# Top level modules:
+# 	uart_tx_tb
+# End time: 17:18:53 on Apr 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  uart_tx_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" uart_tx_tb 
+# Start time: 17:18:54 on Apr 02,2022
+# Loading work.uart_tx_tb
+# Loading work.uart_tx
+# ** Warning: (vsim-3015) C:/Users/TX/Desktop/uart_test/prj/../tb/uart_tx_tb.v(17): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_din'. The port definition is at: C:/Users/TX/Desktop/uart_test/rtl/uart_tx.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tx_tb/u_uart_tx File: C:/Users/TX/Desktop/uart_test/rtl/uart_tx.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/Users/TX/Desktop/uart_test/prj/../tb/uart_tx_tb.v(42)
+#    Time: 40002128 ns  Iteration: 0  Instance: /uart_tx_tb
+# Break in Module uart_tx_tb at C:/Users/TX/Desktop/uart_test/prj/../tb/uart_tx_tb.v line 42
+# End time: 17:19:47 on Apr 02,2022, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 1

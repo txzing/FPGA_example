@@ -1,0 +1,31 @@
+
+State Machine - |i2c_eeprom|i2c_interface:u_i2c_interface|state_c
+Name state_c.STOP state_c.SEND_ACK state_c.RECV_ACK state_c.READ state_c.WRITE state_c.START state_c.IDLE 
+state_c.IDLE 0 0 0 0 0 0 0 
+state_c.START 0 0 0 0 0 1 1 
+state_c.WRITE 0 0 0 0 1 0 1 
+state_c.READ 0 0 0 1 0 0 1 
+state_c.RECV_ACK 0 0 1 0 0 0 1 
+state_c.SEND_ACK 0 1 0 0 0 0 1 
+state_c.STOP 1 0 0 0 0 0 1 
+
+State Machine - |i2c_eeprom|eeprom_control:u_eeprom_control|state_c
+Name state_c.DONE state_c.WAIT_RDONE state_c.RD_REQ state_c.WAIT_WDONE state_c.WR_REQ state_c.IDLE 
+state_c.IDLE 0 0 0 0 0 0 
+state_c.WR_REQ 0 0 0 0 1 1 
+state_c.WAIT_WDONE 0 0 0 1 0 1 
+state_c.RD_REQ 0 0 1 0 0 1 
+state_c.WAIT_RDONE 0 1 0 0 0 1 
+state_c.DONE 1 0 0 0 0 1 
+
+State Machine - |i2c_eeprom|cmd_analy:u_cmd_analy|state_c
+Name state_c.RD_ADDR state_c.RD_REQ state_c.WR_ADDR state_c.WR_REQ state_c.FRAME_END state_c.WR_DATA state_c.WRDATA_INST state_c.FRAME_HEAD state_c.IDLE 
+state_c.IDLE 0 0 0 0 0 0 0 0 0 
+state_c.FRAME_HEAD 0 0 0 0 0 0 0 1 1 
+state_c.WRDATA_INST 0 0 0 0 0 0 1 0 1 
+state_c.WR_DATA 0 0 0 0 0 1 0 0 1 
+state_c.FRAME_END 0 0 0 0 1 0 0 0 1 
+state_c.WR_REQ 0 0 0 1 0 0 0 0 1 
+state_c.WR_ADDR 0 0 1 0 0 0 0 0 1 
+state_c.RD_REQ 0 1 0 0 0 0 0 0 1 
+state_c.RD_ADDR 1 0 0 0 0 0 0 0 1 

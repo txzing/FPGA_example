@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags="INTERNAL_COMPONENT=false"
+   categories="HLS" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element avg_internal_inst
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="5CEFA9F23I7" />
+ <parameter name="deviceFamily" value="Cyclone V" />
+ <parameter name="deviceSpeedGrade" value="7" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface
+   name="avmm_0_rw"
+   internal="avg_internal_inst.avmm_0_rw"
+   type="avalon"
+   dir="start">
+  <port name="avmm_0_rw_address" internal="avmm_0_rw_address" />
+  <port name="avmm_0_rw_byteenable" internal="avmm_0_rw_byteenable" />
+  <port name="avmm_0_rw_read" internal="avmm_0_rw_read" />
+  <port name="avmm_0_rw_readdata" internal="avmm_0_rw_readdata" />
+  <port name="avmm_0_rw_write" internal="avmm_0_rw_write" />
+  <port name="avmm_0_rw_writedata" internal="avmm_0_rw_writedata" />
+ </interface>
+ <interface
+   name="call"
+   internal="avg_internal_inst.call"
+   type="conduit"
+   dir="end">
+  <port name="start" internal="start" />
+  <port name="busy" internal="busy" />
+ </interface>
+ <interface
+   name="clock"
+   internal="avg_internal_inst.clock"
+   type="clock"
+   dir="end">
+  <port name="clock" internal="clock" />
+ </interface>
+ <interface
+   name="reset"
+   internal="avg_internal_inst.reset"
+   type="reset"
+   dir="end">
+  <port name="resetn" internal="resetn" />
+ </interface>
+ <interface
+   name="return"
+   internal="avg_internal_inst.return"
+   type="conduit"
+   dir="end">
+  <port name="done" internal="done" />
+  <port name="stall" internal="stall" />
+ </interface>
+ <interface name="x" internal="avg_internal_inst.x" type="conduit" dir="end">
+  <port name="x" internal="x" />
+ </interface>
+ <interface name="y" internal="avg_internal_inst.y" type="conduit" dir="end">
+  <port name="y" internal="y" />
+ </interface>
+ <module
+   name="avg_internal_inst"
+   kind="avg_internal"
+   version="1.0"
+   enabled="1"
+   autoexport="1" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

@@ -1,0 +1,208 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Bottleneck", "Details"]
+  , "children":
+  [
+    {
+      "name":"Component: avg"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"avg.c"
+            , "line":7
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Task function"
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"avg.B1.start"
+          , "data":
+          ["Yes", ">=1", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"Component invocation"
+                , "line":0
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":" "
+            }
+            , {
+              "type":"text"
+              , "text":"Run simulation to verify component's dynamic II. Use the %L report to view results. II is an approximation due to variable inner loop trip count."
+              , "links":
+              [
+                {
+                  "view":"Verification statistics"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"avg.B2"
+              , "data":
+              ["Yes", ">=1", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"avg.c"
+                    , "line":12
+                  }
+                ]
+                , [
+                  {
+                    "filename":"avg.c"
+                    , "line":12
+                  }
+                ]
+                , [
+                  {
+                    "filename":"avg.c"
+                    , "line":24
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Iteration executed serially across avg.B3. Only a single loop iteration will execute inside this region due to memory dependency:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"From: Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"avg.c"
+                          , "line":"20"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"To: Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"avg.c"
+                          , "line":"23"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"brief"
+                  , "text":"Serial exe: Memory dependency"
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"avg.B3"
+                  , "data":
+                  ["Yes", "~16", "II"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"avg.c"
+                        , "line":16
+                      }
+                    ]
+                    , [
+                      {
+                        "filename":"avg.c"
+                        , "line":16
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Compiler failed to schedule this loop with smaller II due to data dependency on variable(s):"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"sum (%L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"avg.c"
+                              , "line":"9"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"The critical path that prevented successful II = 15 scheduling:"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"16 clock cycles Floating-point Add Operation (%L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"Unknown location"
+                              , "line":"0"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"brief"
+                      , "text":"Data dependency"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                    }
+                  ]
+                  , "children":
+                  [
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

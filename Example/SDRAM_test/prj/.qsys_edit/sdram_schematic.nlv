@@ -1,0 +1,13 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst sdram -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst sdram.new_sdram_controller_0 -pg 1 -lvl 2 -y 70
+preplace inst sdram.clk_0 -pg 1 -lvl 1 -y 50
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)sdram.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)new_sdram_controller_0.s1,(SLAVE)sdram.avalon_sdram) 1 0 2 NJ 120 NJ
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)sdram.sdram,(SLAVE)new_sdram_controller_0.wire) 1 0 2 NJ 140 NJ
+preplace netloc POINT_TO_POINT<net_container>sdram</net_container>(MASTER)clk_0.clk,(SLAVE)new_sdram_controller_0.clk) 1 1 1 300
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)sdram.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)new_sdram_controller_0.reset,(SLAVE)sdram.sdram_rst) 1 0 2 NJ 40 NJ
+levelinfo -pg 1 0 90 530
+levelinfo -hier sdram 100 130 390 520

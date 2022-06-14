@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Nov 22 10:00:12 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : hist
+Top-level Entity Name : hist
+Family : Cyclone IV E
+Device : EP4CE6F17C8
+Timing Models : Final
+Total logic elements : 166 / 6,272 ( 3 % )
+    Total combinational functions : 156 / 6,272 ( 2 % )
+    Dedicated logic registers : 105 / 6,272 ( 2 % )
+Total registers : 105
+Total pins : 35 / 180 ( 19 % )
+Total virtual pins : 0
+Total memory bits : 5,120 / 276,480 ( 2 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

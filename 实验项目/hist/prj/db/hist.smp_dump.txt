@@ -1,0 +1,7 @@
+
+State Machine - |hist|state_c
+Name state_c.OUTPUT state_c.CALCU state_c.CLEAR state_c.IDLE 
+state_c.IDLE 0 0 0 0 
+state_c.CLEAR 0 0 1 1 
+state_c.CALCU 0 1 0 1 
+state_c.OUTPUT 1 0 0 1 

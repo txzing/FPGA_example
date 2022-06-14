@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="63" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Memory Interfaces and Controllers/Memory Interfaces with UniPHY,Project,Library/Memory Interfaces and Controllers/SDRAM,Library,Library/University Program/Clock,Library/Memory Interfaces and Controllers/Memory Interfaces with ALTMEMPHY,Library/University Program,Library/Memory Interfaces and Controllers" />
+ <window width="1936" height="1056" x="1912" y="-8" />
+ <hdlexample language="VERILOG" />
+</preferences>

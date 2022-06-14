@@ -1,0 +1,181 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "wrfull",
+					"strict" : false
+				},
+				{
+					"name" : "wrempty",
+					"strict" : false
+				},
+				{
+					"name" : "wrusedw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wrusedw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wrusedw[2]",
+					"strict" : false
+				},
+				{
+					"name" : "wrusedw[3]",
+					"strict" : false
+				},
+				{
+					"name" : "wrusedw[4]",
+					"strict" : false
+				},
+				{
+					"name" : "wrusedw[5]",
+					"strict" : false
+				},
+				{
+					"name" : "wrusedw[6]",
+					"strict" : false
+				},
+				{
+					"name" : "wrusedw[7]",
+					"strict" : false
+				},
+				{
+					"name" : "wrusedw[8]",
+					"strict" : false
+				},
+				{
+					"name" : "rddout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rddout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rddout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rddout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rddout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rddout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rddout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rddout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rdfull",
+					"strict" : false
+				},
+				{
+					"name" : "rdempty",
+					"strict" : false
+				},
+				{
+					"name" : "rdusedw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rdusedw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rdusedw[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rdusedw[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rdusedw[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rdusedw[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rdusedw[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rdusedw[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rdusedw[8]",
+					"strict" : false
+				},
+				{
+					"name" : "wrclk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "wrreq",
+					"strict" : false
+				},
+				{
+					"name" : "rdclk",
+					"strict" : false
+				},
+				{
+					"name" : "rdreq",
+					"strict" : false
+				},
+				{
+					"name" : "wrdin[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wrdin[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wrdin[2]",
+					"strict" : false
+				},
+				{
+					"name" : "wrdin[3]",
+					"strict" : false
+				},
+				{
+					"name" : "wrdin[4]",
+					"strict" : false
+				},
+				{
+					"name" : "wrdin[5]",
+					"strict" : false
+				},
+				{
+					"name" : "wrdin[6]",
+					"strict" : false
+				},
+				{
+					"name" : "wrdin[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

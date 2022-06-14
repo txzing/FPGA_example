@@ -1,0 +1,8223 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dd:/FPGA_rtl_project/fir/doc/a.prj/verification
+vacl_aligned_burst_coalesced_lsu
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1626162550
+!i10b 1
+!s100 Y5LK8NdaOGG3b9g1GPPW21
+I8N=H0T6GEHKaRXEB<NUF70
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 acl_aligned_burst_coalesced_lsu_v_unit
+S1
+R0
+Z5 w1626162543
+Z6 8tb/simulation/submodules/acl_aligned_burst_coalesced_lsu.v
+Z7 Ftb/simulation/submodules/acl_aligned_burst_coalesced_lsu.v
+L0 65
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1626162550.000000
+Z10 !s107 tb/simulation/submodules/acl_aligned_burst_coalesced_lsu.v|
+Z11 !s90 -sv|tb/simulation/submodules/acl_aligned_burst_coalesced_lsu.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+Z12 o-sv -L altera_common_sv_packages -work avg_internal_inst
+Z13 tCvgOpt 0
+vacl_arb2
+R1
+Z14 !s110 1626162565
+!i10b 1
+!s100 Ybk:Z[Yz6Y7H7:QJ;C8`92
+Idbo5?Tj`>Y:;QQWH5L>ZC3
+R3
+Z15 !s105 acl_arb2_v_unit
+S1
+R0
+R5
+Z16 8tb/simulation/submodules/acl_arb2.v
+Z17 Ftb/simulation/submodules/acl_arb2.v
+Z18 L0 20
+R8
+r1
+!s85 0
+31
+Z19 !s108 1626162565.000000
+Z20 !s107 tb/simulation/submodules/acl_arb2.v|
+Z21 !s90 -sv|tb/simulation/submodules/acl_arb2.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+Yacl_arb_data
+R1
+R14
+!i10b 1
+!s100 SS2C`z]zGnDDa8d9]A[g<2
+IFJ:;HiKzaadgoAE?9]WCY1
+R3
+Z22 !s105 acl_arb_intf_v_unit
+S1
+R0
+R5
+Z23 8tb/simulation/submodules/acl_arb_intf.v
+Z24 Ftb/simulation/submodules/acl_arb_intf.v
+Z25 L0 21
+R8
+r1
+!s85 0
+31
+R19
+Z26 !s107 tb/simulation/submodules/acl_arb_intf.v|
+Z27 !s90 -sv|tb/simulation/submodules/acl_arb_intf.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+Yacl_arb_intf
+R1
+R14
+!i10b 1
+!s100 9OQ;IPH3YXNT7I[jf:X<V2
+IefYbCa6?nU56KlI[LOHYm3
+R3
+R22
+S1
+R0
+R5
+R23
+R24
+Z28 L0 42
+R8
+r1
+!s85 0
+31
+R19
+R26
+R27
+!i113 1
+R12
+R13
+vacl_arb_pipeline_reg
+R1
+R14
+!i10b 1
+!s100 T;hMn0DGCFjP;l6[7<<5i2
+IjJhoHc:=fH;UO?zYI>?i^3
+R3
+R15
+S1
+R0
+R5
+R16
+R17
+L0 336
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12
+R13
+vacl_arb_staging_reg
+R1
+R14
+!i10b 1
+!s100 z_bE=he^M5`S1E:=IQI4I3
+IVJYe=X_bMMY8@Zma=FMeW3
+R3
+R15
+S1
+R0
+R5
+R16
+R17
+L0 420
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12
+R13
+vacl_avm_to_ic
+R1
+R14
+!i10b 1
+!s100 E`HbnF8OM5o?M;i6Q>]:<1
+ILkGTD7h8Z:J:nX;nh7P370
+R3
+!s105 acl_avm_to_ic_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_avm_to_ic.v
+Ftb/simulation/submodules/acl_avm_to_ic.v
+Z29 L0 19
+R8
+r1
+!s85 0
+31
+R19
+!s107 tb/simulation/submodules/acl_avm_to_ic.v|
+!s90 -sv|tb/simulation/submodules/acl_avm_to_ic.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_burst_coalescer
+R1
+R2
+!i10b 1
+!s100 :PdgkYo;T^]n`[UaNQb@b1
+IfHA4Uc]FnooDRlj@0aK5X1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 767
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vacl_data_fifo
+R1
+Z30 !s110 1626162547
+!i10b 1
+!s100 `Nz8kXkDk>eT1P6?[iJeF0
+IfOXTn209P;mm8PlLiB^jJ0
+R3
+!s105 acl_data_fifo_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_data_fifo.v
+Ftb/simulation/submodules/acl_data_fifo.v
+L0 49
+R8
+r1
+!s85 0
+31
+Z31 !s108 1626162547.000000
+!s107 tb/simulation/submodules/acl_data_fifo.v|
+!s90 -sv|tb/simulation/submodules/acl_data_fifo.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_debug_mem
+R1
+R2
+!i10b 1
+!s100 <O@DdmHSA:ajGJ9aL[YIb2
+I2283jQ=dZJbID0jB26T7Y0
+R3
+!s105 acl_debug_mem_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_debug_mem.v
+Ftb/simulation/submodules/acl_debug_mem.v
+Z32 L0 28
+R8
+r1
+!s85 0
+31
+R9
+!s107 tb/simulation/submodules/acl_debug_mem.v|
+!s90 -sv|tb/simulation/submodules/acl_debug_mem.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_dspba_buffer
+R1
+Z33 !s110 1626162548
+!i10b 1
+!s100 Q4I6`n58HVdj6L986YGa[0
+IZK@nJo?oURn5>CdnPooR`2
+R3
+!s105 acl_dspba_buffer_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_dspba_buffer.v
+Ftb/simulation/submodules/acl_dspba_buffer.v
+Z34 L0 22
+R8
+r1
+!s85 0
+31
+Z35 !s108 1626162548.000000
+!s107 tb/simulation/submodules/acl_dspba_buffer.v|
+!s90 -sv|tb/simulation/submodules/acl_dspba_buffer.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_dspba_valid_fifo_counter
+R1
+R30
+!i10b 1
+!s100 Pf`fVc:L5@M6mIeJ54[[@0
+IH8z6NzZ?JNLd6<mzVj94h3
+R3
+!s105 acl_dspba_valid_fifo_counter_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_dspba_valid_fifo_counter.v
+Ftb/simulation/submodules/acl_dspba_valid_fifo_counter.v
+R34
+R8
+r1
+!s85 0
+31
+R31
+!s107 tb/simulation/submodules/acl_dspba_valid_fifo_counter.v|
+!s90 -sv|tb/simulation/submodules/acl_dspba_valid_fifo_counter.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_enable_sink
+R1
+R33
+!i10b 1
+!s100 gNIdAk9k`N6>cOVV5HF5h3
+I_kWKJ@IzQ;N;5kd35njh^1
+R3
+!s105 acl_enable_sink_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_enable_sink.v
+Ftb/simulation/submodules/acl_enable_sink.v
+R29
+R8
+r1
+!s85 0
+31
+R35
+!s107 tb/simulation/submodules/acl_enable_sink.v|
+!s90 -sv|tb/simulation/submodules/acl_enable_sink.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_fanout_pipeline
+R1
+R33
+!i10b 1
+!s100 SQ5n^3L;VXkBElYMo<?TP2
+IcDMi_c3zeCHC2Xo59?cf73
+R3
+!s105 acl_fanout_pipeline_sv_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_fanout_pipeline.sv
+Ftb/simulation/submodules/acl_fanout_pipeline.sv
+Z36 L0 25
+R8
+r1
+!s85 0
+31
+R35
+!s107 tb/simulation/submodules/acl_fanout_pipeline.sv|
+!s90 -sv|tb/simulation/submodules/acl_fanout_pipeline.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_ffwdsrc
+R1
+Z37 !s110 1626162549
+!i10b 1
+!s100 7L6R6;@T2=cCo2?Z4e=B@0
+IJc7VRAB?IV3_;nB5AIYN71
+R3
+!s105 acl_ffwdsrc_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_ffwdsrc.v
+Ftb/simulation/submodules/acl_ffwdsrc.v
+R29
+R8
+r1
+!s85 0
+31
+Z38 !s108 1626162549.000000
+!s107 tb/simulation/submodules/acl_ffwdsrc.v|
+!s90 -sv|tb/simulation/submodules/acl_ffwdsrc.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_fifo
+R1
+R30
+!i10b 1
+!s100 GM88CVfGGRAcQfMnZZz]_3
+IcKjZH@J95mi^D92>g33;z0
+R3
+!s105 acl_fifo_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_fifo.v
+Ftb/simulation/submodules/acl_fifo.v
+R36
+R8
+r1
+!s85 0
+31
+R31
+!s107 tb/simulation/submodules/acl_fifo.v|
+!s90 -sv|tb/simulation/submodules/acl_fifo.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_fifo_stall_valid_lookahead
+R1
+Z39 !s110 1626162551
+!i10b 1
+!s100 =5bJX@Vg:nnlSo64PHIeW1
+I::UdoD5M?22bk?f5c;Ehn3
+R3
+!s105 acl_fifo_stall_valid_lookahead_sv_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_fifo_stall_valid_lookahead.sv
+Ftb/simulation/submodules/acl_fifo_stall_valid_lookahead.sv
+R36
+R8
+r1
+!s85 0
+31
+R9
+!s107 tb/simulation/submodules/acl_fifo_stall_valid_lookahead.sv|
+!s90 -sv|tb/simulation/submodules/acl_fifo_stall_valid_lookahead.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_full_detector
+R1
+R37
+!i10b 1
+!s100 Q^eBXaz:T3CKSbQe]jGfd2
+I=<h42NCz6KVZdO1<z;5_k1
+R3
+!s105 acl_full_detector_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_full_detector.v
+Ftb/simulation/submodules/acl_full_detector.v
+R28
+R8
+r1
+!s85 0
+31
+R38
+!s107 tb/simulation/submodules/acl_full_detector.v|
+!s90 -sv|tb/simulation/submodules/acl_full_detector.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_high_speed_fifo
+R1
+R30
+!i10b 1
+!s100 7Sle2ofS=:lQoM:Vc_YmE0
+IeYcL@?abUnCXNJzg^d8;z3
+R3
+Z40 !s105 acl_high_speed_fifo_sv_unit
+S1
+R0
+R5
+Z41 8tb/simulation/submodules/acl_high_speed_fifo.sv
+Z42 Ftb/simulation/submodules/acl_high_speed_fifo.sv
+L0 133
+R8
+r1
+!s85 0
+31
+R31
+Z43 !s107 tb/simulation/submodules/acl_high_speed_fifo.sv|
+Z44 !s90 -sv|tb/simulation/submodules/acl_high_speed_fifo.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_ic_master_endpoint
+R1
+R14
+!i10b 1
+!s100 B8hPiUJm;FHJHD5gN9eZM0
+I_1LbfYbaZ`]k?ZMZb?I@B3
+R3
+!s105 acl_ic_master_endpoint_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_ic_master_endpoint.v
+Ftb/simulation/submodules/acl_ic_master_endpoint.v
+R34
+R8
+r1
+!s85 0
+31
+R19
+!s107 tb/simulation/submodules/acl_ic_master_endpoint.v|
+!s90 -sv|tb/simulation/submodules/acl_ic_master_endpoint.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+Yacl_ic_master_intf
+R1
+R14
+!i10b 1
+!s100 GU1WZfP1B<o?CgQH4T6ga3
+I^i_m5fOU;i=g7b4iIoUJl0
+R3
+Z45 !s105 acl_ic_intf_v_unit
+S1
+R0
+R5
+Z46 8tb/simulation/submodules/acl_ic_intf.v
+Z47 Ftb/simulation/submodules/acl_ic_intf.v
+L0 37
+R8
+r1
+!s85 0
+31
+R19
+Z48 !s107 tb/simulation/submodules/acl_ic_intf.v|
+Z49 !s90 -sv|tb/simulation/submodules/acl_ic_intf.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+Yacl_ic_rrp_intf
+R1
+R14
+!i10b 1
+!s100 ^zN_jMgR8IjL`j2QPPa8@1
+Id1dG71L9VU189H01`P0K?1
+R3
+R45
+S1
+R0
+R5
+R46
+R47
+Z50 L0 27
+R8
+r1
+!s85 0
+31
+R19
+R48
+R49
+!i113 1
+R12
+R13
+vacl_ic_slave_endpoint
+R1
+R14
+!i10b 1
+!s100 >lA;NlK_cPic20<Qhj3Z?0
+I7=Kdn8DAIS7TA[^iXE^DN1
+R3
+!s105 acl_ic_slave_endpoint_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_ic_slave_endpoint.v
+Ftb/simulation/submodules/acl_ic_slave_endpoint.v
+R34
+R8
+r1
+!s85 0
+31
+R19
+!s107 tb/simulation/submodules/acl_ic_slave_endpoint.v|
+!s90 -sv|tb/simulation/submodules/acl_ic_slave_endpoint.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_ic_slave_rrp
+R1
+R14
+!i10b 1
+!s100 89W4h<KI:9V[o:21;Xmk>3
+IB<8?>0fE6NlCbj7X]G]j70
+R3
+!s105 acl_ic_slave_rrp_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_ic_slave_rrp.v
+Ftb/simulation/submodules/acl_ic_slave_rrp.v
+R29
+R8
+r1
+!s85 0
+31
+R19
+!s107 tb/simulation/submodules/acl_ic_slave_rrp.v|
+!s90 -sv|tb/simulation/submodules/acl_ic_slave_rrp.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_ic_slave_wrp
+R1
+R14
+!i10b 1
+!s100 `_EdHQ<YO]Hmo285?d:6@2
+IjiPNOkSiBf7lcG<FKLF`=2
+R3
+!s105 acl_ic_slave_wrp_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_ic_slave_wrp.v
+Ftb/simulation/submodules/acl_ic_slave_wrp.v
+R29
+R8
+r1
+!s85 0
+31
+R19
+!s107 tb/simulation/submodules/acl_ic_slave_wrp.v|
+!s90 -sv|tb/simulation/submodules/acl_ic_slave_wrp.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_ic_to_avm
+R1
+R14
+!i10b 1
+!s100 LP5c]h=QKD=HE835nLfg80
+ImPELQ9iVJam1Z2lCf8IZ>1
+R3
+!s105 acl_ic_to_avm_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_ic_to_avm.v
+Ftb/simulation/submodules/acl_ic_to_avm.v
+R29
+R8
+r1
+!s85 0
+31
+R19
+!s107 tb/simulation/submodules/acl_ic_to_avm.v|
+!s90 -sv|tb/simulation/submodules/acl_ic_to_avm.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+Yacl_ic_wrp_intf
+R1
+R14
+!i10b 1
+!s100 2c0lPL5=B0@^741e^HQL90
+I9ACA;oWNTkLlJSKIh10f@3
+R3
+R45
+S1
+R0
+R5
+R46
+R47
+R29
+R8
+r1
+!s85 0
+31
+R19
+R48
+R49
+!i113 1
+R12
+R13
+vacl_io_pipeline
+R1
+R37
+!i10b 1
+!s100 eVhg<kY3Z:PFX[`69TJe`1
+I7:Vc10:A>k^`LIh9Mz^I_0
+R3
+Z51 !s105 lsu_bursting_load_stores_v_unit
+S1
+R0
+R5
+Z52 8tb/simulation/submodules/lsu_bursting_load_stores.v
+Z53 Ftb/simulation/submodules/lsu_bursting_load_stores.v
+L0 405
+R8
+r1
+!s85 0
+31
+R38
+Z54 !s107 tb/simulation/submodules/lsu_bursting_load_stores.v|
+Z55 !s90 -sv|tb/simulation/submodules/lsu_bursting_load_stores.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_lfsr
+R1
+R33
+!i10b 1
+!s100 h=b^O^D>7>:b6ddiX]`kz2
+IV82Mn_9WbM2hO8gPzg:B22
+R3
+Z56 !s105 acl_lfsr_sv_unit
+S1
+R0
+R5
+Z57 8tb/simulation/submodules/acl_lfsr.sv
+Z58 Ftb/simulation/submodules/acl_lfsr.sv
+R28
+R8
+r1
+!s85 0
+31
+R35
+Z59 !s107 tb/simulation/submodules/acl_lfsr.sv|
+Z60 !s90 -sv|tb/simulation/submodules/acl_lfsr.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_ll_fifo
+R1
+R30
+!i10b 1
+!s100 IbnnmD7<Zh=j>HUjgBkkc0
+INMMD8:?P:2VI>7VUzV3Mo2
+R3
+!s105 acl_ll_fifo_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_ll_fifo.v
+Ftb/simulation/submodules/acl_ll_fifo.v
+R36
+R8
+r1
+!s85 0
+31
+R31
+!s107 tb/simulation/submodules/acl_ll_fifo.v|
+!s90 -sv|tb/simulation/submodules/acl_ll_fifo.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_ll_ram_fifo
+R1
+R30
+!i10b 1
+!s100 U5ElB@Vzf?6bG=o2gcf7@2
+IXJUC6S_mJ]PTk]chLIA862
+R3
+!s105 acl_ll_ram_fifo_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_ll_ram_fifo.v
+Ftb/simulation/submodules/acl_ll_ram_fifo.v
+R32
+R8
+r1
+!s85 0
+31
+R31
+!s107 tb/simulation/submodules/acl_ll_ram_fifo.v|
+!s90 -sv|tb/simulation/submodules/acl_ll_ram_fifo.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_loop_limiter
+R1
+R39
+!i10b 1
+!s100 [>1]BKEogAj0NicV6IUEK2
+IO<AN]Go<jlcVNcPzI8cbo0
+R3
+!s105 acl_loop_limiter_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_loop_limiter.v
+Ftb/simulation/submodules/acl_loop_limiter.v
+R18
+R8
+r1
+!s85 0
+31
+Z61 !s108 1626162551.000000
+!s107 tb/simulation/submodules/acl_loop_limiter.v|
+!s90 -sv|tb/simulation/submodules/acl_loop_limiter.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_low_latency_fifo
+R1
+R30
+!i10b 1
+!s100 PCILF4SIN_jP5SMS1?KKL1
+IgcOFMFk[?Pa?;P3SMiBf11
+R3
+!s105 acl_low_latency_fifo_sv_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_low_latency_fifo.sv
+Ftb/simulation/submodules/acl_low_latency_fifo.sv
+L0 80
+R8
+r1
+!s85 0
+31
+R31
+!s107 tb/simulation/submodules/acl_low_latency_fifo.sv|
+!s90 -sv|tb/simulation/submodules/acl_low_latency_fifo.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_lsu_buffers
+R1
+R2
+!i10b 1
+!s100 QMDL]<B_LA4INEcLNNPV40
+I4``SFfjmS<_f;GW?h2GKo0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 563
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vacl_pipeline
+R1
+R33
+!i10b 1
+!s100 M6bbgJ3FKZN;Y5TzeFVR]3
+I?:3eWH;V=<M>=YX5Hgd@P0
+R3
+!s105 acl_pipeline_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_pipeline.v
+Ftb/simulation/submodules/acl_pipeline.v
+Z62 L0 24
+R8
+r1
+!s85 0
+31
+R35
+!s107 tb/simulation/submodules/acl_pipeline.v|
+!s90 -sv|tb/simulation/submodules/acl_pipeline.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_pop
+R1
+R33
+!i10b 1
+!s100 OBGOh7TQgnoKCTjaA9X[l3
+IGK>ijYK]IC?Xc7EaM]Ch31
+R3
+!s105 acl_pop_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_pop.v
+Ftb/simulation/submodules/acl_pop.v
+R50
+R8
+r1
+!s85 0
+31
+R35
+!s107 tb/simulation/submodules/acl_pop.v|
+!s90 -sv|tb/simulation/submodules/acl_pop.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_push
+R1
+R33
+!i10b 1
+!s100 Lj@IZNN84RAc=8YX5K[m[1
+I91IG7DjCk6[E@z`20h<Um3
+R3
+!s105 acl_push_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_push.v
+Ftb/simulation/submodules/acl_push.v
+L0 33
+R8
+r1
+!s85 0
+31
+R35
+!s107 tb/simulation/submodules/acl_push.v|
+!s90 -sv|tb/simulation/submodules/acl_push.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_registered_comparison
+R1
+R2
+!i10b 1
+!s100 lfL3eDOQQ2jVZ2cYfcj;O0
+I@5;4@K@DeaN;cM6YflUm12
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 1186
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vacl_reset_fanout_pipeline_with_synchronizer_and_pulse_extender
+R1
+R33
+!i10b 1
+!s100 d>cQIKE@zPC9z9<];=kob3
+Ia8J=gf4HQILE22G`N=>PS2
+R3
+Z63 !s105 acl_reset_handler_sv_unit
+S1
+R0
+R5
+Z64 8tb/simulation/submodules/acl_reset_handler.sv
+Z65 Ftb/simulation/submodules/acl_reset_handler.sv
+L0 124
+R8
+r1
+!s85 0
+31
+R35
+Z66 !s107 tb/simulation/submodules/acl_reset_handler.sv|
+Z67 !s90 -sv|tb/simulation/submodules/acl_reset_handler.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_reset_handler
+R1
+R33
+!i10b 1
+!s100 ;kMLaeG[f<XAFkY_`SQ]c1
+IJTo>HHTV5mdGMOfzUbJz10
+R3
+R63
+S1
+R0
+R5
+R64
+R65
+L0 48
+R8
+r1
+!s85 0
+31
+R35
+R66
+R67
+!i113 1
+R12
+R13
+vacl_reset_pulse_extender
+R1
+R33
+!i10b 1
+!s100 ]VGc58S[MZD`HI8ZDdY_L1
+IjL2Ul^IX`]ZSgMi9[ni^L2
+R3
+R63
+S1
+R0
+R5
+R64
+R65
+L0 200
+R8
+r1
+!s85 0
+31
+R35
+R66
+R67
+!i113 1
+R12
+R13
+vacl_reset_wire
+R1
+R39
+!i10b 1
+!s100 HnKmXfbA`maoO;iYF_=Rf1
+IUlTG>8SR:[41V@mXn3_Q:0
+R3
+!s105 acl_reset_wire_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_reset_wire.v
+Ftb/simulation/submodules/acl_reset_wire.v
+R25
+R8
+r1
+!s85 0
+31
+R61
+!s107 tb/simulation/submodules/acl_reset_wire.v|
+!s90 -sv|tb/simulation/submodules/acl_reset_wire.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_staging_reg
+R1
+R30
+!i10b 1
+!s100 `JcEQ<kMHghLUGXZ;cMho2
+Ih0l^hdNekA]D>VNBFAiCY3
+R3
+!s105 acl_staging_reg_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_staging_reg.v
+Ftb/simulation/submodules/acl_staging_reg.v
+R62
+R8
+r1
+!s85 0
+31
+R31
+!s107 tb/simulation/submodules/acl_staging_reg.v|
+!s90 -sv|tb/simulation/submodules/acl_staging_reg.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_stall_free_coalescer
+R1
+R37
+!i10b 1
+!s100 i]VVFoB0mWjSdh6zNY8R?1
+IY<QeW:7kQjJHPc^Ej>Lh80
+R3
+R51
+S1
+R0
+R5
+R52
+R53
+L0 939
+R8
+r1
+!s85 0
+31
+R38
+R54
+R55
+!i113 1
+R12
+R13
+vacl_std_synchronizer_nocut
+R1
+R33
+!i10b 1
+!s100 HjNfWeLlofJ3NLA7P=LNi0
+I7QoXTaFedf<j]?9AJ;hf?0
+R3
+!s105 acl_std_synchronizer_nocut_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_std_synchronizer_nocut.v
+Ftb/simulation/submodules/acl_std_synchronizer_nocut.v
+L0 52
+R8
+r1
+!s85 0
+31
+R35
+!s107 tb/simulation/submodules/acl_std_synchronizer_nocut.v|
+!s90 -sv|tb/simulation/submodules/acl_std_synchronizer_nocut.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_tessellated_incr_decr
+R1
+R33
+!i10b 1
+!s100 z]SMe2YG_F@1BE@]aA06Q1
+I0`<kV`JA8MQS<zSB33CX?2
+R3
+Z68 !s105 acl_tessellated_incr_decr_threshold_sv_unit
+S1
+R0
+R5
+Z69 8tb/simulation/submodules/acl_tessellated_incr_decr_threshold.sv
+Z70 Ftb/simulation/submodules/acl_tessellated_incr_decr_threshold.sv
+L0 374
+R8
+r1
+!s85 0
+31
+R35
+Z71 !s107 tb/simulation/submodules/acl_tessellated_incr_decr_threshold.sv|
+Z72 !s90 -sv|tb/simulation/submodules/acl_tessellated_incr_decr_threshold.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_tessellated_incr_decr_threshold
+R1
+R33
+!i10b 1
+!s100 5;0icJPjiT8GTLXz<F>l]1
+Ij`K^hfQMOED81^IAmI9g:1
+R3
+R68
+S1
+R0
+R5
+R69
+R70
+R28
+R8
+r1
+!s85 0
+31
+R35
+R71
+R72
+!i113 1
+R12
+R13
+vacl_tessellated_incr_lookahead
+R1
+R33
+!i10b 1
+!s100 n5P16MeEBMFP[HK0;g6;D1
+INLAG9CV68<;=G[=C1UFg31
+R3
+!s105 acl_tessellated_incr_lookahead_sv_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_tessellated_incr_lookahead.sv
+Ftb/simulation/submodules/acl_tessellated_incr_lookahead.sv
+L0 40
+R8
+r1
+!s85 0
+31
+R35
+!s107 tb/simulation/submodules/acl_tessellated_incr_lookahead.sv|
+!s90 -sv|tb/simulation/submodules/acl_tessellated_incr_lookahead.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_toggle_detect
+R1
+R2
+!i10b 1
+!s100 f?^70@17BKj>>kD^;O^HU1
+IX?VT6N<f2bAOl2>[aLADY3
+R3
+!s105 acl_toggle_detect_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_toggle_detect.v
+Ftb/simulation/submodules/acl_toggle_detect.v
+Z73 L0 39
+R8
+r1
+!s85 0
+31
+R9
+!s107 tb/simulation/submodules/acl_toggle_detect.v|
+!s90 -sv|tb/simulation/submodules/acl_toggle_detect.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_token_fifo_counter
+R1
+R33
+!i10b 1
+!s100 UY?0z[A@^>l[=:Gz4@hWo2
+I;cIFQYRg1LcQL2AT[81HY2
+R3
+!s105 acl_token_fifo_counter_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_token_fifo_counter.v
+Ftb/simulation/submodules/acl_token_fifo_counter.v
+L0 29
+R8
+r1
+!s85 0
+31
+R35
+!s107 tb/simulation/submodules/acl_token_fifo_counter.v|
+!s90 -sv|tb/simulation/submodules/acl_token_fifo_counter.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_valid_fifo_counter
+R1
+R30
+!i10b 1
+!s100 hcnSMHkl=G=kFFMlgDCTS1
+IMUlO0KgYanI4Qfz05i@SG3
+R3
+!s105 acl_valid_fifo_counter_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_valid_fifo_counter.v
+Ftb/simulation/submodules/acl_valid_fifo_counter.v
+R25
+R8
+r1
+!s85 0
+31
+R31
+!s107 tb/simulation/submodules/acl_valid_fifo_counter.v|
+!s90 -sv|tb/simulation/submodules/acl_valid_fifo_counter.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vacl_zero_latency_fifo
+R1
+R30
+!i10b 1
+!s100 AJNY=1RCKPizY?U5jizGQ3
+I[WhiYOH?R=aKUOV6Q;Nb61
+R3
+!s105 acl_zero_latency_fifo_sv_unit
+S1
+R0
+R5
+8tb/simulation/submodules/acl_zero_latency_fifo.sv
+Ftb/simulation/submodules/acl_zero_latency_fifo.sv
+L0 97
+R8
+r1
+!s85 0
+31
+R31
+!s107 tb/simulation/submodules/acl_zero_latency_fifo.sv|
+!s90 -sv|tb/simulation/submodules/acl_zero_latency_fifo.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vavalon_interface
+R1
+R2
+!i10b 1
+!s100 C^<_hQI5=Vg8;3NJNlDo<3
+I=jFj33iHgLk^CNfc2Gd[81
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 310
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eavg_b0_runonce_branch
+R5
+Z74 DPx3 lpm 14 lpm_components 0 22 BZZBj]8LhndN7CkCjD@L`2
+Z75 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 QZo1Vh6en2ZO3=hNmAfQ>0
+Z76 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+Z77 DPx4 work 21 dspba_library_package 0 22 nC_15f`@cYSnzEX1;m45b0
+Z78 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z79 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z80 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z81 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z82 8tb/simulation/submodules/avg_B0_runOnce_branch.vhd
+Z83 Ftb/simulation/submodules/avg_B0_runOnce_branch.vhd
+l0
+L35
+V1?UeElg]H>boH1chb?SF22
+!s100 niILc>IoejSA=K:ciK^0D3
+Z84 OV;C;10.5b;63
+32
+Z85 !s110 1626162558
+!i10b 1
+Z86 !s108 1626162558.000000
+Z87 !s90 tb/simulation/submodules/avg_B0_runOnce_branch.vhd|-work|avg_internal_inst|
+Z88 !s107 tb/simulation/submodules/avg_B0_runOnce_branch.vhd|
+!i113 1
+Z89 o-work avg_internal_inst
+Z90 tExplicit 1 CvgOpt 0
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 21 avg_b0_runonce_branch 0 22 1?UeElg]H>boH1chb?SF22
+l53
+L46
+VWB6_[WI[h>KKZc`U8Db@g0
+!s100 ESnCeUb1T;nOHenSQoRGa0
+R84
+32
+R85
+!i10b 1
+R86
+R87
+R88
+!i113 1
+R89
+R90
+Eavg_b0_runonce_merge
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z91 8tb/simulation/submodules/avg_B0_runOnce_merge.vhd
+Z92 Ftb/simulation/submodules/avg_B0_runOnce_merge.vhd
+l0
+L35
+VekA;HhAL<T0oLOENm2VW:1
+!s100 ^aGjCf>`79O6P2@7hY7]^0
+R84
+32
+R85
+!i10b 1
+R86
+Z93 !s90 tb/simulation/submodules/avg_B0_runOnce_merge.vhd|-work|avg_internal_inst|
+Z94 !s107 tb/simulation/submodules/avg_B0_runOnce_merge.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 20 avg_b0_runonce_merge 0 22 ekA;HhAL<T0oLOENm2VW:1
+l53
+L46
+VjW`U7cSE^URkEFSez0kkW0
+!s100 ;fETAgc3Y7T=T3SSim:XS1
+R84
+32
+R85
+!i10b 1
+R86
+R93
+R94
+!i113 1
+R89
+R90
+Eavg_b0_runonce_merge_reg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z95 8tb/simulation/submodules/avg_B0_runOnce_merge_reg.vhd
+Z96 Ftb/simulation/submodules/avg_B0_runOnce_merge_reg.vhd
+l0
+L35
+V_5X=lC[OJiD>dIGVDSH1Z0
+!s100 ]b=ZZN_[FO:?EX2TDf=6h3
+R84
+32
+R85
+!i10b 1
+R86
+Z97 !s90 tb/simulation/submodules/avg_B0_runOnce_merge_reg.vhd|-work|avg_internal_inst|
+Z98 !s107 tb/simulation/submodules/avg_B0_runOnce_merge_reg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 24 avg_b0_runonce_merge_reg 0 22 _5X=lC[OJiD>dIGVDSH1Z0
+l61
+L48
+VLgG@Vmoc75c?;hDF6NDTY1
+!s100 _XX9lE3>@XHLDBcOSdR8S0
+R84
+32
+R85
+!i10b 1
+R86
+R97
+R98
+!i113 1
+R89
+R90
+Eavg_b1_start_branch
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z99 8tb/simulation/submodules/avg_B1_start_branch.vhd
+Z100 Ftb/simulation/submodules/avg_B1_start_branch.vhd
+l0
+L35
+VK]C]je6oX@bi2m@RczfT:0
+!s100 iF[fF;gk2onajcWgjhXMX0
+R84
+32
+Z101 !s110 1626162559
+!i10b 1
+Z102 !s108 1626162559.000000
+Z103 !s90 tb/simulation/submodules/avg_B1_start_branch.vhd|-work|avg_internal_inst|
+Z104 !s107 tb/simulation/submodules/avg_B1_start_branch.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 19 avg_b1_start_branch 0 22 K]C]je6oX@bi2m@RczfT:0
+l53
+L46
+V6d6hbDYDd^XAEZ4o_6THi0
+!s100 1?kJ14F9Jo=[jNgO<Z=a<0
+R84
+32
+R101
+!i10b 1
+R102
+R103
+R104
+!i113 1
+R89
+R90
+Eavg_b1_start_merge
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z105 8tb/simulation/submodules/avg_B1_start_merge.vhd
+Z106 Ftb/simulation/submodules/avg_B1_start_merge.vhd
+l0
+L35
+VKOPRkjTK4<F8o<bLiAd5f0
+!s100 CV?25Rf6>@022[090]Qal0
+R84
+32
+R101
+!i10b 1
+R102
+Z107 !s90 tb/simulation/submodules/avg_B1_start_merge.vhd|-work|avg_internal_inst|
+Z108 !s107 tb/simulation/submodules/avg_B1_start_merge.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 18 avg_b1_start_merge 0 22 KOPRkjTK4<F8o<bLiAd5f0
+l57
+L48
+VhlY`ac1e_7fdJFc^@e7?g3
+!s100 P;eMg17DSW?N]J=N3z?0Y3
+R84
+32
+R101
+!i10b 1
+R102
+R107
+R108
+!i113 1
+R89
+R90
+Eavg_b1_start_merge_reg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z109 8tb/simulation/submodules/avg_B1_start_merge_reg.vhd
+Z110 Ftb/simulation/submodules/avg_B1_start_merge_reg.vhd
+l0
+L35
+VO[h<S42o2MULi_]N=GkRK2
+!s100 j[R?=dQfKl?b5VEh3Z3>@0
+R84
+32
+Z111 !s110 1626162560
+!i10b 1
+Z112 !s108 1626162560.000000
+Z113 !s90 tb/simulation/submodules/avg_B1_start_merge_reg.vhd|-work|avg_internal_inst|
+Z114 !s107 tb/simulation/submodules/avg_B1_start_merge_reg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 22 avg_b1_start_merge_reg 0 22 O[h<S42o2MULi_]N=GkRK2
+l61
+L48
+VWjiACG6hbXcPjV_2VHThF1
+!s100 Kl`HegY1Q3ebbc0F_2h1C3
+R84
+32
+R111
+!i10b 1
+R112
+R113
+R114
+!i113 1
+R89
+R90
+Eavg_b2_branch
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z115 8tb/simulation/submodules/avg_B2_branch.vhd
+Z116 Ftb/simulation/submodules/avg_B2_branch.vhd
+l0
+L35
+V>LL7Z4YcfI:Ng29m6dBD@1
+!s100 ;^k9YL:?mJhiaXlZ_]5TD1
+R84
+32
+Z117 !s110 1626162561
+!i10b 1
+Z118 !s108 1626162561.000000
+Z119 !s90 tb/simulation/submodules/avg_B2_branch.vhd|-work|avg_internal_inst|
+Z120 !s107 tb/simulation/submodules/avg_B2_branch.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 13 avg_b2_branch 0 22 >LL7Z4YcfI:Ng29m6dBD@1
+l61
+L54
+VY_AjC`YgTRD6BJmYC2dDh2
+!s100 Y8XebJd9ERU<FT3434mPI1
+R84
+32
+R117
+!i10b 1
+R118
+R119
+R120
+!i113 1
+R89
+R90
+Eavg_b2_merge
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z121 8tb/simulation/submodules/avg_B2_merge.vhd
+Z122 Ftb/simulation/submodules/avg_B2_merge.vhd
+l0
+L35
+VAMj@CcCS]>b3gDEfG89:01
+!s100 bkIACZ1hB36U=NVli[N0a1
+R84
+32
+R117
+!i10b 1
+R118
+Z123 !s90 tb/simulation/submodules/avg_B2_merge.vhd|-work|avg_internal_inst|
+Z124 !s107 tb/simulation/submodules/avg_B2_merge.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 12 avg_b2_merge 0 22 AMj@CcCS]>b3gDEfG89:01
+l63
+L51
+VC<Q>aBbzg:do8^kJ=g_:j1
+!s100 ok^>>N4d2zP2MIokimlZA2
+R84
+32
+R117
+!i10b 1
+R118
+R123
+R124
+!i113 1
+R89
+R90
+Eavg_b2_merge_reg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z125 8tb/simulation/submodules/avg_B2_merge_reg.vhd
+Z126 Ftb/simulation/submodules/avg_B2_merge_reg.vhd
+l0
+L35
+V]az=bU:71CQHZSW1kK^7S0
+!s100 R`@djLShnN?gOcT2OQ_g;3
+R84
+32
+R117
+!i10b 1
+R118
+Z127 !s90 tb/simulation/submodules/avg_B2_merge_reg.vhd|-work|avg_internal_inst|
+Z128 !s107 tb/simulation/submodules/avg_B2_merge_reg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 16 avg_b2_merge_reg 0 22 ]az=bU:71CQHZSW1kK^7S0
+l61
+L48
+Vc6Uhkmh^Rob9644ZfokX33
+!s100 `TeCHPR7=?H9Kz?U4lZ_41
+R84
+32
+R117
+!i10b 1
+R118
+R127
+R128
+!i113 1
+R89
+R90
+Eavg_b3_branch
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z129 8tb/simulation/submodules/avg_B3_branch.vhd
+Z130 Ftb/simulation/submodules/avg_B3_branch.vhd
+l0
+L35
+VC<ZF>hEi4X7C>>f;;C9;C1
+!s100 PD2?KjnLOFk36Dag>bJNd1
+R84
+32
+R39
+!i10b 1
+R61
+Z131 !s90 tb/simulation/submodules/avg_B3_branch.vhd|-work|avg_internal_inst|
+Z132 !s107 tb/simulation/submodules/avg_B3_branch.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 13 avg_b3_branch 0 22 C<ZF>hEi4X7C>>f;;C9;C1
+l105
+L73
+VnIIXbN7j;F]PWIfaIlVP90
+!s100 Y5knm[YTOjm_nSXc6gHHH3
+R84
+32
+R39
+!i10b 1
+R61
+R131
+R132
+!i113 1
+R89
+R90
+Eavg_b3_merge
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z133 8tb/simulation/submodules/avg_B3_merge.vhd
+Z134 Ftb/simulation/submodules/avg_B3_merge.vhd
+l0
+L35
+V>_YGKN1ggFDSJUTO5JT>k0
+!s100 o[Ko8IXj0PXjlJVZi;mLJ2
+R84
+32
+R39
+!i10b 1
+R61
+Z135 !s90 tb/simulation/submodules/avg_B3_merge.vhd|-work|avg_internal_inst|
+Z136 !s107 tb/simulation/submodules/avg_B3_merge.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 12 avg_b3_merge 0 22 >_YGKN1ggFDSJUTO5JT>k0
+l83
+L63
+VzJnGi2?X[WK]gPo2[;?9G3
+!s100 6e2HChQ>JlOXMLSlJb3Nj3
+R84
+32
+R39
+!i10b 1
+R61
+R135
+R136
+!i113 1
+R89
+R90
+Eavg_b3_merge_reg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z137 8tb/simulation/submodules/avg_B3_merge_reg.vhd
+Z138 Ftb/simulation/submodules/avg_B3_merge_reg.vhd
+l0
+L35
+V9G0jN[LjR77GZn<7G@zD>0
+!s100 Xj=RE42KTBIk>>AbWAnW60
+R84
+32
+Z139 !s110 1626162552
+!i10b 1
+R61
+Z140 !s90 tb/simulation/submodules/avg_B3_merge_reg.vhd|-work|avg_internal_inst|
+Z141 !s107 tb/simulation/submodules/avg_B3_merge_reg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 16 avg_b3_merge_reg 0 22 9G0jN[LjR77GZn<7G@zD>0
+l73
+L56
+V`W`cWLj@g3iQG=[^YT36i3
+!s100 N?h0b6d@[Tc473]C9DzFj0
+R84
+32
+R139
+!i10b 1
+R61
+R140
+R141
+!i113 1
+R89
+R90
+Eavg_b4_branch
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z142 8tb/simulation/submodules/avg_B4_branch.vhd
+Z143 Ftb/simulation/submodules/avg_B4_branch.vhd
+l0
+L35
+Vl3B]89?D]XC1;jNQToH;]1
+!s100 G`^K73I:=R<7N[<UMaL@10
+R84
+32
+Z144 !s110 1626162555
+!i10b 1
+Z145 !s108 1626162555.000000
+Z146 !s90 tb/simulation/submodules/avg_B4_branch.vhd|-work|avg_internal_inst|
+Z147 !s107 tb/simulation/submodules/avg_B4_branch.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 13 avg_b4_branch 0 22 l3B]89?D]XC1;jNQToH;]1
+l69
+L49
+Vmh_STGD4jhOC@K_[NT@>W2
+!s100 XS9>@:dn<KT1aIc8?2[Dj2
+R84
+32
+R144
+!i10b 1
+R145
+R146
+R147
+!i113 1
+R89
+R90
+Eavg_b4_merge
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z148 8tb/simulation/submodules/avg_B4_merge.vhd
+Z149 Ftb/simulation/submodules/avg_B4_merge.vhd
+l0
+L35
+V0B]_e<WCH0l3@=Wl7YT:H2
+!s100 8eo7YT>N?Qg:PQ9`>G`Va2
+R84
+32
+R144
+!i10b 1
+R145
+Z150 !s90 tb/simulation/submodules/avg_B4_merge.vhd|-work|avg_internal_inst|
+Z151 !s107 tb/simulation/submodules/avg_B4_merge.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 12 avg_b4_merge 0 22 0B]_e<WCH0l3@=Wl7YT:H2
+l77
+L70
+V;J;PWePj>XQ`K[1mOW;LE2
+!s100 >aTQC;z7RnC@>5UfJ^ZmX0
+R84
+32
+R144
+!i10b 1
+R145
+R150
+R151
+!i113 1
+R89
+R90
+Eavg_b5_branch
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z152 8tb/simulation/submodules/avg_B5_branch.vhd
+Z153 Ftb/simulation/submodules/avg_B5_branch.vhd
+l0
+L35
+Vbiegnh?GaFldV8<o<RGW[2
+!s100 7XGiMOzn=4NC:D=3Q06Rz1
+R84
+32
+Z154 !s110 1626162563
+!i10b 1
+Z155 !s108 1626162563.000000
+Z156 !s90 tb/simulation/submodules/avg_B5_branch.vhd|-work|avg_internal_inst|
+Z157 !s107 tb/simulation/submodules/avg_B5_branch.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 13 avg_b5_branch 0 22 biegnh?GaFldV8<o<RGW[2
+l53
+L46
+Vc1eNofK;I_@XZRZS=Ti:G1
+!s100 Ad=`JZo=8lVCzmIzA@K8S0
+R84
+32
+R154
+!i10b 1
+R155
+R156
+R157
+!i113 1
+R89
+R90
+Eavg_b5_merge
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z158 8tb/simulation/submodules/avg_B5_merge.vhd
+Z159 Ftb/simulation/submodules/avg_B5_merge.vhd
+l0
+L35
+V0V:a9Kbm0NW7DfEK?17]@3
+!s100 nMTAhaEiNIQYBPe@1Bf290
+R84
+32
+R154
+!i10b 1
+R155
+Z160 !s90 tb/simulation/submodules/avg_B5_merge.vhd|-work|avg_internal_inst|
+Z161 !s107 tb/simulation/submodules/avg_B5_merge.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 12 avg_b5_merge 0 22 0V:a9Kbm0NW7DfEK?17]@3
+l53
+L46
+V7`BPDFBhfX_X[I_M@be4`0
+!s100 PHG=0DG<3]Q2]4JNbh6eT2
+R84
+32
+R154
+!i10b 1
+R155
+R160
+R161
+!i113 1
+R89
+R90
+Eavg_function
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z162 8tb/simulation/submodules/avg_function.vhd
+Z163 Ftb/simulation/submodules/avg_function.vhd
+l0
+L35
+VzAKzf=KR<C166WJF]`i_A1
+!s100 mRYIX2b9dbb@^69cBhQ^30
+R84
+32
+R39
+!i10b 1
+R61
+Z164 !s90 tb/simulation/submodules/avg_function.vhd|-work|avg_internal_inst|
+Z165 !s107 tb/simulation/submodules/avg_function.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 12 avg_function 0 22 zAKzf=KR<C166WJF]`i_A1
+l572
+L80
+VPBN`>T^<56@KL7eCaACnh2
+!s100 hlmEGC3UWTSl[NI9Zh6aT2
+R84
+32
+R39
+!i10b 1
+R61
+R164
+R165
+!i113 1
+R89
+R90
+Eavg_function_wrapper
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z166 8tb/simulation/submodules/avg_function_wrapper.vhd
+Z167 Ftb/simulation/submodules/avg_function_wrapper.vhd
+l0
+L35
+VYU[OZ<RU_kc92HPO@ogRR0
+!s100 ^JF?3Z@AA]a7OMjokQN011
+R84
+32
+R39
+!i10b 1
+R61
+Z168 !s90 tb/simulation/submodules/avg_function_wrapper.vhd|-work|avg_internal_inst|
+Z169 !s107 tb/simulation/submodules/avg_function_wrapper.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 20 avg_function_wrapper 0 22 YU[OZ<RU_kc92HPO@ogRR0
+l168
+L79
+VY6H2dddPGD0>d[_CMM@?H2
+!s100 BMG_MIjZMSOCQRPnM1i0h1
+R84
+32
+R39
+!i10b 1
+R61
+R168
+R169
+!i113 1
+R89
+R90
+vavg_internal
+R1
+R14
+!i10b 1
+!s100 `i;3:Y2Vd<L=6[6kINh_e1
+I>[VD7:Ca3VMBzXknb;dRY1
+R3
+Z170 !s105 avg_internal_v_unit
+S1
+R0
+R5
+Z171 8tb/simulation/submodules/avg_internal.v
+Z172 Ftb/simulation/submodules/avg_internal.v
+Z173 L0 23
+R8
+r1
+!s85 0
+31
+R19
+Z174 !s107 tb/simulation/submodules/avg_internal.v|
+Z175 !s90 -sv|tb/simulation/submodules/avg_internal.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vavg_internal_interconnect_0
+R1
+R14
+!i10b 1
+!s100 AOKEWWD6hY@BU^Oi50Z;F0
+Inb1ocgJE@c5GzQ`am^Xc[1
+R3
+R170
+S1
+R0
+R5
+R171
+R172
+L0 279
+R8
+r1
+!s85 0
+31
+R19
+R174
+R175
+!i113 1
+R12
+R13
+vbasic_coalescer
+R1
+R37
+!i10b 1
+!s100 0_Oh7g2jlZ[[]S2^N3g5?1
+I3:CZ6mHCGLdTm[]WAR0A23
+R3
+Z176 !s105 lsu_basic_coalescer_v_unit
+S1
+R0
+R5
+Z177 8tb/simulation/submodules/lsu_basic_coalescer.v
+Z178 Ftb/simulation/submodules/lsu_basic_coalescer.v
+L0 543
+R8
+r1
+!s85 0
+31
+R38
+Z179 !s107 tb/simulation/submodules/lsu_basic_coalescer.v|
+Z180 !s90 -sv|tb/simulation/submodules/lsu_basic_coalescer.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+Ebb_avg_b0_runonce
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z181 8tb/simulation/submodules/bb_avg_B0_runOnce.vhd
+Z182 Ftb/simulation/submodules/bb_avg_B0_runOnce.vhd
+l0
+L35
+V1>5[ZdgSGh=lBNN2C`=PT2
+!s100 D1l@GYb`d8`h`AASS[P5P1
+R84
+32
+R85
+!i10b 1
+R86
+Z183 !s90 tb/simulation/submodules/bb_avg_B0_runOnce.vhd|-work|avg_internal_inst|
+Z184 !s107 tb/simulation/submodules/bb_avg_B0_runOnce.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 17 bb_avg_b0_runonce 0 22 1>5[ZdgSGh=lBNN2C`=PT2
+l94
+L46
+V9e=KIS;>5FSa>abB9e]lc2
+!s100 1<Dcii52e@6>]Na[Hhk9c2
+R84
+32
+R85
+!i10b 1
+R86
+R183
+R184
+!i113 1
+R89
+R90
+Ebb_avg_b0_runonce_stall_region
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z185 8tb/simulation/submodules/bb_avg_B0_runOnce_stall_region.vhd
+Z186 Ftb/simulation/submodules/bb_avg_B0_runOnce_stall_region.vhd
+l0
+L35
+Vi4=c:R_?T4R5:WHZ7GVcV0
+!s100 [=_8:^P<cLfMRGb^89Zza0
+R84
+32
+R85
+!i10b 1
+R86
+Z187 !s90 tb/simulation/submodules/bb_avg_B0_runOnce_stall_region.vhd|-work|avg_internal_inst|
+Z188 !s107 tb/simulation/submodules/bb_avg_B0_runOnce_stall_region.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 30 bb_avg_b0_runonce_stall_region 0 22 i4=c:R_?T4R5:WHZ7GVcV0
+l133
+L46
+V?]:S]mbco3R1S[JN7NTjR3
+!s100 XAS]F7ViAoQOmBGKmYG=`2
+R84
+32
+R85
+!i10b 1
+R86
+R187
+R188
+!i113 1
+R89
+R90
+Ebb_avg_b1_start
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z189 8tb/simulation/submodules/bb_avg_B1_start.vhd
+Z190 Ftb/simulation/submodules/bb_avg_B1_start.vhd
+l0
+L35
+Vc?mXLaAo71H7_Z4^8Uf>L3
+!s100 0?UOfZKCT=9@>P;XUGf>m0
+R84
+32
+R101
+!i10b 1
+R102
+Z191 !s90 tb/simulation/submodules/bb_avg_B1_start.vhd|-work|avg_internal_inst|
+Z192 !s107 tb/simulation/submodules/bb_avg_B1_start.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 15 bb_avg_b1_start 0 22 c?mXLaAo71H7_Z4^8Uf>L3
+l130
+L60
+V2dTPPC<XaIbzXXCd[A]U?3
+!s100 Sb>d[ecIE7]MM@3`zM``V0
+R84
+32
+R101
+!i10b 1
+R102
+R191
+R192
+!i113 1
+R89
+R90
+Ebb_avg_b1_start_stall_region
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z193 8tb/simulation/submodules/bb_avg_B1_start_stall_region.vhd
+Z194 Ftb/simulation/submodules/bb_avg_B1_start_stall_region.vhd
+l0
+L35
+V0fg7@hoc@ZXWh?]^?P1zd2
+!s100 DXC=7n7gkThj^NKCR]gJz2
+R84
+32
+R101
+!i10b 1
+R102
+Z195 !s90 tb/simulation/submodules/bb_avg_B1_start_stall_region.vhd|-work|avg_internal_inst|
+Z196 !s107 tb/simulation/submodules/bb_avg_B1_start_stall_region.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 28 bb_avg_b1_start_stall_region 0 22 0fg7@hoc@ZXWh?]^?P1zd2
+l239
+L58
+VLFFlimcQH[KDT:jV<9b]g1
+!s100 eR4RHAA]4XhCK0A8z3jON0
+R84
+32
+R101
+!i10b 1
+R102
+R195
+R196
+!i113 1
+R89
+R90
+Ebb_avg_b2
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z197 8tb/simulation/submodules/bb_avg_B2.vhd
+Z198 Ftb/simulation/submodules/bb_avg_B2.vhd
+l0
+L35
+VSNJD[?Da<6Vg8z5I8?HB01
+!s100 K3dETcU;m>Gm1]EBjX?NI0
+R84
+32
+R117
+!i10b 1
+R118
+Z199 !s90 tb/simulation/submodules/bb_avg_B2.vhd|-work|avg_internal_inst|
+Z200 !s107 tb/simulation/submodules/bb_avg_B2.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 9 bb_avg_b2 0 22 SNJD[?Da<6Vg8z5I8?HB01
+l148
+L61
+V8MUFThaSibM`A=@IYAWa`3
+!s100 F7^`EcKEGVVDco=[EM49]3
+R84
+32
+R117
+!i10b 1
+R118
+R199
+R200
+!i113 1
+R89
+R90
+Ebb_avg_b2_sr_1
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z201 8tb/simulation/submodules/bb_avg_B2_sr_1.vhd
+Z202 Ftb/simulation/submodules/bb_avg_B2_sr_1.vhd
+l0
+L35
+V3Q26jKQd?Xl@4X:jVFoUJ0
+!s100 <_W=D;VPnaoL[AIJLKlig2
+R84
+32
+R39
+!i10b 1
+R61
+Z203 !s90 tb/simulation/submodules/bb_avg_B2_sr_1.vhd|-work|avg_internal_inst|
+Z204 !s107 tb/simulation/submodules/bb_avg_B2_sr_1.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 14 bb_avg_b2_sr_1 0 22 3Q26jKQd?Xl@4X:jVFoUJ0
+l62
+L48
+V;UVdQWdAl3`J1aOZ;z7QV1
+!s100 85blI6];FP;<Yi7:B0gkz3
+R84
+32
+R39
+!i10b 1
+R61
+R203
+R204
+!i113 1
+R89
+R90
+Ebb_avg_b2_stall_region
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z205 8tb/simulation/submodules/bb_avg_B2_stall_region.vhd
+Z206 Ftb/simulation/submodules/bb_avg_B2_stall_region.vhd
+l0
+L35
+VidI<AnRD?oCRY6N[c5AFd3
+!s100 KOd]@1QG<C]^o5n?5f?Fn3
+R84
+32
+R117
+!i10b 1
+R118
+Z207 !s90 tb/simulation/submodules/bb_avg_B2_stall_region.vhd|-work|avg_internal_inst|
+Z208 !s107 tb/simulation/submodules/bb_avg_B2_stall_region.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 22 bb_avg_b2_stall_region 0 22 idI<AnRD?oCRY6N[c5AFd3
+l179
+L58
+V:fSHkjHgCA3W5b1^cZ>VM1
+!s100 6Q3Ii]A8BKDD9iT63E_^i1
+R84
+32
+R117
+!i10b 1
+R118
+R207
+R208
+!i113 1
+R89
+R90
+Ebb_avg_b3
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z209 8tb/simulation/submodules/bb_avg_B3.vhd
+Z210 Ftb/simulation/submodules/bb_avg_B3.vhd
+l0
+L35
+VOF3bC@Y0f6`N>4EMb6Fij0
+!s100 4AVK]bhG9WZNAEzbc4zaV0
+R84
+32
+R39
+!i10b 1
+R61
+Z211 !s90 tb/simulation/submodules/bb_avg_B3.vhd|-work|avg_internal_inst|
+Z212 !s107 tb/simulation/submodules/bb_avg_B3.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 9 bb_avg_b3 0 22 OF3bC@Y0f6`N>4EMb6Fij0
+l258
+L89
+VGV_Fj?74kfL0nSInPU`R:3
+!s100 ULo:Gd6>jJ<cTIHE@afRh2
+R84
+32
+R39
+!i10b 1
+R61
+R211
+R212
+!i113 1
+R89
+R90
+Ebb_avg_b3_sr_1
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z213 8tb/simulation/submodules/bb_avg_B3_sr_1.vhd
+Z214 Ftb/simulation/submodules/bb_avg_B3_sr_1.vhd
+l0
+L35
+V91z:dK4F]DjagZN6OfWC]0
+!s100 mKIJXAP`[z]_ih1jJNmU63
+R84
+32
+R144
+!i10b 1
+R145
+Z215 !s90 tb/simulation/submodules/bb_avg_B3_sr_1.vhd|-work|avg_internal_inst|
+Z216 !s107 tb/simulation/submodules/bb_avg_B3_sr_1.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 14 bb_avg_b3_sr_1 0 22 91z:dK4F]DjagZN6OfWC]0
+l82
+L56
+V7]nRMRXzcNk?fWa_Qz^R_3
+!s100 be2L<CbKQZRPTCz>=:WoC2
+R84
+32
+R144
+!i10b 1
+R145
+R215
+R216
+!i113 1
+R89
+R90
+Ebb_avg_b3_stall_region
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z217 8tb/simulation/submodules/bb_avg_B3_stall_region.vhd
+Z218 Ftb/simulation/submodules/bb_avg_B3_stall_region.vhd
+l0
+L35
+V23jgR;L^3TiV0lIn8cJLb2
+!s100 @bfcP`4d^?8:aQ;E@QXU33
+R84
+32
+R39
+!i10b 1
+R61
+Z219 !s90 tb/simulation/submodules/bb_avg_B3_stall_region.vhd|-work|avg_internal_inst|
+Z220 !s107 tb/simulation/submodules/bb_avg_B3_stall_region.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 22 bb_avg_b3_stall_region 0 22 23jgR;L^3TiV0lIn8cJLb2
+l566
+L81
+VXLIlSVajb>W8EOClzl;5K1
+!s100 a2^EH]UIJjn@dIAPeiST00
+R84
+32
+R39
+!i10b 1
+R61
+R219
+R220
+!i113 1
+R89
+R90
+Ebb_avg_b4
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z221 8tb/simulation/submodules/bb_avg_B4.vhd
+Z222 Ftb/simulation/submodules/bb_avg_B4.vhd
+l0
+L35
+Vc7AO<4RNT8kS@WHP>fk0_2
+!s100 VTDYIFTZBLUI]oW0E6TOU3
+R84
+32
+R144
+!i10b 1
+R145
+Z223 !s90 tb/simulation/submodules/bb_avg_B4.vhd|-work|avg_internal_inst|
+Z224 !s107 tb/simulation/submodules/bb_avg_B4.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 9 bb_avg_b4 0 22 c7AO<4RNT8kS@WHP>fk0_2
+l206
+L77
+VRhaXM@LgR4YO_`R:SkLJi1
+!s100 3iPgOb_2g2lJhe0]WDH7E2
+R84
+32
+R144
+!i10b 1
+R145
+R223
+R224
+!i113 1
+R89
+R90
+Ebb_avg_b4_sr_0
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z225 8tb/simulation/submodules/bb_avg_B4_sr_0.vhd
+Z226 Ftb/simulation/submodules/bb_avg_B4_sr_0.vhd
+l0
+L35
+V]:7mSIR7CWgEIKYb_VcPZ3
+!s100 ?DZ0;WR3iO:TMM]H>`e^F2
+R84
+32
+Z227 !s110 1626162557
+!i10b 1
+Z228 !s108 1626162557.000000
+Z229 !s90 tb/simulation/submodules/bb_avg_B4_sr_0.vhd|-work|avg_internal_inst|
+Z230 !s107 tb/simulation/submodules/bb_avg_B4_sr_0.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 14 bb_avg_b4_sr_0 0 22 ]:7mSIR7CWgEIKYb_VcPZ3
+l117
+L70
+V4L5a1`X0Y_<D^MR<2z6SW3
+!s100 oNzIUgoglcHb`PiS4hX621
+R84
+32
+R227
+!i10b 1
+R228
+R229
+R230
+!i113 1
+R89
+R90
+Ebb_avg_b4_stall_region
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z231 8tb/simulation/submodules/bb_avg_B4_stall_region.vhd
+Z232 Ftb/simulation/submodules/bb_avg_B4_stall_region.vhd
+l0
+L35
+V`1JLi;JF=6Q<`HNP=aiLV0
+!s100 n7a4KNdzIRJU:o]h4M6^41
+R84
+32
+Z233 !s110 1626162556
+!i10b 1
+R145
+Z234 !s90 tb/simulation/submodules/bb_avg_B4_stall_region.vhd|-work|avg_internal_inst|
+Z235 !s107 tb/simulation/submodules/bb_avg_B4_stall_region.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 22 bb_avg_b4_stall_region 0 22 `1JLi;JF=6Q<`HNP=aiLV0
+l368
+L76
+VM@`AnYFU4N1mLcTE>d_;B3
+!s100 79NePYi9O_`]5iUSHVF1Q3
+R84
+32
+R233
+!i10b 1
+R145
+R234
+R235
+!i113 1
+R89
+R90
+Ebb_avg_b5
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z236 8tb/simulation/submodules/bb_avg_B5.vhd
+Z237 Ftb/simulation/submodules/bb_avg_B5.vhd
+l0
+L35
+VT7MmmP_VlW9EZYa3j<?mH3
+!s100 23Xh1N4W4VSZF`5Pe[Kf:1
+R84
+32
+R154
+!i10b 1
+R155
+Z238 !s90 tb/simulation/submodules/bb_avg_B5.vhd|-work|avg_internal_inst|
+Z239 !s107 tb/simulation/submodules/bb_avg_B5.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 9 bb_avg_b5 0 22 T7MmmP_VlW9EZYa3j<?mH3
+l110
+L52
+VzBVaCfHAS[5L:B4YKhliN3
+!s100 @hP;Z@b4V7GFNbE:CZk5n3
+R84
+32
+R154
+!i10b 1
+R155
+R238
+R239
+!i113 1
+R89
+R90
+Ebb_avg_b5_sr_0
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z240 8tb/simulation/submodules/bb_avg_B5_sr_0.vhd
+Z241 Ftb/simulation/submodules/bb_avg_B5_sr_0.vhd
+l0
+L35
+V0AX<I5d>jmF7dhJ_<zXUJ0
+!s100 DPli`9b_9Y54M7SblMQQM2
+R84
+32
+R85
+!i10b 1
+R86
+Z242 !s90 tb/simulation/submodules/bb_avg_B5_sr_0.vhd|-work|avg_internal_inst|
+Z243 !s107 tb/simulation/submodules/bb_avg_B5_sr_0.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 14 bb_avg_b5_sr_0 0 22 0AX<I5d>jmF7dhJ_<zXUJ0
+l62
+L48
+VEJ3k[cL4`O7Q^LQ40e<o53
+!s100 NRT5Ekc8_4_07:<Iz_9fg0
+R84
+32
+R85
+!i10b 1
+R86
+R242
+R243
+!i113 1
+R89
+R90
+Ebb_avg_b5_stall_region
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z244 8tb/simulation/submodules/bb_avg_B5_stall_region.vhd
+Z245 Ftb/simulation/submodules/bb_avg_B5_stall_region.vhd
+l0
+L35
+VF]@me7I;G_O;aO0PUTZMQ1
+!s100 =GiFOzVMhM[mBHhdJV4e91
+R84
+32
+R154
+!i10b 1
+R155
+Z246 !s90 tb/simulation/submodules/bb_avg_B5_stall_region.vhd|-work|avg_internal_inst|
+Z247 !s107 tb/simulation/submodules/bb_avg_B5_stall_region.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 22 bb_avg_b5_stall_region 0 22 F]@me7I;G_O;aO0PUTZMQ1
+l113
+L52
+VOhBAZ@ONCmmWEhX8`VChh1
+!s100 z^Wlc`@Ql4XFo6:KQiYIC1
+R84
+32
+R154
+!i10b 1
+R155
+R246
+R247
+!i113 1
+R89
+R90
+vbursting_coalescer
+R1
+R2
+!i10b 1
+!s100 dBP_?FDGSB>oT4@=09dQi3
+IFAmDdlNA7e_C2l:3Z5;;e0
+R3
+R51
+S1
+R0
+R5
+R52
+R53
+L0 1675
+R8
+r1
+!s85 0
+31
+R38
+R54
+R55
+!i113 1
+R12
+R13
+Edspba_delay
+R5
+R77
+R80
+R81
+R0
+Z248 8tb/simulation/submodules/dspba_library.vhd
+Z249 Ftb/simulation/submodules/dspba_library.vhd
+l0
+L18
+V6gjH^A2F1W^i74SkJ7dZ]0
+!s100 >TY9@l4a>2O5Wd_6jF4:g0
+R84
+32
+R30
+!i10b 1
+Z250 !s108 1626162546.000000
+Z251 !s90 tb/simulation/submodules/dspba_library.vhd|-work|avg_internal_inst|
+Z252 !s107 tb/simulation/submodules/dspba_library.vhd|
+!i113 1
+R89
+R90
+Adelay
+R77
+R80
+R81
+DEx4 work 11 dspba_delay 0 22 6gjH^A2F1W^i74SkJ7dZ]0
+l37
+L34
+V4DF]QX22aKX9Vel:^e[]n2
+!s100 DAfPXKZhR<Ac>Wg8zYj1H3
+R84
+32
+R30
+!i10b 1
+R250
+R251
+R252
+!i113 1
+R89
+R90
+Pdspba_library_package
+R80
+R81
+R5
+R0
+8tb/simulation/submodules/dspba_library_package.vhd
+Ftb/simulation/submodules/dspba_library_package.vhd
+l0
+L17
+VnC_15f`@cYSnzEX1;m45b0
+!s100 @e;XE0e^oAdIdzY=Rc];H3
+R84
+32
+!s110 1626162546
+!i10b 1
+R250
+!s90 tb/simulation/submodules/dspba_library_package.vhd|-work|avg_internal_inst|
+!s107 tb/simulation/submodules/dspba_library_package.vhd|
+!i113 1
+R89
+R90
+Edspba_pipe
+R5
+R79
+R80
+R81
+R0
+R248
+R249
+l0
+L343
+V59Ukd4Z:_^b?EhOMS>_:^1
+!s100 ko3XcgZgdPgSD;SDR?Wmi2
+R84
+32
+R30
+!i10b 1
+R250
+R251
+R252
+!i113 1
+R89
+R90
+Artl
+R79
+R80
+R81
+DEx4 work 10 dspba_pipe 0 22 59Ukd4Z:_^b?EhOMS>_:^1
+l362
+L356
+V>BOlJf[i=WM5z^:lA33cl3
+!s100 =]hA3YBJaaU9dNBMla?I?2
+R84
+32
+R30
+!i10b 1
+R250
+R251
+R252
+!i113 1
+R89
+R90
+Edspba_sync_reg
+R5
+R77
+R79
+R80
+R81
+R0
+R248
+R249
+l0
+L93
+VTV^:B=gF_VI7JzY1k2z7H0
+!s100 G`[2Ci2RQWoL`zK>2h>oj2
+R84
+32
+R30
+!i10b 1
+R250
+R251
+R252
+!i113 1
+R89
+R90
+Async_reg
+R77
+R79
+R80
+R81
+DEx4 work 14 dspba_sync_reg 0 22 TV^:B=gF_VI7JzY1k2z7H0
+l136
+L117
+VB>hP[KB:LhIYmhPZ];cDd3
+!s100 D5ba3Bk5_`1nL6?j<JkK81
+R84
+32
+R30
+!i10b 1
+R250
+R251
+R252
+!i113 1
+R89
+R90
+vearliness_delay
+R1
+R30
+!i10b 1
+!s100 CDWCL=Z<JPK?HUBhD6H[=3
+Im^E@G3LS?PBRIcHWjQ]112
+R3
+Z253 !s105 hld_fifo_sv_unit
+S1
+R0
+R5
+Z254 8tb/simulation/submodules/hld_fifo.sv
+Z255 Ftb/simulation/submodules/hld_fifo.sv
+L0 389
+R8
+r1
+!s85 0
+31
+R31
+Z256 !s107 tb/simulation/submodules/hld_fifo.sv|
+Z257 !s90 -sv|tb/simulation/submodules/hld_fifo.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vfibonacci_lfsr
+R1
+R33
+!i10b 1
+!s100 8VbAAeJ?;ZDEJ`RUXo]_n0
+IaUNc7W=JQM3bOY9d4m?Tb1
+R3
+R56
+S1
+R0
+R5
+R57
+R58
+L0 1670
+R8
+r1
+!s85 0
+31
+R35
+R59
+R60
+!i113 1
+R12
+R13
+Efloatcomponent_i_sfc_logic_c0_for_end_avg_c0_enter36_avg82_constmultblock_typesfa0z06of03p06o303d0jzj0u
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z258 8tb/simulation/submodules/floatComponent_i_sfc_logic_c0_for_end_avA0Z03p06o303d0jzj0u.vhd
+Z259 Ftb/simulation/submodules/floatComponent_i_sfc_logic_c0_for_end_avA0Z03p06o303d0jzj0u.vhd
+l0
+L35
+V2JTcSa;OSZ?QQCA8aQI4j1
+!s100 ]LFfDV@G_Pm7VmG8m7jXG1
+R84
+32
+R227
+!i10b 1
+Z260 !s108 1626162556.000000
+Z261 !s90 tb/simulation/submodules/floatComponent_i_sfc_logic_c0_for_end_avA0Z03p06o303d0jzj0u.vhd|-work|avg_internal_inst|
+Z262 !s107 tb/simulation/submodules/floatComponent_i_sfc_logic_c0_for_end_avA0Z03p06o303d0jzj0u.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 103 floatcomponent_i_sfc_logic_c0_for_end_avg_c0_enter36_avg82_constmultblock_typesfa0z06of03p06o303d0jzj0u 0 22 2JTcSa;OSZ?QQCA8aQI4j1
+l133
+L44
+VRG@Mjc>WYe09Bi]Ne?DAZ3
+!s100 FOkk6gzLdWS_OQTdT9oR52
+R84
+32
+R227
+!i10b 1
+R260
+R261
+R262
+!i113 1
+R89
+R90
+Efloatcomponent_i_sfc_logic_c0_for_end_avg_c0_enter36_avg82_multblock_typesfloatia0zp06o303d06o00rf01pzc
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z263 8tb/simulation/submodules/floatComponent_i_sfc_logic_c0_for_end_avA0Z303d06o00rf01pzc.vhd
+Z264 Ftb/simulation/submodules/floatComponent_i_sfc_logic_c0_for_end_avA0Z303d06o00rf01pzc.vhd
+l0
+L35
+VZLkI0TDQN7EAO>d8=U8j<2
+!s100 3dIk<nk:=<2BPezl[b4zo1
+R84
+32
+R227
+!i10b 1
+R228
+Z265 !s90 tb/simulation/submodules/floatComponent_i_sfc_logic_c0_for_end_avA0Z303d06o00rf01pzc.vhd|-work|avg_internal_inst|
+Z266 !s107 tb/simulation/submodules/floatComponent_i_sfc_logic_c0_for_end_avA0Z303d06o00rf01pzc.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 103 floatcomponent_i_sfc_logic_c0_for_end_avg_c0_enter36_avg82_multblock_typesfloatia0zp06o303d06o00rf01pzc 0 22 ZLkI0TDQN7EAO>d8=U8j<2
+l202
+L45
+VX<Y9::E2;d9hBg1?WzM>72
+!s100 S@O:@Jo=JH9iPPG]@2n:h3
+R84
+32
+R227
+!i10b 1
+R228
+R265
+R266
+!i113 1
+R89
+R90
+Efloatcomponent_i_sfc_logic_c1_for_body3_avg_c1_enter_avg75_addblock_typesfloatiea0z3d06o00rf00d06of5q0u
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z267 8tb/simulation/submodules/floatComponent_i_sfc_logic_c1_for_body3_A0Zo00rf00d06of5q0u.vhd
+Z268 Ftb/simulation/submodules/floatComponent_i_sfc_logic_c1_for_body3_A0Zo00rf00d06of5q0u.vhd
+l0
+L35
+VEmFP9g<[eoQYE]PiSoJA@1
+!s100 `W]Z`<ghgdo[^2cKKeR_M1
+R84
+32
+R144
+!i10b 1
+R145
+Z269 !s90 tb/simulation/submodules/floatComponent_i_sfc_logic_c1_for_body3_A0Zo00rf00d06of5q0u.vhd|-work|avg_internal_inst|
+Z270 !s107 tb/simulation/submodules/floatComponent_i_sfc_logic_c1_for_body3_A0Zo00rf00d06of5q0u.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 103 floatcomponent_i_sfc_logic_c1_for_body3_avg_c1_enter_avg75_addblock_typesfloatiea0z3d06o00rf00d06of5q0u 0 22 EmFP9g<[eoQYE]PiSoJA@1
+l398
+L45
+Vd0[`@YzLS[Bi:2_Q67W[T2
+!s100 Ji6ea20E_UXLG7H;NTz_;2
+R84
+32
+R144
+!i10b 1
+R145
+R269
+R270
+!i113 1
+R89
+R90
+vgalois_lfsr
+R1
+R33
+!i10b 1
+!s100 3^6biR?eVJmJj4<2B0ek?1
+I`nz=Tfofg?J9>JC:MGAgM2
+R3
+R56
+S1
+R0
+R5
+R57
+R58
+L0 1622
+R8
+r1
+!s85 0
+31
+R35
+R59
+R60
+!i113 1
+R12
+R13
+vhld_fifo
+R1
+R30
+!i10b 1
+!s100 ^HECjb2?VP@OC[oM8>g=K3
+IG[oi6AkdMYi513H@P1E[L3
+R3
+R253
+S1
+R0
+R5
+R254
+R255
+L0 132
+R8
+r1
+!s85 0
+31
+R31
+R256
+R257
+!i113 1
+R12
+R13
+vhld_fifo_zero_width
+R1
+R30
+!i10b 1
+!s100 ma6`5?zliS?1m;?B32``U2
+IQACfanQ?2jC[E=<<FgJ`I3
+R3
+!s105 hld_fifo_zero_width_sv_unit
+S1
+R0
+R5
+8tb/simulation/submodules/hld_fifo_zero_width.sv
+Ftb/simulation/submodules/hld_fifo_zero_width.sv
+L0 26
+R8
+r1
+!s85 0
+31
+R31
+!s107 tb/simulation/submodules/hld_fifo_zero_width.sv|
+!s90 -sv|tb/simulation/submodules/hld_fifo_zero_width.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+Ei_acl_pipeline_keep_going13_avg6
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z271 8tb/simulation/submodules/i_acl_pipeline_keep_going13_avg6.vhd
+Z272 Ftb/simulation/submodules/i_acl_pipeline_keep_going13_avg6.vhd
+l0
+L35
+Vo=>_n>ILzYQKEXhSAC]7n2
+!s100 1dT0H7gOQa:BKdLbJiB8_3
+R84
+32
+R111
+!i10b 1
+R112
+Z273 !s90 tb/simulation/submodules/i_acl_pipeline_keep_going13_avg6.vhd|-work|avg_internal_inst|
+Z274 !s107 tb/simulation/submodules/i_acl_pipeline_keep_going13_avg6.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 32 i_acl_pipeline_keep_going13_avg6 0 22 o=>_n>ILzYQKEXhSAC]7n2
+l137
+L58
+V_V575@2=PN@DF2ALe>RXk3
+!s100 h3bPief1l81EcNL^E_aEZ0
+R84
+32
+R111
+!i10b 1
+R112
+R273
+R274
+!i113 1
+R89
+R90
+Ei_acl_pipeline_keep_going13_avg_sr
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z275 8tb/simulation/submodules/i_acl_pipeline_keep_going13_avg_sr.vhd
+Z276 Ftb/simulation/submodules/i_acl_pipeline_keep_going13_avg_sr.vhd
+l0
+L35
+VzT8KYQ767TH]<<UDk6M:R3
+!s100 9UB06[0X:DCmGeab>LX]53
+R84
+32
+Z277 !s110 1626162564
+!i10b 1
+Z278 !s108 1626162564.000000
+Z279 !s90 tb/simulation/submodules/i_acl_pipeline_keep_going13_avg_sr.vhd|-work|avg_internal_inst|
+Z280 !s107 tb/simulation/submodules/i_acl_pipeline_keep_going13_avg_sr.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 34 i_acl_pipeline_keep_going13_avg_sr 0 22 zT8KYQ767TH]<<UDk6M:R3
+l62
+L48
+VmWa2;kFPfgWG>TZ5<4oWY0
+!s100 ;YgY=8Zjnl6QWgnjK66_<1
+R84
+32
+R277
+!i10b 1
+R278
+R279
+R280
+!i113 1
+R89
+R90
+Ei_acl_pipeline_keep_going13_avg_valid_fifo
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z281 8tb/simulation/submodules/i_acl_pipeline_keep_going13_avg_valid_fifo.vhd
+Z282 Ftb/simulation/submodules/i_acl_pipeline_keep_going13_avg_valid_fifo.vhd
+l0
+L35
+V5l4Xa[ICTdo75doLhJ@PY1
+!s100 ThdSMk^TNCgn=Be;C3>9a1
+R84
+32
+R277
+!i10b 1
+R278
+Z283 !s90 tb/simulation/submodules/i_acl_pipeline_keep_going13_avg_valid_fifo.vhd|-work|avg_internal_inst|
+Z284 !s107 tb/simulation/submodules/i_acl_pipeline_keep_going13_avg_valid_fifo.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 42 i_acl_pipeline_keep_going13_avg_valid_fifo 0 22 5l4Xa[ICTdo75doLhJ@PY1
+l83
+L48
+VK_f>_d_KzFn3em_^[g6^[1
+!s100 5mH5CP_?^g?V;1@CH?0:X3
+R84
+32
+R277
+!i10b 1
+R278
+R283
+R284
+!i113 1
+R89
+R90
+Ei_acl_pipeline_keep_going9_avg21
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z285 8tb/simulation/submodules/i_acl_pipeline_keep_going9_avg21.vhd
+Z286 Ftb/simulation/submodules/i_acl_pipeline_keep_going9_avg21.vhd
+l0
+L35
+VXg8nZe8^VPDk[^ESMg?>W2
+!s100 l2=DMfab?I3EXQX0`58_J0
+R84
+32
+Z287 !s110 1626162562
+!i10b 1
+Z288 !s108 1626162562.000000
+Z289 !s90 tb/simulation/submodules/i_acl_pipeline_keep_going9_avg21.vhd|-work|avg_internal_inst|
+Z290 !s107 tb/simulation/submodules/i_acl_pipeline_keep_going9_avg21.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 32 i_acl_pipeline_keep_going9_avg21 0 22 Xg8nZe8^VPDk[^ESMg?>W2
+l137
+L58
+Vgm@cV=8E9`Xdz9PFN_GzH3
+!s100 X27MA>8Pf`OZ:^SV`97JG0
+R84
+32
+R287
+!i10b 1
+R288
+R289
+R290
+!i113 1
+R89
+R90
+Ei_acl_pipeline_keep_going9_avg_sr
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z291 8tb/simulation/submodules/i_acl_pipeline_keep_going9_avg_sr.vhd
+Z292 Ftb/simulation/submodules/i_acl_pipeline_keep_going9_avg_sr.vhd
+l0
+L35
+V=`kzjXSYQHm4iloF0j7kP0
+!s100 omoeC3:iAY[5jROYiQTBJ2
+R84
+32
+R277
+!i10b 1
+R278
+Z293 !s90 tb/simulation/submodules/i_acl_pipeline_keep_going9_avg_sr.vhd|-work|avg_internal_inst|
+Z294 !s107 tb/simulation/submodules/i_acl_pipeline_keep_going9_avg_sr.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 33 i_acl_pipeline_keep_going9_avg_sr 0 22 =`kzjXSYQHm4iloF0j7kP0
+l62
+L48
+V3H5mnaHbGkGV@2mH5QDVN1
+!s100 Q95Hn?W_T=0zfRNh;bMRa3
+R84
+32
+R277
+!i10b 1
+R278
+R293
+R294
+!i113 1
+R89
+R90
+Ei_acl_pipeline_keep_going9_avg_valid_fifo
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z295 8tb/simulation/submodules/i_acl_pipeline_keep_going9_avg_valid_fifo.vhd
+Z296 Ftb/simulation/submodules/i_acl_pipeline_keep_going9_avg_valid_fifo.vhd
+l0
+L35
+VeLYAJl5TI2oVK=k83_i971
+!s100 e=V9Q3iT`N5MFJY`82Ym31
+R84
+32
+R277
+!i10b 1
+R278
+Z297 !s90 tb/simulation/submodules/i_acl_pipeline_keep_going9_avg_valid_fifo.vhd|-work|avg_internal_inst|
+Z298 !s107 tb/simulation/submodules/i_acl_pipeline_keep_going9_avg_valid_fifo.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 41 i_acl_pipeline_keep_going9_avg_valid_fifo 0 22 eLYAJl5TI2oVK=k83_i971
+l83
+L48
+VX=iI_ceEP_COoXcH9DJ6n3
+!s100 d;3T3Bj3l9H8Y`MSPV_ef0
+R84
+32
+R277
+!i10b 1
+R278
+R297
+R298
+!i113 1
+R89
+R90
+Ei_acl_pipeline_keep_going_avg39
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z299 8tb/simulation/submodules/i_acl_pipeline_keep_going_avg39.vhd
+Z300 Ftb/simulation/submodules/i_acl_pipeline_keep_going_avg39.vhd
+l0
+L35
+VI8N`58Mz`Djh30[ejPcn[3
+!s100 GFnGj0BS<<eA9[jjC^VLF3
+R84
+32
+R139
+!i10b 1
+Z301 !s108 1626162552.000000
+Z302 !s90 tb/simulation/submodules/i_acl_pipeline_keep_going_avg39.vhd|-work|avg_internal_inst|
+Z303 !s107 tb/simulation/submodules/i_acl_pipeline_keep_going_avg39.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 31 i_acl_pipeline_keep_going_avg39 0 22 I8N`58Mz`Djh30[ejPcn[3
+l137
+L58
+VAnbT@g7HN6L=N1JNCI8^d0
+!s100 T0zO4W:R2WUOmeO`cE^WM3
+R84
+32
+R139
+!i10b 1
+R301
+R302
+R303
+!i113 1
+R89
+R90
+Ei_acl_pipeline_keep_going_avg_sr
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z304 8tb/simulation/submodules/i_acl_pipeline_keep_going_avg_sr.vhd
+Z305 Ftb/simulation/submodules/i_acl_pipeline_keep_going_avg_sr.vhd
+l0
+L35
+V`dRb3k2mcYkR1a11mm`II0
+!s100 hBbcN74Jn2h<AN>JRkOad1
+R84
+32
+R277
+!i10b 1
+R278
+Z306 !s90 tb/simulation/submodules/i_acl_pipeline_keep_going_avg_sr.vhd|-work|avg_internal_inst|
+Z307 !s107 tb/simulation/submodules/i_acl_pipeline_keep_going_avg_sr.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 32 i_acl_pipeline_keep_going_avg_sr 0 22 `dRb3k2mcYkR1a11mm`II0
+l62
+L48
+V<oZ=QTgP:Qh<@W:_8_f;m3
+!s100 4BV`1inHiFCn`dNoK@@1f1
+R84
+32
+R277
+!i10b 1
+R278
+R306
+R307
+!i113 1
+R89
+R90
+Ei_acl_pipeline_keep_going_avg_valid_fifo
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z308 8tb/simulation/submodules/i_acl_pipeline_keep_going_avg_valid_fifo.vhd
+Z309 Ftb/simulation/submodules/i_acl_pipeline_keep_going_avg_valid_fifo.vhd
+l0
+L35
+VWgUgDcW0RPAS<THA7?l]a2
+!s100 SEIX]?WI3TVEg]8h6h^bG0
+R84
+32
+R277
+!i10b 1
+R278
+Z310 !s90 tb/simulation/submodules/i_acl_pipeline_keep_going_avg_valid_fifo.vhd|-work|avg_internal_inst|
+Z311 !s107 tb/simulation/submodules/i_acl_pipeline_keep_going_avg_valid_fifo.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 40 i_acl_pipeline_keep_going_avg_valid_fifo 0 22 WgUgDcW0RPAS<THA7?l]a2
+l84
+L48
+VZi=FBBm?TF4]0f;Ie6hQ02
+!s100 WU92@5TPmo<D;908U>aJ43
+R84
+32
+R277
+!i10b 1
+R278
+R310
+R311
+!i113 1
+R89
+R90
+Ei_acl_pop_f_sum_12_pop12_avg77
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z312 8tb/simulation/submodules/i_acl_pop_f_sum_12_pop12_avg77.vhd
+Z313 Ftb/simulation/submodules/i_acl_pop_f_sum_12_pop12_avg77.vhd
+l0
+L35
+VB]X0`ccZ6<YR6HobPTz@73
+!s100 2Vc<fYjzaF]JiC[=Ii>R?0
+R84
+32
+Z314 !s110 1626162554
+!i10b 1
+Z315 !s108 1626162554.000000
+Z316 !s90 tb/simulation/submodules/i_acl_pop_f_sum_12_pop12_avg77.vhd|-work|avg_internal_inst|
+Z317 !s107 tb/simulation/submodules/i_acl_pop_f_sum_12_pop12_avg77.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 30 i_acl_pop_f_sum_12_pop12_avg77 0 22 B]X0`ccZ6<YR6HobPTz@73
+l103
+L53
+V>BX?VHdj29dj6lIIeBMZa3
+!s100 8^aHXoZiDo5=GE_BX95QB3
+R84
+32
+R314
+!i10b 1
+R315
+R316
+R317
+!i113 1
+R89
+R90
+Ei_acl_pop_i1_exitcond18_pop15_avg64
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z318 8tb/simulation/submodules/i_acl_pop_i1_exitcond18_pop15_avg64.vhd
+Z319 Ftb/simulation/submodules/i_acl_pop_i1_exitcond18_pop15_avg64.vhd
+l0
+L35
+VBM3YW1h@NdUzc<LE`FT960
+!s100 U?68`55kgDWX>:KMONK>H1
+R84
+32
+R139
+!i10b 1
+R301
+Z320 !s90 tb/simulation/submodules/i_acl_pop_i1_exitcond18_pop15_avg64.vhd|-work|avg_internal_inst|
+Z321 !s107 tb/simulation/submodules/i_acl_pop_i1_exitcond18_pop15_avg64.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 35 i_acl_pop_i1_exitcond18_pop15_avg64 0 22 BM3YW1h@NdUzc<LE`FT960
+l106
+L53
+VJXPIeL7nH[XlGXdSHk8151
+!s100 AR_F`BGSdXCYT3KFJ:fi>1
+R84
+32
+R139
+!i10b 1
+R301
+R320
+R321
+!i113 1
+R89
+R90
+Ei_acl_pop_i1_memdep_phi_pop1020_pop17_avg49
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z322 8tb/simulation/submodules/i_acl_pop_i1_memdep_phi_pop1020_pop17_avg49.vhd
+Z323 Ftb/simulation/submodules/i_acl_pop_i1_memdep_phi_pop1020_pop17_avg49.vhd
+l0
+L35
+Vf7fUDR]hJ2VmDj3b4?2Oa1
+!s100 ^RV?RDJX=j]jfmo8TIh:`3
+R84
+32
+R139
+!i10b 1
+R301
+Z324 !s90 tb/simulation/submodules/i_acl_pop_i1_memdep_phi_pop1020_pop17_avg49.vhd|-work|avg_internal_inst|
+Z325 !s107 tb/simulation/submodules/i_acl_pop_i1_memdep_phi_pop1020_pop17_avg49.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 43 i_acl_pop_i1_memdep_phi_pop1020_pop17_avg49 0 22 f7fUDR]hJ2VmDj3b4?2Oa1
+l106
+L53
+V8Ghb^SV?Q2J[FcaK[0V8:2
+!s100 c@6Qn>i;Gj6h<JX`P^Mfk2
+R84
+32
+R139
+!i10b 1
+R301
+R324
+R325
+!i113 1
+R89
+R90
+Ei_acl_pop_i1_memdep_phi_pop10_avg35
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z326 8tb/simulation/submodules/i_acl_pop_i1_memdep_phi_pop10_avg35.vhd
+Z327 Ftb/simulation/submodules/i_acl_pop_i1_memdep_phi_pop10_avg35.vhd
+l0
+L35
+VTX?K3OTNbRPAB[CFck_zA3
+!s100 EI4dk7[cgQ>YmAIiolB5A0
+R84
+32
+R154
+!i10b 1
+R155
+Z328 !s90 tb/simulation/submodules/i_acl_pop_i1_memdep_phi_pop10_avg35.vhd|-work|avg_internal_inst|
+Z329 !s107 tb/simulation/submodules/i_acl_pop_i1_memdep_phi_pop10_avg35.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 35 i_acl_pop_i1_memdep_phi_pop10_avg35 0 22 TX?K3OTNbRPAB[CFck_zA3
+l124
+L53
+V2V4BCEH93ETkzOC7j^E0l3
+!s100 `LAKJU9M7QhbCR=PBVm`j0
+R84
+32
+R154
+!i10b 1
+R155
+R328
+R329
+!i113 1
+R89
+R90
+Ei_acl_pop_i1_memdep_phi_pop10_avg_reg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z330 8tb/simulation/submodules/i_acl_pop_i1_memdep_phi_pop10_avg_reg.vhd
+Z331 Ftb/simulation/submodules/i_acl_pop_i1_memdep_phi_pop10_avg_reg.vhd
+l0
+L35
+V_:<lXcfRze<AIZgUFZE^?3
+!s100 NYITX4QADFRDQHRA82zU52
+R84
+32
+R154
+!i10b 1
+R155
+Z332 !s90 tb/simulation/submodules/i_acl_pop_i1_memdep_phi_pop10_avg_reg.vhd|-work|avg_internal_inst|
+Z333 !s107 tb/simulation/submodules/i_acl_pop_i1_memdep_phi_pop10_avg_reg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 37 i_acl_pop_i1_memdep_phi_pop10_avg_reg 0 22 _:<lXcfRze<AIZgUFZE^?3
+l61
+L48
+V;<:?J>`=Fa3HI`B[jI1ln3
+!s100 O2CVJj=cOGgN9X8Wd8K893
+R84
+32
+R154
+!i10b 1
+R155
+R332
+R333
+!i113 1
+R89
+R90
+Ei_acl_pop_i1_notexit1119_pop16_avg68
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z334 8tb/simulation/submodules/i_acl_pop_i1_notexit1119_pop16_avg68.vhd
+Z335 Ftb/simulation/submodules/i_acl_pop_i1_notexit1119_pop16_avg68.vhd
+l0
+L35
+VU_E_RdJG`_5[eoPb[RaAX3
+!s100 kE3mYl;]6Dk7^ERH5B:[^1
+R84
+32
+Z336 !s110 1626162553
+!i10b 1
+Z337 !s108 1626162553.000000
+Z338 !s90 tb/simulation/submodules/i_acl_pop_i1_notexit1119_pop16_avg68.vhd|-work|avg_internal_inst|
+Z339 !s107 tb/simulation/submodules/i_acl_pop_i1_notexit1119_pop16_avg68.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 36 i_acl_pop_i1_notexit1119_pop16_avg68 0 22 U_E_RdJG`_5[eoPb[RaAX3
+l106
+L53
+V^V3P`SCc=_kMeVzO>C9ND0
+!s100 A9=lF:YmC6Q5jkg4[XEc[1
+R84
+32
+R336
+!i10b 1
+R337
+R338
+R339
+!i113 1
+R89
+R90
+Ei_acl_pop_i1_throttle_pop_avg12
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z340 8tb/simulation/submodules/i_acl_pop_i1_throttle_pop_avg12.vhd
+Z341 Ftb/simulation/submodules/i_acl_pop_i1_throttle_pop_avg12.vhd
+l0
+L35
+V0H9OKSeYaR9Qog0;8Ede11
+!s100 37h04k7FRUQd?G0Df1FO80
+R84
+32
+R111
+!i10b 1
+R112
+Z342 !s90 tb/simulation/submodules/i_acl_pop_i1_throttle_pop_avg12.vhd|-work|avg_internal_inst|
+Z343 !s107 tb/simulation/submodules/i_acl_pop_i1_throttle_pop_avg12.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 31 i_acl_pop_i1_throttle_pop_avg12 0 22 0H9OKSeYaR9Qog0;8Ede11
+l124
+L53
+Vl51zCSm@LSJFFAAYgX<I01
+!s100 7Wd_V0fZFbELBH;GgT85o0
+R84
+32
+R111
+!i10b 1
+R112
+R342
+R343
+!i113 1
+R89
+R90
+Ei_acl_pop_i1_throttle_pop_avg_reg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z344 8tb/simulation/submodules/i_acl_pop_i1_throttle_pop_avg_reg.vhd
+Z345 Ftb/simulation/submodules/i_acl_pop_i1_throttle_pop_avg_reg.vhd
+l0
+L35
+VDQI6IDI?5`aJd<5dQ1o3O2
+!s100 bFiQMOEo]WNl[@N3DM`XA2
+R84
+32
+R111
+!i10b 1
+R112
+Z346 !s90 tb/simulation/submodules/i_acl_pop_i1_throttle_pop_avg_reg.vhd|-work|avg_internal_inst|
+Z347 !s107 tb/simulation/submodules/i_acl_pop_i1_throttle_pop_avg_reg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 33 i_acl_pop_i1_throttle_pop_avg_reg 0 22 DQI6IDI?5`aJd<5dQ1o3O2
+l61
+L48
+Ve1_ic_WVJIX6XJaAXPiC23
+!s100 [YbLze]mD3XG_NXZI5Elz0
+R84
+32
+R111
+!i10b 1
+R112
+R346
+R347
+!i113 1
+R89
+R90
+Ei_acl_pop_i1_wt_limpop_avg0
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z348 8tb/simulation/submodules/i_acl_pop_i1_wt_limpop_avg0.vhd
+Z349 Ftb/simulation/submodules/i_acl_pop_i1_wt_limpop_avg0.vhd
+l0
+L35
+V6ZMn1WH0K`[93UMhMLMN51
+!s100 a[eA1db?3SY>Z1G9Hl69O3
+R84
+32
+R85
+!i10b 1
+R86
+Z350 !s90 tb/simulation/submodules/i_acl_pop_i1_wt_limpop_avg0.vhd|-work|avg_internal_inst|
+Z351 !s107 tb/simulation/submodules/i_acl_pop_i1_wt_limpop_avg0.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 27 i_acl_pop_i1_wt_limpop_avg0 0 22 6ZMn1WH0K`[93UMhMLMN51
+l124
+L53
+VQKIGl?@BJKAhX`QoS`dXQ2
+!s100 H8ZZA_J85<iD6gmVKa55Q3
+R84
+32
+R85
+!i10b 1
+R86
+R350
+R351
+!i113 1
+R89
+R90
+Ei_acl_pop_i1_wt_limpop_avg_reg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z352 8tb/simulation/submodules/i_acl_pop_i1_wt_limpop_avg_reg.vhd
+Z353 Ftb/simulation/submodules/i_acl_pop_i1_wt_limpop_avg_reg.vhd
+l0
+L35
+Vj2k4m56V9RKzc8XZ>h<QM2
+!s100 gY5;ldKa0:RT`n]`;CXS[3
+R84
+32
+R85
+!i10b 1
+R86
+Z354 !s90 tb/simulation/submodules/i_acl_pop_i1_wt_limpop_avg_reg.vhd|-work|avg_internal_inst|
+Z355 !s107 tb/simulation/submodules/i_acl_pop_i1_wt_limpop_avg_reg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 30 i_acl_pop_i1_wt_limpop_avg_reg 0 22 j2k4m56V9RKzc8XZ>h<QM2
+l61
+L48
+VNl`]J>YS;MneoWN6@8NnX2
+!s100 kLKZKKoi25H@HK@dLRR`b3
+R84
+32
+R85
+!i10b 1
+R86
+R354
+R355
+!i113 1
+R89
+R90
+Ei_acl_pop_i32_i_03_pop917_pop14_avg43
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z356 8tb/simulation/submodules/i_acl_pop_i32_i_03_pop917_pop14_avg43.vhd
+Z357 Ftb/simulation/submodules/i_acl_pop_i32_i_03_pop917_pop14_avg43.vhd
+l0
+L35
+VYCzoS[Na5LiLR37nebGmB1
+!s100 D9PNGNcjOWN]`@I<58o[V2
+R84
+32
+R336
+!i10b 1
+R337
+Z358 !s90 tb/simulation/submodules/i_acl_pop_i32_i_03_pop917_pop14_avg43.vhd|-work|avg_internal_inst|
+Z359 !s107 tb/simulation/submodules/i_acl_pop_i32_i_03_pop917_pop14_avg43.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 37 i_acl_pop_i32_i_03_pop917_pop14_avg43 0 22 YCzoS[Na5LiLR37nebGmB1
+l103
+L53
+VnI><fkcF0HFF:ai:T4O3A1
+!s100 A0jcoh8`;cz0ICGO^Ei]g1
+R84
+32
+R336
+!i10b 1
+R337
+R358
+R359
+!i113 1
+R89
+R90
+Ei_acl_pop_i32_i_03_pop9_avg23
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z360 8tb/simulation/submodules/i_acl_pop_i32_i_03_pop9_avg23.vhd
+Z361 Ftb/simulation/submodules/i_acl_pop_i32_i_03_pop9_avg23.vhd
+l0
+L35
+VZAkC5hf@V[SnRF_5MX9P41
+!s100 gEf4C^I=ikGMQDIGje]A70
+R84
+32
+R287
+!i10b 1
+R288
+Z362 !s90 tb/simulation/submodules/i_acl_pop_i32_i_03_pop9_avg23.vhd|-work|avg_internal_inst|
+Z363 !s107 tb/simulation/submodules/i_acl_pop_i32_i_03_pop9_avg23.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 29 i_acl_pop_i32_i_03_pop9_avg23 0 22 ZAkC5hf@V[SnRF_5MX9P41
+l103
+L53
+V^W7I_gRfeVT>IgKR`R:5l3
+!s100 lEFmJG2HQ]JV>UY=kQf?X0
+R84
+32
+R287
+!i10b 1
+R288
+R362
+R363
+!i113 1
+R89
+R90
+Ei_acl_pop_i32_j_11_pop13_avg41
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z364 8tb/simulation/submodules/i_acl_pop_i32_j_11_pop13_avg41.vhd
+Z365 Ftb/simulation/submodules/i_acl_pop_i32_j_11_pop13_avg41.vhd
+l0
+L35
+VPhCkVfQz>`aRQ[o5]H^8l1
+!s100 b1h@F^DTfRMdHoPgA21;61
+R84
+32
+R336
+!i10b 1
+R337
+Z366 !s90 tb/simulation/submodules/i_acl_pop_i32_j_11_pop13_avg41.vhd|-work|avg_internal_inst|
+Z367 !s107 tb/simulation/submodules/i_acl_pop_i32_j_11_pop13_avg41.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 30 i_acl_pop_i32_j_11_pop13_avg41 0 22 PhCkVfQz>`aRQ[o5]H^8l1
+l103
+L53
+V[BQdhUm92cA_0>T<ZXH=E0
+!s100 N2QXAWF0e;TGT1_EPWl?E3
+R84
+32
+R336
+!i10b 1
+R337
+R366
+R367
+!i113 1
+R89
+R90
+Ei_acl_pop_i4_fpgaindvars_iv_pop11_avg51
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z368 8tb/simulation/submodules/i_acl_pop_i4_fpgaindvars_iv_pop11_avg51.vhd
+Z369 Ftb/simulation/submodules/i_acl_pop_i4_fpgaindvars_iv_pop11_avg51.vhd
+l0
+L35
+V@VLzXL1]96@YeIadbDlU?3
+!s100 7k:2c8g38N@JD<f?<Dmkd1
+R84
+32
+R336
+!i10b 1
+R337
+Z370 !s90 tb/simulation/submodules/i_acl_pop_i4_fpgaindvars_iv_pop11_avg51.vhd|-work|avg_internal_inst|
+Z371 !s107 tb/simulation/submodules/i_acl_pop_i4_fpgaindvars_iv_pop11_avg51.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 39 i_acl_pop_i4_fpgaindvars_iv_pop11_avg51 0 22 @VLzXL1]96@YeIadbDlU?3
+l106
+L53
+VceX<?kRLLRQEAN0bUURBR0
+!s100 :=m2BmFA@2c>>6DoSBDDb3
+R84
+32
+R336
+!i10b 1
+R337
+R370
+R371
+!i113 1
+R89
+R90
+Ei_acl_pop_i6_fpgaindvars_iv4_pop8_avg25
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z372 8tb/simulation/submodules/i_acl_pop_i6_fpgaindvars_iv4_pop8_avg25.vhd
+Z373 Ftb/simulation/submodules/i_acl_pop_i6_fpgaindvars_iv4_pop8_avg25.vhd
+l0
+L35
+VJ@P:AKl`F?[c^AU3a2T[]3
+!s100 ;8;6_PLbm1nGI`X<<hd[H3
+R84
+32
+R287
+!i10b 1
+R288
+Z374 !s90 tb/simulation/submodules/i_acl_pop_i6_fpgaindvars_iv4_pop8_avg25.vhd|-work|avg_internal_inst|
+Z375 !s107 tb/simulation/submodules/i_acl_pop_i6_fpgaindvars_iv4_pop8_avg25.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 39 i_acl_pop_i6_fpgaindvars_iv4_pop8_avg25 0 22 J@P:AKl`F?[c^AU3a2T[]3
+l106
+L53
+VcdP[TnJYoE]4DR`d3^][23
+!s100 6>]lV=<<BES[h`aYI[T7R1
+R84
+32
+R287
+!i10b 1
+R288
+R374
+R375
+!i113 1
+R89
+R90
+Ei_acl_push_f_sum_12_push12_avg79
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z376 8tb/simulation/submodules/i_acl_push_f_sum_12_push12_avg79.vhd
+Z377 Ftb/simulation/submodules/i_acl_push_f_sum_12_push12_avg79.vhd
+l0
+L35
+V8_N>U^ocOCYoe[`iZD99_2
+!s100 z0EBTm^H7CA_MPL>E6B231
+R84
+32
+R144
+!i10b 1
+R315
+Z378 !s90 tb/simulation/submodules/i_acl_push_f_sum_12_push12_avg79.vhd|-work|avg_internal_inst|
+Z379 !s107 tb/simulation/submodules/i_acl_push_f_sum_12_push12_avg79.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 32 i_acl_push_f_sum_12_push12_avg79 0 22 8_N>U^ocOCYoe[`iZD99_2
+l108
+L52
+V2899RO0naIH]1SQ99X0@:0
+!s100 coE>5O79kW=6CmUhWznl>2
+R84
+32
+R144
+!i10b 1
+R315
+R378
+R379
+!i113 1
+R89
+R90
+Ei_acl_push_i1_exitcond18_push15_avg66
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z380 8tb/simulation/submodules/i_acl_push_i1_exitcond18_push15_avg66.vhd
+Z381 Ftb/simulation/submodules/i_acl_push_i1_exitcond18_push15_avg66.vhd
+l0
+L35
+VeEh]]1o1Q>HN^^6XDDS=82
+!s100 BJM8a5AVEAWLA9:@QXf?]1
+R84
+32
+R336
+!i10b 1
+R337
+Z382 !s90 tb/simulation/submodules/i_acl_push_i1_exitcond18_push15_avg66.vhd|-work|avg_internal_inst|
+Z383 !s107 tb/simulation/submodules/i_acl_push_i1_exitcond18_push15_avg66.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 37 i_acl_push_i1_exitcond18_push15_avg66 0 22 eEh]]1o1Q>HN^^6XDDS=82
+l111
+L52
+VZj3ET2[1V2Whzn_R<mdOh3
+!s100 V=WF5_27`LPN_kio327Wi2
+R84
+32
+R336
+!i10b 1
+R337
+R382
+R383
+!i113 1
+R89
+R90
+Ei_acl_push_i1_memdep_phi_pop1020_push17_avg54
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z384 8tb/simulation/submodules/i_acl_push_i1_memdep_phi_pop1020_push17_avg54.vhd
+Z385 Ftb/simulation/submodules/i_acl_push_i1_memdep_phi_pop1020_push17_avg54.vhd
+l0
+L35
+V8<]H[da^c:HfzRX>Od54:1
+!s100 HD3B71SQ7l7@1;6a<j<Yb3
+R84
+32
+R336
+!i10b 1
+R337
+Z386 !s90 tb/simulation/submodules/i_acl_push_i1_memdep_phi_pop1020_push17_avg54.vhd|-work|avg_internal_inst|
+Z387 !s107 tb/simulation/submodules/i_acl_push_i1_memdep_phi_pop1020_push17_avg54.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 45 i_acl_push_i1_memdep_phi_pop1020_push17_avg54 0 22 8<]H[da^c:HfzRX>Od54:1
+l111
+L52
+VC>C<;QT_bC8D9i<@_HLjf1
+!s100 V`F2LM34RAQ<;;Z;jelk?1
+R84
+32
+R336
+!i10b 1
+R337
+R386
+R387
+!i113 1
+R89
+R90
+Ei_acl_push_i1_memdep_phi_push10_avg90
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z388 8tb/simulation/submodules/i_acl_push_i1_memdep_phi_push10_avg90.vhd
+Z389 Ftb/simulation/submodules/i_acl_push_i1_memdep_phi_push10_avg90.vhd
+l0
+L35
+V>SQGzHHAVdCj?>XKgn[le3
+!s100 YhDkaBM1BcOJb`DCRabX^3
+R84
+32
+R227
+!i10b 1
+R228
+Z390 !s90 tb/simulation/submodules/i_acl_push_i1_memdep_phi_push10_avg90.vhd|-work|avg_internal_inst|
+Z391 !s107 tb/simulation/submodules/i_acl_push_i1_memdep_phi_push10_avg90.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 37 i_acl_push_i1_memdep_phi_push10_avg90 0 22 >SQGzHHAVdCj?>XKgn[le3
+l129
+L52
+VZ`eQVbA7_e7j_m3?FjhFC3
+!s100 129GMWnT[Hnmm<C[=9@UB2
+R84
+32
+R227
+!i10b 1
+R228
+R390
+R391
+!i113 1
+R89
+R90
+Ei_acl_push_i1_memdep_phi_push10_avg_reg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z392 8tb/simulation/submodules/i_acl_push_i1_memdep_phi_push10_avg_reg.vhd
+Z393 Ftb/simulation/submodules/i_acl_push_i1_memdep_phi_push10_avg_reg.vhd
+l0
+L35
+VTT^Y^TK?oPOafz7Ae[E:[0
+!s100 Y[7c@_WP892?TN<N9aXEc3
+R84
+32
+R227
+!i10b 1
+R228
+Z394 !s90 tb/simulation/submodules/i_acl_push_i1_memdep_phi_push10_avg_reg.vhd|-work|avg_internal_inst|
+Z395 !s107 tb/simulation/submodules/i_acl_push_i1_memdep_phi_push10_avg_reg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 39 i_acl_push_i1_memdep_phi_push10_avg_reg 0 22 TT^Y^TK?oPOafz7Ae[E:[0
+l61
+L48
+V^EogBGoJ`M7LC@]I@ZIkI0
+!s100 R36WRB1VY??8EJbP9T_jg2
+R84
+32
+R227
+!i10b 1
+R228
+R394
+R395
+!i113 1
+R89
+R90
+Ei_acl_push_i1_notexit1119_push16_avg70
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z396 8tb/simulation/submodules/i_acl_push_i1_notexit1119_push16_avg70.vhd
+Z397 Ftb/simulation/submodules/i_acl_push_i1_notexit1119_push16_avg70.vhd
+l0
+L35
+VC_54m@lVC?Fa`?DK89A_52
+!s100 8QPY>><f?BbDHi_[<C@_T0
+R84
+32
+R336
+!i10b 1
+R337
+Z398 !s90 tb/simulation/submodules/i_acl_push_i1_notexit1119_push16_avg70.vhd|-work|avg_internal_inst|
+Z399 !s107 tb/simulation/submodules/i_acl_push_i1_notexit1119_push16_avg70.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 38 i_acl_push_i1_notexit1119_push16_avg70 0 22 C_54m@lVC?Fa`?DK89A_52
+l111
+L52
+VDFWNSkK9?YDWz>^N15A@g2
+!s100 hnQO:>ZbYd?SVliEeHOfk1
+R84
+32
+R336
+!i10b 1
+R337
+R398
+R399
+!i113 1
+R89
+R90
+Ei_acl_push_i1_notexitcond10_avg30
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z400 8tb/simulation/submodules/i_acl_push_i1_notexitcond10_avg30.vhd
+Z401 Ftb/simulation/submodules/i_acl_push_i1_notexitcond10_avg30.vhd
+l0
+L35
+VgBCh`=3@<H;VQ8bK>NB4z3
+!s100 A>F>:MYzHSS9PWVEfMWY60
+R84
+32
+R287
+!i10b 1
+R288
+Z402 !s90 tb/simulation/submodules/i_acl_push_i1_notexitcond10_avg30.vhd|-work|avg_internal_inst|
+Z403 !s107 tb/simulation/submodules/i_acl_push_i1_notexitcond10_avg30.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 33 i_acl_push_i1_notexitcond10_avg30 0 22 gBCh`=3@<H;VQ8bK>NB4z3
+l111
+L51
+VcJHJeXQ0FNcY0FX?1Tb`h2
+!s100 aBmzYTV2e9igX[2;WFlb11
+R84
+32
+R287
+!i10b 1
+R288
+R402
+R403
+!i113 1
+R89
+R90
+Ei_acl_push_i1_notexitcond14_avg8
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z404 8tb/simulation/submodules/i_acl_push_i1_notexitcond14_avg8.vhd
+Z405 Ftb/simulation/submodules/i_acl_push_i1_notexitcond14_avg8.vhd
+l0
+L35
+VCfmiRkHLXZG:zzz__TY8]3
+!s100 Q[h89nmSh6SG0BgY]^8^21
+R84
+32
+R111
+!i10b 1
+R112
+Z406 !s90 tb/simulation/submodules/i_acl_push_i1_notexitcond14_avg8.vhd|-work|avg_internal_inst|
+Z407 !s107 tb/simulation/submodules/i_acl_push_i1_notexitcond14_avg8.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 32 i_acl_push_i1_notexitcond14_avg8 0 22 CfmiRkHLXZG:zzz__TY8]3
+l111
+L51
+V`<k_H@mS_Mbggl;_DQ^`G3
+!s100 Z@XYQA9D^PaUZ@h8PVL@?0
+R84
+32
+R111
+!i10b 1
+R112
+R406
+R407
+!i113 1
+R89
+R90
+Ei_acl_push_i1_notexitcond_avg60
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z408 8tb/simulation/submodules/i_acl_push_i1_notexitcond_avg60.vhd
+Z409 Ftb/simulation/submodules/i_acl_push_i1_notexitcond_avg60.vhd
+l0
+L35
+V91nDCa3dka>G6P[;G61Jk2
+!s100 fEhKQL7Gh7=BAOHJCb5Gf2
+R84
+32
+R336
+!i10b 1
+R337
+Z410 !s90 tb/simulation/submodules/i_acl_push_i1_notexitcond_avg60.vhd|-work|avg_internal_inst|
+Z411 !s107 tb/simulation/submodules/i_acl_push_i1_notexitcond_avg60.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 31 i_acl_push_i1_notexitcond_avg60 0 22 91nDCa3dka>G6P[;G61Jk2
+l111
+L51
+VBd?6eYf8f_oGQZ[ICz2481
+!s100 Lb>?6zHnhO7N?b:H4<3DD2
+R84
+32
+R336
+!i10b 1
+R337
+R410
+R411
+!i113 1
+R89
+R90
+Ei_acl_push_i1_throttle_push_avg93
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z412 8tb/simulation/submodules/i_acl_push_i1_throttle_push_avg93.vhd
+Z413 Ftb/simulation/submodules/i_acl_push_i1_throttle_push_avg93.vhd
+l0
+L35
+Vi?jVei>;]Lg>AbVPQZ_:_2
+!s100 Tc1[J`Xa2zQ?OgoL]A1Ph0
+R84
+32
+R154
+!i10b 1
+R155
+Z414 !s90 tb/simulation/submodules/i_acl_push_i1_throttle_push_avg93.vhd|-work|avg_internal_inst|
+Z415 !s107 tb/simulation/submodules/i_acl_push_i1_throttle_push_avg93.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 33 i_acl_push_i1_throttle_push_avg93 0 22 i?jVei>;]Lg>AbVPQZ_:_2
+l129
+L51
+VgE^Qd5CS]M]<Aa:kz7ed?2
+!s100 _?56Q7Q36jX8:KoLTX[Tn1
+R84
+32
+R154
+!i10b 1
+R155
+R414
+R415
+!i113 1
+R89
+R90
+Ei_acl_push_i1_throttle_push_avg_reg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z416 8tb/simulation/submodules/i_acl_push_i1_throttle_push_avg_reg.vhd
+Z417 Ftb/simulation/submodules/i_acl_push_i1_throttle_push_avg_reg.vhd
+l0
+L35
+Vi6^7=?22WUJ[aIVWYmCgH2
+!s100 2Vb;WOLDIk30Z2F6d<aOI3
+R84
+32
+R154
+!i10b 1
+R155
+Z418 !s90 tb/simulation/submodules/i_acl_push_i1_throttle_push_avg_reg.vhd|-work|avg_internal_inst|
+Z419 !s107 tb/simulation/submodules/i_acl_push_i1_throttle_push_avg_reg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 35 i_acl_push_i1_throttle_push_avg_reg 0 22 i6^7=?22WUJ[aIVWYmCgH2
+l61
+L48
+VHfZD?2CoHXfO3XGUAIBNF1
+!s100 a?T<C<i]S6W=8D`h`NoLe1
+R84
+32
+R154
+!i10b 1
+R155
+R418
+R419
+!i113 1
+R89
+R90
+Ei_acl_push_i1_wt_limpush_avg2
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z420 8tb/simulation/submodules/i_acl_push_i1_wt_limpush_avg2.vhd
+Z421 Ftb/simulation/submodules/i_acl_push_i1_wt_limpush_avg2.vhd
+l0
+L35
+V[=ffA_UG7<^4n^i2NHiUQ2
+!s100 ?kdg:2__Ill>5FIcF;K_G3
+R84
+32
+R101
+!i10b 1
+R102
+Z422 !s90 tb/simulation/submodules/i_acl_push_i1_wt_limpush_avg2.vhd|-work|avg_internal_inst|
+Z423 !s107 tb/simulation/submodules/i_acl_push_i1_wt_limpush_avg2.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 29 i_acl_push_i1_wt_limpush_avg2 0 22 [=ffA_UG7<^4n^i2NHiUQ2
+l128
+L51
+VX19KHHd31EZJU0VWhE7932
+!s100 6Q3e9`eO;mcGzA3DT=C=?3
+R84
+32
+R101
+!i10b 1
+R102
+R422
+R423
+!i113 1
+R89
+R90
+Ei_acl_push_i1_wt_limpush_avg_reg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z424 8tb/simulation/submodules/i_acl_push_i1_wt_limpush_avg_reg.vhd
+Z425 Ftb/simulation/submodules/i_acl_push_i1_wt_limpush_avg_reg.vhd
+l0
+L35
+VU`L9R]gmjmk;ABN1Fj7kF2
+!s100 LnV16KY@ZaoRHDf?DeTe93
+R84
+32
+R101
+!i10b 1
+R102
+Z426 !s90 tb/simulation/submodules/i_acl_push_i1_wt_limpush_avg_reg.vhd|-work|avg_internal_inst|
+Z427 !s107 tb/simulation/submodules/i_acl_push_i1_wt_limpush_avg_reg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 32 i_acl_push_i1_wt_limpush_avg_reg 0 22 U`L9R]gmjmk;ABN1Fj7kF2
+l61
+L48
+VZ<nhJ=bH5R5`:f^acVbcl2
+!s100 b6G0n4KkM17oC<XV8C6G]2
+R84
+32
+R101
+!i10b 1
+R102
+R426
+R427
+!i113 1
+R89
+R90
+Ei_acl_push_i32_i_03_pop917_push14_avg56
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z428 8tb/simulation/submodules/i_acl_push_i32_i_03_pop917_push14_avg56.vhd
+Z429 Ftb/simulation/submodules/i_acl_push_i32_i_03_pop917_push14_avg56.vhd
+l0
+L35
+ViA@7]a:>1N]iZ28G:S=;c3
+!s100 K]3Kz<He54<LnPLcOXS<e3
+R84
+32
+R336
+!i10b 1
+R337
+Z430 !s90 tb/simulation/submodules/i_acl_push_i32_i_03_pop917_push14_avg56.vhd|-work|avg_internal_inst|
+Z431 !s107 tb/simulation/submodules/i_acl_push_i32_i_03_pop917_push14_avg56.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 39 i_acl_push_i32_i_03_pop917_push14_avg56 0 22 iA@7]a:>1N]iZ28G:S=;c3
+l108
+L52
+VGFe117JFnJQZzeff^K_aH2
+!s100 nT_=YIOV9>EJi9f[?j7ej3
+R84
+32
+R336
+!i10b 1
+R337
+R430
+R431
+!i113 1
+R89
+R90
+Ei_acl_push_i32_i_03_push9_avg28
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z432 8tb/simulation/submodules/i_acl_push_i32_i_03_push9_avg28.vhd
+Z433 Ftb/simulation/submodules/i_acl_push_i32_i_03_push9_avg28.vhd
+l0
+L35
+Vb1X?Z=2z;Ffl_<PDcL7aB2
+!s100 5V6z>JKHz0CI>V@DU7d:Z0
+R84
+32
+R287
+!i10b 1
+R288
+Z434 !s90 tb/simulation/submodules/i_acl_push_i32_i_03_push9_avg28.vhd|-work|avg_internal_inst|
+Z435 !s107 tb/simulation/submodules/i_acl_push_i32_i_03_push9_avg28.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 31 i_acl_push_i32_i_03_push9_avg28 0 22 b1X?Z=2z;Ffl_<PDcL7aB2
+l108
+L52
+Vi<DlO8[?JYR;cPe:c=`iX2
+!s100 z6Dkc;YA>5gUUNSWa`=2P3
+R84
+32
+R287
+!i10b 1
+R288
+R434
+R435
+!i113 1
+R89
+R90
+Ei_acl_push_i32_j_11_push13_avg58
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z436 8tb/simulation/submodules/i_acl_push_i32_j_11_push13_avg58.vhd
+Z437 Ftb/simulation/submodules/i_acl_push_i32_j_11_push13_avg58.vhd
+l0
+L35
+VaEPeWmzZ?D`hQVU>475Um2
+!s100 5H_A_g7FhNVKbV7JAafka3
+R84
+32
+R314
+!i10b 1
+R337
+Z438 !s90 tb/simulation/submodules/i_acl_push_i32_j_11_push13_avg58.vhd|-work|avg_internal_inst|
+Z439 !s107 tb/simulation/submodules/i_acl_push_i32_j_11_push13_avg58.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 32 i_acl_push_i32_j_11_push13_avg58 0 22 aEPeWmzZ?D`hQVU>475Um2
+l108
+L52
+V1KbAUcaA`oF;HO:[NnnPC0
+!s100 2HDZYb`U];SU^9m6FWfZi3
+R84
+32
+R314
+!i10b 1
+R337
+R438
+R439
+!i113 1
+R89
+R90
+Ei_acl_push_i4_fpgaindvars_iv_push11_avg62
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z440 8tb/simulation/submodules/i_acl_push_i4_fpgaindvars_iv_push11_avg62.vhd
+Z441 Ftb/simulation/submodules/i_acl_push_i4_fpgaindvars_iv_push11_avg62.vhd
+l0
+L35
+Vm9FkJSV^lUNNELDlgI:1l0
+!s100 CZiTCQmUmcf_A=TTm4O4f0
+R84
+32
+R314
+!i10b 1
+R315
+Z442 !s90 tb/simulation/submodules/i_acl_push_i4_fpgaindvars_iv_push11_avg62.vhd|-work|avg_internal_inst|
+Z443 !s107 tb/simulation/submodules/i_acl_push_i4_fpgaindvars_iv_push11_avg62.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 41 i_acl_push_i4_fpgaindvars_iv_push11_avg62 0 22 m9FkJSV^lUNNELDlgI:1l0
+l111
+L52
+VaH_jU`jgP>MFlnYYV5d0T1
+!s100 9B6PCIF?KVQOodm:Z_XgM2
+R84
+32
+R314
+!i10b 1
+R315
+R442
+R443
+!i113 1
+R89
+R90
+Ei_acl_push_i6_fpgaindvars_iv4_push8_avg32
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z444 8tb/simulation/submodules/i_acl_push_i6_fpgaindvars_iv4_push8_avg32.vhd
+Z445 Ftb/simulation/submodules/i_acl_push_i6_fpgaindvars_iv4_push8_avg32.vhd
+l0
+L35
+VP@Fz1XAnRUojOFl@T2>W80
+!s100 WXGc3E3MYgT]3WBUjIUXa3
+R84
+32
+R287
+!i10b 1
+R288
+Z446 !s90 tb/simulation/submodules/i_acl_push_i6_fpgaindvars_iv4_push8_avg32.vhd|-work|avg_internal_inst|
+Z447 !s107 tb/simulation/submodules/i_acl_push_i6_fpgaindvars_iv4_push8_avg32.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 41 i_acl_push_i6_fpgaindvars_iv4_push8_avg32 0 22 P@Fz1XAnRUojOFl@T2>W80
+l111
+L52
+V?eg2f@Ao@QBihhTkoPODe2
+!s100 AEFRa=RgeAF9@joJZlk6Q1
+R84
+32
+R287
+!i10b 1
+R288
+R446
+R447
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c0_for_body3_avg_c0_exit31_avg72
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z448 8tb/simulation/submodules/i_acl_sfc_exit_c0_for_body3_avg_c0_exit31_avg72.vhd
+Z449 Ftb/simulation/submodules/i_acl_sfc_exit_c0_for_body3_avg_c0_exit31_avg72.vhd
+l0
+L35
+V95l9aDNMD?]>0X7d2YK7_2
+!s100 FZhP:Vk<BD5]2IaMEEFb]0
+R84
+32
+R139
+!i10b 1
+R301
+Z450 !s90 tb/simulation/submodules/i_acl_sfc_exit_c0_for_body3_avg_c0_exit31_avg72.vhd|-work|avg_internal_inst|
+Z451 !s107 tb/simulation/submodules/i_acl_sfc_exit_c0_for_body3_avg_c0_exit31_avg72.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 47 i_acl_sfc_exit_c0_for_body3_avg_c0_exit31_avg72 0 22 95l9aDNMD?]>0X7d2YK7_2
+l135
+L67
+V^FbQ`oKK^Z92NK=bk_^3X3
+!s100 HRHiTJGA^fjAZTIgRFgbS1
+R84
+32
+R139
+!i10b 1
+R301
+R450
+R451
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c0_for_body3_avg_c0_exit31_avg97_data_fifo
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z452 8tb/simulation/submodules/i_acl_sfc_exit_c0_for_body3_avg_c0_exit3A0Z_avg97_data_fifo.vhd
+Z453 Ftb/simulation/submodules/i_acl_sfc_exit_c0_for_body3_avg_c0_exit3A0Z_avg97_data_fifo.vhd
+l0
+L35
+VY7<kBF_7=be[G>dWZ6VQO1
+!s100 kJMIOR:T2[;@Q>_M^mHZ_0
+R84
+32
+R139
+!i10b 1
+R301
+Z454 !s90 tb/simulation/submodules/i_acl_sfc_exit_c0_for_body3_avg_c0_exit3A0Z_avg97_data_fifo.vhd|-work|avg_internal_inst|
+Z455 !s107 tb/simulation/submodules/i_acl_sfc_exit_c0_for_body3_avg_c0_exit3A0Z_avg97_data_fifo.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 57 i_acl_sfc_exit_c0_for_body3_avg_c0_exit31_avg97_data_fifo 0 22 Y7<kBF_7=be[G>dWZ6VQO1
+l143
+L66
+V>]OoX>fDL8Fj]9g[?GQo71
+!s100 =PTkRnjRLJG]07l<IL[aC1
+R84
+32
+R139
+!i10b 1
+R301
+R454
+R455
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c0_for_body3_avg_c0_exit31_avg_full_detector
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z456 8tb/simulation/submodules/i_acl_sfc_exit_c0_for_body3_avg_c0_exit3A0Zvg_full_detector.vhd
+Z457 Ftb/simulation/submodules/i_acl_sfc_exit_c0_for_body3_avg_c0_exit3A0Zvg_full_detector.vhd
+l0
+L35
+VEXlOCM8DnV<d5WRiI_>622
+!s100 4iOBR;RHLeM4EGP4<X2Cj1
+R84
+32
+R139
+!i10b 1
+R301
+Z458 !s90 tb/simulation/submodules/i_acl_sfc_exit_c0_for_body3_avg_c0_exit3A0Zvg_full_detector.vhd|-work|avg_internal_inst|
+Z459 !s107 tb/simulation/submodules/i_acl_sfc_exit_c0_for_body3_avg_c0_exit3A0Zvg_full_detector.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 59 i_acl_sfc_exit_c0_for_body3_avg_c0_exit31_avg_full_detector 0 22 EXlOCM8DnV<d5WRiI_>622
+l85
+L48
+V`XD7;7TF9I79UV`C=D<8A0
+!s100 n9YJV]Y2[IGM>VLHCknKE1
+R84
+32
+R139
+!i10b 1
+R301
+R458
+R459
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c0_for_cond1_preheader_avg_c0_exit23_avg34
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z460 8tb/simulation/submodules/i_acl_sfc_exit_c0_for_cond1_preheader_avA0Z_c0_exit23_avg34.vhd
+Z461 Ftb/simulation/submodules/i_acl_sfc_exit_c0_for_cond1_preheader_avA0Z_c0_exit23_avg34.vhd
+l0
+L35
+V[lbA5g<M7i9zD88Wm:>G[2
+!s100 BiOkXd2mX?1X1_5h=LoNl0
+R84
+32
+R117
+!i10b 1
+R118
+Z462 !s90 tb/simulation/submodules/i_acl_sfc_exit_c0_for_cond1_preheader_avA0Z_c0_exit23_avg34.vhd|-work|avg_internal_inst|
+Z463 !s107 tb/simulation/submodules/i_acl_sfc_exit_c0_for_cond1_preheader_avA0Z_c0_exit23_avg34.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 57 i_acl_sfc_exit_c0_for_cond1_preheader_avg_c0_exit23_avg34 0 22 [lbA5g<M7i9zD88Wm:>G[2
+l105
+L55
+V21Uj3=E_SV?Jnm>o?@@RP2
+!s100 n6ZOMn`D4>aUSfF8eGlU:3
+R84
+32
+R117
+!i10b 1
+R118
+R462
+R463
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c0_for_cond1_preheader_avg_c0_exit23_avg95_data_fifo
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z464 8tb/simulation/submodules/i_acl_sfc_exit_c0_for_cond1_preheader_avA0Z_avg95_data_fifo.vhd
+Z465 Ftb/simulation/submodules/i_acl_sfc_exit_c0_for_cond1_preheader_avA0Z_avg95_data_fifo.vhd
+l0
+L35
+VXC?5oCKTiAW^;=8BQ6M]<1
+!s100 CVmgl>bCnj;cZEIP6?o_[0
+R84
+32
+R287
+!i10b 1
+R118
+Z466 !s90 tb/simulation/submodules/i_acl_sfc_exit_c0_for_cond1_preheader_avA0Z_avg95_data_fifo.vhd|-work|avg_internal_inst|
+Z467 !s107 tb/simulation/submodules/i_acl_sfc_exit_c0_for_cond1_preheader_avA0Z_avg95_data_fifo.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 67 i_acl_sfc_exit_c0_for_cond1_preheader_avg_c0_exit23_avg95_data_fifo 0 22 XC?5oCKTiAW^;=8BQ6M]<1
+l108
+L54
+Vza?2j@?A_1EA`X3SFB8]U3
+!s100 0IDX;fEHYi00[LAbG9D6g1
+R84
+32
+R287
+!i10b 1
+R118
+R466
+R467
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c0_for_cond1_preheader_avg_c0_exit23_avg_full_detector
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z468 8tb/simulation/submodules/i_acl_sfc_exit_c0_for_cond1_preheader_avA0Zvg_full_detector.vhd
+Z469 Ftb/simulation/submodules/i_acl_sfc_exit_c0_for_cond1_preheader_avA0Zvg_full_detector.vhd
+l0
+L35
+VaXO954`f5KFc`=bfn[M]b0
+!s100 GUlC8OKOX6In3SNX45:oa0
+R84
+32
+R287
+!i10b 1
+R288
+Z470 !s90 tb/simulation/submodules/i_acl_sfc_exit_c0_for_cond1_preheader_avA0Zvg_full_detector.vhd|-work|avg_internal_inst|
+Z471 !s107 tb/simulation/submodules/i_acl_sfc_exit_c0_for_cond1_preheader_avA0Zvg_full_detector.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 69 i_acl_sfc_exit_c0_for_cond1_preheader_avg_c0_exit23_avg_full_detector 0 22 aXO954`f5KFc`=bfn[M]b0
+l85
+L48
+Vg8jLDLCT=LAALd=b?N:Ji1
+!s100 I2C=5ZzdaVW222eSb;ZF^3
+R84
+32
+R287
+!i10b 1
+R288
+R470
+R471
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c0_for_end_avg_c0_exit39_avg101_data_fifo
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z472 8tb/simulation/submodules/i_acl_sfc_exit_c0_for_end_avg_c0_exit39_A0Zavg101_data_fifo.vhd
+Z473 Ftb/simulation/submodules/i_acl_sfc_exit_c0_for_end_avg_c0_exit39_A0Zavg101_data_fifo.vhd
+l0
+L35
+VhgKMG`n`D410iG8zGRa2O2
+!s100 GAlJn5<NT@m9:dHdOI`mL1
+R84
+32
+R233
+!i10b 1
+R260
+Z474 !s90 tb/simulation/submodules/i_acl_sfc_exit_c0_for_end_avg_c0_exit39_A0Zavg101_data_fifo.vhd|-work|avg_internal_inst|
+Z475 !s107 tb/simulation/submodules/i_acl_sfc_exit_c0_for_end_avg_c0_exit39_A0Zavg101_data_fifo.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 56 i_acl_sfc_exit_c0_for_end_avg_c0_exit39_avg101_data_fifo 0 22 hgKMG`n`D410iG8zGRa2O2
+l97
+L50
+VOg`CJ5AcmkKJCo2HjKidn0
+!s100 GIo8lP4M?Y?XY:lV0A9PE1
+R84
+32
+R233
+!i10b 1
+R260
+R474
+R475
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c0_for_end_avg_c0_exit39_avg84
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z476 8tb/simulation/submodules/i_acl_sfc_exit_c0_for_end_avg_c0_exit39_avg84.vhd
+Z477 Ftb/simulation/submodules/i_acl_sfc_exit_c0_for_end_avg_c0_exit39_avg84.vhd
+l0
+L35
+VY1m9=JTX`7zl;7WTi@YgW0
+!s100 JMIN0T[HGN;L1T9HFk^^H3
+R84
+32
+R233
+!i10b 1
+R260
+Z478 !s90 tb/simulation/submodules/i_acl_sfc_exit_c0_for_end_avg_c0_exit39_avg84.vhd|-work|avg_internal_inst|
+Z479 !s107 tb/simulation/submodules/i_acl_sfc_exit_c0_for_end_avg_c0_exit39_avg84.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 45 i_acl_sfc_exit_c0_for_end_avg_c0_exit39_avg84 0 22 Y1m9=JTX`7zl;7WTi@YgW0
+l95
+L51
+VOoO6KQ@E9=CJ]HFMZhhI`2
+!s100 KFzc?H?K[E8gT`G2<l2;o0
+R84
+32
+R233
+!i10b 1
+R260
+R478
+R479
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c0_for_end_avg_c0_exit39_avg_full_detector
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z480 8tb/simulation/submodules/i_acl_sfc_exit_c0_for_end_avg_c0_exit39_A0Zvg_full_detector.vhd
+Z481 Ftb/simulation/submodules/i_acl_sfc_exit_c0_for_end_avg_c0_exit39_A0Zvg_full_detector.vhd
+l0
+L35
+V;nUE[bb3>`nE^QK;gdPcJ3
+!s100 oLiP1Q2[8P1=BJcK3KXC41
+R84
+32
+R233
+!i10b 1
+R260
+Z482 !s90 tb/simulation/submodules/i_acl_sfc_exit_c0_for_end_avg_c0_exit39_A0Zvg_full_detector.vhd|-work|avg_internal_inst|
+Z483 !s107 tb/simulation/submodules/i_acl_sfc_exit_c0_for_end_avg_c0_exit39_A0Zvg_full_detector.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 57 i_acl_sfc_exit_c0_for_end_avg_c0_exit39_avg_full_detector 0 22 ;nUE[bb3>`nE^QK;gdPcJ3
+l85
+L48
+V8fQ<kiD;JXS9WIH81P1l02
+!s100 iHK5GCdX1Mf`NlC:5ia4K2
+R84
+32
+R233
+!i10b 1
+R260
+R482
+R483
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c0_wt_entry_avg_c0_exit_avg10
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z484 8tb/simulation/submodules/i_acl_sfc_exit_c0_wt_entry_avg_c0_exit_avg10.vhd
+Z485 Ftb/simulation/submodules/i_acl_sfc_exit_c0_wt_entry_avg_c0_exit_avg10.vhd
+l0
+L35
+V2hi@ik=G14W1kYg]zLg5?0
+!s100 MIcc857fHQU:M]JCMan?c2
+R84
+32
+R111
+!i10b 1
+R112
+Z486 !s90 tb/simulation/submodules/i_acl_sfc_exit_c0_wt_entry_avg_c0_exit_avg10.vhd|-work|avg_internal_inst|
+Z487 !s107 tb/simulation/submodules/i_acl_sfc_exit_c0_wt_entry_avg_c0_exit_avg10.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 44 i_acl_sfc_exit_c0_wt_entry_avg_c0_exit_avg10 0 22 2hi@ik=G14W1kYg]zLg5?0
+l115
+L53
+VNcBj:3HSbM`HSR24:5@eo3
+!s100 KE7Y8]@`@Tm;9o]oge^hi2
+R84
+32
+R111
+!i10b 1
+R112
+R486
+R487
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg81
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z488 8tb/simulation/submodules/i_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg81.vhd
+Z489 Ftb/simulation/submodules/i_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg81.vhd
+l0
+L35
+VXa<coC;fH;3GUlMVm9FoV3
+!s100 ]gaP;4]CUA@[GH:oeN_@_0
+R84
+32
+R314
+!i10b 1
+R315
+Z490 !s90 tb/simulation/submodules/i_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg81.vhd|-work|avg_internal_inst|
+Z491 !s107 tb/simulation/submodules/i_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg81.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 45 i_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg81 0 22 Xa<coC;fH;3GUlMVm9FoV3
+l99
+L53
+VPdf>Ki=2e6kcPXZ]_jBmY2
+!s100 ?d]jk?[cM_KC9LSRmVXHV3
+R84
+32
+R314
+!i10b 1
+R315
+R490
+R491
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg99_data_fifo
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z492 8tb/simulation/submodules/i_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg99_data_fifo.vhd
+Z493 Ftb/simulation/submodules/i_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg99_data_fifo.vhd
+l0
+L35
+VGWS@YIQSgBCJfnm2AWDhZ3
+!s100 3K0N2>@mI;>d8YWFgEha<2
+R84
+32
+R314
+!i10b 1
+R315
+Z494 !s90 tb/simulation/submodules/i_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg99_data_fifo.vhd|-work|avg_internal_inst|
+Z495 !s107 tb/simulation/submodules/i_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg99_data_fifo.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 55 i_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg99_data_fifo 0 22 GWS@YIQSgBCJfnm2AWDhZ3
+l97
+L50
+V@B3gGd>BAnf<UHmR<Gj`=3
+!s100 Kk=2VJL7MPn`o@Hdaz@kF2
+R84
+32
+R314
+!i10b 1
+R315
+R494
+R495
+!i113 1
+R89
+R90
+Ei_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg_full_detector
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z496 8tb/simulation/submodules/i_acl_sfc_exit_c1_for_body3_avg_c1_exit_A0Zvg_full_detector.vhd
+Z497 Ftb/simulation/submodules/i_acl_sfc_exit_c1_for_body3_avg_c1_exit_A0Zvg_full_detector.vhd
+l0
+L35
+V<4n?92Oz06^SMa5Nm]Jka3
+!s100 b1ImN`T7o3cFWohSYDG?@0
+R84
+32
+R314
+!i10b 1
+R315
+Z498 !s90 tb/simulation/submodules/i_acl_sfc_exit_c1_for_body3_avg_c1_exit_A0Zvg_full_detector.vhd|-work|avg_internal_inst|
+Z499 !s107 tb/simulation/submodules/i_acl_sfc_exit_c1_for_body3_avg_c1_exit_A0Zvg_full_detector.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 57 i_acl_sfc_exit_c1_for_body3_avg_c1_exit_avg_full_detector 0 22 <4n?92Oz06^SMa5Nm]Jka3
+l85
+L48
+VPE=?[RlK:4i@_b4RVTL;L3
+!s100 [L]kQijPkAkXMkj;PE_NV3
+R84
+32
+R314
+!i10b 1
+R315
+R498
+R499
+!i113 1
+R89
+R90
+Ei_ffwd_dst_x56_avg46
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z500 8tb/simulation/submodules/i_ffwd_dst_x56_avg46.vhd
+Z501 Ftb/simulation/submodules/i_ffwd_dst_x56_avg46.vhd
+l0
+L35
+Ve71L=I>6]BW^j8OdhEJf=3
+!s100 =ZkbKjgzB631F]Joe>z5_2
+R84
+32
+R314
+!i10b 1
+R315
+Z502 !s90 tb/simulation/submodules/i_ffwd_dst_x56_avg46.vhd|-work|avg_internal_inst|
+Z503 !s107 tb/simulation/submodules/i_ffwd_dst_x56_avg46.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 20 i_ffwd_dst_x56_avg46 0 22 e71L=I>6]BW^j8OdhEJf=3
+l67
+L48
+V>7U8KP@LH]:WZeOnBMX>k0
+!s100 P:WMh7;9639Q:gbQfG0Y63
+R84
+32
+R314
+!i10b 1
+R315
+R502
+R503
+!i113 1
+R89
+R90
+Ei_ffwd_dst_y67_avg85
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z504 8tb/simulation/submodules/i_ffwd_dst_y67_avg85.vhd
+Z505 Ftb/simulation/submodules/i_ffwd_dst_y67_avg85.vhd
+l0
+L35
+Vo8X=2FRLP>cUhQ6f<Y>]`0
+!s100 k5P7b`f[C]TW@88Ol3XG93
+R84
+32
+R227
+!i10b 1
+R228
+Z506 !s90 tb/simulation/submodules/i_ffwd_dst_y67_avg85.vhd|-work|avg_internal_inst|
+Z507 !s107 tb/simulation/submodules/i_ffwd_dst_y67_avg85.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 20 i_ffwd_dst_y67_avg85 0 22 o8X=2FRLP>cUhQ6f<Y>]`0
+l68
+L48
+V=>89[a@3_cW[GL5TJ3eU^1
+!s100 EgC[1W_BV5]_iS]MHNIHM0
+R84
+32
+R227
+!i10b 1
+R228
+R506
+R507
+!i113 1
+R89
+R90
+Ei_ffwd_src_unnamed_avg2_avg15
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z508 8tb/simulation/submodules/i_ffwd_src_unnamed_avg2_avg15.vhd
+Z509 Ftb/simulation/submodules/i_ffwd_src_unnamed_avg2_avg15.vhd
+l0
+L35
+Vci4nF7O]F^eUe=H;L7^f:2
+!s100 ehVf0mE?^h;Eo73eX?Zo61
+R84
+32
+R111
+!i10b 1
+R112
+Z510 !s90 tb/simulation/submodules/i_ffwd_src_unnamed_avg2_avg15.vhd|-work|avg_internal_inst|
+Z511 !s107 tb/simulation/submodules/i_ffwd_src_unnamed_avg2_avg15.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 29 i_ffwd_src_unnamed_avg2_avg15 0 22 ci4nF7O]F^eUe=H;L7^f:2
+l77
+L49
+V_lz:gmEJk3ED;XhMn=LDI0
+!s100 @YHBTlAKNYXLMA1hRgBNN3
+R84
+32
+R111
+!i10b 1
+R112
+R510
+R511
+!i113 1
+R89
+R90
+Ei_ffwd_src_unnamed_avg3_avg17
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z512 8tb/simulation/submodules/i_ffwd_src_unnamed_avg3_avg17.vhd
+Z513 Ftb/simulation/submodules/i_ffwd_src_unnamed_avg3_avg17.vhd
+l0
+L35
+VBHoEZ:>17zbe_Q3n:ZjGk3
+!s100 JJ<2IIEI^MSZWPA=9^2BW0
+R84
+32
+R117
+!i10b 1
+R118
+Z514 !s90 tb/simulation/submodules/i_ffwd_src_unnamed_avg3_avg17.vhd|-work|avg_internal_inst|
+Z515 !s107 tb/simulation/submodules/i_ffwd_src_unnamed_avg3_avg17.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 29 i_ffwd_src_unnamed_avg3_avg17 0 22 BHoEZ:>17zbe_Q3n:ZjGk3
+l77
+L49
+V]0;ZDhl1zj=IR>3g1A9ml0
+!s100 g0HkGz?6AVjZiPT8ALD3?3
+R84
+32
+R117
+!i10b 1
+R118
+R514
+R515
+!i113 1
+R89
+R90
+Ei_iord_bl_do_unnamed_avg1_avg14
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z516 8tb/simulation/submodules/i_iord_bl_do_unnamed_avg1_avg14.vhd
+Z517 Ftb/simulation/submodules/i_iord_bl_do_unnamed_avg1_avg14.vhd
+l0
+L35
+V^`]4<MJ_n4602AO4HaD[`3
+!s100 b;bU19UT@WYgP03zE[92R0
+R84
+32
+R101
+!i10b 1
+R102
+Z518 !s90 tb/simulation/submodules/i_iord_bl_do_unnamed_avg1_avg14.vhd|-work|avg_internal_inst|
+Z519 !s107 tb/simulation/submodules/i_iord_bl_do_unnamed_avg1_avg14.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 31 i_iord_bl_do_unnamed_avg1_avg14 0 22 ^`]4<MJ_n4602AO4HaD[`3
+l114
+L52
+VgG0JB1^8g7BNTfd]CJ3Y23
+!s100 CPY<b2nah[J3T<h7EeBnK3
+R84
+32
+R101
+!i10b 1
+R102
+R518
+R519
+!i113 1
+R89
+R90
+Ei_iowr_bl_return_unnamed_avg5_avg92
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z520 8tb/simulation/submodules/i_iowr_bl_return_unnamed_avg5_avg92.vhd
+Z521 Ftb/simulation/submodules/i_iowr_bl_return_unnamed_avg5_avg92.vhd
+l0
+L35
+VW6XdPoKGb@33Zd`m93=G50
+!s100 SaIC@e4g^TYzn2E=_7S>=0
+R84
+32
+R277
+!i10b 1
+R278
+Z522 !s90 tb/simulation/submodules/i_iowr_bl_return_unnamed_avg5_avg92.vhd|-work|avg_internal_inst|
+Z523 !s107 tb/simulation/submodules/i_iowr_bl_return_unnamed_avg5_avg92.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 35 i_iowr_bl_return_unnamed_avg5_avg92 0 22 W6XdPoKGb@33Zd`m93=G50
+l113
+L51
+V]iN=GFbk18E2@>oeJ]L4A3
+!s100 ?cK8FFeQdW^@QODzOXzUl1
+R84
+32
+R277
+!i10b 1
+R278
+R522
+R523
+!i113 1
+R89
+R90
+Ei_load_unnamed_avg4_avg73
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z524 8tb/simulation/submodules/i_load_unnamed_avg4_avg73.vhd
+Z525 Ftb/simulation/submodules/i_load_unnamed_avg4_avg73.vhd
+l0
+L35
+VcfNB59[FW5l4hlJEDHajc1
+!s100 heY[a8Q?]>]7<7`]i4SNk3
+R84
+32
+R144
+!i10b 1
+R145
+Z526 !s90 tb/simulation/submodules/i_load_unnamed_avg4_avg73.vhd|-work|avg_internal_inst|
+Z527 !s107 tb/simulation/submodules/i_load_unnamed_avg4_avg73.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 25 i_load_unnamed_avg4_avg73 0 22 cfNB59[FW5l4hlJEDHajc1
+l211
+L62
+VOoS@a[RfaKAGzIVRO<@cW2
+!s100 F1NchB_hZ_oXm@7F=P[zX3
+R84
+32
+R144
+!i10b 1
+R145
+R526
+R527
+!i113 1
+R89
+R90
+Ei_sfc_c0_for_body3_avg_c0_enter26_avg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z528 8tb/simulation/submodules/i_sfc_c0_for_body3_avg_c0_enter26_avg.vhd
+Z529 Ftb/simulation/submodules/i_sfc_c0_for_body3_avg_c0_enter26_avg.vhd
+l0
+L35
+VV:7Uj<ELho[`SzBGABU411
+!s100 8g``n^=o`b?j4:<;1ONZZ2
+R84
+32
+R139
+!i10b 1
+R301
+Z530 !s90 tb/simulation/submodules/i_sfc_c0_for_body3_avg_c0_enter26_avg.vhd|-work|avg_internal_inst|
+Z531 !s107 tb/simulation/submodules/i_sfc_c0_for_body3_avg_c0_enter26_avg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 37 i_sfc_c0_for_body3_avg_c0_enter26_avg 0 22 V:7Uj<ELho[`SzBGABU411
+l166
+L67
+V?kk0lTMhmG5AjOOib9BIZ1
+!s100 VLQE<QMQT>Z`YY6?<XFSW1
+R84
+32
+R139
+!i10b 1
+R301
+R530
+R531
+!i113 1
+R89
+R90
+Ei_sfc_c0_for_cond1_preheader_avg_c0_enter21_avg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z532 8tb/simulation/submodules/i_sfc_c0_for_cond1_preheader_avg_c0_enter21_avg.vhd
+Z533 Ftb/simulation/submodules/i_sfc_c0_for_cond1_preheader_avg_c0_enter21_avg.vhd
+l0
+L35
+VTO;m6;J]O3D77VcE[F6Bb3
+!s100 j4Xn`:0IJG=5eaod1CeOl3
+R84
+32
+R117
+!i10b 1
+R118
+Z534 !s90 tb/simulation/submodules/i_sfc_c0_for_cond1_preheader_avg_c0_enter21_avg.vhd|-work|avg_internal_inst|
+Z535 !s107 tb/simulation/submodules/i_sfc_c0_for_cond1_preheader_avg_c0_enter21_avg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 47 i_sfc_c0_for_cond1_preheader_avg_c0_enter21_avg 0 22 TO;m6;J]O3D77VcE[F6Bb3
+l120
+L56
+V=jT>b7[liKCCj894?mZ_;2
+!s100 Q`HAY5@EY4RFRXgn9]OJa3
+R84
+32
+R117
+!i10b 1
+R118
+R534
+R535
+!i113 1
+R89
+R90
+Ei_sfc_c0_for_end_avg_c0_enter36_avg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z536 8tb/simulation/submodules/i_sfc_c0_for_end_avg_c0_enter36_avg.vhd
+Z537 Ftb/simulation/submodules/i_sfc_c0_for_end_avg_c0_enter36_avg.vhd
+l0
+L35
+Va9NK1WMfLU;7@[TGMlg8g1
+!s100 Ya^bgWEikDd_:WK4k`_ZG1
+R84
+32
+R233
+!i10b 1
+R260
+Z538 !s90 tb/simulation/submodules/i_sfc_c0_for_end_avg_c0_enter36_avg.vhd|-work|avg_internal_inst|
+Z539 !s107 tb/simulation/submodules/i_sfc_c0_for_end_avg_c0_enter36_avg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 35 i_sfc_c0_for_end_avg_c0_enter36_avg 0 22 a9NK1WMfLU;7@[TGMlg8g1
+l97
+L50
+VME]ZeNBAk3=3Ce<ZaN1gT0
+!s100 SfNO1VoEbddXbz9Q@[YY^3
+R84
+32
+R233
+!i10b 1
+R260
+R538
+R539
+!i113 1
+R89
+R90
+Ei_sfc_c0_wt_entry_avg_c0_enter_avg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z540 8tb/simulation/submodules/i_sfc_c0_wt_entry_avg_c0_enter_avg.vhd
+Z541 Ftb/simulation/submodules/i_sfc_c0_wt_entry_avg_c0_enter_avg.vhd
+l0
+L35
+Vkn04]U2jYeDFl_d4JK1VA2
+!s100 9_JPHFXFe]5KJGL5YYOTV2
+R84
+32
+R101
+!i10b 1
+R102
+Z542 !s90 tb/simulation/submodules/i_sfc_c0_wt_entry_avg_c0_enter_avg.vhd|-work|avg_internal_inst|
+Z543 !s107 tb/simulation/submodules/i_sfc_c0_wt_entry_avg_c0_enter_avg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 34 i_sfc_c0_wt_entry_avg_c0_enter_avg 0 22 kn04]U2jYeDFl_d4JK1VA2
+l110
+L53
+VFQ`KnXTjC^dS>O3W?2IY`0
+!s100 _gAaK04PYUf]_ToD`9U2c1
+R84
+32
+R101
+!i10b 1
+R102
+R542
+R543
+!i113 1
+R89
+R90
+Ei_sfc_c1_for_body3_avg_c1_enter_avg
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z544 8tb/simulation/submodules/i_sfc_c1_for_body3_avg_c1_enter_avg.vhd
+Z545 Ftb/simulation/submodules/i_sfc_c1_for_body3_avg_c1_enter_avg.vhd
+l0
+L35
+V:2Y57M7JiXJnUWiVGgRVz2
+!s100 >jQZKOX1n:bKzEkd7[:Oz1
+R84
+32
+R314
+!i10b 1
+R315
+Z546 !s90 tb/simulation/submodules/i_sfc_c1_for_body3_avg_c1_enter_avg.vhd|-work|avg_internal_inst|
+Z547 !s107 tb/simulation/submodules/i_sfc_c1_for_body3_avg_c1_enter_avg.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 35 i_sfc_c1_for_body3_avg_c1_enter_avg 0 22 :2Y57M7JiXJnUWiVGgRVz2
+l107
+L55
+V3K_^_a5<QW1^z3H;^Y^;k3
+!s100 70jLP^7gX^f0N4V:gOaHK2
+R84
+32
+R314
+!i10b 1
+R315
+R546
+R547
+!i113 1
+R89
+R90
+Ei_sfc_logic_c0_for_body3_avg_c0_enter26_avg37
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z548 8tb/simulation/submodules/i_sfc_logic_c0_for_body3_avg_c0_enter26_avg37.vhd
+Z549 Ftb/simulation/submodules/i_sfc_logic_c0_for_body3_avg_c0_enter26_avg37.vhd
+l0
+L35
+V8<Lclg]AkJ9A>lQT<4h>13
+!s100 zO4XKgPc7BkzDAOJJQbHD0
+R84
+32
+R139
+!i10b 1
+R301
+Z550 !s90 tb/simulation/submodules/i_sfc_logic_c0_for_body3_avg_c0_enter26_avg37.vhd|-work|avg_internal_inst|
+Z551 !s107 tb/simulation/submodules/i_sfc_logic_c0_for_body3_avg_c0_enter26_avg37.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 45 i_sfc_logic_c0_for_body3_avg_c0_enter26_avg37 0 22 8<Lclg]AkJ9A>lQT<4h>13
+l482
+L65
+VX:;V9?bBW3kMT7ZNHbiNg1
+!s100 Ib2gQM6`M34V7QlYoA[;C0
+R84
+32
+R139
+!i10b 1
+R301
+R550
+R551
+!i113 1
+R89
+R90
+Ei_sfc_logic_c0_for_cond1_preheader_avg_c0_enter21_avg19
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z552 8tb/simulation/submodules/i_sfc_logic_c0_for_cond1_preheader_avg_c0_enter21_avg19.vhd
+Z553 Ftb/simulation/submodules/i_sfc_logic_c0_for_cond1_preheader_avg_c0_enter21_avg19.vhd
+l0
+L35
+V]J`VPDM>6>@GhGRT5m;=S1
+!s100 EcX^`jh3T=;O@:R7Y^XeE2
+R84
+32
+R287
+!i10b 1
+R288
+Z554 !s90 tb/simulation/submodules/i_sfc_logic_c0_for_cond1_preheader_avg_c0_enter21_avg19.vhd|-work|avg_internal_inst|
+Z555 !s107 tb/simulation/submodules/i_sfc_logic_c0_for_cond1_preheader_avg_c0_enter21_avg19.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 55 i_sfc_logic_c0_for_cond1_preheader_avg_c0_enter21_avg19 0 22 ]J`VPDM>6>@GhGRT5m;=S1
+l207
+L54
+VH;U<>KgT[hQVfI`MX@Y4K3
+!s100 Hde5B2S@GO;ko5b6m[KM21
+R84
+32
+R287
+!i10b 1
+R288
+R554
+R555
+!i113 1
+R89
+R90
+Ei_sfc_logic_c0_for_end_avg_c0_enter36_avg82
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z556 8tb/simulation/submodules/i_sfc_logic_c0_for_end_avg_c0_enter36_avg82.vhd
+Z557 Ftb/simulation/submodules/i_sfc_logic_c0_for_end_avg_c0_enter36_avg82.vhd
+l0
+L35
+VW2lS8[iYNL;i@I75oazXe2
+!s100 Mnjaz7QPz37oc:hg4::1_1
+R84
+32
+R233
+!i10b 1
+R260
+Z558 !s90 tb/simulation/submodules/i_sfc_logic_c0_for_end_avg_c0_enter36_avg82.vhd|-work|avg_internal_inst|
+Z559 !s107 tb/simulation/submodules/i_sfc_logic_c0_for_end_avg_c0_enter36_avg82.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 43 i_sfc_logic_c0_for_end_avg_c0_enter36_avg82 0 22 W2lS8[iYNL;i@I75oazXe2
+l82
+L48
+VFZH0VEdXT:9`D1D0a]4Ae2
+!s100 JMn20:flFBA2041=`E6jQ2
+R84
+32
+R233
+!i10b 1
+R260
+R558
+R559
+!i113 1
+R89
+R90
+Ei_sfc_logic_c0_wt_entry_avg_c0_enter_avg4
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z560 8tb/simulation/submodules/i_sfc_logic_c0_wt_entry_avg_c0_enter_avg4.vhd
+Z561 Ftb/simulation/submodules/i_sfc_logic_c0_wt_entry_avg_c0_enter_avg4.vhd
+l0
+L35
+VP7^iSnU]f7M[[>N]8[lPB2
+!s100 4`F6kg7^RWFjOA;E[1Ffm2
+R84
+32
+R111
+!i10b 1
+R112
+Z562 !s90 tb/simulation/submodules/i_sfc_logic_c0_wt_entry_avg_c0_enter_avg4.vhd|-work|avg_internal_inst|
+Z563 !s107 tb/simulation/submodules/i_sfc_logic_c0_wt_entry_avg_c0_enter_avg4.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 41 i_sfc_logic_c0_wt_entry_avg_c0_enter_avg4 0 22 P7^iSnU]f7M[[>N]8[lPB2
+l108
+L51
+VN[?292N71ccO9[jj;L=n=1
+!s100 9[C]DV<jJG]7cRIi[3L222
+R84
+32
+R111
+!i10b 1
+R112
+R562
+R563
+!i113 1
+R89
+R90
+Ei_sfc_logic_c1_for_body3_avg_c1_enter_avg75
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z564 8tb/simulation/submodules/i_sfc_logic_c1_for_body3_avg_c1_enter_avg75.vhd
+Z565 Ftb/simulation/submodules/i_sfc_logic_c1_for_body3_avg_c1_enter_avg75.vhd
+l0
+L35
+VGW_H=:29KDmg[g:QH7JW[0
+!s100 J7W0>6CIa`@MXbkYLM^eK2
+R84
+32
+R314
+!i10b 1
+R315
+Z566 !s90 tb/simulation/submodules/i_sfc_logic_c1_for_body3_avg_c1_enter_avg75.vhd|-work|avg_internal_inst|
+Z567 !s107 tb/simulation/submodules/i_sfc_logic_c1_for_body3_avg_c1_enter_avg75.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 43 i_sfc_logic_c1_for_body3_avg_c1_enter_avg75 0 22 GW_H=:29KDmg[g:QH7JW[0
+l118
+L51
+VODP:NaiGZ89`Z>23JSkL02
+!s100 ADo6PPI2aBXC;a2o>m0=N1
+R84
+32
+R314
+!i10b 1
+R315
+R566
+R567
+!i113 1
+R89
+R90
+Ei_store_memdep_avg88
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z568 8tb/simulation/submodules/i_store_memdep_avg88.vhd
+Z569 Ftb/simulation/submodules/i_store_memdep_avg88.vhd
+l0
+L35
+V]U@7E=OAVcO@SZR>:a>bF1
+!s100 Fo;FVYO<do5I_n366M>Ob2
+R84
+32
+R227
+!i10b 1
+R228
+Z570 !s90 tb/simulation/submodules/i_store_memdep_avg88.vhd|-work|avg_internal_inst|
+Z571 !s107 tb/simulation/submodules/i_store_memdep_avg88.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 20 i_store_memdep_avg88 0 22 ]U@7E=OAVcO@SZR>:a>bF1
+l198
+L63
+V>?j`dBhVz^@TZLRFZ4C262
+!s100 kbI]?KD77?HN[Xzi0IhR]1
+R84
+32
+R227
+!i10b 1
+R228
+R570
+R571
+!i113 1
+R89
+R90
+vinit_reg
+R1
+R37
+!i10b 1
+!s100 =M5ZM^>:Df@o0ILQCh[9P3
+I=ZLJC^MP6cnHTHU=ME3[D3
+R3
+Z572 !s105 st_top_v_unit
+S1
+R0
+R5
+Z573 8tb/simulation/submodules/st_top.v
+Z574 Ftb/simulation/submodules/st_top.v
+R173
+R8
+r1
+!s85 0
+31
+R35
+Z575 !s107 tb/simulation/submodules/st_top.v|
+Z576 !s90 -sv|tb/simulation/submodules/st_top.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlookahead_fifo
+R1
+R37
+!i10b 1
+!s100 ?zPGZ??LajD2acjT<0G<<3
+I]6Y?9e?J<z?SzlQWFc^6N1
+R3
+R176
+S1
+R0
+R5
+R177
+R178
+L0 482
+R8
+r1
+!s85 0
+31
+R38
+R179
+R180
+!i113 1
+R12
+R13
+Eloop_limiter_avg0
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z577 8tb/simulation/submodules/loop_limiter_avg0.vhd
+Z578 Ftb/simulation/submodules/loop_limiter_avg0.vhd
+l0
+L35
+VF:zQ64]NKcB7zg9N9a8SU2
+!s100 ;Hc9OD9>TO9BXjFb<Kd[i2
+R84
+32
+R277
+!i10b 1
+R278
+Z579 !s90 tb/simulation/submodules/loop_limiter_avg0.vhd|-work|avg_internal_inst|
+Z580 !s107 tb/simulation/submodules/loop_limiter_avg0.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 17 loop_limiter_avg0 0 22 F:zQ64]NKcB7zg9N9a8SU2
+l86
+L48
+V_7;:?TIj5Y3Gm`S9?`X:V3
+!s100 h2M3GPU_:=@X;?;GSN9@=2
+R84
+32
+R277
+!i10b 1
+R278
+R579
+R580
+!i113 1
+R89
+R90
+Eloop_limiter_avg1
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z581 8tb/simulation/submodules/loop_limiter_avg1.vhd
+Z582 Ftb/simulation/submodules/loop_limiter_avg1.vhd
+l0
+L35
+VhQj>GPFbLK0kbU:7Yo^Jc0
+!s100 V8?_[YNgOY^nS2VR7Bbzk3
+R84
+32
+R14
+!i10b 1
+R278
+Z583 !s90 tb/simulation/submodules/loop_limiter_avg1.vhd|-work|avg_internal_inst|
+Z584 !s107 tb/simulation/submodules/loop_limiter_avg1.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 17 loop_limiter_avg1 0 22 hQj>GPFbLK0kbU:7Yo^Jc0
+l86
+L48
+VcJ8RmmLdT^UaM`hJZ0b@R1
+!s100 9[9f=QA3:Vb=@]<a`;dnV0
+R84
+32
+R14
+!i10b 1
+R278
+R583
+R584
+!i113 1
+R89
+R90
+vlsu_atomic_pipelined
+R1
+R2
+!i10b 1
+!s100 :HzJ5eT22=2mdUA251Xig1
+IL6I^nMfCJF1Qa_X=nC`Yn1
+R3
+!s105 lsu_atomic_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/lsu_atomic.v
+Ftb/simulation/submodules/lsu_atomic.v
+L0 38
+R8
+r1
+!s85 0
+31
+R9
+!s107 tb/simulation/submodules/lsu_atomic.v|
+!s90 -sv|tb/simulation/submodules/lsu_atomic.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_basic_coalesced_read
+R1
+R37
+!i10b 1
+!s100 iR2MC1I>JD^3H2Dk2d;_b2
+IiZh@Ez5kj7nUe[g2]GCo?1
+R3
+R176
+S1
+R0
+R5
+R177
+R178
+Z585 L0 41
+R8
+r1
+!s85 0
+31
+R38
+R179
+R180
+!i113 1
+R12
+R13
+vlsu_basic_coalesced_write
+R1
+R37
+!i10b 1
+!s100 DIZ8GiIl=^_QDY^PXbE2l3
+I@zZC[_5RMWUAmK]Je3dB`2
+R3
+R176
+S1
+R0
+R5
+R177
+R178
+L0 227
+R8
+r1
+!s85 0
+31
+R38
+R179
+R180
+!i113 1
+R12
+R13
+vlsu_burst_coalesced_pipelined_read
+R1
+R2
+!i10b 1
+!s100 71GLJQIcSQiJ4MaSAnX6e1
+IKIzjBTb?QM@eOQKaT8iOW2
+R3
+!s105 lsu_burst_coalesced_pipelined_read_sv_unit
+S1
+R0
+R5
+8tb/simulation/submodules/lsu_burst_coalesced_pipelined_read.sv
+Ftb/simulation/submodules/lsu_burst_coalesced_pipelined_read.sv
+L0 63
+R8
+r1
+!s85 0
+31
+R9
+!s107 tb/simulation/submodules/lsu_burst_coalesced_pipelined_read.sv|
+!s90 -sv|tb/simulation/submodules/lsu_burst_coalesced_pipelined_read.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_burst_coalesced_pipelined_write
+R1
+R2
+!i10b 1
+!s100 c7[]iVWWciAQRWWRm02G13
+IQFfmWzOJB;;i@VJ=^0^jo2
+R3
+!s105 lsu_burst_coalesced_pipelined_write_sv_unit
+S1
+R0
+R5
+8tb/simulation/submodules/lsu_burst_coalesced_pipelined_write.sv
+Ftb/simulation/submodules/lsu_burst_coalesced_pipelined_write.sv
+L0 69
+R8
+r1
+!s85 0
+31
+R9
+!s107 tb/simulation/submodules/lsu_burst_coalesced_pipelined_write.sv|
+!s90 -sv|tb/simulation/submodules/lsu_burst_coalesced_pipelined_write.sv|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_burst_read_master
+R1
+R37
+!i10b 1
+!s100 `KcZ2[AEEd9D^JI1L>O>W0
+I?CGW@g`R]JmL0_b>VLiSW0
+R3
+!s105 lsu_burst_master_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/lsu_burst_master.v
+Ftb/simulation/submodules/lsu_burst_master.v
+L0 30
+R8
+r1
+!s85 0
+31
+R38
+!s107 tb/simulation/submodules/lsu_burst_master.v|
+!s90 -sv|tb/simulation/submodules/lsu_burst_master.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_bursting_pipelined_read
+R1
+R37
+!i10b 1
+!s100 QQYiB[g?fHh[>QEaooFi80
+IX96nlN?UXZc>;4Og?mz=e3
+R3
+R51
+S1
+R0
+R5
+R52
+R53
+L0 432
+R8
+r1
+!s85 0
+31
+R38
+R54
+R55
+!i113 1
+R12
+R13
+vlsu_bursting_read
+R1
+R37
+!i10b 1
+!s100 ^z7;F0:g<GV8gRTnQD83?3
+I@kh^J9?VZRKXMI]m2JDoG2
+R3
+R51
+S1
+R0
+R5
+R52
+R53
+L0 18
+R8
+r1
+!s85 0
+31
+R38
+R54
+R55
+!i113 1
+R12
+R13
+vlsu_bursting_write
+R1
+R37
+!i10b 1
+!s100 OnP1W0K4VeRD]MYRhcUg_2
+I776LX15=4DXF;i`n<ABI_2
+R3
+R51
+S1
+R0
+R5
+R52
+R53
+L0 1096
+R8
+r1
+!s85 0
+31
+R38
+R54
+R55
+!i113 1
+R12
+R13
+vlsu_bursting_write_internal
+R1
+R37
+!i10b 1
+!s100 fliXafQAMRSS4kC`SHb2E3
+IeYAOYfQ[nbVP2z2G;fJ;h0
+R3
+R51
+S1
+R0
+R5
+R52
+R53
+L0 1260
+R8
+r1
+!s85 0
+31
+R38
+R54
+R55
+!i113 1
+R12
+R13
+vlsu_enabled_read
+R1
+R37
+!i10b 1
+!s100 g>9<^Df3i6PUbF[gHN8dT0
+IhdRAo:<91]ziH>IM5iCVb2
+R3
+Z586 !s105 lsu_enabled_v_unit
+S1
+R0
+R5
+Z587 8tb/simulation/submodules/lsu_enabled.v
+Z588 Ftb/simulation/submodules/lsu_enabled.v
+R585
+R8
+r1
+!s85 0
+31
+R38
+Z589 !s107 tb/simulation/submodules/lsu_enabled.v|
+Z590 !s90 -sv|tb/simulation/submodules/lsu_enabled.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_enabled_write
+R1
+R37
+!i10b 1
+!s100 >W3Da0<Ll[e=cJY3b]jBM2
+I=66[h=;ATK[5WcHV@aiD03
+R3
+R586
+S1
+R0
+R5
+R587
+R588
+L0 194
+R8
+r1
+!s85 0
+31
+R38
+R589
+R590
+!i113 1
+R12
+R13
+vlsu_non_aligned_write
+R1
+R2
+!i10b 1
+!s100 VlR?T8>`K44glK7_zl<IT3
+IF0Q;`l2S2iU=_][FEl0T11
+R3
+Z591 !s105 lsu_non_aligned_write_v_unit
+S1
+R0
+R5
+Z592 8tb/simulation/submodules/lsu_non_aligned_write.v
+Z593 Ftb/simulation/submodules/lsu_non_aligned_write.v
+R29
+R8
+r1
+!s85 0
+31
+R9
+Z594 !s107 tb/simulation/submodules/lsu_non_aligned_write.v|
+Z595 !s90 -sv|tb/simulation/submodules/lsu_non_aligned_write.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_non_aligned_write_internal
+R1
+R2
+!i10b 1
+!s100 YgM=VHBhA[QdIEXDAZ5;83
+I:`JdV]gARzC3@^T;ELLU73
+R3
+R591
+S1
+R0
+R5
+R592
+R593
+L0 168
+R8
+r1
+!s85 0
+31
+R9
+R594
+R595
+!i113 1
+R12
+R13
+vlsu_permute_address
+R1
+R37
+!i10b 1
+!s100 MjK2f7:4:PD@]:;`b]XlY0
+I]O4SeEPJg[O_3UM]EBFPc1
+R3
+!s105 lsu_permute_address_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/lsu_permute_address.v
+Ftb/simulation/submodules/lsu_permute_address.v
+R18
+R8
+r1
+!s85 0
+31
+R38
+!s107 tb/simulation/submodules/lsu_permute_address.v|
+!s90 -sv|tb/simulation/submodules/lsu_permute_address.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_pipelined_read
+R1
+R37
+!i10b 1
+!s100 k4NGh?2YVN6:HODW:G^DQ0
+IDCnD^onK^dl4BXdV]aiNf3
+R3
+Z596 !s105 lsu_pipelined_v_unit
+S1
+R0
+R5
+Z597 8tb/simulation/submodules/lsu_pipelined.v
+Z598 Ftb/simulation/submodules/lsu_pipelined.v
+L0 43
+R8
+r1
+!s85 0
+31
+R38
+Z599 !s107 tb/simulation/submodules/lsu_pipelined.v|
+Z600 !s90 -sv|tb/simulation/submodules/lsu_pipelined.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_pipelined_write
+R1
+R37
+!i10b 1
+!s100 iWXLZ@]M>dGG7H[1_1:On2
+IKa]3Bz;iaJ;I0i8Bj?Dkf3
+R3
+R596
+S1
+R0
+R5
+R597
+R598
+L0 458
+R8
+r1
+!s85 0
+31
+R38
+R599
+R600
+!i113 1
+R12
+R13
+vlsu_prefetch_block
+R1
+R2
+!i10b 1
+!s100 EV1>T<TaP<halQkW7PK3a3
+IPofm;:5HUi2m5=aD2]Ldb3
+R3
+!s105 lsu_prefetch_block_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/lsu_prefetch_block.v
+Ftb/simulation/submodules/lsu_prefetch_block.v
+L0 35
+R8
+r1
+!s85 0
+31
+R9
+!s107 tb/simulation/submodules/lsu_prefetch_block.v|
+!s90 -sv|tb/simulation/submodules/lsu_prefetch_block.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_read_cache
+R1
+R2
+!i10b 1
+!s100 okSOl[Z@gRFn?AXZRQDb81
+ICNna;78RG4jLKTcMghM6g0
+R3
+!s105 lsu_read_cache_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/lsu_read_cache.v
+Ftb/simulation/submodules/lsu_read_cache.v
+L0 45
+R8
+r1
+!s85 0
+31
+R9
+!s107 tb/simulation/submodules/lsu_read_cache.v|
+!s90 -sv|tb/simulation/submodules/lsu_read_cache.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_simple_read
+R1
+R37
+!i10b 1
+!s100 REl`hfekaC6aW@T@3iD7z1
+I;ZVUP59TB=FUZ31hnEm]E3
+R3
+Z601 !s105 lsu_simple_v_unit
+S1
+R0
+R5
+Z602 8tb/simulation/submodules/lsu_simple.v
+Z603 Ftb/simulation/submodules/lsu_simple.v
+L0 36
+R8
+r1
+!s85 0
+31
+R38
+Z604 !s107 tb/simulation/submodules/lsu_simple.v|
+Z605 !s90 -sv|tb/simulation/submodules/lsu_simple.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_simple_write
+R1
+R37
+!i10b 1
+!s100 =6FDCb=i[n74CFezVTD:W3
+IQB`MGD1adoUBmWcPTOj<@1
+R3
+R601
+S1
+R0
+R5
+R602
+R603
+L0 201
+R8
+r1
+!s85 0
+31
+R38
+R604
+R605
+!i113 1
+R12
+R13
+vlsu_streaming_prefetch_avalon_bust_master
+R1
+R2
+!i10b 1
+!s100 McfLn3jEEOCZf0[gnkmIV0
+IEKjVZE44GChYI:JUc]3Tf2
+R3
+Z606 !s105 lsu_streaming_prefetch_v_unit
+S1
+R0
+R5
+Z607 8tb/simulation/submodules/lsu_streaming_prefetch.v
+Z608 Ftb/simulation/submodules/lsu_streaming_prefetch.v
+L0 542
+R8
+r1
+!s85 0
+31
+R9
+Z609 !s107 tb/simulation/submodules/lsu_streaming_prefetch.v|
+Z610 !s90 -sv|tb/simulation/submodules/lsu_streaming_prefetch.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_streaming_prefetch_fifo
+R1
+R2
+!i10b 1
+!s100 kQUGZmimfDT?aH9@n=1P]1
+Ihk`J0AYj6ibDW6?gGDA;j3
+R3
+R606
+S1
+R0
+R5
+R607
+R608
+L0 324
+R8
+r1
+!s85 0
+31
+R9
+R609
+R610
+!i113 1
+R12
+R13
+vlsu_streaming_prefetch_read
+R1
+R2
+!i10b 1
+!s100 hOWZRgA^`<]n9fj4FRjWW3
+I0Lh<?UQ:hO>fz1aP7obdG0
+R3
+R606
+S1
+R0
+R5
+R607
+R608
+R36
+R8
+r1
+!s85 0
+31
+R9
+R609
+R610
+!i113 1
+R12
+R13
+vlsu_streaming_read
+R1
+R37
+!i10b 1
+!s100 Q^i5ODXSBlXo>oel3?<TT2
+I^g`FbINm4[8zFYX0mldlO1
+R3
+Z611 !s105 lsu_streaming_v_unit
+S1
+R0
+R5
+Z612 8tb/simulation/submodules/lsu_streaming.v
+Z613 Ftb/simulation/submodules/lsu_streaming.v
+R73
+R8
+r1
+!s85 0
+31
+R38
+Z614 !s107 tb/simulation/submodules/lsu_streaming.v|
+Z615 !s90 -sv|tb/simulation/submodules/lsu_streaming.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_streaming_write
+R1
+R37
+!i10b 1
+!s100 X[cIoh2UHZaBmZT6lIO`22
+Ib5YoV9;n<ceaBBO9O^5m^2
+R3
+R611
+S1
+R0
+R5
+R612
+R613
+L0 294
+R8
+r1
+!s85 0
+31
+R38
+R614
+R615
+!i113 1
+R12
+R13
+vlsu_top
+R1
+R37
+!i10b 1
+!s100 8LoXH@3jDHMUm4AbJ>W=@3
+IA:FkUiBD7[hkXUE5^Z9oX0
+R3
+!s105 lsu_top_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/lsu_top.v
+Ftb/simulation/submodules/lsu_top.v
+L0 82
+R8
+r1
+!s85 0
+31
+R38
+!s107 tb/simulation/submodules/lsu_top.v|
+!s90 -sv|tb/simulation/submodules/lsu_top.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+vlsu_wide_wrapper
+R1
+R2
+!i10b 1
+!s100 ;>Z]Yo^_67]WG9Q6djgX>2
+I@D^^Z@@ZKBzA[=<[RiSbS0
+R3
+!s105 lsu_wide_wrapper_v_unit
+S1
+R0
+R5
+8tb/simulation/submodules/lsu_wide_wrapper.v
+Ftb/simulation/submodules/lsu_wide_wrapper.v
+R25
+R8
+r1
+!s85 0
+31
+R9
+!s107 tb/simulation/submodules/lsu_wide_wrapper.v|
+!s90 -sv|tb/simulation/submodules/lsu_wide_wrapper.v|-L|altera_common_sv_packages|-work|avg_internal_inst|
+!i113 1
+R12
+R13
+Ereaddata_reg_unnamed_avg4_avg0
+R5
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R0
+Z616 8tb/simulation/submodules/readdata_reg_unnamed_avg4_avg0.vhd
+Z617 Ftb/simulation/submodules/readdata_reg_unnamed_avg4_avg0.vhd
+l0
+L35
+VlMUzzQQ4iQSY06E@P2aQ<2
+!s100 Ih^6VN2mG4@K_UHRdVh^I3
+R84
+32
+R144
+!i10b 1
+R145
+Z618 !s90 tb/simulation/submodules/readdata_reg_unnamed_avg4_avg0.vhd|-work|avg_internal_inst|
+Z619 !s107 tb/simulation/submodules/readdata_reg_unnamed_avg4_avg0.vhd|
+!i113 1
+R89
+R90
+Anormal
+R74
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+DEx4 work 30 readdata_reg_unnamed_avg4_avg0 0 22 lMUzzQQ4iQSY06E@P2aQ<2
+l61
+L48
+V:TbJfhWF@mNcDmfYOJABR0
+!s100 JJ:nfUmB7hB<]?Jn@L4H]3
+R84
+32
+R144
+!i10b 1
+R145
+R618
+R619
+!i113 1
+R89
+R90
+vscfifo_to_acl_high_speed_fifo
+R1
+R30
+!i10b 1
+!s100 RVZ:fIEeD6ZWcF;f;8K?o0
+I8j4Nl=6UiaIk0j]LDj:U]2
+R3
+R40
+S1
+R0
+R5
+R41
+R42
+L0 1084
+R8
+r1
+!s85 0
+31
+R31
+R43
+R44
+!i113 1
+R12
+R13
+vst_read
+R1
+R37
+!i10b 1
+!s100 f<bELoAVio9RJ2MB?b2Fl2
+ICg>E?@SBAGSA[>EYH3PI]3
+R3
+R572
+S1
+R0
+R5
+R573
+R574
+L0 93
+R8
+r1
+!s85 0
+31
+R35
+R575
+R576
+!i113 1
+R12
+R13
+vst_write
+R1
+R37
+!i10b 1
+!s100 :_W[XCf;mi:g3jDo:Y@Yo3
+I^=3X2fHBj:Q[Rnac<ff1D3
+R3
+R572
+S1
+R0
+R5
+R573
+R574
+L0 263
+R8
+r1
+!s85 0
+31
+R35
+R575
+R576
+!i113 1
+R12
+R13
+vvalid_generator
+R1
+R2
+!i10b 1
+!s100 ZiVCEUAa<22``l]jBFHhQ0
+IjGjA0@4U;kz<6SXU00dR:3
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 496
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13

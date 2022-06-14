@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/class5_code/temp_detect/tb
+vds18b20_driver
+!s110 1627637621
+!i10b 1
+!s100 gJ`Ib5X29oFNMS[A`RL]S2
+Ii5RTJJ2PQ5Kgd:bAE3Ig`1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1627637598
+8D:/class5_code/temp_detect/rtl/ds18b20_driver.v
+FD:/class5_code/temp_detect/rtl/ds18b20_driver.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1627637621.000000
+!s107 D:/class5_code/temp_detect/rtl/ds18b20_driver.v|
+!s90 -reportprogress|300|D:/class5_code/temp_detect/rtl/ds18b20_driver.v|
+!i113 1
+Z3 tCvgOpt 0
+vds18b20_driver_tb
+!s110 1627637516
+!i10b 1
+!s100 g5n:2d?D0h919NCTbN4JU1
+IOWg:OeEUZY4BOdGcJgQVS0
+R1
+R0
+w1627626919
+8ds18b20_driver_tb.v
+Fds18b20_driver_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1627637516.000000
+!s107 ds18b20_driver_tb.v|
+!s90 -reportprogress|300|ds18b20_driver_tb.v|
+!i113 1
+R3

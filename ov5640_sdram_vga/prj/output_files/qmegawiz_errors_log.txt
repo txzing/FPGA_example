@@ -1,0 +1,6 @@
+
+
+E:/FPGA_DEMO/de10_demo/ov5640_sdram_vga/ip/pll1/pll1.v
+
+Dec 13 12PM:48:36>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

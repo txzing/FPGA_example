@@ -1,0 +1,15 @@
+
+State Machine - |fsm_saler|control:u_control|state_c
+Name state_c.WAIT state_c.OUT state_c.INCOIN state_c.SELECT state_c.IDLE 
+state_c.IDLE 0 0 0 0 0 
+state_c.SELECT 0 0 0 1 1 
+state_c.INCOIN 0 0 1 0 1 
+state_c.OUT 0 1 0 0 1 
+state_c.WAIT 1 0 0 0 1 
+
+State Machine - |fsm_saler|key_filter:u_key_filter|state_c
+Name state_c.FILTER_UP state_c.HOLD_DOWN state_c.FILTER_DOWN state_c.IDLE 
+state_c.IDLE 0 0 0 0 
+state_c.FILTER_DOWN 0 0 1 1 
+state_c.HOLD_DOWN 0 1 0 1 
+state_c.FILTER_UP 1 0 0 1 

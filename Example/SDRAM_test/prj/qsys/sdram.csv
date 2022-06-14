@@ -1,0 +1,18 @@
+# system info sdram on 2021.07.22.15:48:37
+system_info:
+name,value
+DEVICE,EP4CE6F17C8
+DEVICE_FAMILY,Cyclone IV E
+GENERATION_ID,1626940115
+#
+#
+# Files generated for sdram on 2021.07.22.15:48:37
+files:
+filepath,kind,attributes,module,is_top
+simulation/sdram.v,VERILOG,,sdram,true
+simulation/submodules/sdram_new_sdram_controller_0.v,VERILOG,,sdram_new_sdram_controller_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+sdram.new_sdram_controller_0,sdram_new_sdram_controller_0
